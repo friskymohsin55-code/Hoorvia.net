@@ -18,10 +18,11 @@
 <meta property="og:description" content="Free Python syntax cheat sheet for Python 3. Quick reference chart covering f-strings, list comprehensions, dictionaries, loops, and functions." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://hoorvia.net/sheet/python-syntax-493/" />
-<meta property="og:site_name" content="Hoorvia" />
-<meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Python Syntax Cheat Sheet (Free Printable Python 3 Quick Reference)" />
 <meta name="twitter:description" content="Free Python syntax cheat sheet for Python 3. Quick reference chart covering f-strings, list comprehensions, dictionaries, loops, and functions." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -32,8 +33,7 @@
   "inLanguage": "en-US",
   "mainEntityOfPage": "https://hoorvia.net/sheet/python-syntax-493/"
 }
-</script>
-<script type="application/ld+json">
+</script><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -65,183 +65,92 @@
   ]
 }
 </script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
-tailwind.config = { theme: { extend: { colors: { paper: '#F8FAFC', warmPaper: '#FAF9F6', slateText: '#1E293B', brandNavy: '#0F172A', brandTeal: '#0D9488', ctaGreen: '#10B981', ctaGreenHover: '#059669', ctaAmber: '#F59E0B', ctaAmberHover: '#D97706' }, fontFamily: { heading: ['"Plus Jakarta Sans"', 'sans-serif'], sans: ['Inter', 'system-ui', 'sans-serif'] }, boxShadow: { 'paper-sheet': '0 14px 35px -5px rgba(15, 23, 42, 0.12), 0 4px 12px -2px rgba(15, 23, 42, 0.06)' } } } }
+tailwind.config = { theme: { extend: { colors: { paper: '#F8FAFC', warmPaper: '#FAF9F6', slateText: '#1E293B', brandNavy: '#0F172A', brandTeal: '#0D9488', ctaGreen: '#10B981', ctaGreenHover: '#059669', ctaAmber: '#F59E0B', ctaAmberHover: '#D97706' }, fontFamily: { heading: ['"Plus Jakarta Sans"', 'sans-serif'], sans: ['Inter', 'system-ui', 'sans-serif'] }, boxShadow: { 'paper-sheet': '0 14px 35px -5px rgba(15, 23, 42, 0.12), 0 4px 12px -2px rgba(15, 23, 42, 0.06)', 'card-hover': '0 12px 24px -6px rgba(13, 148, 136, 0.14)' } } } }
 </script>
 <style>
-body { background-color: #F8FAFC; color: #1E293B; font-family: 'Inter', system-ui, sans-serif; }
+body { background-color: #F8FAFC; color: #1E293B; font-family: 'Inter', sans-serif; }
 h1, h2, h3, h4, .font-heading { font-family: 'Plus Jakarta Sans', sans-serif; }
-.paper-sheet { background: #FFFFFF; border: 1px solid #E2E8F0; position: relative; }
-.paper-sheet::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 6px; border-radius: 1rem 1rem 0 0; background: linear-gradient(90deg, #0D9488, #10B981, #F59E0B); }
-.print-header { display: none; }
-.sheet-table { width: 100%; border-collapse: collapse; font-size: 0.875rem; text-align: left; }
-.sheet-table thead th { background: #0F172A; color: #fff; font-weight: 600; padding: 0.75rem; border-bottom: 1px solid #1e293b; white-space: nowrap; }
-.sheet-table thead th:first-child { border-radius: 0.5rem 0 0 0; }
-.sheet-table thead th:last-child { border-radius: 0 0.5rem 0 0; }
-.sheet-table tbody td { padding: 0.75rem; color: #334155; border-bottom: 1px solid #f1f5f9; vertical-align: top; }
-.sheet-table tbody tr:nth-child(even) td { background: #F8FAFC; }
-.sheet-table tbody tr:hover td { background: #f0fdfa; }
-.sheet-table tbody td:first-child { font-weight: 600; color: #0F172A; }
-.table-scroll { overflow-x: auto; border-radius: 0.75rem; border: 1px solid #e2e8f0; }
-::-webkit-scrollbar { width: 8px; height: 8px; }
-::-webkit-scrollbar-track { background: #F1F5F9; }
-::-webkit-scrollbar-thumb { background: #CBD5E1; border-radius: 4px; }
-@media (max-width: 640px) {
-  .sheet-table { min-width: 620px; }
-  .sheet-table thead th:first-child, .sheet-table tbody td:first-child {
-    position: sticky; left: 0; z-index: 1;
-    box-shadow: 2px 0 4px rgba(15,23,42,0.08);
-  }
-  .sheet-table thead th:first-child { background: #0F172A; }
-  .sheet-table tbody tr:nth-child(odd) td:first-child { background: #ffffff; }
-  .sheet-table tbody tr:nth-child(even) td:first-child { background: #F8FAFC; }
-  .sheet-table tbody tr:hover td:first-child { background: #f0fdfa; }
-}
+::-webkit-scrollbar { width: 8px; height: 8px; } ::-webkit-scrollbar-track { background: #F1F5F9; } ::-webkit-scrollbar-thumb { background: #CBD5E1; border-radius: 4px; }
+#print-title { display: none; }
 @media print {
   @page { size: auto; margin: 12mm 15mm; }
-  *, *::before, *::after { box-shadow: none !important; text-shadow: none !important; }
-  html, body { background: #ffffff !important; color: #0f172a !important; }
-  body > :not(main):not(.print-header) { display: none !important; }
-  main > *:not(.print-keep) { display: none !important; }
-  main { max-width: 100% !important; padding: 0 !important; margin: 0 !important; }
-  .print-keep { box-shadow: none !important; border: none !important; padding: 0 !important; margin: 0 0 12px 0 !important; background: #fff !important; }
-  .title-sec > div, .title-sec > p { display: none !important; }
-  #sheet-title { font-size: 20pt !important; margin: 0 0 10px 0 !important; line-height: 1.25 !important; color: #0f172a !important; }
-  #sheet-table-section > h2, #sheet-table-section > p { display: none !important; }
-  .print-header { display: block !important; margin-bottom: 10px !important; padding-bottom: 8px !important; border-bottom: 2px solid #0f172a !important; }
-  .table-scroll { overflow: visible !important; border: none !important; }
-  .sheet-table { min-width: 0 !important; width: 100% !important; font-size: 9pt; border-collapse: collapse; }
-  .sheet-table thead th:first-child, .sheet-table tbody td:first-child { position: static !important; box-shadow: none !important; }
-  .sheet-table thead th { background: #0F172A !important; color: #ffffff !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body { background: #FFFFFF !important; color: #000000 !important; font-size: 10pt; }
+  .no-print, header, footer, #quick-action-bar, #download-cta-box, #seo-guide-section,
+  #table-controls, #breadcrumb-bar, #preview-section, #related-section, #tips-section, #faq-section, #howto-section { display: none !important; }
+  #print-title { display: block !important; margin-bottom: 10px; padding-bottom: 8px; border-bottom: 2px solid #0f172a; }
+  #table-section { display: block !important; border: none !important; box-shadow: none !important; margin: 0 !important; }
+  #table-section .no-print { display: none !important; }
+  #table-section > div:first-child { border: none !important; background: none !important; padding: 0 0 8px 0 !important; }
+  table { page-break-inside: auto; border-collapse: collapse !important; width: 100% !important; font-size: 9pt; }
+  tr { page-break-inside: avoid; page-break-after: auto; }
+  thead { display: table-header-group; }
+  thead tr { background: #0f172a !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  thead th { color: #fff !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  main, article { max-width: 100% !important; padding: 0 !important; margin: 0 !important; }
 }
 </style>
-
 </head>
-<body>
-<div class="print-header">
-<div style="display:flex;justify-content:space-between;align-items:center;font-size:12px;color:#334155;">
-<span style="font-weight:800;letter-spacing:0.08em;color:#0f172a;font-size:15px;">HOORVIA.NET &middot; DIGITAL REFERENCE LIBRARY</span>
-<span style="font-family:monospace;font-weight:700;color:#0f172a;">MASTER SHEET #493</span>
-</div>
-<div style="font-size:11px;color:#475569;margin-top:2px;">Tech &amp; Software &gt; Python Programming</div>
-<div style="font-size:10px;color:#64748b;font-family:monospace;margin-top:2px;">Reference URL: https://hoorvia.net/sheet/python-syntax-493/</div>
-</div>
-<header class="site-header no-print bg-white/95 backdrop-blur-md border-b border-slate-200 sticky top-0 z-40">
+<body class="min-h-screen flex flex-col selection:bg-teal-100 selection:text-teal-900">
+<header class="no-print bg-white/95 backdrop-blur-md border-b border-slate-200 sticky top-0 z-40">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
 <a href="/" class="flex items-center gap-2.5 group">
 <div class="w-9 h-9 rounded-xl bg-brandNavy text-white flex items-center justify-center font-heading font-extrabold text-lg shadow-sm group-hover:bg-brandTeal transition-colors">H</div>
-<span class="font-heading font-extrabold text-xl tracking-tight text-brandNavy">Hoorvia</span>
-</a>
+<div><span class="font-heading font-extrabold text-xl tracking-tight text-brandNavy">Hoorvia</span>
+</div></a>
 <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-600"><a href="/kitchen/" class="hover:text-brandTeal transition-colors">Kitchen &amp; Cooking</a><a href="/crafting/" class="hover:text-brandTeal transition-colors">Crafting &amp; DIY</a><a href="/home-health/" class="hover:text-brandTeal transition-colors">Home &amp; Health Trackers</a><a href="/tech/" class="hover:text-brandTeal transition-colors">Tech &amp; Software</a><a href="/reference/" class="hover:text-brandTeal transition-colors">Reference</a></nav>
 <div class="flex items-center gap-2"><a href="/kitchen/air-fryer-cooking-times.html" class="text-xs sm:text-sm font-semibold px-3.5 py-2 rounded-lg bg-teal-50 text-brandTeal hover:bg-teal-100 transition-colors">&#128293; Popular: Air Fryer Chart</a></div>
 </div></header>
-<main class="max-w-6xl mx-auto px-4 sm:px-6 py-8 sm:py-10">
-<div id="breadcrumb-bar" class="no-print flex flex-wrap items-center gap-2 mb-5 text-xs sm:text-sm text-slate-500">
-<a href="/" class="hover:text-brandTeal">Home</a><span class="text-slate-300">/</span>
-<a href="/tech/" class="hover:text-brandTeal">Tech & Software</a><span class="text-slate-300">/</span>
-<span>Python Programming</span><span class="text-slate-300">/</span>
-<span class="font-bold text-brandNavy">#493</span>
-</div>
 
-<section class="paper-sheet rounded-2xl shadow-paper-sheet p-6 sm:p-8 mb-6 sm:mb-8 pt-8 print-keep title-sec">
-<div class="flex flex-wrap items-center gap-2 mb-4">
-<span class="px-2.5 py-1 rounded-md bg-teal-100 text-brandTeal text-xs font-bold uppercase tracking-wide">Tech & Software</span>
-<span class="px-2.5 py-1 rounded-md bg-emerald-100 text-emerald-800 text-xs font-semibold">Free Printable</span>
-<span class="font-mono text-xs font-bold px-2 py-1 rounded-md bg-slate-100 text-slate-600">#493</span>
-<span class="text-xs text-slate-500">Sizes: US Letter &amp; A4</span>
-</div>
-<h1 id="sheet-title" class="font-heading text-2xl sm:text-4xl font-extrabold text-brandNavy tracking-tight leading-tight mb-3">Python Syntax Cheat Sheet: Printable Python 3 Quick Reference Guide</h1>
-<p class="text-slate-600 text-sm sm:text-base leading-relaxed max-w-3xl">Whether you are writing your first automation script, preparing for a technical coding interview, or switching between multiple programming languages, small syntax details can easily trip up your workflow. Python 3 relies on clean indentation and expressive one-liners, making a concise syntax reference invaluable when you need to recall dictionary methods, slicing rules, or exception handling blocks on the fly. This printable Python syntax cheat sheet condenses essential Python 3.10+ building blocks into a practical, copy-ready reference chart. Instead of digging through lengthy documentation pages, you can immediately check exact code patterns for f-string formatting, list comprehensions, lambda functions, file context managers, and structural pattern matching. Review the complete Python commands and syntax chart below for real-world code snippets and expected outputs, or print the sheet below to keep beside your keyboard while coding in VS Code, PyCharm, or Jupyter.</p>
-<div id="quick-action-bar" class="no-print mt-6 pt-5 border-t border-slate-100 flex flex-wrap items-center gap-3">
-<button onclick="window.print()" class="inline-flex items-center gap-2 px-5 py-2.5 bg-ctaGreen hover:bg-ctaGreenHover text-white rounded-lg text-sm font-bold transition-colors cursor-pointer shadow-sm">
-<svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" /></svg>
-Print Sheet / Save PDF
-</button>
-<span class="text-xs text-slate-400">No sign-up &middot; prints cleanly on US Letter &amp; A4</span>
-</div>
-</section>
-
-<section id="sheet-table-section" class="paper-sheet rounded-2xl shadow-paper-sheet p-6 sm:p-8 mb-6 sm:mb-8 pt-8 print-keep table-sec">
-<h2 class="font-heading text-lg sm:text-xl font-bold text-brandNavy mb-1">Interactive Reference Table</h2>
-<p class="text-xs sm:text-sm text-slate-500 mb-4 sm:hidden">&#8592; Swipe sideways to see all columns &#8594;</p>
-<div class="table-scroll">
-<table class="sheet-table">
-<thead>
-<tr><th>Construct / Feature</th><th>Python 3 Syntax Example</th><th>Output / Behavior</th><th>Core Use Case</th></tr>
-</thead>
-<tbody>
-<tr><td>F-String Formatting</td><td>f&quot;Price: ${cost:.2f}&quot;</td><td>&#x27;Price: $19.50&#x27;</td><td>Embed variables and round decimals cleanly inside strings</td></tr>
-<tr><td>List Slicing</td><td>items[1:4] / items[::-1]</td><td>Elements 1–3 / Reversed list</td><td>Extract sub-lists or reverse sequences [start:stop:step]</td></tr>
-<tr><td>List Comprehension</td><td>[x**2 for x in range(5) if x % 2 == 0]</td><td>[0, 4, 16]</td><td>Filter and transform iterables in a single readable line</td></tr>
-<tr><td>Dictionary Safe Lookup</td><td>user.get(&quot;role&quot;, &quot;guest&quot;)</td><td>&#x27;guest&#x27; (if key missing)</td><td>Retrieve dictionary values without raising a KeyError</td></tr>
-<tr><td>Dictionary Merge (3.9+)</td><td>merged = defaults | custom</td><td>Combined dict (right wins)</td><td>Merge two dictionaries cleanly using the union operator</td></tr>
-<tr><td>Unpacking &amp; Splat</td><td>first, *rest = [10, 20, 30, 40]</td><td>first=10, rest=[20, 30, 40]</td><td>Capture head/tail elements from lists or tuples dynamically</td></tr>
-<tr><td>Enumerate Loop</td><td>for idx, val in enumerate(seq, 1):</td><td>Yields (1, item0), (2, item1)</td><td>Loop over an iterable while tracking a 1-based counter</td></tr>
-<tr><td>Zip Parallel Iteration</td><td>for a, b in zip(names, scores):</td><td>Pairs (name0, score0)</td><td>Iterate over two or more lists simultaneously</td></tr>
-<tr><td>Function with Type Hints</td><td>def calc(x: int, rate: float = 0.1) -&gt; float:</td><td>Returns typed float value</td><td>Define reusable functions with default args and type safety</td></tr>
-<tr><td>Lambda Anonymous Func</td><td>sort_fn = sorted(rows, key=lambda r: r[1])</td><td>List sorted by index 1</td><td>Pass short inline sorting or filtering logic</td></tr>
-<tr><td>Exception Handling</td><td>try: ... except ValueError as e: ... finally:</td><td>Catches error safely</td><td>Handle runtime errors without crashing the script</td></tr>
-<tr><td>Context Manager (with)</td><td>with open(&quot;data.txt&quot;, &quot;r&quot;, encoding=&quot;utf-8&quot;) as f:</td><td>Auto-closes file handle</td><td>Read or write files safely without memory or handle leaks</td></tr>
-<tr><td>Structural Match (3.10+)</td><td>match status: case 200: ... case _:</td><td>Matches value pattern</td><td>Clean multi-branch alternative to long if/elif chains</td></tr>
-</tbody>
-</table>
-</div>
-</section>
-
-<section class="paper-sheet rounded-2xl shadow-paper-sheet p-6 sm:p-8 mb-6 sm:mb-8 pt-8">
-<h2 class="font-heading text-xl sm:text-2xl font-bold text-brandNavy mb-4">How to Use This Chart</h2>
-<p class="text-sm sm:text-[15px] text-slate-600 leading-relaxed mb-3">Pin this chart where you work: it packs <strong>13 entries</strong> and 4 columns (<strong>Construct / Feature</strong>, <strong>Python 3 Syntax Example</strong>, <strong>Output / Behavior</strong>, <strong>Core Use Case</strong>) into one printable page, built for quick lookups.</p>
+<main class="flex-grow">
+<div id="print-title"><div style="font-weight:800;letter-spacing:0.08em;font-size:15px;">HOORVIA.NET &middot; DIGITAL REFERENCE LIBRARY</div><div style="font-size:22px;font-weight:800;margin-top:4px;">Python Syntax Cheat Sheet: Printable Python 3 Quick Reference Guide</div><div style="font-size:11px;color:#475569;margin-top:2px;">Tech &amp; Software &gt; Sheet #1</div></div>
+<article class="max-w-[850px] mx-auto px-4 sm:px-6 py-8">
+<div id="breadcrumb-bar" class="no-print flex flex-wrap items-center justify-between gap-2 mb-5 text-xs sm:text-sm text-slate-500">
+<nav class="flex items-center gap-1.5"><a href="/" class="hover:text-brandTeal font-medium">Home</a><span>&rsaquo;</span><a href="/tech/" class="hover:text-brandTeal font-medium">Tech &amp; Software</a><span>&rsaquo;</span><span class="text-slate-800 font-semibold">Python Syntax Cheat Sheet: Printable Python 3 Quick Reference Guide</span></nav>
+<a href="/" class="inline-flex items-center gap-1 text-brandTeal font-semibold hover:underline">&larr; Back to All Cheat Sheets</a></div>
+<header class="mb-6"><div class="flex flex-wrap items-center gap-2 mb-3"><span class="px-2.5 py-1 rounded-md bg-teal-100 text-brandTeal text-xs font-bold uppercase tracking-wide">Tech &amp; Software</span><span class="px-2.5 py-1 rounded-md bg-emerald-100 text-emerald-800 text-xs font-semibold">Free Printable</span><span class="text-xs text-slate-500">Sizes: US Letter &amp; A4</span></div>
+<h1 class="font-heading text-2xl sm:text-4xl font-extrabold text-brandNavy tracking-tight leading-tight mb-3">Python Syntax Cheat Sheet: Printable Python 3 Quick Reference Guide</h1>
+<p class="text-slate-600 text-sm sm:text-base leading-relaxed">Whether you are writing your first automation script, preparing for a technical coding interview, or switching between multiple programming languages, small syntax details can easily trip up your workflow. Python 3 relies on clean indentation and expressive one-liners, making a concise syntax reference invaluable when you need to recall dictionary methods, slicing rules, or exception handling blocks on the fly. This printable Python syntax cheat sheet condenses essential Python 3.10+ building blocks into a practical, copy-ready reference chart. Instead of digging through lengthy documentation pages, you can immediately check exact code patterns for f-string formatting, list comprehensions, lambda functions, file context managers, and structural pattern matching. Review the complete Python commands and syntax chart below for real-world code snippets and expected outputs, or print the sheet below to keep beside your keyboard while coding in VS Code, PyCharm, or Jupyter.</p></header>
+<div id="quick-action-bar" class="no-print flex flex-wrap items-center gap-2.5 p-3 rounded-xl bg-white border border-slate-200 shadow-sm mb-8">
+<a href="#download-cta-box" class="flex-1 sm:flex-initial inline-flex items-center justify-center gap-1.5 px-4 py-2 rounded-lg bg-ctaGreen hover:bg-ctaGreenHover text-white font-semibold text-xs sm:text-sm transition-all shadow-sm"><span>&#128229; Jump to Free PDF Download</span></a>
+<button onclick="window.print()" class="flex-1 sm:flex-initial inline-flex items-center justify-center gap-1.5 px-4 py-2 rounded-lg bg-ctaAmber hover:bg-ctaAmberHover text-white font-semibold text-xs sm:text-sm transition-all shadow-sm cursor-pointer border-0"><span>&#128438; Print This Chart Now</span></button>
+<a href="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Fhoorvia.net%2Fsheet%2Fpython-syntax%2F&description=Python%20Syntax%20Cheat%20Sheet%3A%20Printable%20Python%203%20Quick%20Reference%20Guide" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-1.5 px-3.5 py-2 rounded-lg bg-rose-600 hover:bg-rose-700 text-white font-semibold text-xs sm:text-sm transition-all ml-auto"><span>&#128204; Save to Pinterest</span></a></div>
+<section id="table-section" class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden mb-10">
+<div class="p-4 sm:p-5 border-b border-slate-200 bg-slate-50/70 flex flex-col sm:flex-row sm:items-center justify-between gap-3"><div><h2 class="font-heading text-lg sm:text-xl font-bold text-brandNavy">Quick-Reference Table</h2><p class="text-xs text-slate-500">The full data from this cheat sheet, right on the page.</p></div></div>
+<div class="no-print p-3 sm:px-5 bg-white border-b border-slate-200"><input type="text" id="table-filter-input" oninput="filterRows()" placeholder="&#128270; Filter this table instantly..." class="w-full px-3.5 py-2 text-sm border border-slate-200 rounded-lg focus:outline-none focus:border-brandTeal" /></div>
+<div class="overflow-x-auto"><table class="w-full text-left border-collapse"><thead><tr class="bg-slate-100/80 text-slate-700 text-xs uppercase tracking-wider border-b border-slate-200"><th class="py-3 px-4 font-bold">Construct / Feature</th><th class="py-3 px-4 font-bold">Python 3 Syntax Example</th><th class="py-3 px-4 font-bold">Output / Behavior</th><th class="py-3 px-4 font-bold">Core Use Case</th></tr></thead><tbody id="post-tbody" class="divide-y divide-slate-200 text-xs sm:text-sm"><tr><td class="py-3 px-4 text-slate-700">F-String Formatting</td><td class="py-3 px-4 text-slate-700">f&quot;Price: ${cost:.2f}&quot;</td><td class="py-3 px-4 text-slate-700">&#x27;Price: $19.50&#x27;</td><td class="py-3 px-4 text-slate-700">Embed variables and round decimals cleanly inside strings</td></tr><tr><td class="py-3 px-4 text-slate-700">List Slicing</td><td class="py-3 px-4 text-slate-700">items[1:4] / items[::-1]</td><td class="py-3 px-4 text-slate-700">Elements 1–3 / Reversed list</td><td class="py-3 px-4 text-slate-700">Extract sub-lists or reverse sequences [start:stop:step]</td></tr><tr><td class="py-3 px-4 text-slate-700">List Comprehension</td><td class="py-3 px-4 text-slate-700">[x**2 for x in range(5) if x % 2 == 0]</td><td class="py-3 px-4 text-slate-700">[0, 4, 16]</td><td class="py-3 px-4 text-slate-700">Filter and transform iterables in a single readable line</td></tr><tr><td class="py-3 px-4 text-slate-700">Dictionary Safe Lookup</td><td class="py-3 px-4 text-slate-700">user.get(&quot;role&quot;, &quot;guest&quot;)</td><td class="py-3 px-4 text-slate-700">&#x27;guest&#x27; (if key missing)</td><td class="py-3 px-4 text-slate-700">Retrieve dictionary values without raising a KeyError</td></tr><tr><td class="py-3 px-4 text-slate-700">Dictionary Merge (3.9+)</td><td class="py-3 px-4 text-slate-700">merged = defaults | custom</td><td class="py-3 px-4 text-slate-700">Combined dict (right wins)</td><td class="py-3 px-4 text-slate-700">Merge two dictionaries cleanly using the union operator</td></tr><tr><td class="py-3 px-4 text-slate-700">Unpacking &amp; Splat</td><td class="py-3 px-4 text-slate-700">first, *rest = [10, 20, 30, 40]</td><td class="py-3 px-4 text-slate-700">first=10, rest=[20, 30, 40]</td><td class="py-3 px-4 text-slate-700">Capture head/tail elements from lists or tuples dynamically</td></tr><tr><td class="py-3 px-4 text-slate-700">Enumerate Loop</td><td class="py-3 px-4 text-slate-700">for idx, val in enumerate(seq, 1):</td><td class="py-3 px-4 text-slate-700">Yields (1, item0), (2, item1)</td><td class="py-3 px-4 text-slate-700">Loop over an iterable while tracking a 1-based counter</td></tr><tr><td class="py-3 px-4 text-slate-700">Zip Parallel Iteration</td><td class="py-3 px-4 text-slate-700">for a, b in zip(names, scores):</td><td class="py-3 px-4 text-slate-700">Pairs (name0, score0)</td><td class="py-3 px-4 text-slate-700">Iterate over two or more lists simultaneously</td></tr><tr><td class="py-3 px-4 text-slate-700">Function with Type Hints</td><td class="py-3 px-4 text-slate-700">def calc(x: int, rate: float = 0.1) -&gt; float:</td><td class="py-3 px-4 text-slate-700">Returns typed float value</td><td class="py-3 px-4 text-slate-700">Define reusable functions with default args and type safety</td></tr><tr><td class="py-3 px-4 text-slate-700">Lambda Anonymous Func</td><td class="py-3 px-4 text-slate-700">sort_fn = sorted(rows, key=lambda r: r[1])</td><td class="py-3 px-4 text-slate-700">List sorted by index 1</td><td class="py-3 px-4 text-slate-700">Pass short inline sorting or filtering logic</td></tr><tr><td class="py-3 px-4 text-slate-700">Exception Handling</td><td class="py-3 px-4 text-slate-700">try: ... except ValueError as e: ... finally:</td><td class="py-3 px-4 text-slate-700">Catches error safely</td><td class="py-3 px-4 text-slate-700">Handle runtime errors without crashing the script</td></tr><tr><td class="py-3 px-4 text-slate-700">Context Manager (with)</td><td class="py-3 px-4 text-slate-700">with open(&quot;data.txt&quot;, &quot;r&quot;, encoding=&quot;utf-8&quot;) as f:</td><td class="py-3 px-4 text-slate-700">Auto-closes file handle</td><td class="py-3 px-4 text-slate-700">Read or write files safely without memory or handle leaks</td></tr><tr><td class="py-3 px-4 text-slate-700">Structural Match (3.10+)</td><td class="py-3 px-4 text-slate-700">match status: case 200: ... case _:</td><td class="py-3 px-4 text-slate-700">Matches value pattern</td><td class="py-3 px-4 text-slate-700">Clean multi-branch alternative to long if/elif chains</td></tr></tbody></table></div></section>
+<section id="howto-section" class="no-print bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 mb-10"><h2 class="font-heading text-xl sm:text-2xl font-bold text-brandNavy mb-4">How to Use This Chart</h2><p class="text-sm sm:text-[15px] text-slate-600 leading-relaxed mb-3">Pin this chart where you work: it packs <strong>13 entries</strong> and 4 columns (<strong>Construct / Feature</strong>, <strong>Python 3 Syntax Example</strong>, <strong>Output / Behavior</strong>, <strong>Core Use Case</strong>) into one printable page, built for quick lookups.</p>
 <p class="text-sm sm:text-[15px] text-slate-600 leading-relaxed mb-3">Scan down the <strong>Construct / Feature</strong> column to your item, then read across for Python 3 Syntax Example, Output / Behavior.</p>
 <p class="text-sm sm:text-[15px] text-slate-600 leading-relaxed mb-3"><strong class="text-brandNavy">Example:</strong> for <strong>F-String Formatting</strong>, the chart gives <strong>Python 3 Syntax Example</strong> of <strong>f&quot;Price: ${cost:.2f}&quot;</strong>.</p>
-<ul class="list-disc pl-5 space-y-1.5 text-sm sm:text-[15px] text-slate-600 leading-relaxed"><li>Compare values down a single column to spot the pattern before you commit to a choice.</li><li>When two rows look close, the Core Use Case column usually breaks the tie.</li><li>Print it once and keep it where you work — that's the whole point of a cheat sheet.</li></ul>
-</section>
-
-<section class="paper-sheet rounded-2xl shadow-paper-sheet p-6 sm:p-8 mb-6 sm:mb-8 pt-8">
-<h2 class="font-heading text-lg sm:text-xl font-bold text-brandNavy mb-3">&#128161; Quick Tips</h2>
-<div class="space-y-3 text-sm sm:text-base text-slate-600 leading-relaxed">
+<ul class="list-disc pl-5 space-y-1.5 text-sm sm:text-[15px] text-slate-600 leading-relaxed"><li>Compare values down a single column to spot the pattern before you commit to a choice.</li><li>When two rows look close, the Core Use Case column usually breaks the tie.</li><li>Print it once and keep it where you work — that's the whole point of a cheat sheet.</li></ul></section>
+<section id="tips-section" class="no-print bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 mb-10"><h2 class="font-heading text-xl sm:text-2xl font-bold text-brandNavy mb-4">&#128161; Quick Tips</h2><div class="space-y-3 text-sm sm:text-base text-slate-600 leading-relaxed">
 <p><strong class="text-brandNavy">Indentation Rule:</strong> Python uses 4 spaces (never mixed tabs and spaces) per indentation level to define code blocks instead of curly braces.</p><p><strong class="text-brandNavy">Mutable Default Trap:</strong> Never use def add_item(val, items=[]): as a default argument; use items=None and initialize items = [] inside the function body so lists do not persist across calls.</p>
-</div>
+</div></section>
+<section id="faq-section" class="no-print bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 mb-10"><h2 class="font-heading text-xl sm:text-2xl font-bold text-brandNavy mb-4">Frequently Asked Questions</h2><div class="space-y-3"><details class="group border border-slate-200 rounded-xl p-4 bg-paper" open><summary class="font-heading font-bold text-brandNavy cursor-pointer list-none flex justify-between items-center"><span>What is the difference between a list, a tuple, and a set in Python?</span><span class="text-brandTeal group-open:rotate-180 transition-transform">▼</span></summary><p class="text-slate-600 text-sm mt-2">Lists ([1, 2]) are ordered and mutable, allowing you to add or change elements. Tuples ((1, 2)) are ordered but immutable once created. Sets ({1, 2}) are unordered collections that automatically strip duplicate values and support ultra-fast membership checks.</p></details><details class="group border border-slate-200 rounded-xl p-4 bg-paper"><summary class="font-heading font-bold text-brandNavy cursor-pointer list-none flex justify-between items-center"><span>Why should I use enumerate() instead of range(len(my_list)) in Python loops?</span><span class="text-brandTeal group-open:rotate-180 transition-transform">▼</span></summary><p class="text-slate-600 text-sm mt-2">Using for i, item in enumerate(my_list): gives you both the index and the actual value directly without manual indexing (my_list[i]). It is faster, cleaner, more Pythonic, and lets you set a custom starting counter number.</p></details><details class="group border border-slate-200 rounded-xl p-4 bg-paper"><summary class="font-heading font-bold text-brandNavy cursor-pointer list-none flex justify-between items-center"><span>How do *args and **kwargs work in Python function definitions?</span><span class="text-brandTeal group-open:rotate-180 transition-transform">▼</span></summary><p class="text-slate-600 text-sm mt-2">*args collects any number of extra positional arguments into a tuple, while **kwargs collects extra keyword arguments (key=value) into a dictionary. Together, they let you write flexible functions and decorators that accept variable inputs.</p></details></div></section>
+<section id="preview-section" class="no-print mb-8"><div class="flex items-center justify-between mb-3"><h2 class="font-heading text-lg sm:text-xl font-bold text-brandNavy">Printable Sheet Preview</h2><span class="text-xs font-medium text-slate-500">High-Contrast Layout</span></div>
+<img src="/assets/previews/python-syntax.webp" alt="Printable Python 3 syntax cheat sheet showing code examples for data types, loops, list comprehensions, and functions" loading="lazy" class="rounded-2xl border border-slate-200 shadow-sm w-full" />
 </section>
-
-<section class="paper-sheet rounded-2xl shadow-paper-sheet p-6 sm:p-8 mb-6 sm:mb-8 pt-8">
-<h2 class="font-heading text-lg sm:text-xl font-bold text-brandNavy mb-4">Frequently Asked Questions</h2>
-<div class="space-y-4">
-<div class="border-b border-slate-100 pb-4 last:border-0 last:pb-0">
-<h3 class="font-heading font-bold text-brandNavy text-sm sm:text-base mb-1.5">What is the difference between a list, a tuple, and a set in Python?</h3>
-<p class="text-sm text-slate-600 leading-relaxed">Lists ([1, 2]) are ordered and mutable, allowing you to add or change elements. Tuples ((1, 2)) are ordered but immutable once created. Sets ({1, 2}) are unordered collections that automatically strip duplicate values and support ultra-fast membership checks.</p>
-</div><div class="border-b border-slate-100 pb-4 last:border-0 last:pb-0">
-<h3 class="font-heading font-bold text-brandNavy text-sm sm:text-base mb-1.5">Why should I use enumerate() instead of range(len(my_list)) in Python loops?</h3>
-<p class="text-sm text-slate-600 leading-relaxed">Using for i, item in enumerate(my_list): gives you both the index and the actual value directly without manual indexing (my_list[i]). It is faster, cleaner, more Pythonic, and lets you set a custom starting counter number.</p>
-</div><div class="border-b border-slate-100 pb-4 last:border-0 last:pb-0">
-<h3 class="font-heading font-bold text-brandNavy text-sm sm:text-base mb-1.5">How do *args and **kwargs work in Python function definitions?</h3>
-<p class="text-sm text-slate-600 leading-relaxed">*args collects any number of extra positional arguments into a tuple, while **kwargs collects extra keyword arguments (key=value) into a dictionary. Together, they let you write flexible functions and decorators that accept variable inputs.</p>
-</div>
-</div>
-</section>
-
-<section class="mb-8">
-<div class="flex items-center justify-between mb-3">
-<h2 class="font-heading text-lg sm:text-xl font-bold text-brandNavy">Printable Sheet Preview</h2>
-<span class="text-xs font-medium text-slate-500">High-Contrast Layout</span>
-</div>
-<img src="/assets/previews/python-syntax.webp" alt="Printable Python 3 syntax cheat sheet showing code examples for data types, loops, list comprehensions, and functions" loading="lazy" class="rounded-2xl border border-slate-200 shadow-paper-sheet w-full" />
-</section>
-
-<div class="no-print flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-teal-100 bg-teal-50/60 px-5 py-4">
-<p class="text-sm text-slate-600">Looking for more <strong class="text-brandNavy">Python Programming</strong> charts?</p>
-<a href="/tech/" class="text-sm font-bold text-brandTeal hover:text-brandNavy transition-colors">Browse the full Tech & Software hub &rarr;</a>
-</div>
-</main>
-<footer class="site-footer no-print bg-white border-t border-slate-200 mt-12">
+<section id="download-cta-box" class="no-print bg-white rounded-2xl border-2 border-emerald-500/40 shadow-md p-6 sm:p-8 mb-10 text-center">
+<span class="inline-block px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold uppercase tracking-wide mb-2">Instant Direct Download &bull; No Email Required</span>
+<h2 class="font-heading text-xl sm:text-2xl font-extrabold text-brandNavy mb-2">Download Your Free Printable Sheet</h2>
+<p class="text-slate-600 text-xs sm:text-sm max-w-xl mx-auto mb-6">Download the printable PDF below. It is the same sheet shown in the preview above, ready to print on US Letter or A4 &mdash; open it and choose Print, with Scale set to Fit to Page.</p>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-3 max-w-2xl mx-auto">
+<a href="/assets/pdfs/python-syntax.pdf" download="Hoorvia-python-syntax.pdf" class="flex flex-col items-center justify-center py-3.5 px-4 rounded-xl bg-ctaGreen hover:bg-ctaGreenHover text-white font-heading font-bold shadow-sm transition-all"><span class="text-sm sm:text-base">&#128229; Download Free Printable PDF</span><span class="text-[11px] font-normal opacity-90">US Letter + A4 &mdash; PDF file</span></a>
+<a href="/assets/pdfs/python-syntax.pdf" target="_blank" class="flex flex-col items-center justify-center py-3.5 px-4 rounded-xl bg-ctaGreen hover:bg-ctaGreenHover text-white font-heading font-bold shadow-sm transition-all"><span class="text-sm sm:text-base">&#128229; Download US Letter</span><span class="text-[11px] font-normal opacity-90">8.5&quot; &times; 11&quot; &mdash; PDF file</span></a>
+<a href="/assets/pdfs/python-syntax.pdf" target="_blank" class="flex flex-col items-center justify-center py-3.5 px-4 rounded-xl bg-brandTeal hover:bg-teal-700 text-white font-heading font-bold shadow-sm transition-all"><span class="text-sm sm:text-base">&#128229; Download A4 Size</span><span class="text-[11px] font-normal opacity-90">210 &times; 297 mm UK/EU/AU &mdash; PDF file</span></a>
+<a href="/assets/pdfs/python-syntax.pdf" target="_blank" class="flex flex-col items-center justify-center py-3.5 px-4 rounded-xl bg-ctaAmber hover:bg-ctaAmberHover text-white font-heading font-bold shadow-sm transition-all"><span class="text-sm sm:text-base">&#128438; Print Directly Now</span><span class="text-[11px] font-normal opacity-90">Open PDF to Print</span></a></div>
+<p class="text-[11px] text-slate-400 mt-4">&#128161; <strong>Pro Printing Tip:</strong> In your printer settings, set Scale to <strong>&ldquo;Fit to Printable Area&rdquo;</strong> and enable <strong>&ldquo;Background Graphics&rdquo;</strong> for color headers.</p></section>
+</article></main>
+<script>
+function filterRows(){ const q=(document.getElementById('table-filter-input').value||'').toLowerCase(); document.querySelectorAll('#post-tbody tr').forEach(r=>{ r.style.display=r.textContent.toLowerCase().includes(q)?'':'none'; }); }
+</script>
+<footer class="no-print bg-white border-t border-slate-200 mt-12">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 py-10">
 <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
 <div class="md:col-span-2"><div class="flex items-center gap-2 mb-3"><div class="w-7 h-7 rounded-lg bg-brandNavy text-white flex items-center justify-center font-heading font-bold text-sm">H</div><span class="font-heading font-extrabold text-lg text-brandNavy">Hoorvia</span></div>
 <p class="text-xs sm:text-sm text-slate-500 max-w-sm leading-relaxed">Free, accuracy-checked printable cheat sheets, conversion tables, and daily trackers formatted for US Letter &amp; A4 paper. No sign-up required.</p></div>
-<div><h4 class="font-heading font-bold text-brandNavy text-sm mb-3">Popular Categories</h4><ul class="space-y-2 text-xs sm:text-sm text-slate-600"><li><a href="/kitchen/" class="hover:text-brandTeal">Kitchen &amp; Cooking</a></li><li><a href="/crafting/" class="hover:text-brandTeal">Crafting &amp; DIY</a></li><li><a href="/home-health/" class="hover:text-brandTeal">Home &amp; Health Trackers</a></li><li><a href="/tech/" class="hover:text-brandTeal">Tech &amp; Software</a></li><li><a href="/reference/" class="hover:text-brandTeal">Reference Charts</a></li></ul></div>
+<div><h4 class="font-heading font-bold text-brandNavy text-sm mb-3">Popular Categories</h4><ul class="space-y-2 text-xs sm:text-sm text-slate-600"><li><a href="/kitchen/" class="hover:text-brandTeal">Kitchen &amp; Cooking</a></li><li><a href="/crafting/" class="hover:text-brandTeal">Crafting &amp; DIY</a></li><li><a href="/home-health/" class="hover:text-brandTeal">Home &amp; Health Trackers</a></li><li><a href="/tech/" class="hover:text-brandTeal">Tech &amp; Software</a></li><li><a href="/reference/" class="hover:text-brandTeal">Reference</a></li></ul></div>
 <div><h4 class="font-heading font-bold text-brandNavy text-sm mb-3">Legal &amp; Info</h4><ul class="space-y-2 text-xs sm:text-sm text-slate-600">
 <li><a href="/about.html" class="hover:text-brandTeal">About Us</a></li>
 <li><a href="/contact.html" class="hover:text-brandTeal">Contact Us</a></li>
@@ -250,5 +159,4 @@ Print Sheet / Save PDF
 <li><a href="/disclaimer.html" class="hover:text-brandTeal">Disclaimer</a></li></ul></div></div>
 <div class="pt-6 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-2">
 <p>&copy; Hoorvia.net. All rights reserved.</p><p>Free Printable and Cheat Sheets</p></div></div></footer>
-</body>
-</html>
+</body></html>
