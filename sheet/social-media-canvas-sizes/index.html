@@ -70,13 +70,19 @@ h1, h2, h3, h4, .font-heading { font-family: 'Plus Jakarta Sans', sans-serif; }
 @media print {
   @page { size: auto; margin: 12mm 15mm; }
   *, *::before, *::after { box-shadow: none !important; text-shadow: none !important; }
-  html, body { background: #ffffff !important; color: #0f172a !important; font-size: 10pt; }
-  .no-print, header.site-header, footer.site-footer, #breadcrumb-bar, #quick-action-bar { display: none !important; }
-  .print-header { display: block !important; margin-bottom: 1rem; padding-bottom: 0.75rem; border-bottom: 2px solid #0f172a; }
-  .table-scroll { overflow: visible; border: none; }
-  .sheet-table { min-width: 0; font-size: 9pt; }
-  .sheet-table thead th:first-child, .sheet-table tbody td:first-child { position: static; box-shadow: none; }
-  main { max-width: 100% !important; padding: 0 !important; }
+  html, body { background: #ffffff !important; color: #0f172a !important; }
+  body > :not(main):not(.print-header) { display: none !important; }
+  main > *:not(.print-keep) { display: none !important; }
+  main { max-width: 100% !important; padding: 0 !important; margin: 0 !important; }
+  .print-keep { box-shadow: none !important; border: none !important; padding: 0 !important; margin: 0 0 12px 0 !important; background: #fff !important; }
+  .title-sec > div, .title-sec > p { display: none !important; }
+  #sheet-title { font-size: 20pt !important; margin: 0 0 10px 0 !important; line-height: 1.25 !important; color: #0f172a !important; }
+  #sheet-table-section > h2, #sheet-table-section > p { display: none !important; }
+  .print-header { display: block !important; margin-bottom: 10px !important; padding-bottom: 8px !important; border-bottom: 2px solid #0f172a !important; }
+  .table-scroll { overflow: visible !important; border: none !important; }
+  .sheet-table { min-width: 0 !important; width: 100% !important; font-size: 9pt; border-collapse: collapse; }
+  .sheet-table thead th:first-child, .sheet-table tbody td:first-child { position: static !important; box-shadow: none !important; }
+  .sheet-table thead th { background: #0F172A !important; color: #ffffff !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
 }
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How many entries does this Social Media Canvas Sizes chart include?", "acceptedAnswer": {"@type": "Answer", "text": "This chart includes 4 entries, each with 4 data columns."}}, {"@type": "Question", "name": "What is the Syntax / Keyboard Shortcut (Win / Mac) for Social Media Canvas Sizes Configuration?", "acceptedAnswer": {"@type": "Answer", "text": "According to the chart, Social Media Canvas Sizes Configuration has a Syntax / Keyboard Shortcut (Win / Mac) of export CONFIG_SOCIAL_MEDIA_CANVAS_SIZES=true."}}, {"@type": "Question", "name": "What columns does the Social Media Canvas Sizes chart show?", "acceptedAnswer": {"@type": "Answer", "text": "Each row shows Command / Feature, Syntax / Keyboard Shortcut (Win / Mac), Operational Context & Environment, Key Output / Practical Result."}}]}</script>
@@ -107,14 +113,14 @@ h1, h2, h3, h4, .font-heading { font-family: 'Plus Jakarta Sans', sans-serif; }
 <span class="font-bold text-brandNavy">#627</span>
 </div>
 
-<section class="paper-sheet rounded-2xl shadow-paper-sheet p-6 sm:p-8 mb-6 sm:mb-8 pt-8">
+<section class="paper-sheet rounded-2xl shadow-paper-sheet p-6 sm:p-8 mb-6 sm:mb-8 pt-8 print-keep title-sec">
 <div class="flex flex-wrap items-center gap-2 mb-4">
 <span class="px-2.5 py-1 rounded-md bg-teal-100 text-brandTeal text-xs font-bold uppercase tracking-wide">Tech & Software</span>
 <span class="px-2.5 py-1 rounded-md bg-emerald-100 text-emerald-800 text-xs font-semibold">Free Printable</span>
 <span class="font-mono text-xs font-bold px-2 py-1 rounded-md bg-slate-100 text-slate-600">#627</span>
 <span class="text-xs text-slate-500">Sizes: US Letter &amp; A4</span>
 </div>
-<h1 class="font-heading text-2xl sm:text-4xl font-extrabold text-brandNavy tracking-tight leading-tight mb-3">Social Media Canvas Sizes Quick Reference Guide</h1>
+<h1 id="sheet-title" class="font-heading text-2xl sm:text-4xl font-extrabold text-brandNavy tracking-tight leading-tight mb-3">Social Media Canvas Sizes Quick Reference Guide</h1>
 <p class="text-slate-600 text-sm sm:text-base leading-relaxed max-w-3xl">Authentic reference chart and data matrix for Social Media Canvas Sizes in Canva Shortcuts &amp; Sizes. Use the interactive table below or print it / save it as a PDF with the button below.</p>
 <div id="quick-action-bar" class="no-print mt-6 pt-5 border-t border-slate-100 flex flex-wrap items-center gap-3">
 <button onclick="window.print()" class="inline-flex items-center gap-2 px-5 py-2.5 bg-ctaGreen hover:bg-ctaGreenHover text-white rounded-lg text-sm font-bold transition-colors cursor-pointer shadow-sm">
@@ -125,7 +131,7 @@ Print Sheet / Save PDF
 </div>
 </section>
 
-<section class="paper-sheet rounded-2xl shadow-paper-sheet p-6 sm:p-8 mb-6 sm:mb-8 pt-8">
+<section id="sheet-table-section" class="paper-sheet rounded-2xl shadow-paper-sheet p-6 sm:p-8 mb-6 sm:mb-8 pt-8 print-keep table-sec">
 <h2 class="font-heading text-lg sm:text-xl font-bold text-brandNavy mb-1">Interactive Reference Table</h2>
 <p class="text-xs sm:text-sm text-slate-500 mb-4 sm:hidden">&#8592; Swipe sideways to see all columns &#8594;</p>
 <div class="table-scroll">
