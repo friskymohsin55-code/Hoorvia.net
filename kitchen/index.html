@@ -51,7 +51,26 @@
     .card-body p { font-size:13.8px; color:var(--muted); margin-bottom:16px; flex:1; }
     .card-btn { display:inline-block; background:var(--navy); color:#fff; text-decoration:none; text-align:center; padding:10px 16px; border-radius:8px; font-size:13.5px; font-weight:600; }
     footer { background:#fff; border-top:1px solid var(--border); padding:32px 20px; text-align:center; font-size:13.5px; color:var(--muted); }
-  </style>
+  
+/* New-sheet cards (data-subcat="new") — brand styling */
+.sheet-card[data-subcat="new"]{background:#fff;border-radius:1rem;border:1px solid #e2e8f0;overflow:hidden;box-shadow:0 1px 2px rgba(15,23,42,.05);transition:box-shadow .2s ease,transform .2s ease;display:flex;flex-direction:column}
+.sheet-card[data-subcat="new"]:hover{box-shadow:0 12px 24px -6px rgba(13,148,136,.14);transform:translateY(-2px)}
+.card-thumb-wrap{display:block;padding:1rem 1rem 0;text-decoration:none}
+.card-badges{display:flex;gap:6px;margin-bottom:8px;flex-wrap:wrap}
+.b-pill{font-size:10px;font-weight:700;padding:2px 10px;border-radius:9999px;background:#fff;border:1px solid #e2e8f0;color:#0F172A;box-shadow:0 1px 2px rgba(15,23,42,.05);line-height:1.6}
+.b-pill:last-child{background:#D1FAE5;color:#065F46;border-color:transparent}
+.card-thumb{height:170px;background:#F8FAFC;border:1px solid #e2e8f0;border-radius:8px;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.card-thumb img{height:100%;width:auto;max-width:100%;object-fit:contain}
+.card-body{padding:1rem 1.25rem 1.25rem;display:flex;flex-direction:column;gap:8px;flex-grow:1}
+.card-cat{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#0D9488}
+.card-body h3{font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:1rem;color:#0F172A;margin:0;line-height:1.4}
+.card-body h3 a{color:inherit;text-decoration:none}
+.card-body h3 a:hover{color:#0D9488}
+.card-body p{font-size:13px;color:#64748B;margin:0;line-height:1.55}
+.card-btn{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:700;color:#0D9488;text-decoration:none;margin-top:auto;padding-top:4px}
+.card-btn:hover{color:#0F172A}
+
+</style>
 </head>
 <body>
   <header>
@@ -497,7 +516,7 @@
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/meat-times/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Meat Times Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/meat-times.webp" alt="Meat Times Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Kitchen & Cooking</div>
@@ -510,7 +529,7 @@
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/milk/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Milk Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/milk.webp" alt="Milk Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Kitchen & Cooking</div>
@@ -523,7 +542,7 @@
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/npr-vs-quick-release/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">NPR vs Quick Release Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/npr-vs-quick-release.webp" alt="NPR vs Quick Release Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Kitchen & Cooking</div>
@@ -536,7 +555,7 @@
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/oatmeal-ratio/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Oatmeal Ratio Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/oatmeal-ratio.webp" alt="Oatmeal Ratio Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Kitchen & Cooking</div>
@@ -549,7 +568,7 @@
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/oil/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Oil Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/oil.webp" alt="Oil Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Kitchen & Cooking</div>
@@ -562,7 +581,7 @@
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/oven-to-slow-cooker/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Oven to Slow Cooker Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/oven-to-slow-cooker.webp" alt="Oven to Slow Cooker Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Kitchen & Cooking</div>
@@ -575,7 +594,7 @@
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/oz-to-grams/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Oz to Grams Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/oz-to-grams.webp" alt="Oz to Grams Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Kitchen & Cooking</div>
@@ -588,7 +607,7 @@
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/pan-size-conversion/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Pan Size Conversion Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/pan-size-conversion.webp" alt="Pan Size Conversion Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Kitchen & Cooking</div>
@@ -601,7 +620,7 @@
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/pantry-expiration/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Pantry Expiration Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/pantry-expiration.webp" alt="Pantry Expiration Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Kitchen & Cooking</div>
@@ -614,7 +633,7 @@
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/pork/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Pork Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/pork.webp" alt="Pork Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Kitchen & Cooking</div>
@@ -627,7 +646,7 @@
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/portion-guide/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Portion Guide Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/portion-guide.webp" alt="Portion Guide Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Kitchen & Cooking</div>
@@ -640,7 +659,7 @@
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/poultry/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Poultry Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/poultry.webp" alt="Poultry Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Kitchen & Cooking</div>
@@ -653,7 +672,7 @@
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/pour-over/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Pour Over Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/pour-over.webp" alt="Pour Over Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Kitchen & Cooking</div>
@@ -666,7 +685,7 @@
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/pressure-canning-altitude-psi/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Pressure Canning Altitude PSI Quick Reference Gu</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/pressure-canning-altitude-psi.webp" alt="Pressure Canning Altitude PSI Quick Reference Gu" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Kitchen & Cooking</div>
@@ -679,7 +698,7 @@
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/quinoa-guide/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Quinoa Guide Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/quinoa-guide.webp" alt="Quinoa Guide Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Kitchen & Cooking</div>
@@ -692,7 +711,7 @@
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/recipe-scaling/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Recipe Scaling Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/recipe-scaling.webp" alt="Recipe Scaling Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Kitchen & Cooking</div>
@@ -705,7 +724,7 @@
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/reheating/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Reheating Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/reheating.webp" alt="Reheating Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Kitchen & Cooking</div>
@@ -718,7 +737,7 @@
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/resting-time/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Resting Time Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/resting-time.webp" alt="Resting Time Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Kitchen & Cooking</div>
@@ -731,7 +750,7 @@
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/rice-grain-water-ratios/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Grain &amp; Rice Water Ratios &amp; Cooking Times</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/rice-grain-water-ratios.webp" alt="Grain &amp; Rice Water Ratios &amp; Cooking Times" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Kitchen & Cooking</div>
@@ -744,7 +763,7 @@
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/rice-ratio/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Rice Ratio Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/rice-ratio.webp" alt="Rice Ratio Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Kitchen & Cooking</div>
@@ -757,7 +776,7 @@
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/rice-water-ratio/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Rice Water Ratio Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/rice-water-ratio.webp" alt="Rice Water Ratio Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Kitchen & Cooking</div>
@@ -770,7 +789,7 @@
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/roast-guide/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Roast Guide Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/roast-guide.webp" alt="Roast Guide Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Kitchen & Cooking</div>
@@ -783,7 +802,7 @@
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/seafood/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Seafood Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/seafood.webp" alt="Seafood Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Kitchen & Cooking</div>
@@ -796,7 +815,7 @@
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/slow-cooker-meat-times/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Slow Cooker Meat Times Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/slow-cooker-meat-times.webp" alt="Slow Cooker Meat Times Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Kitchen & Cooking</div>
@@ -809,7 +828,7 @@
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/smoker-temps/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Smoker Temps Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/smoker-temps.webp" alt="Smoker Temps Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Kitchen & Cooking</div>
@@ -822,7 +841,7 @@
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/sourdough-feeding/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Sourdough Feeding Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/sourdough-feeding.webp" alt="Sourdough Feeding Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Kitchen & Cooking</div>
@@ -835,7 +854,7 @@
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/steak-doneness/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Steak Doneness Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/steak-doneness.webp" alt="Steak Doneness Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Kitchen & Cooking</div>
@@ -848,7 +867,7 @@
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/steak-grill-times/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Steak Grill Times Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/steak-grill-times.webp" alt="Steak Grill Times Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Kitchen & Cooking</div>
@@ -861,7 +880,7 @@
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/sugar/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Sugar Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/sugar.webp" alt="Sugar Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Kitchen & Cooking</div>
@@ -874,7 +893,7 @@
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/tea-steeping/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Tea Steeping Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/tea-steeping.webp" alt="Tea Steeping Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Kitchen & Cooking</div>
@@ -887,7 +906,7 @@
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/thawing-meat-safety/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Thawing Meat Safety Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/thawing-meat-safety.webp" alt="Thawing Meat Safety Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Kitchen & Cooking</div>
@@ -900,7 +919,7 @@
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/turkey-guide/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Turkey Guide Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/turkey-guide.webp" alt="Turkey Guide Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Kitchen & Cooking</div>
@@ -913,7 +932,7 @@
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/usda-meat-internal-temp/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">USDA Meat Internal Temp Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/usda-meat-internal-temp.webp" alt="USDA Meat Internal Temp Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Kitchen & Cooking</div>
@@ -926,7 +945,7 @@
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/usda-meat-internal-temperatures/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">USDA Meat &amp; Seafood Safe Internal Temperatures</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/usda-meat-internal-temperatures.webp" alt="USDA Meat &amp; Seafood Safe Internal Temperatures" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Kitchen & Cooking</div>
@@ -939,7 +958,7 @@
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/veggies/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Veggies Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/veggies.webp" alt="Veggies Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Kitchen & Cooking</div>
@@ -952,7 +971,7 @@
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/vinaigrette-ratios/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Vinaigrette Ratios Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/vinaigrette-ratios.webp" alt="Vinaigrette Ratios Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Kitchen & Cooking</div>
@@ -965,7 +984,7 @@
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/water-bath-canning-times/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Water Bath Canning Times Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/water-bath-canning-times.webp" alt="Water Bath Canning Times Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Kitchen & Cooking</div>
@@ -978,7 +997,7 @@
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/water-temp/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Water Temp Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/water-temp.webp" alt="Water Temp Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Kitchen & Cooking</div>
@@ -991,7 +1010,7 @@
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/weekly-monthly-meal-planner/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Weekly/Monthly Meal Planner Quick Reference Guid</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/weekly-monthly-meal-planner.webp" alt="Weekly/Monthly Meal Planner Quick Reference Guid" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Kitchen & Cooking</div>
@@ -1004,7 +1023,7 @@
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/wood-pairing/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Wood Pairing Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/wood-pairing.webp" alt="Wood Pairing Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Kitchen & Cooking</div>

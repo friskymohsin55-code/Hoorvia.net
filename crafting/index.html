@@ -35,6 +35,25 @@ body { background: #FFFFFF !important; color: #000000 !important; font-size: 11p
 table { page-break-inside: auto; border-collapse: collapse !important; width: 100% !important; }
 tr { page-break-inside: avoid; page-break-after: auto; }
 }
+
+/* New-sheet cards (data-subcat="new") — brand styling */
+.sheet-card[data-subcat="new"]{background:#fff;border-radius:1rem;border:1px solid #e2e8f0;overflow:hidden;box-shadow:0 1px 2px rgba(15,23,42,.05);transition:box-shadow .2s ease,transform .2s ease;display:flex;flex-direction:column}
+.sheet-card[data-subcat="new"]:hover{box-shadow:0 12px 24px -6px rgba(13,148,136,.14);transform:translateY(-2px)}
+.card-thumb-wrap{display:block;padding:1rem 1rem 0;text-decoration:none}
+.card-badges{display:flex;gap:6px;margin-bottom:8px;flex-wrap:wrap}
+.b-pill{font-size:10px;font-weight:700;padding:2px 10px;border-radius:9999px;background:#fff;border:1px solid #e2e8f0;color:#0F172A;box-shadow:0 1px 2px rgba(15,23,42,.05);line-height:1.6}
+.b-pill:last-child{background:#D1FAE5;color:#065F46;border-color:transparent}
+.card-thumb{height:170px;background:#F8FAFC;border:1px solid #e2e8f0;border-radius:8px;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.card-thumb img{height:100%;width:auto;max-width:100%;object-fit:contain}
+.card-body{padding:1rem 1.25rem 1.25rem;display:flex;flex-direction:column;gap:8px;flex-grow:1}
+.card-cat{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#0D9488}
+.card-body h3{font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:1rem;color:#0F172A;margin:0;line-height:1.4}
+.card-body h3 a{color:inherit;text-decoration:none}
+.card-body h3 a:hover{color:#0D9488}
+.card-body p{font-size:13px;color:#64748B;margin:0;line-height:1.55}
+.card-btn{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:700;color:#0D9488;text-decoration:none;margin-top:auto;padding-top:4px}
+.card-btn:hover{color:#0F172A}
+
 </style>
 </head>
 <body class="min-h-screen flex flex-col selection:bg-teal-100 selection:text-teal-900">
@@ -106,7 +125,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/mat-colors/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Mat Colors Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/mat-colors.webp" alt="Mat Colors Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Crafting & DIY</div>
@@ -119,7 +138,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/mug-press/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Mug Press Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/mug-press.webp" alt="Mug Press Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Crafting & DIY</div>
@@ -132,7 +151,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/needle-sizes-fabrics/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Needle Sizes &amp; Fabrics Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/needle-sizes-fabrics.webp" alt="Needle Sizes &amp; Fabrics Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Crafting & DIY</div>
@@ -145,7 +164,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/ohm-s-law-power-formulas/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Ohm&#039;s Law &amp; Power Formulas Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/ohm-s-law-power-formulas.webp" alt="Ohm&#x27;s Law &amp; Power Formulas Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Crafting & DIY</div>
@@ -158,7 +177,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/origami-bases/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Origami Bases Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/origami-bases.webp" alt="Origami Bases Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Crafting & DIY</div>
@@ -171,7 +190,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/paint-sheen-coverage/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Paint Sheen &amp; Coverage Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/paint-sheen-coverage.webp" alt="Paint Sheen &amp; Coverage Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Crafting & DIY</div>
@@ -184,7 +203,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/pigment-load/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Pigment Load Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/pigment-load.webp" alt="Pigment Load Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Crafting & DIY</div>
@@ -197,7 +216,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/pigment-opacity/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Pigment Opacity Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/pigment-opacity.webp" alt="Pigment Opacity Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Crafting & DIY</div>
@@ -210,7 +229,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/polyester-shirt/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Polyester Shirt Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/polyester-shirt.webp" alt="Polyester Shirt Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Crafting & DIY</div>
@@ -223,7 +242,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/polymer-bake-times/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Polymer Bake Times Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/polymer-bake-times.webp" alt="Polymer Bake Times Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Crafting & DIY</div>
@@ -236,7 +255,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/presser-feet-guide/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Presser Feet Guide Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/presser-feet-guide.webp" alt="Presser Feet Guide Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Crafting & DIY</div>
@@ -249,7 +268,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/quilt-bed-sizes/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Quilt Bed Sizes Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/quilt-bed-sizes.webp" alt="Quilt Bed Sizes Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Crafting & DIY</div>
@@ -262,7 +281,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/ring-sizing-mandrel/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Ring Sizing Mandrel Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/ring-sizing-mandrel.webp" alt="Ring Sizing Mandrel Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Crafting & DIY</div>
@@ -275,7 +294,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/sandpaper-grit-progression/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Sandpaper Grit Progression Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/sandpaper-grit-progression.webp" alt="Sandpaper Grit Progression Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Crafting & DIY</div>
@@ -288,7 +307,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/scoring-lines/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Scoring Lines Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/scoring-lines.webp" alt="Scoring Lines Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Crafting & DIY</div>
@@ -301,7 +320,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/screw-pilot-hole-sizes/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Screw Pilot Hole Sizes Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/screw-pilot-hole-sizes.webp" alt="Screw Pilot Hole Sizes Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Crafting & DIY</div>
@@ -314,7 +333,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/seam-allowances/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Seam Allowances Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/seam-allowances.webp" alt="Seam Allowances Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Crafting & DIY</div>
@@ -327,7 +346,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/slate-troubleshooting/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Slate &amp; Troubleshooting Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/slate-troubleshooting.webp" alt="Slate &amp; Troubleshooting Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Crafting & DIY</div>
@@ -340,7 +359,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/standard-paper-weights-gsm-lb/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Standard Paper Weights (GSM/lb) Quick Reference</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/standard-paper-weights-gsm-lb.webp" alt="Standard Paper Weights (GSM/lb) Quick Reference" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Crafting & DIY</div>
@@ -353,7 +372,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/stitch-guide/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Stitch Guide Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/stitch-guide.webp" alt="Stitch Guide Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Crafting & DIY</div>
@@ -366,7 +385,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/stitching-spacing/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Stitching Spacing Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/stitching-spacing.webp" alt="Stitching Spacing Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Crafting & DIY</div>
@@ -379,7 +398,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/sublimation-time-temp-guide/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Sublimation Time, Temperature &amp; Pressure Master</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/sublimation-time-temp-guide.webp" alt="Sublimation Time, Temperature &amp; Pressure Master" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Crafting & DIY</div>
@@ -392,7 +411,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/thread-needle-sizes/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Thread &amp; Needle Sizes Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/thread-needle-sizes.webp" alt="Thread &amp; Needle Sizes Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Crafting & DIY</div>
@@ -405,7 +424,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/watercolor-washes/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Watercolor Washes Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/watercolor-washes.webp" alt="Watercolor Washes Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Crafting & DIY</div>
@@ -418,7 +437,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/wax-pouring-temperatures/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Wax Pouring Temperatures Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/wax-pouring-temperatures.webp" alt="Wax Pouring Temperatures Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Crafting & DIY</div>
@@ -431,7 +450,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/wick-sizing/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Wick Sizing Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/wick-sizing.webp" alt="Wick Sizing Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Crafting & DIY</div>
@@ -444,7 +463,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/wire-gauge-conversion-awg-to-mm/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Wire Gauge Conversion (AWG to mm) Quick Referenc</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/wire-gauge-conversion-awg-to-mm.webp" alt="Wire Gauge Conversion (AWG to mm) Quick Referenc" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Crafting & DIY</div>
@@ -457,7 +476,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/wood-moisture/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Wood Moisture Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/wood-moisture.webp" alt="Wood Moisture Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Crafting & DIY</div>
@@ -470,7 +489,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/yardage-estimator/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Yardage Estimator Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/yardage-estimator.webp" alt="Yardage Estimator Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Crafting & DIY</div>
@@ -483,7 +502,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/yarn-weight/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Yarn Weight Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/yarn-weight.webp" alt="Yarn Weight Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Crafting & DIY</div>

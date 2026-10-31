@@ -35,6 +35,25 @@ body { background: #FFFFFF !important; color: #000000 !important; font-size: 11p
 table { page-break-inside: auto; border-collapse: collapse !important; width: 100% !important; }
 tr { page-break-inside: avoid; page-break-after: auto; }
 }
+
+/* New-sheet cards (data-subcat="new") — brand styling */
+.sheet-card[data-subcat="new"]{background:#fff;border-radius:1rem;border:1px solid #e2e8f0;overflow:hidden;box-shadow:0 1px 2px rgba(15,23,42,.05);transition:box-shadow .2s ease,transform .2s ease;display:flex;flex-direction:column}
+.sheet-card[data-subcat="new"]:hover{box-shadow:0 12px 24px -6px rgba(13,148,136,.14);transform:translateY(-2px)}
+.card-thumb-wrap{display:block;padding:1rem 1rem 0;text-decoration:none}
+.card-badges{display:flex;gap:6px;margin-bottom:8px;flex-wrap:wrap}
+.b-pill{font-size:10px;font-weight:700;padding:2px 10px;border-radius:9999px;background:#fff;border:1px solid #e2e8f0;color:#0F172A;box-shadow:0 1px 2px rgba(15,23,42,.05);line-height:1.6}
+.b-pill:last-child{background:#D1FAE5;color:#065F46;border-color:transparent}
+.card-thumb{height:170px;background:#F8FAFC;border:1px solid #e2e8f0;border-radius:8px;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.card-thumb img{height:100%;width:auto;max-width:100%;object-fit:contain}
+.card-body{padding:1rem 1.25rem 1.25rem;display:flex;flex-direction:column;gap:8px;flex-grow:1}
+.card-cat{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#0D9488}
+.card-body h3{font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:1rem;color:#0F172A;margin:0;line-height:1.4}
+.card-body h3 a{color:inherit;text-decoration:none}
+.card-body h3 a:hover{color:#0D9488}
+.card-body p{font-size:13px;color:#64748B;margin:0;line-height:1.55}
+.card-btn{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:700;color:#0D9488;text-decoration:none;margin-top:auto;padding-top:4px}
+.card-btn:hover{color:#0F172A}
+
 </style>
 </head>
 <body class="min-h-screen flex flex-col selection:bg-teal-100 selection:text-teal-900">
@@ -106,7 +125,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/medication-schedule/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Medication Schedule Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/medication-schedule.webp" alt="Medication Schedule Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Home, Family & Health</div>
@@ -119,7 +138,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/mileage-maintenance-schedule/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Mileage Maintenance Schedule Quick Reference Gui</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/mileage-maintenance-schedule.webp" alt="Mileage Maintenance Schedule Quick Reference Gui" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Home, Family & Health</div>
@@ -132,7 +151,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/monthly-bill-organizer/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Monthly Bill Organizer Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/monthly-bill-organizer.webp" alt="Monthly Bill Organizer Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Home, Family & Health</div>
@@ -145,7 +164,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/mood-log/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Mood Log Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/mood-log.webp" alt="Mood Log Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Home, Family & Health</div>
@@ -158,7 +177,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/morning-evening-routines/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Morning &amp; Evening Routines Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/morning-evening-routines.webp" alt="Morning &amp; Evening Routines Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Home, Family & Health</div>
@@ -171,7 +190,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/move-in-move-out-checklists/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Move-In &amp; Move-Out Checklists Quick Reference Gu</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/move-in-move-out-checklists.webp" alt="Move-In &amp; Move-Out Checklists Quick Reference Gu" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Home, Family & Health</div>
@@ -184,7 +203,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/oil-change-records/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Oil Change Records Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/oil-change-records.webp" alt="Oil Change Records Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Home, Family & Health</div>
@@ -197,7 +216,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/pantry-categorization/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Pantry Categorization Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/pantry-categorization.webp" alt="Pantry Categorization Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Home, Family & Health</div>
@@ -210,7 +229,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/paper-retention-guidelines/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Paper Retention Guidelines Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/paper-retention-guidelines.webp" alt="Paper Retention Guidelines Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Home, Family & Health</div>
@@ -223,7 +242,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/puppy-vaccine-schedule/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Puppy Vaccine Schedule Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/puppy-vaccine-schedule.webp" alt="Puppy Vaccine Schedule Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Home, Family & Health</div>
@@ -236,7 +255,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/push-pull-legs-split/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Push/Pull/Legs Split Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/push-pull-legs-split.webp" alt="Push/Pull/Legs Split Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Home, Family & Health</div>
@@ -249,7 +268,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/seasonal-home-maintenance/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Seasonal Home Maintenance Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/seasonal-home-maintenance.webp" alt="Seasonal Home Maintenance Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Home, Family & Health</div>
@@ -262,7 +281,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/soil-ph-ratios/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Soil pH Ratios Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/soil-ph-ratios.webp" alt="Soil pH Ratios Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Home, Family & Health</div>
@@ -275,7 +294,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/spring-cleaning/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Spring Cleaning Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/spring-cleaning.webp" alt="Spring Cleaning Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Home, Family & Health</div>
@@ -288,7 +307,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/starting-solids-guide/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Starting Solids Guide Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/starting-solids-guide.webp" alt="Starting Solids Guide Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Home, Family & Health</div>
@@ -301,7 +320,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/stretching-routines/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Stretching Routines Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/stretching-routines.webp" alt="Stretching Routines Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Home, Family & Health</div>
@@ -314,7 +333,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/tire-rotation-pattern/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Tire Rotation Pattern Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/tire-rotation-pattern.webp" alt="Tire Rotation Pattern Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Home, Family & Health</div>
@@ -327,7 +346,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/toxic-foods-for-dogs-cats/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Toxic Foods for Dogs/Cats Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/toxic-foods-for-dogs-cats.webp" alt="Toxic Foods for Dogs/Cats Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Home, Family & Health</div>
@@ -340,7 +359,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/training-commands/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Training Commands Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/training-commands.webp" alt="Training Commands Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Home, Family & Health</div>
@@ -353,7 +372,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/vaccination-log/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Vaccination Log Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/vaccination-log.webp" alt="Vaccination Log Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Home, Family & Health</div>
@@ -366,7 +385,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/vegetable-planting-calendar/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Vegetable Planting Calendar Quick Reference Guid</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/vegetable-planting-calendar.webp" alt="Vegetable Planting Calendar Quick Reference Guid" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Home, Family & Health</div>
@@ -379,7 +398,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/warmup-drills/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Warmup Drills Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/warmup-drills.webp" alt="Warmup Drills Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Home, Family & Health</div>
@@ -392,7 +411,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/water-heater-flush/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Water Heater Flush Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/water-heater-flush.webp" alt="Water Heater Flush Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Home, Family & Health</div>
@@ -405,7 +424,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/weekly-monthly-deep-cleaning/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Weekly/Monthly/Deep Cleaning Quick Reference Gui</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/weekly-monthly-deep-cleaning.webp" alt="Weekly/Monthly/Deep Cleaning Quick Reference Gui" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Home, Family & Health</div>

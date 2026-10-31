@@ -35,6 +35,25 @@ body { background: #FFFFFF !important; color: #000000 !important; font-size: 11p
 table { page-break-inside: auto; border-collapse: collapse !important; width: 100% !important; }
 tr { page-break-inside: avoid; page-break-after: auto; }
 }
+
+/* New-sheet cards (data-subcat="new") — brand styling */
+.sheet-card[data-subcat="new"]{background:#fff;border-radius:1rem;border:1px solid #e2e8f0;overflow:hidden;box-shadow:0 1px 2px rgba(15,23,42,.05);transition:box-shadow .2s ease,transform .2s ease;display:flex;flex-direction:column}
+.sheet-card[data-subcat="new"]:hover{box-shadow:0 12px 24px -6px rgba(13,148,136,.14);transform:translateY(-2px)}
+.card-thumb-wrap{display:block;padding:1rem 1rem 0;text-decoration:none}
+.card-badges{display:flex;gap:6px;margin-bottom:8px;flex-wrap:wrap}
+.b-pill{font-size:10px;font-weight:700;padding:2px 10px;border-radius:9999px;background:#fff;border:1px solid #e2e8f0;color:#0F172A;box-shadow:0 1px 2px rgba(15,23,42,.05);line-height:1.6}
+.b-pill:last-child{background:#D1FAE5;color:#065F46;border-color:transparent}
+.card-thumb{height:170px;background:#F8FAFC;border:1px solid #e2e8f0;border-radius:8px;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.card-thumb img{height:100%;width:auto;max-width:100%;object-fit:contain}
+.card-body{padding:1rem 1.25rem 1.25rem;display:flex;flex-direction:column;gap:8px;flex-grow:1}
+.card-cat{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#0D9488}
+.card-body h3{font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:1rem;color:#0F172A;margin:0;line-height:1.4}
+.card-body h3 a{color:inherit;text-decoration:none}
+.card-body h3 a:hover{color:#0D9488}
+.card-body p{font-size:13px;color:#64748B;margin:0;line-height:1.55}
+.card-btn{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:700;color:#0D9488;text-decoration:none;margin-top:auto;padding-top:4px}
+.card-btn:hover{color:#0F172A}
+
 </style>
 </head>
 <body class="min-h-screen flex flex-col selection:bg-teal-100 selection:text-teal-900">
@@ -85,7 +104,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/master-travel-carry-on-packing-list/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Master Travel &amp; Carry-On Packing List Quick Refe</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/master-travel-carry-on-packing-list.webp" alt="Master Travel &amp; Carry-On Packing List Quick Refe" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Reference Charts</div>
@@ -98,7 +117,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/math-logic-symbols/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Math/Logic Symbols Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/math-logic-symbols.webp" alt="Math/Logic Symbols Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Reference Charts</div>
@@ -111,7 +130,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/mattress-paper-dimensions/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Mattress &amp; Paper Dimensions Quick Reference Guid</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/mattress-paper-dimensions.webp" alt="Mattress &amp; Paper Dimensions Quick Reference Guid" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Reference Charts</div>
@@ -124,7 +143,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/meeting-checklist/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Meeting Checklist Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/meeting-checklist.webp" alt="Meeting Checklist Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Reference Charts</div>
@@ -137,7 +156,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/metric-to-imperial/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Metric to Imperial Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/metric-to-imperial.webp" alt="Metric to Imperial Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Reference Charts</div>
@@ -150,7 +169,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/metric-to-imperial-conversion-table/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Universal Metric to Imperial Conversion Calculat</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/metric-to-imperial-conversion-table.webp" alt="Universal Metric to Imperial Conversion Calculat" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Reference Charts</div>
@@ -163,7 +182,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/military-time-24-hour-chart/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">12-Hour to 24-Hour Military Time Conversion Char</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/military-time-24-hour-chart.webp" alt="12-Hour to 24-Hour Military Time Conversion Char" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Reference Charts</div>
@@ -176,7 +195,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/morse-code-chart/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Morse Code Chart Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/morse-code-chart.webp" alt="Morse Code Chart Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Reference Charts</div>
@@ -189,7 +208,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/multiplication-grid-1-12-1-20/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Multiplication Grid (1–12 &amp; 1–20) Quick Referenc</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/multiplication-grid-1-12-1-20.webp" alt="Multiplication Grid (1–12 &amp; 1–20) Quick Referenc" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Reference Charts</div>
@@ -202,7 +221,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/nato-phonetic-alphabet/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">NATO Phonetic Alphabet Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/nato-phonetic-alphabet.webp" alt="NATO Phonetic Alphabet Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Reference Charts</div>
@@ -215,7 +234,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/nato-phonetic-alphabet-morse-code/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">NATO Phonetic Alphabet, Morse Code &amp; Telephony S</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/nato-phonetic-alphabet-morse-code.webp" alt="NATO Phonetic Alphabet, Morse Code &amp; Telephony S" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Reference Charts</div>
@@ -228,7 +247,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/obd2-codes/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">OBD2 Codes Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/obd2-codes.webp" alt="OBD2 Codes Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Reference Charts</div>
@@ -241,7 +260,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/office-acronyms/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Office Acronyms Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/office-acronyms.webp" alt="Office Acronyms Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Reference Charts</div>
@@ -254,7 +273,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/oil-viscosity/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Oil Viscosity Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/oil-viscosity.webp" alt="Oil Viscosity Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Reference Charts</div>
@@ -267,7 +286,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/password-backup-list/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Password &amp; Backup List Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/password-backup-list.webp" alt="Password &amp; Backup List Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Reference Charts</div>
@@ -280,7 +299,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/pemdas-order-of-operations/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">PEMDAS Order of Operations Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/pemdas-order-of-operations.webp" alt="PEMDAS Order of Operations Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Reference Charts</div>
@@ -293,7 +312,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/percentage-chart/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Percentage Chart Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/percentage-chart.webp" alt="Percentage Chart Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Reference Charts</div>
@@ -306,7 +325,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/ring-size-strip/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Ring Size Strip Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/ring-size-strip.webp" alt="Ring Size Strip Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Reference Charts</div>
@@ -319,7 +338,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/roman-numerals-chart/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Roman Numerals Chart Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/roman-numerals-chart.webp" alt="Roman Numerals Chart Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Reference Charts</div>
@@ -332,7 +351,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/rule-of-72-compound-table/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Rule of 72 Compound Table Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/rule-of-72-compound-table.webp" alt="Rule of 72 Compound Table Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Reference Charts</div>
@@ -345,7 +364,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/rv-setup-dump-station-checklist/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">RV Setup &amp; Dump Station Checklist Quick Referenc</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/rv-setup-dump-station-checklist.webp" alt="RV Setup &amp; Dump Station Checklist Quick Referenc" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Reference Charts</div>
@@ -358,7 +377,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/standard-file-naming-conventions/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Standard File Naming Conventions Quick Reference</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/standard-file-naming-conventions.webp" alt="Standard File Naming Conventions Quick Reference" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Reference Charts</div>
@@ -371,7 +390,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/temperature/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Temperature Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/temperature.webp" alt="Temperature Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Reference Charts</div>
@@ -384,7 +403,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/tire-pressure-tread-chart/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Tire Pressure &amp; Tread Chart Quick Reference Guid</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/tire-pressure-tread-chart.webp" alt="Tire Pressure &amp; Tread Chart Quick Reference Guid" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Reference Charts</div>
@@ -397,7 +416,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/tsa-3-1-1-liquid-limits/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">TSA 3-1-1 Liquid Limits Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/tsa-3-1-1-liquid-limits.webp" alt="TSA 3-1-1 Liquid Limits Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Reference Charts</div>
@@ -410,7 +429,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/typography-point-guide/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Typography Point Guide Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/typography-point-guide.webp" alt="Typography Point Guide Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Reference Charts</div>
@@ -423,7 +442,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/us-states-capitals/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">US States &amp; Capitals Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/us-states-capitals.webp" alt="US States &amp; Capitals Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Reference Charts</div>
@@ -436,7 +455,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/us-uk-eu-shoe-size-chart/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">US/UK/EU Shoe Size Chart Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/us-uk-eu-shoe-size-chart.webp" alt="US/UK/EU Shoe Size Chart Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Reference Charts</div>
@@ -449,7 +468,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/us-world-time-zones/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">US/World Time Zones Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/us-world-time-zones.webp" alt="US/World Time Zones Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Reference Charts</div>
@@ -462,7 +481,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/volume/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Volume Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/volume.webp" alt="Volume Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Reference Charts</div>
@@ -475,7 +494,7 @@ tr { page-break-inside: avoid; page-break-after: auto; }
     <article class="sheet-card" data-subcat="new">
       <a href="../sheet/weight/" class="card-thumb-wrap">
         <div class="card-badges"><span class="b-pill">Interactive Table</span><span class="b-pill">Print Ready</span></div>
-        <div style="display:flex;align-items:center;justify-content:center;height:170px;background:linear-gradient(135deg,#F0FDFA,#ECFEFF);border:1px solid #CBD5E1;border-radius:6px;margin:0 auto;max-width:210px;"><div style="text-align:center;padding:12px;"><div style="font-size:11px;font-weight:800;letter-spacing:2px;color:#0D9488;">HOORVIA</div><div style="font-size:13px;font-weight:700;color:#0F172A;margin-top:6px;line-height:1.35;">Weight Quick Reference Guide</div><div style="font-size:10.5px;color:#64748B;margin-top:6px;">Printable Cheat Sheet</div></div></div>
+        <div class="card-thumb"><img src="/assets/previews/weight.webp" alt="Weight Quick Reference Guide" loading="lazy"></div></div>
       </a>
       <div class="card-body">
         <div class="card-cat">Reference Charts</div>
