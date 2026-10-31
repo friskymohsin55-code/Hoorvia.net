@@ -11,7 +11,7 @@
 </script>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Media Queries Quick Reference Guide | Hoorvia</title>
+<title>CSS Media Queries Cheat Sheet (Printable)</title>
 <meta name="description" content="Download printable reference charts and view interactive data tables for Media Queries. 100% verified specifications on Hoorvia.net." />
 <link rel="canonical" href="https://hoorvia.net/sheet/media-queries-534/" />
 <meta property="og:title" content="Media Queries Quick Reference Guide | Hoorvia" />
@@ -23,15 +23,49 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
-<script type="application/ld+json">{
+<script type="application/ld+json">
+{
   "@context": "https://schema.org",
   "@type": "TechArticle",
-  "headline": "Media Queries Quick Reference Guide",
-  "description": "Download printable reference charts and view interactive data tables for Media Queries. 100% verified specifications on Hoorvia.net.",
+  "headline": "CSS Media Queries Cheat Sheet: Printable Responsive Guide",
+  "description": "Print our CSS media queries cheat sheet: breakpoints, syntax, feature queries, and device targeting for responsive design.",
   "url": "https://hoorvia.net/sheet/media-queries-534/",
   "inLanguage": "en-US",
   "mainEntityOfPage": "https://hoorvia.net/sheet/media-queries-534/"
-}</script>
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What are the most common CSS breakpoints?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The practical set is 640px (large phones), 768px (tablets), 1024px (laptops), and 1280px (desktops). Use min-width queries so styles stack upward. Frameworks like Tailwind use exactly these values, which is why they feel familiar."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I use min-width or max-width in media queries?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Prefer min-width with a mobile-first approach: write the small-screen styles first, then add min-width queries for larger screens. Max-width works for desktop-first code but creates overlapping rules that are harder to maintain."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can media queries detect dark mode?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes \u2014 @media (prefers-color-scheme: dark) matches when the user's OS is in dark mode. Use it to override colors, swap images, and soften heavy shadows, so your site adapts without any JavaScript."
+      }
+    }
+  ]
+}
+</script>
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
 tailwind.config = { theme: { extend: { colors: { paper: '#F8FAFC', warmPaper: '#FAF9F6', slateText: '#1E293B', brandNavy: '#0F172A', brandTeal: '#0D9488', ctaGreen: '#10B981', ctaGreenHover: '#059669', ctaAmber: '#F59E0B', ctaAmberHover: '#D97706' }, fontFamily: { heading: ['"Plus Jakarta Sans"', 'sans-serif'], sans: ['Inter', 'system-ui', 'sans-serif'] }, boxShadow: { 'paper-sheet': '0 14px 35px -5px rgba(15, 23, 42, 0.12), 0 4px 12px -2px rgba(15, 23, 42, 0.06)', 'card-hover': '0 12px 24px -6px rgba(13, 148, 136, 0.14)' } } } }
@@ -77,8 +111,8 @@ h1, h2, h3, h4, .font-heading { font-family: 'Plus Jakarta Sans', sans-serif; }
 <nav class="flex items-center gap-1.5"><a href="/" class="hover:text-brandTeal font-medium">Home</a><span>&rsaquo;</span><a href="/tech/" class="hover:text-brandTeal font-medium">Tech &amp; Software</a><span>&rsaquo;</span><span class="text-slate-800 font-semibold">Media Queries Quick Reference Guide</span></nav>
 <a href="/" class="inline-flex items-center gap-1 text-brandTeal font-semibold hover:underline">&larr; Back to All Cheat Sheets</a></div>
 <header class="mb-6"><div class="flex flex-wrap items-center gap-2 mb-3"><span class="px-2.5 py-1 rounded-md bg-teal-100 text-brandTeal text-xs font-bold uppercase tracking-wide">Tech &amp; Software</span><span class="px-2.5 py-1 rounded-md bg-emerald-100 text-emerald-800 text-xs font-semibold">Free Printable</span><span class="text-xs text-slate-500">Sizes: US Letter &amp; A4</span></div>
-<h1 class="font-heading text-2xl sm:text-4xl font-extrabold text-brandNavy tracking-tight leading-tight mb-3">Media Queries Quick Reference Guide</h1>
-<p class="text-slate-600 text-sm sm:text-base leading-relaxed">Authentic reference chart and data matrix for Media Queries in HTML5 &amp; CSS3 Layout. Use the interactive table below or print it / save it as a PDF with the button below.</p></header>
+<h1 class="font-heading text-2xl sm:text-4xl font-extrabold text-brandNavy tracking-tight leading-tight mb-3">CSS Media Queries Cheat Sheet: Printable Responsive Guide</h1>
+<p class="text-slate-600 text-sm sm:text-base leading-relaxed">Responsive design breaks in one predictable place: the media queries. A site looks perfect on a laptop, then collapses on a phone because someone used a max-width where a min-width belonged, or hardcoded pixel breakpoints that miss half the devices on the market. The syntax itself is small — @media, a feature, a value — but the decisions behind it are not: which breakpoints to use, when to target orientation or dark mode, and how to handle devices without a mouse. This printable CSS media queries cheat sheet puts twelve essential query patterns on one page: the standard width breakpoints, orientation and dark-mode queries, reduced-motion and print handling, and high-DPI targeting. Check the live table below the next time a layout breaks on a device you don&#x27;t own, or print the sheet below and keep it where you write CSS.</p></header>
 <div id="quick-action-bar" class="no-print flex flex-wrap items-center gap-2.5 p-3 rounded-xl bg-white border border-slate-200 shadow-sm mb-8">
 <a href="#download-cta-box" class="flex-1 sm:flex-initial inline-flex items-center justify-center gap-1.5 px-4 py-2 rounded-lg bg-ctaGreen hover:bg-ctaGreenHover text-white font-semibold text-xs sm:text-sm transition-all shadow-sm"><span>&#128229; Jump to Free PDF Download</span></a>
 <button onclick="window.print()" class="flex-1 sm:flex-initial inline-flex items-center justify-center gap-1.5 px-4 py-2 rounded-lg bg-ctaAmber hover:bg-ctaAmberHover text-white font-semibold text-xs sm:text-sm transition-all shadow-sm cursor-pointer border-0"><span>&#128438; Print This Chart Now</span></button>
@@ -86,13 +120,54 @@ h1, h2, h3, h4, .font-heading { font-family: 'Plus Jakarta Sans', sans-serif; }
 <section id="table-section" class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden mb-10">
 <div class="p-4 sm:p-5 border-b border-slate-200 bg-slate-50/70 flex flex-col sm:flex-row sm:items-center justify-between gap-3"><div><h2 class="font-heading text-lg sm:text-xl font-bold text-brandNavy">Quick-Reference Table</h2><p class="text-xs text-slate-500">The full data from this cheat sheet, right on the page.</p></div></div>
 <div class="no-print p-3 sm:px-5 bg-white border-b border-slate-200"><input type="text" id="table-filter-input" oninput="filterRows()" placeholder="&#128270; Filter this table instantly..." class="w-full px-3.5 py-2 text-sm border border-slate-200 rounded-lg focus:outline-none focus:border-brandTeal" /></div>
-<div class="overflow-x-auto"><table class="w-full text-left border-collapse"><thead><tr class="bg-slate-100/80 text-slate-700 text-xs uppercase tracking-wider border-b border-slate-200"><th class="py-3 px-4 font-bold">Command / Feature</th><th class="py-3 px-4 font-bold">Syntax / Keyboard Shortcut (Win / Mac)</th><th class="py-3 px-4 font-bold">Operational Context &amp; Environment</th><th class="py-3 px-4 font-bold">Key Output / Practical Result</th></tr></thead><tbody id="post-tbody" class="divide-y divide-slate-200 text-xs sm:text-sm"><tr><td class="py-3 px-4 text-slate-700">Media Queries Primary Action</td><td class="py-3 px-4 text-slate-700">Ctrl + P / Cmd + P</td><td class="py-3 px-4 text-slate-700">Editor quick-access palette</td><td class="py-3 px-4 text-slate-700">Instantly locates and opens target files or commands</td></tr><tr><td class="py-3 px-4 text-slate-700">Media Queries Query / Filter</td><td class="py-3 px-4 text-slate-700">SELECT * FROM items WHERE category = &#x27;media queries&#x27;</td><td class="py-3 px-4 text-slate-700">Relational or collection retrieval</td><td class="py-3 px-4 text-slate-700">Returns filtered data record array matching criteria</td></tr><tr><td class="py-3 px-4 text-slate-700">Media Queries Configuration</td><td class="py-3 px-4 text-slate-700">export CONFIG_MEDIA_QUERIES=true</td><td class="py-3 px-4 text-slate-700">Terminal shell environment (.bashrc / .zshrc)</td><td class="py-3 px-4 text-slate-700">Persists operational configuration flags across sessions</td></tr><tr><td class="py-3 px-4 text-slate-700">Media Queries Integrity Check</td><td class="py-3 px-4 text-slate-700">npm test -- --grep=&quot;media queries&quot;</td><td class="py-3 px-4 text-slate-700">Automated CI/CD test runner</td><td class="py-3 px-4 text-slate-700">Executes targeted assertions with exit code confirmation</td></tr></tbody></table></div></section>
-<section id="howto-section" class="no-print bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 mb-10"><h2 class="font-heading text-xl sm:text-2xl font-bold text-brandNavy mb-4">How to Use This Chart</h2><p class="text-sm sm:text-[15px] text-slate-600 leading-relaxed mb-3">Pin this chart where you work: it packs <strong>4 entries</strong> and 4 columns (<strong>Command / Feature</strong>, <strong>Syntax / Keyboard Shortcut (Win / Mac)</strong>, <strong>Operational Context &amp; Environment</strong>, <strong>Key Output / Practical Result</strong>) into one printable page, built for quick lookups.</p>
-<p class="text-sm sm:text-[15px] text-slate-600 leading-relaxed mb-3">Scan down the <strong>Command / Feature</strong> column to your item, then read across for Syntax / Keyboard Shortcut (Win / Mac), Operational Context &amp; Environment.</p>
-<p class="text-sm sm:text-[15px] text-slate-600 leading-relaxed mb-3"><strong class="text-brandNavy">Example:</strong> for <strong>Media Queries Primary Action</strong>, the chart gives <strong>Syntax / Keyboard Shortcut (Win / Mac)</strong> of <strong>Ctrl + P / Cmd + P</strong>.</p>
-<ul class="list-disc pl-5 space-y-1.5 text-sm sm:text-[15px] text-slate-600 leading-relaxed"><li>Compare values down a single column to spot the pattern before you commit to a choice.</li><li>When two rows look close, the Key Output / Practical Result column usually breaks the tie.</li><li>Print it once and keep it where you work — that's the whole point of a cheat sheet.</li></ul></section>
+<div class="overflow-x-auto"><table class="sheet-table">
+<thead>
+<tr><th>Media Query</th><th>Targets</th><th>Use Case</th></tr>
+</thead>
+<tbody>
+<tr><td>@media (max-width: 767px)</td><td>Phones</td><td>Base mobile layout adjustments</td></tr>
+<tr><td>@media (min-width: 640px)</td><td>Large phones, small tablets</td><td>Widen columns and increase type size</td></tr>
+<tr><td>@media (min-width: 768px)</td><td>Tablets and up</td><td>Two-column layouts, visible nav</td></tr>
+<tr><td>@media (min-width: 1024px)</td><td>Laptops and desktops</td><td>Full multi-column grid</td></tr>
+<tr><td>@media (min-width: 1280px)</td><td>Large desktops</td><td>Max-width content containers</td></tr>
+<tr><td>@media (orientation: portrait)</td><td>Vertical screens</td><td>Stack content, bigger tap targets</td></tr>
+<tr><td>@media (orientation: landscape)</td><td>Wide screens</td><td>Side-by-side layouts</td></tr>
+<tr><td>@media (prefers-color-scheme: dark)</td><td>Dark-mode users</td><td>Dark theme color overrides</td></tr>
+<tr><td>@media (prefers-reduced-motion: reduce)</td><td>Motion-sensitive users</td><td>Disable or soften animations</td></tr>
+<tr><td>@media (hover: hover)</td><td>Mouse and trackpad devices</td><td>Hover effects are safe to show</td></tr>
+<tr><td>@media (print)</td><td>Printed pages</td><td>Hide nav and ads, black on white</td></tr>
+<tr><td>@media (min-resolution: 2dppx)</td><td>Retina and high-DPI screens</td><td>Serve sharper images and icons</td></tr>
+</tbody>
+</table></div></section>
+<section id="howto-section" class="no-print bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 mb-10"><h2 class="font-heading text-xl sm:text-2xl font-bold text-brandNavy mb-4">How to Use This Chart</h2><p class="text-sm sm:text-[15px] text-slate-600 leading-relaxed mb-3">Pin this chart where you work: it packs <strong>12 entries</strong> and 3 columns (<strong>Media Query</strong>, <strong>Targets</strong>, <strong>Use Case</strong>) into one printable page, built for quick lookups.</p>
+<p class="text-sm sm:text-[15px] text-slate-600 leading-relaxed mb-3">Scan down the <strong>Media Query</strong> column to your item, then read across for Targets, Use Case.</p>
+<p class="text-sm sm:text-[15px] text-slate-600 leading-relaxed mb-3"><strong class="text-brandNavy">Example:</strong> for <strong>@media (max-width: 767px)</strong>, the chart gives <strong>Targets</strong> of <strong>Phones</strong>.</p>
+<ul class="list-disc pl-5 space-y-1.5 text-sm sm:text-[15px] text-slate-600 leading-relaxed"><li>Compare values down a single column to spot the pattern before you commit to a choice.</li><li>When two rows look close, the last column usually breaks the tie.</li><li>Print it once and keep it where you work — that's the whole point of a cheat sheet.</li></ul></section>
+<section class="paper-sheet rounded-2xl shadow-paper-sheet p-6 sm:p-8 mb-6 sm:mb-8 pt-8">
+<h2 class="font-heading text-lg sm:text-xl font-bold text-brandNavy mb-3">&#128161; Quick Tips</h2>
+<div class="space-y-3 text-sm sm:text-base text-slate-600 leading-relaxed">
+<p><strong class="text-brandNavy">Go Mobile-First:</strong> Write the base styles for phones, then add min-width queries upward. It keeps CSS smaller and fixes the &#x27;max-width maze&#x27; for good.</p><p><strong class="text-brandNavy">Test at Breakpoints:</strong> Resize your browser slowly through each breakpoint instead of jumping between devices — you&#x27;ll catch the layout cracks in between.</p><p><strong class="text-brandNavy">Respect Reduced Motion:</strong> Wrap every animation in prefers-reduced-motion: reduce. It&#x27;s one query that makes your site kinder for thousands of visitors.</p>
+</div>
+</section>
+
+<section class="paper-sheet rounded-2xl shadow-paper-sheet p-6 sm:p-8 mb-6 sm:mb-8 pt-8">
+<h2 class="font-heading text-lg sm:text-xl font-bold text-brandNavy mb-4">Frequently Asked Questions</h2>
+<div class="space-y-4">
+<div class="border-b border-slate-100 pb-4 last:border-0 last:pb-0">
+<h3 class="font-heading font-bold text-brandNavy text-sm sm:text-base mb-1.5">What are the most common CSS breakpoints?</h3>
+<p class="text-sm text-slate-600 leading-relaxed">The practical set is 640px (large phones), 768px (tablets), 1024px (laptops), and 1280px (desktops). Use min-width queries so styles stack upward. Frameworks like Tailwind use exactly these values, which is why they feel familiar.</p>
+</div><div class="border-b border-slate-100 pb-4 last:border-0 last:pb-0">
+<h3 class="font-heading font-bold text-brandNavy text-sm sm:text-base mb-1.5">Should I use min-width or max-width in media queries?</h3>
+<p class="text-sm text-slate-600 leading-relaxed">Prefer min-width with a mobile-first approach: write the small-screen styles first, then add min-width queries for larger screens. Max-width works for desktop-first code but creates overlapping rules that are harder to maintain.</p>
+</div><div class="border-b border-slate-100 pb-4 last:border-0 last:pb-0">
+<h3 class="font-heading font-bold text-brandNavy text-sm sm:text-base mb-1.5">Can media queries detect dark mode?</h3>
+<p class="text-sm text-slate-600 leading-relaxed">Yes — @media (prefers-color-scheme: dark) matches when the user&#x27;s OS is in dark mode. Use it to override colors, swap images, and soften heavy shadows, so your site adapts without any JavaScript.</p>
+</div>
+</div>
+</section>
+
 <section id="preview-section" class="no-print mb-8"><div class="flex items-center justify-between mb-3"><h2 class="font-heading text-lg sm:text-xl font-bold text-brandNavy">Printable Sheet Preview</h2><span class="text-xs font-medium text-slate-500">High-Contrast Layout</span></div>
-<img src="/assets/previews/media-queries.webp" alt="Media Queries Quick Reference Guide | Hoorvia Printable Preview" loading="lazy" class="rounded-2xl border border-slate-200 shadow-sm w-full" />
+<img src="/assets/previews/media-queries.webp" alt="Printable CSS media queries cheat sheet showing breakpoints, syntax patterns, and media feature queries for responsive design." loading="lazy" class="rounded-2xl border border-slate-200 shadow-sm w-full" />
 </section>
 <section id="download-cta-box" class="no-print bg-white rounded-2xl border-2 border-emerald-500/40 shadow-md p-6 sm:p-8 mb-10 text-center">
 <span class="inline-block px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold uppercase tracking-wide mb-2">Instant Direct Download &bull; No Email Required</span>
