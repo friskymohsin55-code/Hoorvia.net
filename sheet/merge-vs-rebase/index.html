@@ -11,7 +11,7 @@
 </script>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Merge vs Rebase Quick Reference Guide | Hoorvia</title>
+<title>Git Merge vs Rebase Cheat Sheet (Printable)</title>
 <meta name="description" content="Download printable reference charts and view interactive data tables for Merge vs Rebase. 100% verified specifications on Hoorvia.net." />
 <link rel="canonical" href="https://hoorvia.net/sheet/merge-vs-rebase-569/" />
 <meta property="og:title" content="Merge vs Rebase Quick Reference Guide | Hoorvia" />
@@ -23,15 +23,49 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
-<script type="application/ld+json">{
+<script type="application/ld+json">
+{
   "@context": "https://schema.org",
   "@type": "TechArticle",
-  "headline": "Merge vs Rebase Quick Reference Guide",
-  "description": "Download printable reference charts and view interactive data tables for Merge vs Rebase. 100% verified specifications on Hoorvia.net.",
+  "headline": "Git Merge vs Rebase Cheat Sheet: Printable Command Guide",
+  "description": "Print our git merge vs rebase cheat sheet: side-by-side commands, when to use each, and the golden rules for safe history rewrites.",
   "url": "https://hoorvia.net/sheet/merge-vs-rebase-569/",
   "inLanguage": "en-US",
   "mainEntityOfPage": "https://hoorvia.net/sheet/merge-vs-rebase-569/"
-}</script>
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "When should I use git rebase instead of merge?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Rebase your private feature branch before opening a pull request \u2014 it produces a clean, linear history that reviewers can follow. Use merge on shared branches like main, where the true history is a team record nobody should rewrite."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is git rebase dangerous?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Only on shared history. Rebasing commits that others have already pulled forces everyone to fix their branches. On your own unpushed branch, rebase is completely safe \u2014 abort anytime with git rebase --abort."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between git pull and git pull --rebase?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Plain git pull merges the remote branch into yours, adding a merge commit. git pull --rebase replays your local commits on top of the remote ones instead, keeping a clean line. Many teams set pull.rebase true as the default."
+      }
+    }
+  ]
+}
+</script>
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
 tailwind.config = { theme: { extend: { colors: { paper: '#F8FAFC', warmPaper: '#FAF9F6', slateText: '#1E293B', brandNavy: '#0F172A', brandTeal: '#0D9488', ctaGreen: '#10B981', ctaGreenHover: '#059669', ctaAmber: '#F59E0B', ctaAmberHover: '#D97706' }, fontFamily: { heading: ['"Plus Jakarta Sans"', 'sans-serif'], sans: ['Inter', 'system-ui', 'sans-serif'] }, boxShadow: { 'paper-sheet': '0 14px 35px -5px rgba(15, 23, 42, 0.12), 0 4px 12px -2px rgba(15, 23, 42, 0.06)', 'card-hover': '0 12px 24px -6px rgba(13, 148, 136, 0.14)' } } } }
@@ -77,8 +111,8 @@ h1, h2, h3, h4, .font-heading { font-family: 'Plus Jakarta Sans', sans-serif; }
 <nav class="flex items-center gap-1.5"><a href="/" class="hover:text-brandTeal font-medium">Home</a><span>&rsaquo;</span><a href="/tech/" class="hover:text-brandTeal font-medium">Tech &amp; Software</a><span>&rsaquo;</span><span class="text-slate-800 font-semibold">Merge vs Rebase Quick Reference Guide</span></nav>
 <a href="/" class="inline-flex items-center gap-1 text-brandTeal font-semibold hover:underline">&larr; Back to All Cheat Sheets</a></div>
 <header class="mb-6"><div class="flex flex-wrap items-center gap-2 mb-3"><span class="px-2.5 py-1 rounded-md bg-teal-100 text-brandTeal text-xs font-bold uppercase tracking-wide">Tech &amp; Software</span><span class="px-2.5 py-1 rounded-md bg-emerald-100 text-emerald-800 text-xs font-semibold">Free Printable</span><span class="text-xs text-slate-500">Sizes: US Letter &amp; A4</span></div>
-<h1 class="font-heading text-2xl sm:text-4xl font-extrabold text-brandNavy tracking-tight leading-tight mb-3">Merge vs Rebase Quick Reference Guide</h1>
-<p class="text-slate-600 text-sm sm:text-base leading-relaxed">Authentic reference chart and data matrix for Merge vs Rebase in Git &amp; GitHub Workflow. Use the interactive table below or print it / save it as a PDF with the button below.</p></header>
+<h1 class="font-heading text-2xl sm:text-4xl font-extrabold text-brandNavy tracking-tight leading-tight mb-3">Git Merge vs Rebase Cheat Sheet: Printable Command Guide</h1>
+<p class="text-slate-600 text-sm sm:text-base leading-relaxed">Every Git developer eventually faces the merge-versus-rebase fork in the road, and guessing wrong rewrites history you cannot get back. Merge keeps the truth — every commit exactly as it happened, branch points and all. Rebase tells a cleaner story — your work replayed in a straight line on top of the latest main. Both are correct, but in different places: merge belongs on shared branches where history is a team record, rebase belongs on private branches before a pull request where readability wins. This printable cheat sheet puts the two side by side: what each does to history, the exact commands, how conflicts resolve, and the golden rule that keeps both safe. Consult the live reference table below before your next feature branch, or print the sheet below and keep it by your terminal.</p></header>
 <div id="quick-action-bar" class="no-print flex flex-wrap items-center gap-2.5 p-3 rounded-xl bg-white border border-slate-200 shadow-sm mb-8">
 <a href="#download-cta-box" class="flex-1 sm:flex-initial inline-flex items-center justify-center gap-1.5 px-4 py-2 rounded-lg bg-ctaGreen hover:bg-ctaGreenHover text-white font-semibold text-xs sm:text-sm transition-all shadow-sm"><span>&#128229; Jump to Free PDF Download</span></a>
 <button onclick="window.print()" class="flex-1 sm:flex-initial inline-flex items-center justify-center gap-1.5 px-4 py-2 rounded-lg bg-ctaAmber hover:bg-ctaAmberHover text-white font-semibold text-xs sm:text-sm transition-all shadow-sm cursor-pointer border-0"><span>&#128438; Print This Chart Now</span></button>
@@ -86,13 +120,54 @@ h1, h2, h3, h4, .font-heading { font-family: 'Plus Jakarta Sans', sans-serif; }
 <section id="table-section" class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden mb-10">
 <div class="p-4 sm:p-5 border-b border-slate-200 bg-slate-50/70 flex flex-col sm:flex-row sm:items-center justify-between gap-3"><div><h2 class="font-heading text-lg sm:text-xl font-bold text-brandNavy">Quick-Reference Table</h2><p class="text-xs text-slate-500">The full data from this cheat sheet, right on the page.</p></div></div>
 <div class="no-print p-3 sm:px-5 bg-white border-b border-slate-200"><input type="text" id="table-filter-input" oninput="filterRows()" placeholder="&#128270; Filter this table instantly..." class="w-full px-3.5 py-2 text-sm border border-slate-200 rounded-lg focus:outline-none focus:border-brandTeal" /></div>
-<div class="overflow-x-auto"><table class="w-full text-left border-collapse"><thead><tr class="bg-slate-100/80 text-slate-700 text-xs uppercase tracking-wider border-b border-slate-200"><th class="py-3 px-4 font-bold">Command / Feature</th><th class="py-3 px-4 font-bold">Syntax / Keyboard Shortcut (Win / Mac)</th><th class="py-3 px-4 font-bold">Operational Context &amp; Environment</th><th class="py-3 px-4 font-bold">Key Output / Practical Result</th></tr></thead><tbody id="post-tbody" class="divide-y divide-slate-200 text-xs sm:text-sm"><tr><td class="py-3 px-4 text-slate-700">Merge vs Rebase Primary Action</td><td class="py-3 px-4 text-slate-700">Ctrl + P / Cmd + P</td><td class="py-3 px-4 text-slate-700">Editor quick-access palette</td><td class="py-3 px-4 text-slate-700">Instantly locates and opens target files or commands</td></tr><tr><td class="py-3 px-4 text-slate-700">Merge vs Rebase Query / Filter</td><td class="py-3 px-4 text-slate-700">SELECT * FROM items WHERE category = &#x27;merge vs rebase&#x27;</td><td class="py-3 px-4 text-slate-700">Relational or collection retrieval</td><td class="py-3 px-4 text-slate-700">Returns filtered data record array matching criteria</td></tr><tr><td class="py-3 px-4 text-slate-700">Merge vs Rebase Configuration</td><td class="py-3 px-4 text-slate-700">export CONFIG_MERGE_VS_REBASE=true</td><td class="py-3 px-4 text-slate-700">Terminal shell environment (.bashrc / .zshrc)</td><td class="py-3 px-4 text-slate-700">Persists operational configuration flags across sessions</td></tr><tr><td class="py-3 px-4 text-slate-700">Merge vs Rebase Integrity Check</td><td class="py-3 px-4 text-slate-700">npm test -- --grep=&quot;merge vs rebase&quot;</td><td class="py-3 px-4 text-slate-700">Automated CI/CD test runner</td><td class="py-3 px-4 text-slate-700">Executes targeted assertions with exit code confirmation</td></tr></tbody></table></div></section>
-<section id="howto-section" class="no-print bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 mb-10"><h2 class="font-heading text-xl sm:text-2xl font-bold text-brandNavy mb-4">How to Use This Chart</h2><p class="text-sm sm:text-[15px] text-slate-600 leading-relaxed mb-3">Pin this chart where you work: it packs <strong>4 entries</strong> and 4 columns (<strong>Command / Feature</strong>, <strong>Syntax / Keyboard Shortcut (Win / Mac)</strong>, <strong>Operational Context &amp; Environment</strong>, <strong>Key Output / Practical Result</strong>) into one printable page, built for quick lookups.</p>
-<p class="text-sm sm:text-[15px] text-slate-600 leading-relaxed mb-3">Scan down the <strong>Command / Feature</strong> column to your item, then read across for Syntax / Keyboard Shortcut (Win / Mac), Operational Context &amp; Environment.</p>
-<p class="text-sm sm:text-[15px] text-slate-600 leading-relaxed mb-3"><strong class="text-brandNavy">Example:</strong> for <strong>Merge vs Rebase Primary Action</strong>, the chart gives <strong>Syntax / Keyboard Shortcut (Win / Mac)</strong> of <strong>Ctrl + P / Cmd + P</strong>.</p>
-<ul class="list-disc pl-5 space-y-1.5 text-sm sm:text-[15px] text-slate-600 leading-relaxed"><li>Compare values down a single column to spot the pattern before you commit to a choice.</li><li>When two rows look close, the Key Output / Practical Result column usually breaks the tie.</li><li>Print it once and keep it where you work — that's the whole point of a cheat sheet.</li></ul></section>
+<div class="overflow-x-auto"><table class="sheet-table">
+<thead>
+<tr><th>Topic</th><th>Merge</th><th>Rebase</th></tr>
+</thead>
+<tbody>
+<tr><td>What it does</td><td>Joins two branch histories with a merge commit</td><td>Replays your commits onto the target branch tip</td></tr>
+<tr><td>History shape</td><td>True history — branchy, every commit kept</td><td>Linear history — reads as one straight line</td></tr>
+<tr><td>Update a feature branch</td><td>git merge main</td><td>git rebase main</td></tr>
+<tr><td>Finish a feature</td><td>Merge the branch into main</td><td>Rebase onto main, then fast-forward merge</td></tr>
+<tr><td>Resolve conflicts</td><td>Fix files, stage, git commit</td><td>Fix files, stage, git rebase --continue</td></tr>
+<tr><td>Abort midway</td><td>git merge --abort</td><td>git rebase --abort</td></tr>
+<tr><td>Pull updates</td><td>git pull (merges by default)</td><td>git pull --rebase</td></tr>
+<tr><td>Push after rewriting</td><td>Normal push works</td><td>git push --force-with-lease</td></tr>
+<tr><td>Edit old commits</td><td>Not available</td><td>git rebase -i HEAD~3 (squash, reword, drop)</td></tr>
+<tr><td>Golden rule</td><td>Safe on shared branches</td><td>Never rebase commits others have pulled</td></tr>
+<tr><td>Best for</td><td>Public branches and team collaboration</td><td>Private branches before a pull request</td></tr>
+<tr><td>Readability</td><td>Shows exactly what happened</td><td>Clean story, hides the trial and error</td></tr>
+</tbody>
+</table></div></section>
+<section id="howto-section" class="no-print bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 mb-10"><h2 class="font-heading text-xl sm:text-2xl font-bold text-brandNavy mb-4">How to Use This Chart</h2><p class="text-sm sm:text-[15px] text-slate-600 leading-relaxed mb-3">Pin this chart where you work: it packs <strong>12 entries</strong> and 3 columns (<strong>Topic</strong>, <strong>Merge</strong>, <strong>Rebase</strong>) into one printable page, built for quick lookups.</p>
+<p class="text-sm sm:text-[15px] text-slate-600 leading-relaxed mb-3">Scan down the <strong>Topic</strong> column to your item, then read across for Merge, Rebase.</p>
+<p class="text-sm sm:text-[15px] text-slate-600 leading-relaxed mb-3"><strong class="text-brandNavy">Example:</strong> for <strong>What it does</strong>, the chart gives <strong>Merge</strong> of <strong>Joins two branch histories with a merge commit</strong>.</p>
+<ul class="list-disc pl-5 space-y-1.5 text-sm sm:text-[15px] text-slate-600 leading-relaxed"><li>Compare values down a single column to spot the pattern before you commit to a choice.</li><li>When two rows look close, the last column usually breaks the tie.</li><li>Print it once and keep it where you work — that's the whole point of a cheat sheet.</li></ul></section>
+<section class="paper-sheet rounded-2xl shadow-paper-sheet p-6 sm:p-8 mb-6 sm:mb-8 pt-8">
+<h2 class="font-heading text-lg sm:text-xl font-bold text-brandNavy mb-3">&#128161; Quick Tips</h2>
+<div class="space-y-3 text-sm sm:text-base text-slate-600 leading-relaxed">
+<p><strong class="text-brandNavy">Rebase Before the Pull Request:</strong> Clean your private branch with git rebase -i so reviewers read a tidy story, not your debugging trail.</p><p><strong class="text-brandNavy">Force-With-Lease, Never Force:</strong> git push --force-with-lease refuses to overwrite if a teammate pushed first — plain --force does not.</p><p><strong class="text-brandNavy">Merge on Shared Branches:</strong> On main and team branches, always merge. Shared history is a team record — keep it honest.</p>
+</div>
+</section>
+
+<section class="paper-sheet rounded-2xl shadow-paper-sheet p-6 sm:p-8 mb-6 sm:mb-8 pt-8">
+<h2 class="font-heading text-lg sm:text-xl font-bold text-brandNavy mb-4">Frequently Asked Questions</h2>
+<div class="space-y-4">
+<div class="border-b border-slate-100 pb-4 last:border-0 last:pb-0">
+<h3 class="font-heading font-bold text-brandNavy text-sm sm:text-base mb-1.5">When should I use git rebase instead of merge?</h3>
+<p class="text-sm text-slate-600 leading-relaxed">Rebase your private feature branch before opening a pull request — it produces a clean, linear history that reviewers can follow. Use merge on shared branches like main, where the true history is a team record nobody should rewrite.</p>
+</div><div class="border-b border-slate-100 pb-4 last:border-0 last:pb-0">
+<h3 class="font-heading font-bold text-brandNavy text-sm sm:text-base mb-1.5">Is git rebase dangerous?</h3>
+<p class="text-sm text-slate-600 leading-relaxed">Only on shared history. Rebasing commits that others have already pulled forces everyone to fix their branches. On your own unpushed branch, rebase is completely safe — abort anytime with git rebase --abort.</p>
+</div><div class="border-b border-slate-100 pb-4 last:border-0 last:pb-0">
+<h3 class="font-heading font-bold text-brandNavy text-sm sm:text-base mb-1.5">What is the difference between git pull and git pull --rebase?</h3>
+<p class="text-sm text-slate-600 leading-relaxed">Plain git pull merges the remote branch into yours, adding a merge commit. git pull --rebase replays your local commits on top of the remote ones instead, keeping a clean line. Many teams set pull.rebase true as the default.</p>
+</div>
+</div>
+</section>
+
 <section id="preview-section" class="no-print mb-8"><div class="flex items-center justify-between mb-3"><h2 class="font-heading text-lg sm:text-xl font-bold text-brandNavy">Printable Sheet Preview</h2><span class="text-xs font-medium text-slate-500">High-Contrast Layout</span></div>
-<img src="/assets/previews/merge-vs-rebase.webp" alt="Merge vs Rebase Quick Reference Guide | Hoorvia Printable Preview" loading="lazy" class="rounded-2xl border border-slate-200 shadow-sm w-full" />
+<img src="/assets/previews/merge-vs-rebase.webp" alt="Printable git merge vs rebase cheat sheet showing commands, use cases, and safety rules for both workflows." loading="lazy" class="rounded-2xl border border-slate-200 shadow-sm w-full" />
 </section>
 <section id="download-cta-box" class="no-print bg-white rounded-2xl border-2 border-emerald-500/40 shadow-md p-6 sm:p-8 mb-10 text-center">
 <span class="inline-block px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold uppercase tracking-wide mb-2">Instant Direct Download &bull; No Email Required</span>
