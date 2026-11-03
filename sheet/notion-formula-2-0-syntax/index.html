@@ -11,27 +11,62 @@
 </script>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Notion Formula 2.0 Syntax Quick Reference Guide | Hoorvia</title>
-<meta name="description" content="Download printable reference charts and view interactive data tables for Notion Formula 2.0 Syntax. 100% verified specifications on Hoorvia.net." />
+<title>Notion Formula 2.0 Syntax Cheat Sheet (Printable)</title>
+<meta name="description" content="Print our Notion Formula 2.0 cheat sheet: dateAdd, dateBetween, if, contains, concat and more, with copy-ready syntax examples." />
 <link rel="canonical" href="https://hoorvia.net/sheet/notion-formula-2-0-syntax-647/" />
-<meta property="og:title" content="Notion Formula 2.0 Syntax Quick Reference Guide | Hoorvia" />
-<meta property="og:description" content="Download printable reference charts and view interactive data tables for Notion Formula 2.0 Syntax. 100% verified specifications on Hoorvia.net." />
+<meta property="og:title" content="Notion Formula 2.0 Syntax Cheat Sheet (Printable)" />
+<meta property="og:description" content="Print our Notion Formula 2.0 cheat sheet: dateAdd, dateBetween, if, contains, concat and more, with copy-ready syntax examples." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://hoorvia.net/sheet/notion-formula-2-0-syntax-647/" />
-<meta name="twitter:title" content="Notion Formula 2.0 Syntax Quick Reference Guide | Hoorvia" />
-<meta name="twitter:description" content="Download printable reference charts and view interactive data tables for Notion Formula 2.0 Syntax. 100% verified specifications on Hoorvia.net." />
+<meta name="twitter:title" content="Notion Formula 2.0 Syntax Cheat Sheet (Printable)" />
+<meta name="twitter:description" content="Print our Notion Formula 2.0 cheat sheet: dateAdd, dateBetween, if, contains, concat and more, with copy-ready syntax examples." />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
-<script type="application/ld+json">{
+<script type="application/ld+json">
+{
   "@context": "https://schema.org",
   "@type": "TechArticle",
-  "headline": "Notion Formula 2.0 Syntax Quick Reference Guide",
-  "description": "Download printable reference charts and view interactive data tables for Notion Formula 2.0 Syntax. 100% verified specifications on Hoorvia.net.",
+  "headline": "Notion Formula 2.0 Syntax: Printable Function Cheat Sheet",
+  "description": "Print our Notion Formula 2.0 cheat sheet: dateAdd, dateBetween, if, contains, concat and more, with copy-ready syntax examples.",
   "url": "https://hoorvia.net/sheet/notion-formula-2-0-syntax-647/",
   "inLanguage": "en-US",
   "mainEntityOfPage": "https://hoorvia.net/sheet/notion-formula-2-0-syntax-647/"
-}</script>
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Why does my Notion formula show a type mismatch error?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Type mismatch is the most common Notion error: it means a function got the wrong data type, like a date where text was expected or text where a number belongs. Fix it by matching each argument to the documented type, and use format() or toNumber() to convert between types."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between Notion formulas 1.0 and 2.0?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Formulas 2.0 (released in 2023) brought a proper editor with multi-line support, syntax highlighting, and autocomplete, plus more typed functions. Old 1.0 formulas still run, but 2.0 syntax is stricter about data types \u2014 which is why copying a 1.0 formula into a 2.0 property sometimes throws errors."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I show days remaining until a deadline in Notion?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Use dateBetween() with now(): dateBetween(prop(\"Due\"), now(), \"days\") returns a number \u2014 positive before the deadline, negative when overdue. Wrap it in an if() to add a label, like if(dateBetween(prop(\"Due\"), now(), \"days\") < 0, \"Overdue\", \"On track\")."
+      }
+    }
+  ]
+}
+</script>
+
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
 tailwind.config = { theme: { extend: { colors: { paper: '#F8FAFC', warmPaper: '#FAF9F6', slateText: '#1E293B', brandNavy: '#0F172A', brandTeal: '#0D9488', ctaGreen: '#10B981', ctaGreenHover: '#059669', ctaAmber: '#F59E0B', ctaAmberHover: '#D97706' }, fontFamily: { heading: ['"Plus Jakarta Sans"', 'sans-serif'], sans: ['Inter', 'system-ui', 'sans-serif'] }, boxShadow: { 'paper-sheet': '0 14px 35px -5px rgba(15, 23, 42, 0.12), 0 4px 12px -2px rgba(15, 23, 42, 0.06)', 'card-hover': '0 12px 24px -6px rgba(13, 148, 136, 0.14)' } } } }
@@ -77,8 +112,8 @@ h1, h2, h3, h4, .font-heading { font-family: 'Plus Jakarta Sans', sans-serif; }
 <nav class="flex items-center gap-1.5"><a href="/" class="hover:text-brandTeal font-medium">Home</a><span>&rsaquo;</span><a href="/tech/" class="hover:text-brandTeal font-medium">Tech &amp; Software</a><span>&rsaquo;</span><span class="text-slate-800 font-semibold">Notion Formula 2.0 Syntax Quick Reference Guide</span></nav>
 <a href="/" class="inline-flex items-center gap-1 text-brandTeal font-semibold hover:underline">&larr; Back to All Cheat Sheets</a></div>
 <header class="mb-6"><div class="flex flex-wrap items-center gap-2 mb-3"><span class="px-2.5 py-1 rounded-md bg-teal-100 text-brandTeal text-xs font-bold uppercase tracking-wide">Tech &amp; Software</span><span class="px-2.5 py-1 rounded-md bg-emerald-100 text-emerald-800 text-xs font-semibold">Free Printable</span><span class="text-xs text-slate-500">Sizes: US Letter &amp; A4</span></div>
-<h1 class="font-heading text-2xl sm:text-4xl font-extrabold text-brandNavy tracking-tight leading-tight mb-3">Notion Formula 2.0 Syntax Quick Reference Guide</h1>
-<p class="text-slate-600 text-sm sm:text-base leading-relaxed">Authentic reference chart and data matrix for Notion Formula 2.0 Syntax in Notion Formulas &amp; DBs. Use the interactive table below or print it / save it as a PDF with the button below.</p></header>
+<h1 class="font-heading text-2xl sm:text-4xl font-extrabold text-brandNavy tracking-tight leading-tight mb-3">Notion Formula 2.0 Syntax: Printable Function Cheat Sheet</h1>
+<p class="text-slate-600 text-sm sm:text-base leading-relaxed">Notion formulas 2.0 turn a database from a static list into a live dashboard — due dates that flag themselves overdue, full names assembled from parts, prices rounded and taxed automatically. But the syntax is unforgiving: arguments in the wrong order, a missing quote around a unit like &quot;days&quot;, or a number where the formula expects text, and the whole cell throws a type mismatch. The official docs spread every function across dozens of pages. This printable cheat sheet gathers the twelve formulas you will actually use — dateAdd, dateBetween, formatDate, if, contains, concat, empty, length, round, and more — each with copy-ready syntax, a plain-English explanation, and a real example you can paste into your formula property. Consult the live reference table below while you build, or print the sheet below for your desk — correct syntax on the first try beats debugging error messages.</p></header>
 <div id="quick-action-bar" class="no-print flex flex-wrap items-center gap-2.5 p-3 rounded-xl bg-white border border-slate-200 shadow-sm mb-8">
 <a href="#download-cta-box" class="flex-1 sm:flex-initial inline-flex items-center justify-center gap-1.5 px-4 py-2 rounded-lg bg-ctaGreen hover:bg-ctaGreenHover text-white font-semibold text-xs sm:text-sm transition-all shadow-sm"><span>&#128229; Jump to Free PDF Download</span></a>
 <button onclick="window.print()" class="flex-1 sm:flex-initial inline-flex items-center justify-center gap-1.5 px-4 py-2 rounded-lg bg-ctaAmber hover:bg-ctaAmberHover text-white font-semibold text-xs sm:text-sm transition-all shadow-sm cursor-pointer border-0"><span>&#128438; Print This Chart Now</span></button>
@@ -86,13 +121,60 @@ h1, h2, h3, h4, .font-heading { font-family: 'Plus Jakarta Sans', sans-serif; }
 <section id="table-section" class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden mb-10">
 <div class="p-4 sm:p-5 border-b border-slate-200 bg-slate-50/70 flex flex-col sm:flex-row sm:items-center justify-between gap-3"><div><h2 class="font-heading text-lg sm:text-xl font-bold text-brandNavy">Quick-Reference Table</h2><p class="text-xs text-slate-500">The full data from this cheat sheet, right on the page.</p></div></div>
 <div class="no-print p-3 sm:px-5 bg-white border-b border-slate-200"><input type="text" id="table-filter-input" oninput="filterRows()" placeholder="&#128270; Filter this table instantly..." class="w-full px-3.5 py-2 text-sm border border-slate-200 rounded-lg focus:outline-none focus:border-brandTeal" /></div>
-<div class="overflow-x-auto"><table class="w-full text-left border-collapse"><thead><tr class="bg-slate-100/80 text-slate-700 text-xs uppercase tracking-wider border-b border-slate-200"><th class="py-3 px-4 font-bold">Function / Formula</th><th class="py-3 px-4 font-bold">Standard Syntax</th><th class="py-3 px-4 font-bold">Practical Use Case</th><th class="py-3 px-4 font-bold">Key Return Value / Error Guard</th></tr></thead><tbody id="post-tbody" class="divide-y divide-slate-200 text-xs sm:text-sm"><tr><td class="py-3 px-4 text-slate-700">XLOOKUP</td><td class="py-3 px-4 text-slate-700">=XLOOKUP(lookup_val, lookup_arr, return_arr, [if_not_found], [match_mode])</td><td class="py-3 px-4 text-slate-700">Bidirectional dynamic array lookup without column index</td><td class="py-3 px-4 text-slate-700">Returns matching cell; eliminates #N/A errors with fallback string</td></tr><tr><td class="py-3 px-4 text-slate-700">INDEX / MATCH</td><td class="py-3 px-4 text-slate-700">=INDEX(return_col, MATCH(lookup_val, lookup_col, 0))</td><td class="py-3 px-4 text-slate-700">Robust 2D table lookups resilient to column insertions</td><td class="py-3 px-4 text-slate-700">Exact match reference; works left-to-right and right-to-left</td></tr><tr><td class="py-3 px-4 text-slate-700">SUMIFS</td><td class="py-3 px-4 text-slate-700">=SUMIFS(sum_range, criteria_range1, criteria1, [criteria_range2, criteria2])</td><td class="py-3 px-4 text-slate-700">Multi-condition numerical aggregation</td><td class="py-3 px-4 text-slate-700">Sums all numeric cells satisfying all specified criteria filters</td></tr><tr><td class="py-3 px-4 text-slate-700">COUNTIFS</td><td class="py-3 px-4 text-slate-700">=COUNTIFS(criteria_range1, criteria1, [criteria_range2, criteria2])</td><td class="py-3 px-4 text-slate-700">Multi-condition frequency counting</td><td class="py-3 px-4 text-slate-700">Integer count of matching records across multiple criteria arrays</td></tr><tr><td class="py-3 px-4 text-slate-700">QUERY (Google Sheets)</td><td class="py-3 px-4 text-slate-700">=QUERY(data, &quot;SELECT A, B WHERE C &gt; 100 ORDER BY B DESC&quot;, 1)</td><td class="py-3 px-4 text-slate-700">SQL-like data transformation and manipulation in spreadsheets</td><td class="py-3 px-4 text-slate-700">Returns dynamic array table filtered and ordered by SQL syntax</td></tr></tbody></table></div></section>
-<section id="howto-section" class="no-print bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 mb-10"><h2 class="font-heading text-xl sm:text-2xl font-bold text-brandNavy mb-4">How to Use This Chart</h2><p class="text-sm sm:text-[15px] text-slate-600 leading-relaxed mb-3">Pin this chart where you work: it packs <strong>5 entries</strong> and 4 columns (<strong>Function / Formula</strong>, <strong>Standard Syntax</strong>, <strong>Practical Use Case</strong>, <strong>Key Return Value / Error Guard</strong>) into one printable page, built for quick lookups.</p>
-<p class="text-sm sm:text-[15px] text-slate-600 leading-relaxed mb-3">Scan down the <strong>Function / Formula</strong> column to your item, then read across for Standard Syntax, Practical Use Case.</p>
-<p class="text-sm sm:text-[15px] text-slate-600 leading-relaxed mb-3"><strong class="text-brandNavy">Example:</strong> for <strong>XLOOKUP</strong>, the chart gives <strong>Standard Syntax</strong> of <strong>=XLOOKUP(lookup_val, lookup_arr, return_arr, [if_not_found], [match_mode])</strong>.</p>
-<ul class="list-disc pl-5 space-y-1.5 text-sm sm:text-[15px] text-slate-600 leading-relaxed"><li>Compare values down a single column to spot the pattern before you commit to a choice.</li><li>When two rows look close, the Key Return Value / Error Guard column usually breaks the tie.</li><li>Print it once and keep it where you work — that's the whole point of a cheat sheet.</li></ul></section>
+<div class="overflow-x-auto"><table class="sheet-table">
+<thead>
+<tr><th>Function</th><th>Syntax</th><th>What It Does</th><th>Example</th></tr>
+</thead>
+<tbody>
+<tr><td>now</td><td>now()</td><td>Returns the current date and time</td><td>now()</td></tr>
+<tr><td>dateAdd</td><td>dateAdd(date, number, &quot;unit&quot;)</td><td>Adds time to a date; units: years, quarters, months, weeks, days, hours, minutes</td><td>dateAdd(prop(&quot;Due&quot;), 7, &quot;days&quot;)</td></tr>
+<tr><td>dateSubtract</td><td>dateSubtract(date, number, &quot;unit&quot;)</td><td>Subtracts time from a date with the same units</td><td>dateSubtract(now(), 1, &quot;months&quot;)</td></tr>
+<tr><td>dateBetween</td><td>dateBetween(date1, date2, &quot;unit&quot;)</td><td>Difference between two dates in the chosen units</td><td>dateBetween(prop(&quot;Due&quot;), now(), &quot;days&quot;)</td></tr>
+<tr><td>formatDate</td><td>formatDate(date, &quot;pattern&quot;)</td><td>Formats a date as text using Moment.js patterns</td><td>formatDate(prop(&quot;Due&quot;), &quot;MMMM D, YYYY&quot;)</td></tr>
+<tr><td>month / day / year</td><td>month(date) / day(date) / year(date)</td><td>Extracts one part of a date as a number</td><td>month(prop(&quot;Birthday&quot;))</td></tr>
+<tr><td>if</td><td>if(condition, ifTrue, ifFalse)</td><td>Returns one value when true, another when false</td><td>if(prop(&quot;Done&quot;) == true, &quot;Complete&quot;, &quot;Pending&quot;)</td></tr>
+<tr><td>contains</td><td>contains(text, search)</td><td>Checks whether the text contains the search string</td><td>contains(prop(&quot;Status&quot;), &quot;Done&quot;)</td></tr>
+<tr><td>concat</td><td>concat(text1, text2, ...)</td><td>Joins multiple text strings into one</td><td>concat(prop(&quot;First&quot;), &quot; &quot;, prop(&quot;Last&quot;))</td></tr>
+<tr><td>empty</td><td>empty(value)</td><td>Checks whether a value is empty or missing</td><td>if(empty(prop(&quot;Name&quot;)), &quot;Add a name&quot;, prop(&quot;Name&quot;))</td></tr>
+<tr><td>length</td><td>length(text)</td><td>Counts the characters in a text string</td><td>length(prop(&quot;Title&quot;))</td></tr>
+<tr><td>round / ceil / floor</td><td>round(number)</td><td>Rounds a number to the nearest integer</td><td>round(prop(&quot;Price&quot;) * 1.08)</td></tr>
+</tbody>
+</table></div></section>
+<section id="howto-section" class="no-print bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 mb-10"><h2 class="font-heading text-xl sm:text-2xl font-bold text-brandNavy mb-4">How to Use This Chart</h2><p class="text-sm sm:text-[15px] text-slate-600 leading-relaxed mb-3">Pin this chart where you work: it packs <strong>12 entries</strong> and 4 columns (<strong>Function</strong>, <strong>Syntax</strong>, <strong>What It Does</strong>, <strong>Example</strong>) into one printable page, built for quick lookups.</p>
+<p class="text-sm sm:text-[15px] text-slate-600 leading-relaxed mb-3">Scan down the <strong>Function</strong> column to your item, then read across for Syntax, What It Does, Example.</p>
+<p class="text-sm sm:text-[15px] text-slate-600 leading-relaxed mb-3"><strong class="text-brandNavy">Example:</strong> for <strong>now</strong>, the chart gives <strong>Syntax</strong> of <strong>now()</strong>.</p>
+<ul class="list-disc pl-5 space-y-1.5 text-sm sm:text-[15px] text-slate-600 leading-relaxed"><li>Compare values down a single column to spot the pattern before you commit to a choice.</li><li>When two rows look close, the last column usually breaks the tie.</li><li>Print it once and keep it where you work — that's the whole point of a cheat sheet.</li></ul></section>
+
+
+
+
+
+<section class="paper-sheet rounded-2xl shadow-paper-sheet p-6 sm:p-8 mb-6 sm:mb-8 pt-8">
+<h2 class="font-heading text-lg sm:text-xl font-bold text-brandNavy mb-3">&#128161; Quick Tips</h2>
+<div class="space-y-3 text-sm sm:text-base text-slate-600 leading-relaxed">
+<p><strong class="text-brandNavy">Mind the Types:</strong> Dates, numbers and text don&#x27;t mix — wrap values with toNumber() or formatDate() before combining them.</p><p><strong class="text-brandNavy">Test in a Scratch Property:</strong> Build tricky formulas somewhere throwaway first, then paste the working version over.</p><p><strong class="text-brandNavy">Copy the Examples:</strong> Every function on the chart has a working example — adapt it to your names instead of starting from scratch.</p>
+</div>
+</section>
+
+
+<section class="paper-sheet rounded-2xl shadow-paper-sheet p-6 sm:p-8 mb-6 sm:mb-8 pt-8">
+<h2 class="font-heading text-lg sm:text-xl font-bold text-brandNavy mb-4">Frequently Asked Questions</h2>
+<div class="space-y-4">
+<div class="border-b border-slate-100 pb-4 last:border-0 last:pb-0">
+<h3 class="font-heading font-bold text-brandNavy text-sm sm:text-base mb-1.5">Why does my Notion formula show a type mismatch error?</h3>
+<p class="text-sm text-slate-600 leading-relaxed">Type mismatch is the most common Notion error: it means a function got the wrong data type, like a date where text was expected or text where a number belongs. Fix it by matching each argument to the documented type, and use format() or toNumber() to convert between types.</p>
+</div><div class="border-b border-slate-100 pb-4 last:border-0 last:pb-0">
+<h3 class="font-heading font-bold text-brandNavy text-sm sm:text-base mb-1.5">What is the difference between Notion formulas 1.0 and 2.0?</h3>
+<p class="text-sm text-slate-600 leading-relaxed">Formulas 2.0 (released in 2023) brought a proper editor with multi-line support, syntax highlighting, and autocomplete, plus more typed functions. Old 1.0 formulas still run, but 2.0 syntax is stricter about data types — which is why copying a 1.0 formula into a 2.0 property sometimes throws errors.</p>
+</div><div class="border-b border-slate-100 pb-4 last:border-0 last:pb-0">
+<h3 class="font-heading font-bold text-brandNavy text-sm sm:text-base mb-1.5">How do I show days remaining until a deadline in Notion?</h3>
+<p class="text-sm text-slate-600 leading-relaxed">Use dateBetween() with now(): dateBetween(prop(&quot;Due&quot;), now(), &quot;days&quot;) returns a number — positive before the deadline, negative when overdue. Wrap it in an if() to add a label, like if(dateBetween(prop(&quot;Due&quot;), now(), &quot;days&quot;) &lt; 0, &quot;Overdue&quot;, &quot;On track&quot;).</p>
+</div>
+</div>
+</section>
+
 <section id="preview-section" class="no-print mb-8"><div class="flex items-center justify-between mb-3"><h2 class="font-heading text-lg sm:text-xl font-bold text-brandNavy">Printable Sheet Preview</h2><span class="text-xs font-medium text-slate-500">High-Contrast Layout</span></div>
-<img src="/assets/previews/notion-formula-2-0-syntax.webp" alt="Notion Formula 2.0 Syntax Quick Reference Guide | Hoorvia Printable Preview" loading="lazy" class="rounded-2xl border border-slate-200 shadow-sm w-full" />
+<img src="/assets/previews/notion-formula-2-0-syntax.webp" alt="Printable Notion Formula 2.0 syntax cheat sheet showing each function with its exact syntax, what it does, and a real copy-ready example." loading="lazy" class="rounded-2xl border border-slate-200 shadow-sm w-full" />
 </section>
 <section id="download-cta-box" class="no-print bg-white rounded-2xl border-2 border-emerald-500/40 shadow-md p-6 sm:p-8 mb-10 text-center">
 <span class="inline-block px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold uppercase tracking-wide mb-2">Instant Direct Download &bull; No Email Required</span>
