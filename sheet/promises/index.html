@@ -11,27 +11,61 @@
 </script>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Promises Quick Reference Guide | Hoorvia</title>
-<meta name="description" content="Download printable reference charts and view interactive data tables for Promises. 100% verified specifications on Hoorvia.net." />
+<title>JavaScript Promises Chart (Printable): Methods</title>
+<meta name="description" content="Print our JavaScript promises chart: 12 promise methods and states — then, catch, finally, all, race, and async/await — with syntax and when to use each." />
 <link rel="canonical" href="https://hoorvia.net/sheet/promises-510/" />
-<meta property="og:title" content="Promises Quick Reference Guide | Hoorvia" />
-<meta property="og:description" content="Download printable reference charts and view interactive data tables for Promises. 100% verified specifications on Hoorvia.net." />
+<meta property="og:title" content="JavaScript Promises Chart (Printable): Methods" />
+<meta property="og:description" content="Print our JavaScript promises chart: 12 promise methods and states — then, catch, finally, all, race, and async/await — with syntax and when to use each." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://hoorvia.net/sheet/promises-510/" />
-<meta name="twitter:title" content="Promises Quick Reference Guide | Hoorvia" />
-<meta name="twitter:description" content="Download printable reference charts and view interactive data tables for Promises. 100% verified specifications on Hoorvia.net." />
+<meta name="twitter:title" content="JavaScript Promises Chart (Printable): Methods" />
+<meta name="twitter:description" content="Print our JavaScript promises chart: 12 promise methods and states — then, catch, finally, all, race, and async/await — with syntax and when to use each." />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
-<script type="application/ld+json">{
+<script type="application/ld+json">
+{
   "@context": "https://schema.org",
   "@type": "TechArticle",
-  "headline": "Promises Quick Reference Guide",
-  "description": "Download printable reference charts and view interactive data tables for Promises. 100% verified specifications on Hoorvia.net.",
+  "headline": "JavaScript Promises Chart: Printable Methods & States Guide",
+  "description": "Print our JavaScript promises chart: 12 promise methods and states \u2014 then, catch, finally, all, race, and async/await \u2014 with syntax and when to use each.",
   "url": "https://hoorvia.net/sheet/promises-510/",
   "inLanguage": "en-US",
   "mainEntityOfPage": "https://hoorvia.net/sheet/promises-510/"
-}</script>
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the difference between Promise.all and Promise.allSettled?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Promise.all waits for every promise and rejects immediately if any one fails, discarding the other results. Promise.allSettled waits for all of them and reports each outcome as fulfilled or rejected. Use all when every result is required, and allSettled when partial results are still useful."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does async/await do that .then() does not?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nothing new \u2014 async/await is syntax sugar over promises, and every awaited value is still a promise underneath. The win is readability: async code reads top to bottom like synchronous code, with try/catch replacing .catch(). Use it for sequential steps, and .then() chains for short pipelines."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why do I get an unhandled promise rejection warning?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A promise rejected with no .catch() attached, and no surrounding try/catch in an async function, triggers the warning. It usually means an error path was never handled \u2014 often a failed fetch. Add a .catch() at the end of the chain or wrap the await in try/catch."
+      }
+    }
+  ]
+}
+</script>
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
 tailwind.config = { theme: { extend: { colors: { paper: '#F8FAFC', warmPaper: '#FAF9F6', slateText: '#1E293B', brandNavy: '#0F172A', brandTeal: '#0D9488', ctaGreen: '#10B981', ctaGreenHover: '#059669', ctaAmber: '#F59E0B', ctaAmberHover: '#D97706' }, fontFamily: { heading: ['"Plus Jakarta Sans"', 'sans-serif'], sans: ['Inter', 'system-ui', 'sans-serif'] }, boxShadow: { 'paper-sheet': '0 14px 35px -5px rgba(15, 23, 42, 0.12), 0 4px 12px -2px rgba(15, 23, 42, 0.06)', 'card-hover': '0 12px 24px -6px rgba(13, 148, 136, 0.14)' } } } }
@@ -77,8 +111,8 @@ h1, h2, h3, h4, .font-heading { font-family: 'Plus Jakarta Sans', sans-serif; }
 <nav class="flex items-center gap-1.5"><a href="/" class="hover:text-brandTeal font-medium">Home</a><span>&rsaquo;</span><a href="/tech/" class="hover:text-brandTeal font-medium">Tech &amp; Software</a><span>&rsaquo;</span><span class="text-slate-800 font-semibold">Promises Quick Reference Guide</span></nav>
 <a href="/" class="inline-flex items-center gap-1 text-brandTeal font-semibold hover:underline">&larr; Back to All Cheat Sheets</a></div>
 <header class="mb-6"><div class="flex flex-wrap items-center gap-2 mb-3"><span class="px-2.5 py-1 rounded-md bg-teal-100 text-brandTeal text-xs font-bold uppercase tracking-wide">Tech &amp; Software</span><span class="px-2.5 py-1 rounded-md bg-emerald-100 text-emerald-800 text-xs font-semibold">Free Printable</span><span class="text-xs text-slate-500">Sizes: US Letter &amp; A4</span></div>
-<h1 class="font-heading text-2xl sm:text-4xl font-extrabold text-brandNavy tracking-tight leading-tight mb-3">Promises Quick Reference Guide</h1>
-<p class="text-slate-600 text-sm sm:text-base leading-relaxed">Authentic reference chart and data matrix for Promises in JavaScript &amp; ES6+. Use the interactive table below or print it / save it as a PDF with the button below.</p></header>
+<h1 class="font-heading text-2xl sm:text-4xl font-extrabold text-brandNavy tracking-tight leading-tight mb-3">JavaScript Promises Chart: Printable Methods &amp; States Guide</h1>
+<p class="text-slate-600 text-sm sm:text-base leading-relaxed">Asynchronous JavaScript runs on promises: a promise is an object that stands in for a value that is not ready yet, and it settles exactly once — either fulfilled with a result or rejected with a reason. The trouble is that the methods blur together. Does Promise.all wait for every promise or fail on the first rejection? Does .catch handle errors from the whole chain or just the step above it? And when does Promise.race actually help instead of just racing? Guessing leads to silent failures, unhandled rejections, and code that works in testing but breaks in production. This printable chart lists twelve promise methods, states, and patterns with exact syntax, what each does, and the job it fits. Consult the live reference table below, or print the sheet and keep it beside your editor.</p></header>
 <div id="quick-action-bar" class="no-print flex flex-wrap items-center gap-2.5 p-3 rounded-xl bg-white border border-slate-200 shadow-sm mb-8">
 <a href="#download-cta-box" class="flex-1 sm:flex-initial inline-flex items-center justify-center gap-1.5 px-4 py-2 rounded-lg bg-ctaGreen hover:bg-ctaGreenHover text-white font-semibold text-xs sm:text-sm transition-all shadow-sm"><span>&#128229; Jump to Free PDF Download</span></a>
 <button onclick="window.print()" class="flex-1 sm:flex-initial inline-flex items-center justify-center gap-1.5 px-4 py-2 rounded-lg bg-ctaAmber hover:bg-ctaAmberHover text-white font-semibold text-xs sm:text-sm transition-all shadow-sm cursor-pointer border-0"><span>&#128438; Print This Chart Now</span></button>
@@ -86,13 +120,54 @@ h1, h2, h3, h4, .font-heading { font-family: 'Plus Jakarta Sans', sans-serif; }
 <section id="table-section" class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden mb-10">
 <div class="p-4 sm:p-5 border-b border-slate-200 bg-slate-50/70 flex flex-col sm:flex-row sm:items-center justify-between gap-3"><div><h2 class="font-heading text-lg sm:text-xl font-bold text-brandNavy">Quick-Reference Table</h2><p class="text-xs text-slate-500">The full data from this cheat sheet, right on the page.</p></div></div>
 <div class="no-print p-3 sm:px-5 bg-white border-b border-slate-200"><input type="text" id="table-filter-input" oninput="filterRows()" placeholder="&#128270; Filter this table instantly..." class="w-full px-3.5 py-2 text-sm border border-slate-200 rounded-lg focus:outline-none focus:border-brandTeal" /></div>
-<div class="overflow-x-auto"><table class="w-full text-left border-collapse"><thead><tr class="bg-slate-100/80 text-slate-700 text-xs uppercase tracking-wider border-b border-slate-200"><th class="py-3 px-4 font-bold">Command / Feature</th><th class="py-3 px-4 font-bold">Syntax / Keyboard Shortcut (Win / Mac)</th><th class="py-3 px-4 font-bold">Operational Context &amp; Environment</th><th class="py-3 px-4 font-bold">Key Output / Practical Result</th></tr></thead><tbody id="post-tbody" class="divide-y divide-slate-200 text-xs sm:text-sm"><tr><td class="py-3 px-4 text-slate-700">Promises Primary Action</td><td class="py-3 px-4 text-slate-700">Ctrl + P / Cmd + P</td><td class="py-3 px-4 text-slate-700">Editor quick-access palette</td><td class="py-3 px-4 text-slate-700">Instantly locates and opens target files or commands</td></tr><tr><td class="py-3 px-4 text-slate-700">Promises Query / Filter</td><td class="py-3 px-4 text-slate-700">SELECT * FROM items WHERE category = &#x27;promises&#x27;</td><td class="py-3 px-4 text-slate-700">Relational or collection retrieval</td><td class="py-3 px-4 text-slate-700">Returns filtered data record array matching criteria</td></tr><tr><td class="py-3 px-4 text-slate-700">Promises Configuration</td><td class="py-3 px-4 text-slate-700">export CONFIG_PROMISES=true</td><td class="py-3 px-4 text-slate-700">Terminal shell environment (.bashrc / .zshrc)</td><td class="py-3 px-4 text-slate-700">Persists operational configuration flags across sessions</td></tr><tr><td class="py-3 px-4 text-slate-700">Promises Integrity Check</td><td class="py-3 px-4 text-slate-700">npm test -- --grep=&quot;promises&quot;</td><td class="py-3 px-4 text-slate-700">Automated CI/CD test runner</td><td class="py-3 px-4 text-slate-700">Executes targeted assertions with exit code confirmation</td></tr></tbody></table></div></section>
-<section id="howto-section" class="no-print bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 mb-10"><h2 class="font-heading text-xl sm:text-2xl font-bold text-brandNavy mb-4">How to Use This Chart</h2><p class="text-sm sm:text-[15px] text-slate-600 leading-relaxed mb-3">Pin this chart where you work: it packs <strong>4 entries</strong> and 4 columns (<strong>Command / Feature</strong>, <strong>Syntax / Keyboard Shortcut (Win / Mac)</strong>, <strong>Operational Context &amp; Environment</strong>, <strong>Key Output / Practical Result</strong>) into one printable page, built for quick lookups.</p>
-<p class="text-sm sm:text-[15px] text-slate-600 leading-relaxed mb-3">Scan down the <strong>Command / Feature</strong> column to your item, then read across for Syntax / Keyboard Shortcut (Win / Mac), Operational Context &amp; Environment.</p>
-<p class="text-sm sm:text-[15px] text-slate-600 leading-relaxed mb-3"><strong class="text-brandNavy">Example:</strong> for <strong>Promises Primary Action</strong>, the chart gives <strong>Syntax / Keyboard Shortcut (Win / Mac)</strong> of <strong>Ctrl + P / Cmd + P</strong>.</p>
-<ul class="list-disc pl-5 space-y-1.5 text-sm sm:text-[15px] text-slate-600 leading-relaxed"><li>Compare values down a single column to spot the pattern before you commit to a choice.</li><li>When two rows look close, the Key Output / Practical Result column usually breaks the tie.</li><li>Print it once and keep it where you work — that's the whole point of a cheat sheet.</li></ul></section>
+<div class="overflow-x-auto"><table class="sheet-table">
+<thead>
+<tr><th>Method / State</th><th>Syntax</th><th>What It Does</th><th>When to Use It</th></tr>
+</thead>
+<tbody>
+<tr><td>Pending</td><td>new Promise(() =&gt; {})</td><td>Initial state: not settled yet</td><td>Describing a promise in flight</td></tr>
+<tr><td>Fulfilled</td><td>resolve(value)</td><td>Settled successfully with a value</td><td>When the async work completes</td></tr>
+<tr><td>Rejected</td><td>reject(error)</td><td>Settled with a failure reason</td><td>When the async work fails</td></tr>
+<tr><td>new Promise()</td><td>new Promise((resolve, reject) =&gt; {})</td><td>Creates a promise around async work</td><td>Wrapping callbacks or timers</td></tr>
+<tr><td>.then()</td><td>promise.then(value =&gt; {})</td><td>Runs when the promise fulfills</td><td>Using the result value</td></tr>
+<tr><td>.catch()</td><td>promise.catch(error =&gt; {})</td><td>Runs when the promise rejects</td><td>Handling errors in a chain</td></tr>
+<tr><td>.finally()</td><td>promise.finally(() =&gt; {})</td><td>Runs whether it fulfills or rejects</td><td>Cleanup like hiding a spinner</td></tr>
+<tr><td>Promise.all()</td><td>Promise.all([p1, p2])</td><td>Waits for all; rejects on the first failure</td><td>Loading several things together</td></tr>
+<tr><td>Promise.allSettled()</td><td>Promise.allSettled([p1, p2])</td><td>Waits for all, reporting each outcome</td><td>Needing every result, failures included</td></tr>
+<tr><td>Promise.race()</td><td>Promise.race([p1, p2])</td><td>Settles with the first promise to settle</td><td>Timeouts and fastest-response wins</td></tr>
+<tr><td>Promise.any()</td><td>Promise.any([p1, p2])</td><td>Fulfills with the first success; rejects if all fail</td><td>Trying several sources for one answer</td></tr>
+<tr><td>async / await</td><td>const x = await fetch(url)</td><td>Pauses the function until the promise settles</td><td>Writing async code that reads top to bottom</td></tr>
+</tbody>
+</table></div></section>
+<section id="howto-section" class="no-print bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 mb-10"><h2 class="font-heading text-xl sm:text-2xl font-bold text-brandNavy mb-4">How to Use This Chart</h2><p class="text-sm sm:text-[15px] text-slate-600 leading-relaxed mb-3">Pin this chart where you work: it packs <strong>12 entries</strong> and 4 columns (<strong>Method / State</strong>, <strong>Syntax</strong>, <strong>What It Does</strong>, <strong>When to Use It</strong>) into one printable page, built for quick lookups.</p>
+<p class="text-sm sm:text-[15px] text-slate-600 leading-relaxed mb-3">Scan down the <strong>Method / State</strong> column to your item, then read across for Syntax, What It Does, When to Use It.</p>
+<p class="text-sm sm:text-[15px] text-slate-600 leading-relaxed mb-3"><strong class="text-brandNavy">Example:</strong> for <strong>Pending</strong>, the chart gives <strong>Syntax</strong> of <strong>new Promise(() =&gt; {})</strong>.</p>
+<ul class="list-disc pl-5 space-y-1.5 text-sm sm:text-[15px] text-slate-600 leading-relaxed"><li>Compare values down a single column to spot the pattern before you commit to a choice.</li><li>When two rows look close, the last column usually breaks the tie.</li><li>Print it once and keep it where you work — that's the whole point of a cheat sheet.</li></ul></section>
+<section class="paper-sheet rounded-2xl shadow-paper-sheet p-6 sm:p-8 mb-6 sm:mb-8 pt-8">
+<h2 class="font-heading text-lg sm:text-xl font-bold text-brandNavy mb-3">&#128161; Quick Tips</h2>
+<div class="space-y-3 text-sm sm:text-base text-slate-600 leading-relaxed">
+<p><strong class="text-brandNavy">Catch at the end of the chain:</strong> One .catch() at the end handles errors from every step above it.</p><p><strong class="text-brandNavy">Use allSettled for batch work:</strong> Promise.all fails the whole batch on one rejection; allSettled reports every outcome.</p><p><strong class="text-brandNavy">Return promises inside then:</strong> A .then() without a return breaks the chain — the next step runs before the work finishes.</p>
+</div>
+</section>
+
+<section class="paper-sheet rounded-2xl shadow-paper-sheet p-6 sm:p-8 mb-6 sm:mb-8 pt-8">
+<h2 class="font-heading text-lg sm:text-xl font-bold text-brandNavy mb-4">Frequently Asked Questions</h2>
+<div class="space-y-4">
+<div class="border-b border-slate-100 pb-4 last:border-0 last:pb-0">
+<h3 class="font-heading font-bold text-brandNavy text-sm sm:text-base mb-1.5">What is the difference between Promise.all and Promise.allSettled?</h3>
+<p class="text-sm text-slate-600 leading-relaxed">Promise.all waits for every promise and rejects immediately if any one fails, discarding the other results. Promise.allSettled waits for all of them and reports each outcome as fulfilled or rejected. Use all when every result is required, and allSettled when partial results are still useful.</p>
+</div><div class="border-b border-slate-100 pb-4 last:border-0 last:pb-0">
+<h3 class="font-heading font-bold text-brandNavy text-sm sm:text-base mb-1.5">What does async/await do that .then() does not?</h3>
+<p class="text-sm text-slate-600 leading-relaxed">Nothing new — async/await is syntax sugar over promises, and every awaited value is still a promise underneath. The win is readability: async code reads top to bottom like synchronous code, with try/catch replacing .catch(). Use it for sequential steps, and .then() chains for short pipelines.</p>
+</div><div class="border-b border-slate-100 pb-4 last:border-0 last:pb-0">
+<h3 class="font-heading font-bold text-brandNavy text-sm sm:text-base mb-1.5">Why do I get an unhandled promise rejection warning?</h3>
+<p class="text-sm text-slate-600 leading-relaxed">A promise rejected with no .catch() attached, and no surrounding try/catch in an async function, triggers the warning. It usually means an error path was never handled — often a failed fetch. Add a .catch() at the end of the chain or wrap the await in try/catch.</p>
+</div>
+</div>
+</section>
+
 <section id="preview-section" class="no-print mb-8"><div class="flex items-center justify-between mb-3"><h2 class="font-heading text-lg sm:text-xl font-bold text-brandNavy">Printable Sheet Preview</h2><span class="text-xs font-medium text-slate-500">High-Contrast Layout</span></div>
-<img src="/assets/previews/promises.webp" alt="Promises Quick Reference Guide | Hoorvia Printable Preview" loading="lazy" class="rounded-2xl border border-slate-200 shadow-sm w-full" />
+<img src="/assets/previews/promises.webp" alt="Printable JavaScript promises chart showing 12 promise methods and states with syntax, what each does, and when to use it." loading="lazy" class="rounded-2xl border border-slate-200 shadow-sm w-full" />
 </section>
 <section id="download-cta-box" class="no-print bg-white rounded-2xl border-2 border-emerald-500/40 shadow-md p-6 sm:p-8 mb-10 text-center">
 <span class="inline-block px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold uppercase tracking-wide mb-2">Instant Direct Download &bull; No Email Required</span>
