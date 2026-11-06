@@ -11,27 +11,61 @@
 </script>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>VLOOKUP Quick Reference Guide | Hoorvia</title>
-<meta name="description" content="Download printable reference charts and view interactive data tables for VLOOKUP. 100% verified specifications on Hoorvia.net." />
+<title>VLOOKUP Guide (Printable): Excel Lookup Chart</title>
+<meta name="description" content="Print our VLOOKUP guide: VLOOKUP, XLOOKUP, INDEX/MATCH, and 9 more lookup functions — syntax, use case, and the error guard for each." />
 <link rel="canonical" href="https://hoorvia.net/sheet/vlookup-401/" />
-<meta property="og:title" content="VLOOKUP Quick Reference Guide | Hoorvia" />
-<meta property="og:description" content="Download printable reference charts and view interactive data tables for VLOOKUP. 100% verified specifications on Hoorvia.net." />
+<meta property="og:title" content="VLOOKUP Guide (Printable): Excel Lookup Chart" />
+<meta property="og:description" content="Print our VLOOKUP guide: VLOOKUP, XLOOKUP, INDEX/MATCH, and 9 more lookup functions — syntax, use case, and the error guard for each." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://hoorvia.net/sheet/vlookup-401/" />
-<meta name="twitter:title" content="VLOOKUP Quick Reference Guide | Hoorvia" />
-<meta name="twitter:description" content="Download printable reference charts and view interactive data tables for VLOOKUP. 100% verified specifications on Hoorvia.net." />
+<meta name="twitter:title" content="VLOOKUP Guide (Printable): Excel Lookup Chart" />
+<meta name="twitter:description" content="Print our VLOOKUP guide: VLOOKUP, XLOOKUP, INDEX/MATCH, and 9 more lookup functions — syntax, use case, and the error guard for each." />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
-<script type="application/ld+json">{
+<script type="application/ld+json">
+{
   "@context": "https://schema.org",
   "@type": "TechArticle",
-  "headline": "VLOOKUP Quick Reference Guide",
-  "description": "Download printable reference charts and view interactive data tables for VLOOKUP. 100% verified specifications on Hoorvia.net.",
+  "headline": "VLOOKUP Guide: Printable Excel Lookup Chart",
+  "description": "Print our VLOOKUP guide: VLOOKUP, XLOOKUP, INDEX/MATCH, and 9 more lookup functions \u2014 syntax, use case, and the error guard for each.",
   "url": "https://hoorvia.net/sheet/vlookup-401/",
   "inLanguage": "en-US",
   "mainEntityOfPage": "https://hoorvia.net/sheet/vlookup-401/"
-}</script>
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Why does my VLOOKUP return #N/A?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The lookup value is not in the first column of the table \u2014 a typo, a trailing space, or a number stored as text. Check the value exists, trim the spaces, and make sure numbers are numbers, not text."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between VLOOKUP and XLOOKUP?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "VLOOKUP only looks right and breaks when a column is inserted; XLOOKUP looks in any direction, takes a fallback value for missing matches, and does not need a column number. XLOOKUP is the modern replacement \u2014 use it when your Excel version supports it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can VLOOKUP look to the left?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No \u2014 VLOOKUP only searches the first column and returns a value to its right. To look left, use INDEX/MATCH or XLOOKUP, which have no direction limit and can return a value from any column in the table."
+      }
+    }
+  ]
+}
+</script>
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
 tailwind.config = { theme: { extend: { colors: { paper: '#F8FAFC', warmPaper: '#FAF9F6', slateText: '#1E293B', brandNavy: '#0F172A', brandTeal: '#0D9488', ctaGreen: '#10B981', ctaGreenHover: '#059669', ctaAmber: '#F59E0B', ctaAmberHover: '#D97706' }, fontFamily: { heading: ['"Plus Jakarta Sans"', 'sans-serif'], sans: ['Inter', 'system-ui', 'sans-serif'] }, boxShadow: { 'paper-sheet': '0 14px 35px -5px rgba(15, 23, 42, 0.12), 0 4px 12px -2px rgba(15, 23, 42, 0.06)', 'card-hover': '0 12px 24px -6px rgba(13, 148, 136, 0.14)' } } } }
@@ -77,8 +111,8 @@ h1, h2, h3, h4, .font-heading { font-family: 'Plus Jakarta Sans', sans-serif; }
 <nav class="flex items-center gap-1.5"><a href="/" class="hover:text-brandTeal font-medium">Home</a><span>&rsaquo;</span><a href="/tech/" class="hover:text-brandTeal font-medium">Tech &amp; Software</a><span>&rsaquo;</span><span class="text-slate-800 font-semibold">VLOOKUP Quick Reference Guide</span></nav>
 <a href="/" class="inline-flex items-center gap-1 text-brandTeal font-semibold hover:underline">&larr; Back to All Cheat Sheets</a></div>
 <header class="mb-6"><div class="flex flex-wrap items-center gap-2 mb-3"><span class="px-2.5 py-1 rounded-md bg-teal-100 text-brandTeal text-xs font-bold uppercase tracking-wide">Tech &amp; Software</span><span class="px-2.5 py-1 rounded-md bg-emerald-100 text-emerald-800 text-xs font-semibold">Free Printable</span><span class="text-xs text-slate-500">Sizes: US Letter &amp; A4</span></div>
-<h1 class="font-heading text-2xl sm:text-4xl font-extrabold text-brandNavy tracking-tight leading-tight mb-3">VLOOKUP Quick Reference Guide</h1>
-<p class="text-slate-600 text-sm sm:text-base leading-relaxed">Authentic reference chart and data matrix for VLOOKUP in Microsoft Excel. Use the interactive table below or print it / save it as a PDF with the button below.</p></header>
+<h1 class="font-heading text-2xl sm:text-4xl font-extrabold text-brandNavy tracking-tight leading-tight mb-3">VLOOKUP Guide: Printable Excel Lookup Chart</h1>
+<p class="text-slate-600 text-sm sm:text-base leading-relaxed">VLOOKUP is the most-used function in Excel: give it a value, a table, and a column number, and it finds the match. Its limits are famous — it only looks right, it breaks when a column is inserted, and a missing value returns an ugly #N/A. The modern replacements fix all three: XLOOKUP looks in any direction and takes a fallback value, INDEX/MATCH survives column inserts, and FILTER returns every match at once. The trap is the exact-match flag: leave it off and VLOOKUP returns the nearest value below, which is almost never what you wanted. Always use FALSE for an exact match. This printable chart lists twelve lookup functions with syntax, use case, and the error guard. Consult the live reference table below, or print the sheet and keep it by your spreadsheet.</p></header>
 <div id="quick-action-bar" class="no-print flex flex-wrap items-center gap-2.5 p-3 rounded-xl bg-white border border-slate-200 shadow-sm mb-8">
 <a href="#download-cta-box" class="flex-1 sm:flex-initial inline-flex items-center justify-center gap-1.5 px-4 py-2 rounded-lg bg-ctaGreen hover:bg-ctaGreenHover text-white font-semibold text-xs sm:text-sm transition-all shadow-sm"><span>&#128229; Jump to Free PDF Download</span></a>
 <button onclick="window.print()" class="flex-1 sm:flex-initial inline-flex items-center justify-center gap-1.5 px-4 py-2 rounded-lg bg-ctaAmber hover:bg-ctaAmberHover text-white font-semibold text-xs sm:text-sm transition-all shadow-sm cursor-pointer border-0"><span>&#128438; Print This Chart Now</span></button>
@@ -86,13 +120,54 @@ h1, h2, h3, h4, .font-heading { font-family: 'Plus Jakarta Sans', sans-serif; }
 <section id="table-section" class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden mb-10">
 <div class="p-4 sm:p-5 border-b border-slate-200 bg-slate-50/70 flex flex-col sm:flex-row sm:items-center justify-between gap-3"><div><h2 class="font-heading text-lg sm:text-xl font-bold text-brandNavy">Quick-Reference Table</h2><p class="text-xs text-slate-500">The full data from this cheat sheet, right on the page.</p></div></div>
 <div class="no-print p-3 sm:px-5 bg-white border-b border-slate-200"><input type="text" id="table-filter-input" oninput="filterRows()" placeholder="&#128270; Filter this table instantly..." class="w-full px-3.5 py-2 text-sm border border-slate-200 rounded-lg focus:outline-none focus:border-brandTeal" /></div>
-<div class="overflow-x-auto"><table class="w-full text-left border-collapse"><thead><tr class="bg-slate-100/80 text-slate-700 text-xs uppercase tracking-wider border-b border-slate-200"><th class="py-3 px-4 font-bold">Function / Formula</th><th class="py-3 px-4 font-bold">Standard Syntax</th><th class="py-3 px-4 font-bold">Practical Use Case</th><th class="py-3 px-4 font-bold">Key Return Value / Error Guard</th></tr></thead><tbody id="post-tbody" class="divide-y divide-slate-200 text-xs sm:text-sm"><tr><td class="py-3 px-4 text-slate-700">XLOOKUP</td><td class="py-3 px-4 text-slate-700">=XLOOKUP(lookup_val, lookup_arr, return_arr, [if_not_found], [match_mode])</td><td class="py-3 px-4 text-slate-700">Bidirectional dynamic array lookup without column index</td><td class="py-3 px-4 text-slate-700">Returns matching cell; eliminates #N/A errors with fallback string</td></tr><tr><td class="py-3 px-4 text-slate-700">INDEX / MATCH</td><td class="py-3 px-4 text-slate-700">=INDEX(return_col, MATCH(lookup_val, lookup_col, 0))</td><td class="py-3 px-4 text-slate-700">Robust 2D table lookups resilient to column insertions</td><td class="py-3 px-4 text-slate-700">Exact match reference; works left-to-right and right-to-left</td></tr><tr><td class="py-3 px-4 text-slate-700">SUMIFS</td><td class="py-3 px-4 text-slate-700">=SUMIFS(sum_range, criteria_range1, criteria1, [criteria_range2, criteria2])</td><td class="py-3 px-4 text-slate-700">Multi-condition numerical aggregation</td><td class="py-3 px-4 text-slate-700">Sums all numeric cells satisfying all specified criteria filters</td></tr><tr><td class="py-3 px-4 text-slate-700">COUNTIFS</td><td class="py-3 px-4 text-slate-700">=COUNTIFS(criteria_range1, criteria1, [criteria_range2, criteria2])</td><td class="py-3 px-4 text-slate-700">Multi-condition frequency counting</td><td class="py-3 px-4 text-slate-700">Integer count of matching records across multiple criteria arrays</td></tr><tr><td class="py-3 px-4 text-slate-700">QUERY (Google Sheets)</td><td class="py-3 px-4 text-slate-700">=QUERY(data, &quot;SELECT A, B WHERE C &gt; 100 ORDER BY B DESC&quot;, 1)</td><td class="py-3 px-4 text-slate-700">SQL-like data transformation and manipulation in spreadsheets</td><td class="py-3 px-4 text-slate-700">Returns dynamic array table filtered and ordered by SQL syntax</td></tr></tbody></table></div></section>
-<section id="howto-section" class="no-print bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 mb-10"><h2 class="font-heading text-xl sm:text-2xl font-bold text-brandNavy mb-4">How to Use This Chart</h2><p class="text-sm sm:text-[15px] text-slate-600 leading-relaxed mb-3">Pin this chart where you work: it packs <strong>5 entries</strong> and 4 columns (<strong>Function / Formula</strong>, <strong>Standard Syntax</strong>, <strong>Practical Use Case</strong>, <strong>Key Return Value / Error Guard</strong>) into one printable page, built for quick lookups.</p>
-<p class="text-sm sm:text-[15px] text-slate-600 leading-relaxed mb-3">Scan down the <strong>Function / Formula</strong> column to your item, then read across for Standard Syntax, Practical Use Case.</p>
-<p class="text-sm sm:text-[15px] text-slate-600 leading-relaxed mb-3"><strong class="text-brandNavy">Example:</strong> for <strong>XLOOKUP</strong>, the chart gives <strong>Standard Syntax</strong> of <strong>=XLOOKUP(lookup_val, lookup_arr, return_arr, [if_not_found], [match_mode])</strong>.</p>
-<ul class="list-disc pl-5 space-y-1.5 text-sm sm:text-[15px] text-slate-600 leading-relaxed"><li>Compare values down a single column to spot the pattern before you commit to a choice.</li><li>When two rows look close, the Key Return Value / Error Guard column usually breaks the tie.</li><li>Print it once and keep it where you work — that's the whole point of a cheat sheet.</li></ul></section>
+<div class="overflow-x-auto"><table class="sheet-table">
+<thead>
+<tr><th>Function / Formula</th><th>Standard Syntax</th><th>Practical Use Case</th><th>Key Return Value / Error Guard</th></tr>
+</thead>
+<tbody>
+<tr><td>VLOOKUP</td><td>=VLOOKUP(lookup_val, table, col, FALSE)</td><td>Vertical lookup in the first column</td><td>Returns the matching value; #N/A if not found</td></tr>
+<tr><td>HLOOKUP</td><td>=HLOOKUP(lookup_val, table, row, FALSE)</td><td>Horizontal lookup in the first row</td><td>Returns the matching value from a row</td></tr>
+<tr><td>XLOOKUP</td><td>=XLOOKUP(lookup_val, lookup_arr, return_arr, [if_not_found], [match_mode])</td><td>Bidirectional dynamic array lookup without column index</td><td>Returns matching cell; eliminates #N/A errors with fallback string</td></tr>
+<tr><td>INDEX / MATCH</td><td>=INDEX(return_col, MATCH(lookup_val, lookup_col, 0))</td><td>Robust 2D table lookups resilient to column insertions</td><td>Exact match reference; works left-to-right and right-to-left</td></tr>
+<tr><td>SUMIFS</td><td>=SUMIFS(sum_range, criteria_range1, criteria1, [criteria_range2, criteria2])</td><td>Multi-condition numerical aggregation</td><td>Sums all numeric cells satisfying all specified criteria filters</td></tr>
+<tr><td>COUNTIFS</td><td>=COUNTIFS(criteria_range1, criteria1, [criteria_range2, criteria2])</td><td>Multi-condition frequency counting</td><td>Integer count of matching records across multiple criteria arrays</td></tr>
+<tr><td>QUERY (Google Sheets)</td><td>=QUERY(data, &quot;SELECT A, B WHERE C &gt; 100 ORDER BY B DESC&quot;, 1)</td><td>SQL-like data transformation and manipulation in spreadsheets</td><td>Returns dynamic array table filtered and ordered by SQL syntax</td></tr>
+<tr><td>VLOOKUP + IFERROR</td><td>=IFERROR(VLOOKUP(lookup_val, table, col, FALSE), &quot;Not found&quot;)</td><td>Hides #N/A errors with a friendly message</td><td>Returns &quot;Not found&quot; instead of an error</td></tr>
+<tr><td>MATCH</td><td>=MATCH(lookup_val, range, 0)</td><td>Finds a value&#x27;s position in a list</td><td>Returns the row or column number</td></tr>
+<tr><td>INDEX</td><td>=INDEX(range, row, col)</td><td>Returns a cell by its position</td><td>Returns the value at that position</td></tr>
+<tr><td>CHOOSE</td><td>=CHOOSE(index, val1, val2, val3)</td><td>Picks a value by its number</td><td>Returns the nth value in the list</td></tr>
+<tr><td>FILTER</td><td>=FILTER(range, condition)</td><td>Returns every matching row</td><td>Dynamic array of all matches</td></tr>
+</tbody>
+</table></div></section>
+<section id="howto-section" class="no-print bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 mb-10"><h2 class="font-heading text-xl sm:text-2xl font-bold text-brandNavy mb-4">How to Use This Chart</h2><p class="text-sm sm:text-[15px] text-slate-600 leading-relaxed mb-3">Pin this chart where you work: it packs <strong>12 entries</strong> and 4 columns (<strong>Function / Formula</strong>, <strong>Standard Syntax</strong>, <strong>Practical Use Case</strong>, <strong>Key Return Value / Error Guard</strong>) into one printable page, built for quick lookups.</p>
+<p class="text-sm sm:text-[15px] text-slate-600 leading-relaxed mb-3">Scan down the <strong>Function / Formula</strong> column to your item, then read across for Standard Syntax, Practical Use Case, Key Return Value / Error Guard.</p>
+<p class="text-sm sm:text-[15px] text-slate-600 leading-relaxed mb-3"><strong class="text-brandNavy">Example:</strong> for <strong>VLOOKUP</strong>, the chart gives <strong>Standard Syntax</strong> of <strong>=VLOOKUP(lookup_val, table, col, FALSE)</strong>.</p>
+<ul class="list-disc pl-5 space-y-1.5 text-sm sm:text-[15px] text-slate-600 leading-relaxed"><li>Compare values down a single column to spot the pattern before you commit to a choice.</li><li>When two rows look close, the last column usually breaks the tie.</li><li>Print it once and keep it where you work — that's the whole point of a cheat sheet.</li></ul></section>
+<section class="paper-sheet rounded-2xl shadow-paper-sheet p-6 sm:p-8 mb-6 sm:mb-8 pt-8">
+<h2 class="font-heading text-lg sm:text-xl font-bold text-brandNavy mb-3">&#128161; Quick Tips</h2>
+<div class="space-y-3 text-sm sm:text-base text-slate-600 leading-relaxed">
+<p><strong class="text-brandNavy">Always use FALSE for exact match:</strong> VLOOKUP without FALSE returns the nearest value below — almost never what you wanted. Use FALSE for an exact match, every time.</p><p><strong class="text-brandNavy">Wrap lookups in IFERROR:</strong> A missing value returns #N/A and breaks every formula downstream. IFERROR turns it into a friendly message or a zero.</p>
+</div>
+</section>
+
+<section class="paper-sheet rounded-2xl shadow-paper-sheet p-6 sm:p-8 mb-6 sm:mb-8 pt-8">
+<h2 class="font-heading text-lg sm:text-xl font-bold text-brandNavy mb-4">Frequently Asked Questions</h2>
+<div class="space-y-4">
+<div class="border-b border-slate-100 pb-4 last:border-0 last:pb-0">
+<h3 class="font-heading font-bold text-brandNavy text-sm sm:text-base mb-1.5">Why does my VLOOKUP return #N/A?</h3>
+<p class="text-sm text-slate-600 leading-relaxed">The lookup value is not in the first column of the table — a typo, a trailing space, or a number stored as text. Check the value exists, trim the spaces, and make sure numbers are numbers, not text.</p>
+</div><div class="border-b border-slate-100 pb-4 last:border-0 last:pb-0">
+<h3 class="font-heading font-bold text-brandNavy text-sm sm:text-base mb-1.5">What is the difference between VLOOKUP and XLOOKUP?</h3>
+<p class="text-sm text-slate-600 leading-relaxed">VLOOKUP only looks right and breaks when a column is inserted; XLOOKUP looks in any direction, takes a fallback value for missing matches, and does not need a column number. XLOOKUP is the modern replacement — use it when your Excel version supports it.</p>
+</div><div class="border-b border-slate-100 pb-4 last:border-0 last:pb-0">
+<h3 class="font-heading font-bold text-brandNavy text-sm sm:text-base mb-1.5">Can VLOOKUP look to the left?</h3>
+<p class="text-sm text-slate-600 leading-relaxed">No — VLOOKUP only searches the first column and returns a value to its right. To look left, use INDEX/MATCH or XLOOKUP, which have no direction limit and can return a value from any column in the table.</p>
+</div>
+</div>
+</section>
+
 <section id="preview-section" class="no-print mb-8"><div class="flex items-center justify-between mb-3"><h2 class="font-heading text-lg sm:text-xl font-bold text-brandNavy">Printable Sheet Preview</h2><span class="text-xs font-medium text-slate-500">High-Contrast Layout</span></div>
-<img src="/assets/previews/vlookup.webp" alt="VLOOKUP Quick Reference Guide | Hoorvia Printable Preview" loading="lazy" class="rounded-2xl border border-slate-200 shadow-sm w-full" />
+<img src="/assets/previews/vlookup.webp" alt="Printable VLOOKUP guide showing 12 Excel lookup functions with syntax, use cases, and error guards." loading="lazy" class="rounded-2xl border border-slate-200 shadow-sm w-full" />
 </section>
 <section id="download-cta-box" class="no-print bg-white rounded-2xl border-2 border-emerald-500/40 shadow-md p-6 sm:p-8 mb-10 text-center">
 <span class="inline-block px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold uppercase tracking-wide mb-2">Instant Direct Download &bull; No Email Required</span>
