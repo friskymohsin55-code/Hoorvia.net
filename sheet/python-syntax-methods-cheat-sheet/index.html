@@ -11,27 +11,61 @@
 </script>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Python 3 Modern Syntax, Data Types &amp; Methods Che | Hoorvia</title>
-<meta name="description" content="Instant access to python 3 modern syntax, data types &amp;amp; methods cheat sheet. Includes interactive data tables, key metrics, and printable PDF reference sheets." />
+<title>Python Methods Cheat Sheet (Printable): 12 Methods</title>
+<meta name="description" content="Print our Python methods cheat sheet: 12 essential list, string, dict, and set methods with examples, what each does, and what it returns." />
 <link rel="canonical" href="https://hoorvia.net/sheet/python-syntax-methods-cheat-sheet/" />
-<meta property="og:title" content="Python 3 Modern Syntax, Data Types &amp;amp; Methods Che | Hoorvia" />
-<meta property="og:description" content="Instant access to python 3 modern syntax, data types &amp;amp; methods cheat sheet. Includes interactive data tables, key metrics, and printable PDF reference sheets." />
+<meta property="og:title" content="Python Methods Cheat Sheet (Printable): 12 Methods" />
+<meta property="og:description" content="Print our Python methods cheat sheet: 12 essential list, string, dict, and set methods with examples, what each does, and what it returns." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://hoorvia.net/sheet/python-syntax-methods-cheat-sheet/" />
-<meta name="twitter:title" content="Python 3 Modern Syntax, Data Types &amp;amp; Methods Che | Hoorvia" />
-<meta name="twitter:description" content="Instant access to python 3 modern syntax, data types &amp;amp; methods cheat sheet. Includes interactive data tables, key metrics, and printable PDF reference sheets." />
+<meta name="twitter:title" content="Python Methods Cheat Sheet (Printable): 12 Methods" />
+<meta name="twitter:description" content="Print our Python methods cheat sheet: 12 essential list, string, dict, and set methods with examples, what each does, and what it returns." />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
-<script type="application/ld+json">{
+<script type="application/ld+json">
+{
   "@context": "https://schema.org",
   "@type": "TechArticle",
-  "headline": "Python 3 Modern Syntax, Data Types & Methods Cheat Sheet",
-  "description": "Instant access to python 3 modern syntax, data types & methods cheat sheet. Includes interactive data tables, key metrics, and printable PDF reference sheets.",
+  "headline": "Python Methods Cheat Sheet: Printable List, String & Dict Guide",
+  "description": "Print our Python methods cheat sheet: 12 essential list, string, dict, and set methods with examples, what each does, and what it returns.",
   "url": "https://hoorvia.net/sheet/python-syntax-methods-cheat-sheet/",
   "inLanguage": "en-US",
   "mainEntityOfPage": "https://hoorvia.net/sheet/python-syntax-methods-cheat-sheet/"
-}</script>
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the difference between append and extend in Python?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "append adds one item to the end of a list, while extend adds every item from another iterable. my_list.append([1, 2]) puts a whole list in as one nested item; my_list.extend([1, 2]) adds 1 and 2 as separate items. Use extend when merging lists."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does list.sort() return None?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "sort changes the list in place and returns None, like most methods that mutate an object. If you need a new sorted list without touching the original, use the built-in sorted() function instead. The same rule applies to append, extend, and update."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I join a list of strings in Python?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Call join on the separator string, not on the list: ', '.join(['a', 'b']) gives 'a, b'. The items must all be strings \u2014 convert numbers with str() first, or the call raises a TypeError."
+      }
+    }
+  ]
+}
+</script>
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
 tailwind.config = { theme: { extend: { colors: { paper: '#F8FAFC', warmPaper: '#FAF9F6', slateText: '#1E293B', brandNavy: '#0F172A', brandTeal: '#0D9488', ctaGreen: '#10B981', ctaGreenHover: '#059669', ctaAmber: '#F59E0B', ctaAmberHover: '#D97706' }, fontFamily: { heading: ['"Plus Jakarta Sans"', 'sans-serif'], sans: ['Inter', 'system-ui', 'sans-serif'] }, boxShadow: { 'paper-sheet': '0 14px 35px -5px rgba(15, 23, 42, 0.12), 0 4px 12px -2px rgba(15, 23, 42, 0.06)', 'card-hover': '0 12px 24px -6px rgba(13, 148, 136, 0.14)' } } } }
@@ -77,7 +111,8 @@ h1, h2, h3, h4, .font-heading { font-family: 'Plus Jakarta Sans', sans-serif; }
 <nav class="flex items-center gap-1.5"><a href="/" class="hover:text-brandTeal font-medium">Home</a><span>&rsaquo;</span><a href="/tech/" class="hover:text-brandTeal font-medium">Tech &amp; Software</a><span>&rsaquo;</span><span class="text-slate-800 font-semibold">Python 3 Modern Syntax, Data Types &amp; Methods Cheat Sheet</span></nav>
 <a href="/" class="inline-flex items-center gap-1 text-brandTeal font-semibold hover:underline">&larr; Back to All Cheat Sheets</a></div>
 <header class="mb-6"><div class="flex flex-wrap items-center gap-2 mb-3"><span class="px-2.5 py-1 rounded-md bg-teal-100 text-brandTeal text-xs font-bold uppercase tracking-wide">Tech &amp; Software</span><span class="px-2.5 py-1 rounded-md bg-emerald-100 text-emerald-800 text-xs font-semibold">Free Printable</span><span class="text-xs text-slate-500">Sizes: US Letter &amp; A4</span></div>
-<h1 class="font-heading text-2xl sm:text-4xl font-extrabold text-brandNavy tracking-tight leading-tight mb-3">Python 3 Modern Syntax, Data Types &amp; Methods Cheat Sheet</h1>
+<h1 class="font-heading text-2xl sm:text-4xl font-extrabold text-brandNavy tracking-tight leading-tight mb-3">Python Methods Cheat Sheet: Printable List, String &amp; Dict Guide</h1>
+<p class="text-slate-600 text-sm sm:text-base leading-relaxed">Python&#x27;s built-ins do the heavy lifting — if you know which method to reach for. Beginners waste time writing loops to do what a single method call already does: append adds one item, extend adds many, get looks a key up without crashing, and join turns a list into a string in one line. The trouble is that the methods blur together. Does pop remove the first item or the last? Does sort return a new list or change yours in place? And why does join belong to the string, not the list? Guessing costs debugging time on exactly the code that should be trivial. This printable chart lists twelve essential Python methods — list, string, dict, and set — with a working example, what each one does, and what it returns. Consult the live reference table below, or print the sheet and keep it beside your keyboard.</p>
 </header>
 <div id="quick-action-bar" class="no-print flex flex-wrap items-center gap-2.5 p-3 rounded-xl bg-white border border-slate-200 shadow-sm mb-8">
 <a href="#download-cta-box" class="flex-1 sm:flex-initial inline-flex items-center justify-center gap-1.5 px-4 py-2 rounded-lg bg-ctaGreen hover:bg-ctaGreenHover text-white font-semibold text-xs sm:text-sm transition-all shadow-sm"><span>&#128229; Jump to Free PDF Download</span></a>
@@ -86,13 +121,54 @@ h1, h2, h3, h4, .font-heading { font-family: 'Plus Jakarta Sans', sans-serif; }
 <section id="table-section" class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden mb-10">
 <div class="p-4 sm:p-5 border-b border-slate-200 bg-slate-50/70 flex flex-col sm:flex-row sm:items-center justify-between gap-3"><div><h2 class="font-heading text-lg sm:text-xl font-bold text-brandNavy">Quick-Reference Table</h2><p class="text-xs text-slate-500">The full data from this cheat sheet, right on the page.</p></div></div>
 <div class="no-print p-3 sm:px-5 bg-white border-b border-slate-200"><input type="text" id="table-filter-input" oninput="filterRows()" placeholder="&#128270; Filter this table instantly..." class="w-full px-3.5 py-2 text-sm border border-slate-200 rounded-lg focus:outline-none focus:border-brandTeal" /></div>
-<div class="overflow-x-auto"><table class="w-full text-left border-collapse"><thead><tr class="bg-slate-100/80 text-slate-700 text-xs uppercase tracking-wider border-b border-slate-200"><th class="py-3 px-4 font-bold">Concept / Syntax</th><th class="py-3 px-4 font-bold">Code Snippet</th><th class="py-3 px-4 font-bold">Description</th><th class="py-3 px-4 font-bold">Time Complexity</th></tr></thead><tbody id="post-tbody" class="divide-y divide-slate-200 text-xs sm:text-sm"><tr><td class="py-3 px-4 text-slate-700">List Comprehension</td><td class="py-3 px-4 text-slate-700">[x**2 for x in items if x % 2 == 0]</td><td class="py-3 px-4 text-slate-700">Clean inline list construction</td><td class="py-3 px-4 text-slate-700">O(n)</td></tr><tr><td class="py-3 px-4 text-slate-700">Dict Comprehension</td><td class="py-3 px-4 text-slate-700">{k: v for k, v in pairs if v is not None}</td><td class="py-3 px-4 text-slate-700">Filter or build dictionary keys</td><td class="py-3 px-4 text-slate-700">O(n)</td></tr><tr><td class="py-3 px-4 text-slate-700">F-String Formatting</td><td class="py-3 px-4 text-slate-700">f&quot;Total: {cost:.2f} ({qty:,} units)&quot;</td><td class="py-3 px-4 text-slate-700">Fast string interpolation with formats</td><td class="py-3 px-4 text-slate-700">O(n)</td></tr><tr><td class="py-3 px-4 text-slate-700">Enumerate</td><td class="py-3 px-4 text-slate-700">for idx, val in enumerate(items, start=1):</td><td class="py-3 px-4 text-slate-700">Iterate over index and value together</td><td class="py-3 px-4 text-slate-700">O(n)</td></tr><tr><td class="py-3 px-4 text-slate-700">Zip Iteration</td><td class="py-3 px-4 text-slate-700">for name, score in zip(names, scores):</td><td class="py-3 px-4 text-slate-700">Lock-step iteration across iterables</td><td class="py-3 px-4 text-slate-700">O(min(len))</td></tr><tr><td class="py-3 px-4 text-slate-700">Dict .get with Default</td><td class="py-3 px-4 text-slate-700">val = my_dict.get(&quot;key&quot;, &quot;default_val&quot;)</td><td class="py-3 px-4 text-slate-700">Safe access without KeyError</td><td class="py-3 px-4 text-slate-700">O(1)</td></tr><tr><td class="py-3 px-4 text-slate-700">Unpacking (Splat)</td><td class="py-3 px-4 text-slate-700">head, *middle, tail = [1, 2, 3, 4, 5]</td><td class="py-3 px-4 text-slate-700">Destructuring sequential collections</td><td class="py-3 px-4 text-slate-700">O(n)</td></tr><tr><td class="py-3 px-4 text-slate-700">Context Manager</td><td class="py-3 px-4 text-slate-700">with open(&quot;data.json&quot;, &quot;r&quot;) as f: data = json.load(f)</td><td class="py-3 px-4 text-slate-700">Guaranteed resource cleanup</td><td class="py-3 px-4 text-slate-700">O(file size)</td></tr></tbody></table></div></section>
-<section id="howto-section" class="no-print bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 mb-10"><h2 class="font-heading text-xl sm:text-2xl font-bold text-brandNavy mb-4">How to Use This Chart</h2><p class="text-sm sm:text-[15px] text-slate-600 leading-relaxed mb-3">Pin this chart where you work: it packs <strong>8 entries</strong> and 4 columns (<strong>Concept / Syntax</strong>, <strong>Code Snippet</strong>, <strong>Description</strong>, <strong>Time Complexity</strong>) into one printable page, built for quick lookups.</p>
-<p class="text-sm sm:text-[15px] text-slate-600 leading-relaxed mb-3">Scan down the <strong>Concept / Syntax</strong> column to your item, then read across for Code Snippet, Description.</p>
-<p class="text-sm sm:text-[15px] text-slate-600 leading-relaxed mb-3"><strong class="text-brandNavy">Example:</strong> for <strong>List Comprehension</strong>, the chart gives <strong>Code Snippet</strong> of <strong>[x**2 for x in items if x % 2 == 0]</strong>.</p>
-<ul class="list-disc pl-5 space-y-1.5 text-sm sm:text-[15px] text-slate-600 leading-relaxed"><li>Compare values down a single column to spot the pattern before you commit to a choice.</li><li>When two rows look close, the Time Complexity column usually breaks the tie.</li><li>Print it once and keep it where you work — that's the whole point of a cheat sheet.</li></ul></section>
+<div class="overflow-x-auto"><table class="sheet-table">
+<thead>
+<tr><th>Method</th><th>Example</th><th>What It Does</th><th>Returns</th></tr>
+</thead>
+<tbody>
+<tr><td>list.append(x)</td><td>my_list.append(4)</td><td>Adds one item to the end of the list</td><td>None</td></tr>
+<tr><td>list.extend(iterable)</td><td>my_list.extend([5, 6])</td><td>Adds every item from another iterable</td><td>None</td></tr>
+<tr><td>list.pop(i)</td><td>my_list.pop()</td><td>Removes and returns an item (last by default)</td><td>The removed item</td></tr>
+<tr><td>list.sort()</td><td>my_list.sort(reverse=True)</td><td>Sorts the list in place</td><td>None</td></tr>
+<tr><td>str.split(sep)</td><td>&quot;a,b&quot;.split(&quot;,&quot;)</td><td>Splits a string into a list</td><td>list</td></tr>
+<tr><td>str.join(iterable)</td><td>&quot;, &quot;.join([&quot;a&quot;, &quot;b&quot;])</td><td>Joins items into one string</td><td>str</td></tr>
+<tr><td>str.strip()</td><td>&quot;  hi  &quot;.strip()</td><td>Removes leading and trailing whitespace</td><td>str</td></tr>
+<tr><td>str.replace(old, new)</td><td>&quot;cat&quot;.replace(&quot;c&quot;, &quot;b&quot;)</td><td>Replaces every match with new text</td><td>str</td></tr>
+<tr><td>dict.get(key, default)</td><td>my_dict.get(&quot;key&quot;, 0)</td><td>Safe lookup that never raises KeyError</td><td>Value or default</td></tr>
+<tr><td>dict.items()</td><td>for k, v in my_dict.items():</td><td>Loops over key–value pairs together</td><td>dict_items view</td></tr>
+<tr><td>dict.update(other)</td><td>my_dict.update({&quot;a&quot;: 1})</td><td>Merges another dict into this one</td><td>None</td></tr>
+<tr><td>set.add(x) / discard(x)</td><td>my_set.add(3)</td><td>Adds a member, or removes one safely</td><td>None</td></tr>
+</tbody>
+</table></div></section>
+<section id="howto-section" class="no-print bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 mb-10"><h2 class="font-heading text-xl sm:text-2xl font-bold text-brandNavy mb-4">How to Use This Chart</h2><p class="text-sm sm:text-[15px] text-slate-600 leading-relaxed mb-3">Pin this chart where you work: it packs <strong>12 entries</strong> and 4 columns (<strong>Method</strong>, <strong>Example</strong>, <strong>What It Does</strong>, <strong>Returns</strong>) into one printable page, built for quick lookups.</p>
+<p class="text-sm sm:text-[15px] text-slate-600 leading-relaxed mb-3">Scan down the <strong>Method</strong> column to your item, then read across for Example, What It Does, Returns.</p>
+<p class="text-sm sm:text-[15px] text-slate-600 leading-relaxed mb-3"><strong class="text-brandNavy">Example:</strong> for <strong>list.append(x)</strong>, the chart gives <strong>Example</strong> of <strong>my_list.append(4)</strong>.</p>
+<ul class="list-disc pl-5 space-y-1.5 text-sm sm:text-[15px] text-slate-600 leading-relaxed"><li>Compare values down a single column to spot the pattern before you commit to a choice.</li><li>When two rows look close, the last column usually breaks the tie.</li><li>Print it once and keep it where you work — that's the whole point of a cheat sheet.</li></ul></section>
+<section class="paper-sheet rounded-2xl shadow-paper-sheet p-6 sm:p-8 mb-6 sm:mb-8 pt-8">
+<h2 class="font-heading text-lg sm:text-xl font-bold text-brandNavy mb-3">&#128161; Quick Tips</h2>
+<div class="space-y-3 text-sm sm:text-base text-slate-600 leading-relaxed">
+<p><strong class="text-brandNavy">Watch out for methods that return None:</strong> sort, append, and update change the object in place and return None — assigning their result to a variable gives you None, not the list.</p><p><strong class="text-brandNavy">Use get instead of brackets for lookups:</strong> my_dict[&#x27;key&#x27;] raises KeyError when the key is missing; my_dict.get(&#x27;key&#x27;, 0) returns a safe default instead.</p>
+</div>
+</section>
+
+<section class="paper-sheet rounded-2xl shadow-paper-sheet p-6 sm:p-8 mb-6 sm:mb-8 pt-8">
+<h2 class="font-heading text-lg sm:text-xl font-bold text-brandNavy mb-4">Frequently Asked Questions</h2>
+<div class="space-y-4">
+<div class="border-b border-slate-100 pb-4 last:border-0 last:pb-0">
+<h3 class="font-heading font-bold text-brandNavy text-sm sm:text-base mb-1.5">What is the difference between append and extend in Python?</h3>
+<p class="text-sm text-slate-600 leading-relaxed">append adds one item to the end of a list, while extend adds every item from another iterable. my_list.append([1, 2]) puts a whole list in as one nested item; my_list.extend([1, 2]) adds 1 and 2 as separate items. Use extend when merging lists.</p>
+</div><div class="border-b border-slate-100 pb-4 last:border-0 last:pb-0">
+<h3 class="font-heading font-bold text-brandNavy text-sm sm:text-base mb-1.5">Why does list.sort() return None?</h3>
+<p class="text-sm text-slate-600 leading-relaxed">sort changes the list in place and returns None, like most methods that mutate an object. If you need a new sorted list without touching the original, use the built-in sorted() function instead. The same rule applies to append, extend, and update.</p>
+</div><div class="border-b border-slate-100 pb-4 last:border-0 last:pb-0">
+<h3 class="font-heading font-bold text-brandNavy text-sm sm:text-base mb-1.5">How do I join a list of strings in Python?</h3>
+<p class="text-sm text-slate-600 leading-relaxed">Call join on the separator string, not on the list: &#x27;, &#x27;.join([&#x27;a&#x27;, &#x27;b&#x27;]) gives &#x27;a, b&#x27;. The items must all be strings — convert numbers with str() first, or the call raises a TypeError.</p>
+</div>
+</div>
+</section>
+
 <section id="preview-section" class="no-print mb-8"><div class="flex items-center justify-between mb-3"><h2 class="font-heading text-lg sm:text-xl font-bold text-brandNavy">Printable Sheet Preview</h2><span class="text-xs font-medium text-slate-500">High-Contrast Layout</span></div>
-<img src="/assets/previews/python-syntax-methods-cheat-sheet.webp" alt="Python 3 Modern Syntax, Data Types &amp;amp; Methods Che | Hoorvia Printable Preview" loading="lazy" class="rounded-2xl border border-slate-200 shadow-sm w-full" />
+<img src="/assets/previews/python-syntax-methods-cheat-sheet.webp" alt="Printable Python methods cheat sheet showing 12 list, string, dict, and set methods with examples and return values." loading="lazy" class="rounded-2xl border border-slate-200 shadow-sm w-full" />
 </section>
 <section id="download-cta-box" class="no-print bg-white rounded-2xl border-2 border-emerald-500/40 shadow-md p-6 sm:p-8 mb-10 text-center">
 <span class="inline-block px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold uppercase tracking-wide mb-2">Instant Direct Download &bull; No Email Required</span>
