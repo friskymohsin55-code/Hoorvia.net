@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
+<!-- premium-green -->
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -25,7 +26,7 @@
 <meta name="twitter:description" content="Print our SQL window functions chart: ROW_NUMBER, RANK, LAG, LEAD, and 8 more — syntax, what each does, and the example for each." />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;0,9..144,800;1,9..144,600;1,9..144,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -71,73 +72,79 @@
 </script>
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
-tailwind.config = { theme: { extend: { colors: { paper: '#F8FAFC', warmPaper: '#FAF9F6', slateText: '#1E293B', brandNavy: '#0F172A', brandTeal: '#0D9488', ctaGreen: '#10B981', ctaGreenHover: '#059669', ctaAmber: '#F59E0B', ctaAmberHover: '#D97706' }, fontFamily: { heading: ['"Plus Jakarta Sans"', 'sans-serif'], sans: ['Inter', 'system-ui', 'sans-serif'] }, boxShadow: { 'paper-sheet': '0 14px 35px -5px rgba(15, 23, 42, 0.12), 0 4px 12px -2px rgba(15, 23, 42, 0.06)', 'card-hover': '0 12px 24px -6px rgba(13, 148, 136, 0.14)' } } } }
+tailwind.config = { theme: { extend: { colors: { forest: '#14532D', pine: '#1B4332', leaf: '#2D6A4F', moss: '#40916C', sage: '#74C69D', cream: '#FAF7F0', paperCream: '#FDFBF7', sand: '#F3EDE0', sandBorder: '#E9E2D2', ink: '#1C2B21', muted: '#5B6B5E', terra: '#E07856', terraHover: '#C85F45', paper: '#FAF7F0', warmPaper: '#FDFBF7', slateText: '#1E293B', brandNavy: '#1B4332', brandTeal: '#2D6A4F', ctaGreen: '#40916C', ctaGreenHover: '#2D6A4F', ctaAmber: '#E07856', ctaAmberHover: '#C85F45' }, fontFamily: { heading: ['Fraunces', 'Georgia', 'serif'], sans: ['Inter', 'system-ui', 'sans-serif'] }, boxShadow: { 'paper-sheet': '0 14px 35px -5px rgba(20, 83, 45, 0.14), 0 4px 12px -2px rgba(20, 83, 45, 0.07)', 'card-hover': '0 12px 24px -6px rgba(45, 106, 79, 0.18)' } } } }
 </script>
 <style>
-body { background-color: #F8FAFC; color: #1E293B; font-family: 'Inter', sans-serif; }
-h1, h2, h3, h4, .font-heading { font-family: 'Plus Jakarta Sans', sans-serif; }
-::-webkit-scrollbar { width: 8px; height: 8px; } ::-webkit-scrollbar-track { background: #F1F5F9; } ::-webkit-scrollbar-thumb { background: #CBD5E1; border-radius: 4px; }
+body { background-color: #FAF7F0; color: #1C2B21; font-family: 'Inter', sans-serif; }
+h1, h2, h3, h4, .font-heading { font-family: 'Fraunces', Georgia, serif; }
+::-webkit-scrollbar { width: 8px; height: 8px; } ::-webkit-scrollbar-track { background: #F3EDE0; } ::-webkit-scrollbar-thumb { background: #9DBFA9; border-radius: 4px; }
 #print-title { display: none; }
 @media print {
   @page { size: auto; margin: 12mm 15mm; }
   body { background: #FFFFFF !important; color: #000000 !important; font-size: 10pt; }
   .no-print, header, footer, #quick-action-bar, #download-cta-box, #seo-guide-section,
   #table-controls, #breadcrumb-bar, #preview-section, #related-section, #tips-section, #faq-section, #howto-section { display: none !important; }
-  #print-title { display: block !important; margin-bottom: 10px; padding-bottom: 8px; border-bottom: 2px solid #0f172a; }
+  #print-title { display: block !important; margin-bottom: 10px; padding-bottom: 8px; border-bottom: 2px solid #14532D; }
   #table-section { display: block !important; border: none !important; box-shadow: none !important; margin: 0 !important; }
   #table-section .no-print { display: none !important; }
   #table-section > div:first-child { border: none !important; background: none !important; padding: 0 0 8px 0 !important; }
   table { page-break-inside: auto; border-collapse: collapse !important; width: 100% !important; font-size: 9pt; }
   tr { page-break-inside: avoid; page-break-after: auto; }
   thead { display: table-header-group; }
-  thead tr { background: #0f172a !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  thead tr { background: #14532D !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   thead th { color: #fff !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   main, article { max-width: 100% !important; padding: 0 !important; margin: 0 !important; }
 }
 
 /* Hoorvia premium upgrade: unit toggle, row copy, swipe hint */
-.unit-toggle-btn{padding:6px 10px;font-size:12px;font-weight:600;color:#475569;background:#fff;border:0;cursor:pointer;white-space:nowrap;line-height:1.2}
-.unit-toggle-btn + .unit-toggle-btn{border-left:1px solid #E2E8F0}
-.unit-toggle-btn:hover{background:#F0FDFA;color:#0D9488}
-.unit-toggle-active{background:#0F172A !important;color:#fff !important}
+.unit-toggle-btn{padding:6px 10px;font-size:12px;font-weight:600;color:#5B6B5E;background:#fff;border:0;cursor:pointer;white-space:nowrap;line-height:1.2}
+.unit-toggle-btn + .unit-toggle-btn{border-left:1px solid #E9E2D2}
+.unit-toggle-btn:hover{background:#E9F2E7;color:#2D6A4F}
+.unit-toggle-active{background:#14532D !important;color:#fff !important}
 #table-section tbody tr{cursor:pointer}
-#table-section tbody tr:hover{background:#F0FDFA}
+#table-section tbody tr:hover{background:#E9F2E7}
 .copy-badge{margin-right:6px;opacity:.55;font-size:12px}
 #table-section tbody tr:hover .copy-badge{opacity:1}
-#copyToast{position:fixed;right:16px;bottom:16px;z-index:60;background:#0F172A;color:#fff;font-size:13px;font-weight:600;padding:10px 16px;border-radius:10px;box-shadow:0 8px 24px rgba(15,23,42,.25);opacity:0;pointer-events:none;transform:translateY(8px);transition:opacity .2s ease,transform .2s ease}
+#copyToast{position:fixed;right:16px;bottom:16px;z-index:60;background:#1B4332;color:#fff;font-size:13px;font-weight:600;padding:10px 16px;border-radius:10px;box-shadow:0 8px 24px rgba(20,83,45,.25);opacity:0;pointer-events:none;transform:translateY(8px);transition:opacity .2s ease,transform .2s ease}
 #copyToast.show{opacity:1;transform:translateY(0)}
-.swipe-hint{display:none;font-size:12px;color:#64748B;padding:8px 16px 12px;text-align:center}
+.swipe-hint{display:none;font-size:12px;color:#5B6B5E;padding:8px 16px 12px;text-align:center}
 @media (max-width:768px){.swipe-hint{display:block}}
 .table-scroll-wrap.edge-fade{background-image:linear-gradient(to left,rgba(255,255,255,.95),rgba(255,255,255,0));background-size:32px 100%;background-repeat:no-repeat;background-position:right top}
+
+.sheet-table { width:100%; border-collapse:collapse; font-size:14px; text-align:left; }
+.sheet-table th { background:#E9F2E7; color:#1C2B21; font-weight:700; padding:10px 14px; border-bottom:1px solid #E9E2D2; text-align:left; font-size:12px; text-transform:uppercase; letter-spacing:.05em; }
+.sheet-table td { padding:10px 14px; border-bottom:1px solid #E9E2D2; color:#1C2B21; }
+.sheet-table tbody tr:nth-child(even) td { background:#FAF7F0; }
+.sheet-table tbody tr:hover td { background:#E9F2E7; }
 </style>
 </head>
-<body class="min-h-screen flex flex-col selection:bg-teal-100 selection:text-teal-900">
-<header class="no-print bg-white/95 backdrop-blur-md border-b border-slate-200 sticky top-0 z-40">
-<div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+<body class="min-h-screen flex flex-col selection:bg-sage/30 selection:text-pine">
+<header class="no-print bg-paperCream/95 backdrop-blur-md border-b border-sandBorder sticky top-0 z-40">
+<div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-2 min-w-0">
 <a href="/" class="flex items-center gap-2.5 group shrink-0 whitespace-nowrap">
-<div class="w-9 h-9 rounded-xl bg-brandNavy text-white flex items-center justify-center font-heading font-extrabold text-lg shadow-sm group-hover:bg-brandTeal transition-colors">H</div>
-<div><span class="font-heading font-extrabold text-xl tracking-tight text-brandNavy">Hoorvia</span>
+<span class="w-10 h-10 rounded-xl bg-forest text-white flex items-center justify-center shadow-sm group-hover:bg-leaf transition-colors shrink-0"><svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 11.5 12 4l9 7.5"/><path stroke-linecap="round" stroke-linejoin="round" d="M5.5 10.5V20h13v-9.5"/><path stroke-linecap="round" stroke-linejoin="round" d="M12 20v-4.5h3.5V20"/><path stroke-linecap="round" stroke-linejoin="round" d="M12 4c.2-1.8 1.4-2.8 3-3-.2 1.8-1.4 2.8-3 3z" fill="currentColor" stroke="none"/></svg></span>
+<div><span class="font-heading font-bold text-[22px] tracking-tight text-pine block">Hoorvia</span><span class="hidden sm:block text-[10px] font-semibold tracking-[0.18em] text-muted uppercase mt-0.5">Print &bull; Plan &bull; Create</span>
 </div></a>
-<nav class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-600"><a href="/kitchen/" class="hover:text-brandTeal transition-colors">Kitchen &amp; Cooking</a><a href="/crafting/" class="hover:text-brandTeal transition-colors">Crafting &amp; DIY</a><a href="/home-health/" class="hover:text-brandTeal transition-colors">Home &amp; Health Trackers</a><a href="/tech/" class="hover:text-brandTeal transition-colors">Tech &amp; Software</a><a href="/reference/" class="hover:text-brandTeal transition-colors">Reference</a></nav>
-<div class="flex items-center gap-2"><a href="/kitchen/air-fryer-cooking-times.html" class="text-xs sm:text-sm font-semibold px-3.5 py-2 rounded-lg bg-teal-50 text-brandTeal hover:bg-teal-100 transition-colors whitespace-nowrap shrink-0"><span class="sm:hidden">&#128293; Air Fryer Chart</span><span class="hidden sm:inline">&#128293; Popular: Air Fryer Chart</span></a></div>
+<nav class="hidden md:flex items-center gap-6 text-sm font-medium text-muted"><a href="/kitchen/" class="hover:text-brandTeal transition-colors">Kitchen &amp; Cooking</a><a href="/crafting/" class="hover:text-brandTeal transition-colors">Crafting &amp; DIY</a><a href="/home-health/" class="hover:text-brandTeal transition-colors">Home &amp; Health Trackers</a><a href="/tech/" class="hover:text-brandTeal transition-colors">Tech &amp; Software</a><a href="/reference/" class="hover:text-brandTeal transition-colors">Reference</a></nav>
+<div class="flex items-center gap-2"><a href="/kitchen/air-fryer-cooking-times.html" class="text-xs sm:text-sm font-semibold px-3.5 py-2 rounded-lg bg-sage/20 text-brandTeal hover:bg-sage/30 transition-colors whitespace-nowrap shrink-0"><span class="sm:hidden">&#128293; Air Fryer Chart</span><span class="hidden sm:inline">&#128293; Popular: Air Fryer Chart</span></a></div>
 </div></header>
 
 <main class="flex-grow">
-<div id="print-title"><div style="font-weight:800;letter-spacing:0.08em;font-size:15px;">HOORVIA.NET &middot; DIGITAL REFERENCE LIBRARY</div><div style="font-size:22px;font-weight:800;margin-top:4px;">Window Functions Quick Reference Guide</div><div style="font-size:11px;color:#475569;margin-top:2px;">Tech &amp; Software &gt; Sheet #1</div></div>
+<div id="print-title"><div style="font-weight:800;letter-spacing:0.08em;font-size:15px;">HOORVIA.NET &middot; DIGITAL REFERENCE LIBRARY</div><div style="font-size:22px;font-weight:800;margin-top:4px;">Window Functions Quick Reference Guide</div><div style="font-size:11px;color:#5B6B5E;margin-top:2px;">Tech &amp; Software &gt; Sheet #1</div></div>
 <article class="max-w-[850px] mx-auto px-4 sm:px-6 py-8">
-<div id="breadcrumb-bar" class="no-print flex flex-wrap items-center justify-between gap-2 mb-5 text-xs sm:text-sm text-slate-500">
-<nav class="flex items-center gap-1.5"><a href="/" class="hover:text-brandTeal font-medium">Home</a><span>&rsaquo;</span><a href="/tech/" class="hover:text-brandTeal font-medium">Tech &amp; Software</a><span>&rsaquo;</span><span class="text-slate-800 font-semibold">Window Functions Quick Reference Guide</span></nav>
+<div id="breadcrumb-bar" class="no-print flex flex-wrap items-center justify-between gap-2 mb-5 text-xs sm:text-sm text-muted">
+<nav class="flex items-center gap-1.5"><a href="/" class="hover:text-brandTeal font-medium">Home</a><span>&rsaquo;</span><a href="/tech/" class="hover:text-brandTeal font-medium">Tech &amp; Software</a><span>&rsaquo;</span><span class="text-ink font-semibold">Window Functions Quick Reference Guide</span></nav>
 <a href="/" class="inline-flex items-center gap-1 text-brandTeal font-semibold hover:underline">&larr; Back to All Cheat Sheets</a></div>
-<header class="mb-6"><div class="flex flex-wrap items-center gap-2 mb-3"><span class="px-2.5 py-1 rounded-md bg-teal-100 text-brandTeal text-xs font-bold uppercase tracking-wide">Tech &amp; Software</span><span class="px-2.5 py-1 rounded-md bg-emerald-100 text-emerald-800 text-xs font-semibold">Free Printable</span><span class="text-xs text-slate-500">Sizes: US Letter &amp; A4</span></div>
+<header class="mb-6"><div class="flex flex-wrap items-center gap-2 mb-3"><span class="px-2.5 py-1 rounded-md bg-sage/30 text-brandTeal text-xs font-bold uppercase tracking-wide">Tech &amp; Software</span><span class="px-2.5 py-1 rounded-md bg-sage/30 text-leaf text-xs font-semibold">Free Printable</span><span class="text-xs text-muted">Sizes: US Letter &amp; A4</span></div>
 <h1 class="font-heading text-2xl sm:text-4xl font-extrabold text-brandNavy tracking-tight leading-tight mb-3">SQL Window Functions: Printable Guide</h1>
-<p class="text-slate-600 text-sm sm:text-base leading-relaxed">Window functions calculate across rows without collapsing them: ROW_NUMBER numbers the rows, RANK orders them, LAG looks at the previous row, and a windowed SUM gives a running total — all while keeping every row in the result. The trap is confusing them with GROUP BY: GROUP BY collapses rows into one per group, while a window function keeps every row and adds a calculation beside it. The key is the OVER clause — PARTITION BY splits the rows into groups, ORDER BY orders them inside each group, and the function does the rest. This printable chart lists twelve window functions with syntax, what each does, and the example. Consult the live reference table below, or print the sheet and keep it by your terminal.</p></header>
-<div id="quick-action-bar" class="no-print flex flex-wrap items-center gap-2.5 p-3 rounded-xl bg-white border border-slate-200 shadow-sm mb-8">
+<p class="text-muted text-sm sm:text-base leading-relaxed">Window functions calculate across rows without collapsing them: ROW_NUMBER numbers the rows, RANK orders them, LAG looks at the previous row, and a windowed SUM gives a running total — all while keeping every row in the result. The trap is confusing them with GROUP BY: GROUP BY collapses rows into one per group, while a window function keeps every row and adds a calculation beside it. The key is the OVER clause — PARTITION BY splits the rows into groups, ORDER BY orders them inside each group, and the function does the rest. This printable chart lists twelve window functions with syntax, what each does, and the example. Consult the live reference table below, or print the sheet and keep it by your terminal.</p></header>
+<div id="quick-action-bar" class="no-print flex flex-wrap items-center gap-2.5 p-3 rounded-xl bg-white border border-sandBorder shadow-sm mb-8">
 <a href="#download-cta-box" class="flex-1 sm:flex-initial inline-flex items-center justify-center gap-1.5 px-4 py-2 rounded-lg bg-ctaGreen hover:bg-ctaGreenHover text-white font-semibold text-xs sm:text-sm transition-all shadow-sm"><span>&#128229; Jump to Free PDF Download</span></a>
 <button onclick="window.print()" class="flex-1 sm:flex-initial inline-flex items-center justify-center gap-1.5 px-4 py-2 rounded-lg bg-ctaAmber hover:bg-ctaAmberHover text-white font-semibold text-xs sm:text-sm transition-all shadow-sm cursor-pointer border-0"><span>&#128438; Print This Chart Now</span></button>
-<a href="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Fhoorvia.net%2Fsheet%2Fwindow-functions%2F&description=Window%20Functions%20Quick%20Reference%20Guide" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-1.5 px-3.5 py-2 rounded-lg bg-rose-600 hover:bg-rose-700 text-white font-semibold text-xs sm:text-sm transition-all ml-auto"><span>&#128204; Save to Pinterest</span></a></div>
-<section id="table-section" class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden mb-10">
-<div class="p-4 sm:p-5 border-b border-slate-200 bg-slate-50/70 flex flex-col sm:flex-row sm:items-center justify-between gap-3"><div><h2 class="font-heading text-lg sm:text-xl font-bold text-brandNavy">Quick-Reference Table</h2><p class="text-xs text-slate-500">The full data from this cheat sheet, right on the page.</p></div></div>
-<div class="no-print p-3 sm:px-5 bg-white border-b border-slate-200"><input type="text" id="table-filter-input" oninput="filterRows()" placeholder="&#128270; Filter this table instantly..." class="w-full px-3.5 py-2 text-sm border border-slate-200 rounded-lg focus:outline-none focus:border-brandTeal" /></div>
+<a href="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Fhoorvia.net%2Fsheet%2Fwindow-functions%2F&description=Window%20Functions%20Quick%20Reference%20Guide" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-1.5 px-3.5 py-2 rounded-lg bg-terra hover:bg-terraHover text-white font-semibold text-xs sm:text-sm transition-all ml-auto"><span>&#128204; Save to Pinterest</span></a></div>
+<section id="table-section" class="bg-white rounded-2xl border border-sandBorder shadow-sm overflow-hidden mb-10">
+<div class="p-4 sm:p-5 border-b border-sandBorder bg-paperCream flex flex-col sm:flex-row sm:items-center justify-between gap-3"><div><h2 class="font-heading text-lg sm:text-xl font-bold text-brandNavy">Quick-Reference Table</h2><p class="text-xs text-muted">The full data from this cheat sheet, right on the page.</p></div></div>
+<div class="no-print p-3 sm:px-5 bg-white border-b border-sandBorder"><input type="text" id="table-filter-input" oninput="filterRows()" placeholder="&#128270; Filter this table instantly..." class="w-full px-3.5 py-2 text-sm border border-sandBorder rounded-lg focus:outline-none focus:border-brandTeal" /></div>
 <div class="overflow-x-auto table-scroll-wrap"><table class="sheet-table">
 <thead>
 <tr><th>Function</th><th>Syntax</th><th>What It Does</th><th>Example</th></tr>
@@ -157,13 +164,13 @@ h1, h2, h3, h4, .font-heading { font-family: 'Plus Jakarta Sans', sans-serif; }
 <tr><td>PARTITION BY</td><td>... OVER (PARTITION BY col)</td><td>Resets the window per group</td><td>Per-department ranking</td></tr>
 </tbody>
 </table></div><div class="swipe-hint no-print">👉 Swipe table horizontally to see all columns</div><div id="copyToast" class="no-print" role="status" aria-live="polite">Copied!</div></section>
-<section id="howto-section" class="no-print bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 mb-10"><h2 class="font-heading text-xl sm:text-2xl font-bold text-brandNavy mb-4">How to Use This Chart</h2><p class="text-sm sm:text-[15px] text-slate-600 leading-relaxed mb-3">Pin this chart where you work: it packs <strong>12 entries</strong> and 4 columns (<strong>Function</strong>, <strong>Syntax</strong>, <strong>What It Does</strong>, <strong>Example</strong>) into one printable page, built for quick lookups.</p>
-<p class="text-sm sm:text-[15px] text-slate-600 leading-relaxed mb-3">Scan down the <strong>Function</strong> column to your item, then read across for Syntax, What It Does, Example.</p>
-<p class="text-sm sm:text-[15px] text-slate-600 leading-relaxed mb-3"><strong class="text-brandNavy">Example:</strong> for <strong>ROW_NUMBER</strong>, the chart gives <strong>Syntax</strong> of <strong>ROW_NUMBER() OVER (ORDER BY col)</strong>.</p>
-<ul class="list-disc pl-5 space-y-1.5 text-sm sm:text-[15px] text-slate-600 leading-relaxed"><li>Compare values down a single column to spot the pattern before you commit to a choice.</li><li>When two rows look close, the last column usually breaks the tie.</li><li>Print it once and keep it where you work — that's the whole point of a cheat sheet.</li></ul></section>
+<section id="howto-section" class="no-print bg-white rounded-2xl border border-sandBorder p-6 sm:p-8 mb-10"><h2 class="font-heading text-xl sm:text-2xl font-bold text-brandNavy mb-4">How to Use This Chart</h2><p class="text-sm sm:text-[15px] text-muted leading-relaxed mb-3">Pin this chart where you work: it packs <strong>12 entries</strong> and 4 columns (<strong>Function</strong>, <strong>Syntax</strong>, <strong>What It Does</strong>, <strong>Example</strong>) into one printable page, built for quick lookups.</p>
+<p class="text-sm sm:text-[15px] text-muted leading-relaxed mb-3">Scan down the <strong>Function</strong> column to your item, then read across for Syntax, What It Does, Example.</p>
+<p class="text-sm sm:text-[15px] text-muted leading-relaxed mb-3"><strong class="text-brandNavy">Example:</strong> for <strong>ROW_NUMBER</strong>, the chart gives <strong>Syntax</strong> of <strong>ROW_NUMBER() OVER (ORDER BY col)</strong>.</p>
+<ul class="list-disc pl-5 space-y-1.5 text-sm sm:text-[15px] text-muted leading-relaxed"><li>Compare values down a single column to spot the pattern before you commit to a choice.</li><li>When two rows look close, the last column usually breaks the tie.</li><li>Print it once and keep it where you work — that's the whole point of a cheat sheet.</li></ul></section>
 <section class="paper-sheet rounded-2xl shadow-paper-sheet p-6 sm:p-8 mb-6 sm:mb-8 pt-8">
 <h2 class="font-heading text-lg sm:text-xl font-bold text-brandNavy mb-3">&#128161; Quick Tips</h2>
-<div class="space-y-3 text-sm sm:text-base text-slate-600 leading-relaxed">
+<div class="space-y-3 text-sm sm:text-base text-muted leading-relaxed">
 <p><strong class="text-brandNavy">PARTITION BY is the grouper:</strong> PARTITION BY splits the rows into groups and the function restarts in each one. Without it, the window is the whole result.</p><p><strong class="text-brandNavy">Window functions keep every row:</strong> GROUP BY collapses rows into one per group; a window function keeps every row and adds a calculation beside it. Use windows for detail plus totals.</p>
 </div>
 </section>
@@ -171,32 +178,32 @@ h1, h2, h3, h4, .font-heading { font-family: 'Plus Jakarta Sans', sans-serif; }
 <section class="paper-sheet rounded-2xl shadow-paper-sheet p-6 sm:p-8 mb-6 sm:mb-8 pt-8">
 <h2 class="font-heading text-lg sm:text-xl font-bold text-brandNavy mb-4">Frequently Asked Questions</h2>
 <div class="space-y-4">
-<div class="border-b border-slate-100 pb-4 last:border-0 last:pb-0">
+<div class="border-b border-sandBorder pb-4 last:border-0 last:pb-0">
 <h3 class="font-heading font-bold text-brandNavy text-sm sm:text-base mb-1.5">What is the difference between RANK and DENSE_RANK?</h3>
-<p class="text-sm text-slate-600 leading-relaxed">RANK leaves gaps after a tie — two rows tied for first both rank 1, and the next ranks 3. DENSE_RANK does not leave gaps — the next row ranks 2. Use RANK for leaderboards, DENSE_RANK for top-N lists without gaps.</p>
-</div><div class="border-b border-slate-100 pb-4 last:border-0 last:pb-0">
+<p class="text-sm text-muted leading-relaxed">RANK leaves gaps after a tie — two rows tied for first both rank 1, and the next ranks 3. DENSE_RANK does not leave gaps — the next row ranks 2. Use RANK for leaderboards, DENSE_RANK for top-N lists without gaps.</p>
+</div><div class="border-b border-sandBorder pb-4 last:border-0 last:pb-0">
 <h3 class="font-heading font-bold text-brandNavy text-sm sm:text-base mb-1.5">When should I use LAG instead of a self-join?</h3>
-<p class="text-sm text-slate-600 leading-relaxed">When you need the previous row&#x27;s value — month-over-month change, days since the last order. LAG does it in one pass; a self-join needs a second scan of the table and is harder to read.</p>
-</div><div class="border-b border-slate-100 pb-4 last:border-0 last:pb-0">
+<p class="text-sm text-muted leading-relaxed">When you need the previous row&#x27;s value — month-over-month change, days since the last order. LAG does it in one pass; a self-join needs a second scan of the table and is harder to read.</p>
+</div><div class="border-b border-sandBorder pb-4 last:border-0 last:pb-0">
 <h3 class="font-heading font-bold text-brandNavy text-sm sm:text-base mb-1.5">Can I use a window function in a WHERE clause?</h3>
-<p class="text-sm text-slate-600 leading-relaxed">No — window functions run after WHERE, so the database has not calculated them yet. Filter on a window result with a subquery or a CTE: compute the window in the inner query, filter in the outer one.</p>
+<p class="text-sm text-muted leading-relaxed">No — window functions run after WHERE, so the database has not calculated them yet. Filter on a window result with a subquery or a CTE: compute the window in the inner query, filter in the outer one.</p>
 </div>
 </div>
 </section>
 
-<section id="preview-section" class="no-print mb-8"><div class="flex items-center justify-between mb-3"><h2 class="font-heading text-lg sm:text-xl font-bold text-brandNavy">Printable Sheet Preview</h2><span class="text-xs font-medium text-slate-500">High-Contrast Layout</span></div>
-<img src="/assets/previews/window-functions.webp" alt="Printable SQL window functions chart showing functions, syntax, purposes, and examples." loading="lazy" class="rounded-2xl border border-slate-200 shadow-sm w-full" />
+<section id="preview-section" class="no-print mb-8"><div class="flex items-center justify-between mb-3"><h2 class="font-heading text-lg sm:text-xl font-bold text-brandNavy">Printable Sheet Preview</h2><span class="text-xs font-medium text-muted">High-Contrast Layout</span></div>
+<img src="/assets/previews/window-functions.webp" alt="Printable SQL window functions chart showing functions, syntax, purposes, and examples." loading="lazy" class="rounded-2xl border border-sandBorder shadow-sm w-full" />
 </section>
-<section id="download-cta-box" class="no-print bg-white rounded-2xl border-2 border-emerald-500/40 shadow-md p-6 sm:p-8 mb-10 text-center">
-<span class="inline-block px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold uppercase tracking-wide mb-2">Instant Direct Download &bull; No Email Required</span>
+<section id="download-cta-box" class="no-print bg-white rounded-2xl border-2 border-moss/40 shadow-md p-6 sm:p-8 mb-10 text-center">
+<span class="inline-block px-3 py-1 rounded-full bg-sage/30 text-leaf text-xs font-bold uppercase tracking-wide mb-2">Instant Direct Download &bull; No Email Required</span>
 <h2 class="font-heading text-xl sm:text-2xl font-extrabold text-brandNavy mb-2">Download Your Free Printable Sheet</h2>
-<p class="text-slate-600 text-xs sm:text-sm max-w-xl mx-auto mb-6">Download the printable PDF below. It is the same sheet shown in the preview above, ready to print on US Letter or A4 &mdash; open it and choose Print, with Scale set to Fit to Page.</p>
+<p class="text-muted text-xs sm:text-sm max-w-xl mx-auto mb-6">Download the printable PDF below. It is the same sheet shown in the preview above, ready to print on US Letter or A4 &mdash; open it and choose Print, with Scale set to Fit to Page.</p>
 <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 max-w-2xl mx-auto">
 <a href="/assets/pdfs/window-functions.pdf" download="Hoorvia-window-functions.pdf" class="flex flex-col items-center justify-center py-3.5 px-4 rounded-xl bg-ctaGreen hover:bg-ctaGreenHover text-white font-heading font-bold shadow-sm transition-all"><span class="text-sm sm:text-base">&#128229; Download Free Printable PDF</span><span class="text-[11px] font-normal opacity-90">US Letter + A4 &mdash; PDF file</span></a>
 <a href="/assets/pdfs/window-functions.pdf" target="_blank" class="flex flex-col items-center justify-center py-3.5 px-4 rounded-xl bg-ctaGreen hover:bg-ctaGreenHover text-white font-heading font-bold shadow-sm transition-all"><span class="text-sm sm:text-base">&#128229; Download US Letter</span><span class="text-[11px] font-normal opacity-90">8.5&quot; &times; 11&quot; &mdash; PDF file</span></a>
-<a href="/assets/pdfs/window-functions.pdf" target="_blank" class="flex flex-col items-center justify-center py-3.5 px-4 rounded-xl bg-brandTeal hover:bg-teal-700 text-white font-heading font-bold shadow-sm transition-all"><span class="text-sm sm:text-base">&#128229; Download A4 Size</span><span class="text-[11px] font-normal opacity-90">210 &times; 297 mm UK/EU/AU &mdash; PDF file</span></a>
+<a href="/assets/pdfs/window-functions-a4.pdf" target="_blank" class="flex flex-col items-center justify-center py-3.5 px-4 rounded-xl bg-brandTeal hover:bg-leaf text-white font-heading font-bold shadow-sm transition-all"><span class="text-sm sm:text-base">&#128229; Download A4 Size</span><span class="text-[11px] font-normal opacity-90">210 &times; 297 mm UK/EU/AU &mdash; PDF file</span></a>
 <a href="/assets/pdfs/window-functions.pdf" target="_blank" class="flex flex-col items-center justify-center py-3.5 px-4 rounded-xl bg-ctaAmber hover:bg-ctaAmberHover text-white font-heading font-bold shadow-sm transition-all"><span class="text-sm sm:text-base">&#128438; Print Directly Now</span><span class="text-[11px] font-normal opacity-90">Open PDF to Print</span></a></div>
-<p class="text-[11px] text-slate-400 mt-4">&#128161; <strong>Pro Printing Tip:</strong> In your printer settings, set Scale to <strong>&ldquo;Fit to Printable Area&rdquo;</strong> and enable <strong>&ldquo;Background Graphics&rdquo;</strong> for color headers.</p></section>
+<p class="text-[11px] text-muted mt-4">&#128161; <strong>Pro Printing Tip:</strong> In your printer settings, set Scale to <strong>&ldquo;Fit to Printable Area&rdquo;</strong> and enable <strong>&ldquo;Background Graphics&rdquo;</strong> for color headers.</p></section>
 </article></main>
 <script>
 function filterRows(){ const q=(document.getElementById('table-filter-input').value||'').toLowerCase(); document.querySelectorAll('#table-section tbody tr').forEach(r=>{ r.style.display=r.textContent.toLowerCase().includes(q)?'':'none'; }); }
@@ -320,18 +327,18 @@ addBadges();
 updateScrollHints();
 })();
 </script>
-<footer class="no-print bg-white border-t border-slate-200 mt-12">
+<footer class="no-print bg-[#0B2E1B] text-[#CFE3D4] mt-12">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 py-10">
 <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-<div class="md:col-span-2"><div class="flex items-center gap-2 mb-3"><div class="w-7 h-7 rounded-lg bg-brandNavy text-white flex items-center justify-center font-heading font-bold text-sm">H</div><span class="font-heading font-extrabold text-lg text-brandNavy">Hoorvia</span></div>
-<p class="text-xs sm:text-sm text-slate-500 max-w-sm leading-relaxed">Free, accuracy-checked printable cheat sheets, conversion tables, and daily trackers formatted for US Letter &amp; A4 paper. No sign-up required.</p></div>
-<div><h4 class="font-heading font-bold text-brandNavy text-sm mb-3">Popular Categories</h4><ul class="space-y-2 text-xs sm:text-sm text-slate-600"><li><a href="/kitchen/" class="hover:text-brandTeal">Kitchen &amp; Cooking</a></li><li><a href="/crafting/" class="hover:text-brandTeal">Crafting &amp; DIY</a></li><li><a href="/home-health/" class="hover:text-brandTeal">Home &amp; Health Trackers</a></li><li><a href="/tech/" class="hover:text-brandTeal">Tech &amp; Software</a></li><li><a href="/reference/" class="hover:text-brandTeal">Reference</a></li></ul></div>
-<div><h4 class="font-heading font-bold text-brandNavy text-sm mb-3">Legal &amp; Info</h4><ul class="space-y-2 text-xs sm:text-sm text-slate-600">
-<li><a href="/about.html" class="hover:text-brandTeal">About Us</a></li>
-<li><a href="/contact.html" class="hover:text-brandTeal">Contact Us</a></li>
-<li><a href="/privacy-policy.html" class="hover:text-brandTeal">Privacy Policy</a></li>
-<li><a href="/terms.html" class="hover:text-brandTeal">Terms &amp; Conditions</a></li>
-<li><a href="/disclaimer.html" class="hover:text-brandTeal">Disclaimer</a></li></ul></div></div>
-<div class="pt-6 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-2">
+<div class="md:col-span-2"><div class="flex items-center gap-2 mb-3"><div class="w-7 h-7 rounded-lg bg-white/10 text-white flex items-center justify-center font-heading font-bold text-sm">H</div><span class="font-heading font-extrabold text-lg text-white">Hoorvia</span></div>
+<p class="text-xs sm:text-sm text-[#9DBFA9] max-w-sm leading-relaxed">Free, accuracy-checked printable cheat sheets, conversion tables, and daily trackers formatted for US Letter &amp; A4 paper. No sign-up required.</p></div>
+<div><h4 class="font-heading font-bold text-white text-sm mb-3">Popular Categories</h4><ul class="space-y-2 text-xs sm:text-sm text-[#CFE3D4]"><li><a href="/kitchen/" class="hover:text-white">Kitchen &amp; Cooking</a></li><li><a href="/crafting/" class="hover:text-white">Crafting &amp; DIY</a></li><li><a href="/home-health/" class="hover:text-white">Home &amp; Health Trackers</a></li><li><a href="/tech/" class="hover:text-white">Tech &amp; Software</a></li><li><a href="/reference/" class="hover:text-white">Reference</a></li></ul></div>
+<div><h4 class="font-heading font-bold text-white text-sm mb-3">Legal &amp; Info</h4><ul class="space-y-2 text-xs sm:text-sm text-[#CFE3D4]">
+<li><a href="/about.html" class="hover:text-white">About Us</a></li>
+<li><a href="/contact.html" class="hover:text-white">Contact Us</a></li>
+<li><a href="/privacy-policy.html" class="hover:text-white">Privacy Policy</a></li>
+<li><a href="/terms.html" class="hover:text-white">Terms &amp; Conditions</a></li>
+<li><a href="/disclaimer.html" class="hover:text-white">Disclaimer</a></li></ul></div></div>
+<div class="pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between text-xs text-[#9DBFA9] gap-2">
 <p>&copy; Hoorvia.net. All rights reserved.</p><p>Free Printable and Cheat Sheets</p></div></div></footer>
 </body></html>
