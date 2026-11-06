@@ -11,27 +11,61 @@
 </script>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>SELECT/WHERE Quick Reference Guide | Hoorvia</title>
-<meta name="description" content="Download printable reference charts and view interactive data tables for SELECT/WHERE. 100% verified specifications on Hoorvia.net." />
+<title>SQL SELECT WHERE Chart (Printable): Query Guide</title>
+<meta name="description" content="Print our SQL SELECT WHERE chart: the 12 clauses and operators every query needs — syntax, what each does, and a working example." />
 <link rel="canonical" href="https://hoorvia.net/sheet/select-where-548/" />
-<meta property="og:title" content="SELECT/WHERE Quick Reference Guide | Hoorvia" />
-<meta property="og:description" content="Download printable reference charts and view interactive data tables for SELECT/WHERE. 100% verified specifications on Hoorvia.net." />
+<meta property="og:title" content="SQL SELECT WHERE Chart (Printable): Query Guide" />
+<meta property="og:description" content="Print our SQL SELECT WHERE chart: the 12 clauses and operators every query needs — syntax, what each does, and a working example." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://hoorvia.net/sheet/select-where-548/" />
-<meta name="twitter:title" content="SELECT/WHERE Quick Reference Guide | Hoorvia" />
-<meta name="twitter:description" content="Download printable reference charts and view interactive data tables for SELECT/WHERE. 100% verified specifications on Hoorvia.net." />
+<meta name="twitter:title" content="SQL SELECT WHERE Chart (Printable): Query Guide" />
+<meta name="twitter:description" content="Print our SQL SELECT WHERE chart: the 12 clauses and operators every query needs — syntax, what each does, and a working example." />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
-<script type="application/ld+json">{
+<script type="application/ld+json">
+{
   "@context": "https://schema.org",
   "@type": "TechArticle",
-  "headline": "SELECT/WHERE Quick Reference Guide",
-  "description": "Download printable reference charts and view interactive data tables for SELECT/WHERE. 100% verified specifications on Hoorvia.net.",
+  "headline": "SQL SELECT WHERE Chart: Printable Query Guide",
+  "description": "Print our SQL SELECT WHERE chart: the 12 clauses and operators every query needs \u2014 syntax, what each does, and a working example.",
   "url": "https://hoorvia.net/sheet/select-where-548/",
   "inLanguage": "en-US",
   "mainEntityOfPage": "https://hoorvia.net/sheet/select-where-548/"
-}</script>
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the difference between WHERE and HAVING?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "WHERE filters rows before they are grouped; HAVING filters groups after aggregation. Use WHERE for row conditions like price > 10, and HAVING for group conditions like COUNT(*) > 5. HAVING only works with GROUP BY."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I filter for a date range in SQL?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Use BETWEEN with two dates, or a pair of comparisons: WHERE order_date BETWEEN '2026-01-01' AND '2026-12-31'. BETWEEN includes both endpoints, so the end date covers the whole final day only if the column has no time component."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does LIKE '%a%' run slowly?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A leading wildcard prevents the database from using an index, so it must scan every row. LIKE 'a%' can use an index because the start is fixed. For full-text search across large tables, use a full-text index instead of LIKE with a leading wildcard."
+      }
+    }
+  ]
+}
+</script>
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
 tailwind.config = { theme: { extend: { colors: { paper: '#F8FAFC', warmPaper: '#FAF9F6', slateText: '#1E293B', brandNavy: '#0F172A', brandTeal: '#0D9488', ctaGreen: '#10B981', ctaGreenHover: '#059669', ctaAmber: '#F59E0B', ctaAmberHover: '#D97706' }, fontFamily: { heading: ['"Plus Jakarta Sans"', 'sans-serif'], sans: ['Inter', 'system-ui', 'sans-serif'] }, boxShadow: { 'paper-sheet': '0 14px 35px -5px rgba(15, 23, 42, 0.12), 0 4px 12px -2px rgba(15, 23, 42, 0.06)', 'card-hover': '0 12px 24px -6px rgba(13, 148, 136, 0.14)' } } } }
@@ -77,8 +111,8 @@ h1, h2, h3, h4, .font-heading { font-family: 'Plus Jakarta Sans', sans-serif; }
 <nav class="flex items-center gap-1.5"><a href="/" class="hover:text-brandTeal font-medium">Home</a><span>&rsaquo;</span><a href="/tech/" class="hover:text-brandTeal font-medium">Tech &amp; Software</a><span>&rsaquo;</span><span class="text-slate-800 font-semibold">SELECT/WHERE Quick Reference Guide</span></nav>
 <a href="/" class="inline-flex items-center gap-1 text-brandTeal font-semibold hover:underline">&larr; Back to All Cheat Sheets</a></div>
 <header class="mb-6"><div class="flex flex-wrap items-center gap-2 mb-3"><span class="px-2.5 py-1 rounded-md bg-teal-100 text-brandTeal text-xs font-bold uppercase tracking-wide">Tech &amp; Software</span><span class="px-2.5 py-1 rounded-md bg-emerald-100 text-emerald-800 text-xs font-semibold">Free Printable</span><span class="text-xs text-slate-500">Sizes: US Letter &amp; A4</span></div>
-<h1 class="font-heading text-2xl sm:text-4xl font-extrabold text-brandNavy tracking-tight leading-tight mb-3">SELECT/WHERE Quick Reference Guide</h1>
-<p class="text-slate-600 text-sm sm:text-base leading-relaxed">Authentic reference chart and data matrix for SELECT/WHERE in SQL &amp; Databases. Use the interactive table below or print it / save it as a PDF with the button below.</p></header>
+<h1 class="font-heading text-2xl sm:text-4xl font-extrabold text-brandNavy tracking-tight leading-tight mb-3">SQL SELECT WHERE Chart: Printable Query Guide</h1>
+<p class="text-slate-600 text-sm sm:text-base leading-relaxed">Every database query starts with two words: SELECT picks the columns, WHERE picks the rows. Everything else — the comparisons, the lists, the pattern matches, the sorting — is a variation on those two ideas. Learn the twelve clauses and operators in this chart and you can pull any slice of data out of any table: customers in one city, orders over a hundred dollars, products whose names start with A. The trap is forgetting that AND binds tighter than OR, so a WHERE with both needs parentheses — otherwise the query returns rows you never asked for. This printable chart lists each clause with its syntax, what it does, and a working example. Consult the live reference table below, or print the sheet and keep it by your terminal.</p></header>
 <div id="quick-action-bar" class="no-print flex flex-wrap items-center gap-2.5 p-3 rounded-xl bg-white border border-slate-200 shadow-sm mb-8">
 <a href="#download-cta-box" class="flex-1 sm:flex-initial inline-flex items-center justify-center gap-1.5 px-4 py-2 rounded-lg bg-ctaGreen hover:bg-ctaGreenHover text-white font-semibold text-xs sm:text-sm transition-all shadow-sm"><span>&#128229; Jump to Free PDF Download</span></a>
 <button onclick="window.print()" class="flex-1 sm:flex-initial inline-flex items-center justify-center gap-1.5 px-4 py-2 rounded-lg bg-ctaAmber hover:bg-ctaAmberHover text-white font-semibold text-xs sm:text-sm transition-all shadow-sm cursor-pointer border-0"><span>&#128438; Print This Chart Now</span></button>
@@ -86,13 +120,54 @@ h1, h2, h3, h4, .font-heading { font-family: 'Plus Jakarta Sans', sans-serif; }
 <section id="table-section" class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden mb-10">
 <div class="p-4 sm:p-5 border-b border-slate-200 bg-slate-50/70 flex flex-col sm:flex-row sm:items-center justify-between gap-3"><div><h2 class="font-heading text-lg sm:text-xl font-bold text-brandNavy">Quick-Reference Table</h2><p class="text-xs text-slate-500">The full data from this cheat sheet, right on the page.</p></div></div>
 <div class="no-print p-3 sm:px-5 bg-white border-b border-slate-200"><input type="text" id="table-filter-input" oninput="filterRows()" placeholder="&#128270; Filter this table instantly..." class="w-full px-3.5 py-2 text-sm border border-slate-200 rounded-lg focus:outline-none focus:border-brandTeal" /></div>
-<div class="overflow-x-auto"><table class="w-full text-left border-collapse"><thead><tr class="bg-slate-100/80 text-slate-700 text-xs uppercase tracking-wider border-b border-slate-200"><th class="py-3 px-4 font-bold">Command / Feature</th><th class="py-3 px-4 font-bold">Syntax / Keyboard Shortcut (Win / Mac)</th><th class="py-3 px-4 font-bold">Operational Context &amp; Environment</th><th class="py-3 px-4 font-bold">Key Output / Practical Result</th></tr></thead><tbody id="post-tbody" class="divide-y divide-slate-200 text-xs sm:text-sm"><tr><td class="py-3 px-4 text-slate-700">SELECT/WHERE Primary Action</td><td class="py-3 px-4 text-slate-700">Ctrl + P / Cmd + P</td><td class="py-3 px-4 text-slate-700">Editor quick-access palette</td><td class="py-3 px-4 text-slate-700">Instantly locates and opens target files or commands</td></tr><tr><td class="py-3 px-4 text-slate-700">SELECT/WHERE Query / Filter</td><td class="py-3 px-4 text-slate-700">SELECT * FROM items WHERE category = &#x27;select/where&#x27;</td><td class="py-3 px-4 text-slate-700">Relational or collection retrieval</td><td class="py-3 px-4 text-slate-700">Returns filtered data record array matching criteria</td></tr><tr><td class="py-3 px-4 text-slate-700">SELECT/WHERE Configuration</td><td class="py-3 px-4 text-slate-700">export CONFIG_SELECT_WHERE=true</td><td class="py-3 px-4 text-slate-700">Terminal shell environment (.bashrc / .zshrc)</td><td class="py-3 px-4 text-slate-700">Persists operational configuration flags across sessions</td></tr><tr><td class="py-3 px-4 text-slate-700">SELECT/WHERE Integrity Check</td><td class="py-3 px-4 text-slate-700">npm test -- --grep=&quot;select/where&quot;</td><td class="py-3 px-4 text-slate-700">Automated CI/CD test runner</td><td class="py-3 px-4 text-slate-700">Executes targeted assertions with exit code confirmation</td></tr></tbody></table></div></section>
-<section id="howto-section" class="no-print bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 mb-10"><h2 class="font-heading text-xl sm:text-2xl font-bold text-brandNavy mb-4">How to Use This Chart</h2><p class="text-sm sm:text-[15px] text-slate-600 leading-relaxed mb-3">Pin this chart where you work: it packs <strong>4 entries</strong> and 4 columns (<strong>Command / Feature</strong>, <strong>Syntax / Keyboard Shortcut (Win / Mac)</strong>, <strong>Operational Context &amp; Environment</strong>, <strong>Key Output / Practical Result</strong>) into one printable page, built for quick lookups.</p>
-<p class="text-sm sm:text-[15px] text-slate-600 leading-relaxed mb-3">Scan down the <strong>Command / Feature</strong> column to your item, then read across for Syntax / Keyboard Shortcut (Win / Mac), Operational Context &amp; Environment.</p>
-<p class="text-sm sm:text-[15px] text-slate-600 leading-relaxed mb-3"><strong class="text-brandNavy">Example:</strong> for <strong>SELECT/WHERE Primary Action</strong>, the chart gives <strong>Syntax / Keyboard Shortcut (Win / Mac)</strong> of <strong>Ctrl + P / Cmd + P</strong>.</p>
-<ul class="list-disc pl-5 space-y-1.5 text-sm sm:text-[15px] text-slate-600 leading-relaxed"><li>Compare values down a single column to spot the pattern before you commit to a choice.</li><li>When two rows look close, the Key Output / Practical Result column usually breaks the tie.</li><li>Print it once and keep it where you work — that's the whole point of a cheat sheet.</li></ul></section>
+<div class="overflow-x-auto"><table class="sheet-table">
+<thead>
+<tr><th>Clause / Operator</th><th>Syntax</th><th>What It Does</th><th>Example</th></tr>
+</thead>
+<tbody>
+<tr><td>SELECT</td><td>SELECT col1, col2 FROM t</td><td>Picks the columns to return</td><td>SELECT name, price FROM products</td></tr>
+<tr><td>WHERE</td><td>WHERE condition</td><td>Filters the rows</td><td>WHERE price &gt; 10</td></tr>
+<tr><td>=</td><td>col = value</td><td>Exact match</td><td>WHERE country = &#x27;USA&#x27;</td></tr>
+<tr><td>&gt; / &lt;</td><td>col &gt; value</td><td>Greater / less than</td><td>WHERE age &gt; 18</td></tr>
+<tr><td>BETWEEN</td><td>col BETWEEN a AND b</td><td>Range, inclusive of both ends</td><td>WHERE price BETWEEN 10 AND 50</td></tr>
+<tr><td>IN</td><td>col IN (a, b, c)</td><td>Matches any value in a list</td><td>WHERE city IN (&#x27;NYC&#x27;, &#x27;LA&#x27;)</td></tr>
+<tr><td>LIKE</td><td>col LIKE &#x27;pat%&#x27;</td><td>Pattern match with % and _</td><td>WHERE name LIKE &#x27;A%&#x27;</td></tr>
+<tr><td>AND</td><td>cond1 AND cond2</td><td>Both conditions must be true</td><td>WHERE a = 1 AND b = 2</td></tr>
+<tr><td>OR</td><td>cond1 OR cond2</td><td>Either condition must be true</td><td>WHERE a = 1 OR b = 2</td></tr>
+<tr><td>NOT</td><td>NOT condition</td><td>Negates the condition</td><td>WHERE NOT active</td></tr>
+<tr><td>IS NULL</td><td>col IS NULL</td><td>Finds missing values</td><td>WHERE email IS NULL</td></tr>
+<tr><td>ORDER BY</td><td>ORDER BY col ASC</td><td>Sorts the results</td><td>ORDER BY price DESC</td></tr>
+</tbody>
+</table></div></section>
+<section id="howto-section" class="no-print bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 mb-10"><h2 class="font-heading text-xl sm:text-2xl font-bold text-brandNavy mb-4">How to Use This Chart</h2><p class="text-sm sm:text-[15px] text-slate-600 leading-relaxed mb-3">Pin this chart where you work: it packs <strong>12 entries</strong> and 4 columns (<strong>Clause / Operator</strong>, <strong>Syntax</strong>, <strong>What It Does</strong>, <strong>Example</strong>) into one printable page, built for quick lookups.</p>
+<p class="text-sm sm:text-[15px] text-slate-600 leading-relaxed mb-3">Scan down the <strong>Clause / Operator</strong> column to your item, then read across for Syntax, What It Does, Example.</p>
+<p class="text-sm sm:text-[15px] text-slate-600 leading-relaxed mb-3"><strong class="text-brandNavy">Example:</strong> for <strong>SELECT</strong>, the chart gives <strong>Syntax</strong> of <strong>SELECT col1, col2 FROM t</strong>.</p>
+<ul class="list-disc pl-5 space-y-1.5 text-sm sm:text-[15px] text-slate-600 leading-relaxed"><li>Compare values down a single column to spot the pattern before you commit to a choice.</li><li>When two rows look close, the last column usually breaks the tie.</li><li>Print it once and keep it where you work — that's the whole point of a cheat sheet.</li></ul></section>
+<section class="paper-sheet rounded-2xl shadow-paper-sheet p-6 sm:p-8 mb-6 sm:mb-8 pt-8">
+<h2 class="font-heading text-lg sm:text-xl font-bold text-brandNavy mb-3">&#128161; Quick Tips</h2>
+<div class="space-y-3 text-sm sm:text-base text-slate-600 leading-relaxed">
+<p><strong class="text-brandNavy">Parenthesize AND with OR:</strong> AND binds tighter than OR, so a WHERE with both needs parentheses — otherwise the query returns rows you never asked for.</p><p><strong class="text-brandNavy">Use IS NULL, never = NULL:</strong> NULL is not a value, so = NULL never matches anything. Always test missing values with IS NULL or IS NOT NULL.</p>
+</div>
+</section>
+
+<section class="paper-sheet rounded-2xl shadow-paper-sheet p-6 sm:p-8 mb-6 sm:mb-8 pt-8">
+<h2 class="font-heading text-lg sm:text-xl font-bold text-brandNavy mb-4">Frequently Asked Questions</h2>
+<div class="space-y-4">
+<div class="border-b border-slate-100 pb-4 last:border-0 last:pb-0">
+<h3 class="font-heading font-bold text-brandNavy text-sm sm:text-base mb-1.5">What is the difference between WHERE and HAVING?</h3>
+<p class="text-sm text-slate-600 leading-relaxed">WHERE filters rows before they are grouped; HAVING filters groups after aggregation. Use WHERE for row conditions like price &gt; 10, and HAVING for group conditions like COUNT(*) &gt; 5. HAVING only works with GROUP BY.</p>
+</div><div class="border-b border-slate-100 pb-4 last:border-0 last:pb-0">
+<h3 class="font-heading font-bold text-brandNavy text-sm sm:text-base mb-1.5">How do I filter for a date range in SQL?</h3>
+<p class="text-sm text-slate-600 leading-relaxed">Use BETWEEN with two dates, or a pair of comparisons: WHERE order_date BETWEEN &#x27;2026-01-01&#x27; AND &#x27;2026-12-31&#x27;. BETWEEN includes both endpoints, so the end date covers the whole final day only if the column has no time component.</p>
+</div><div class="border-b border-slate-100 pb-4 last:border-0 last:pb-0">
+<h3 class="font-heading font-bold text-brandNavy text-sm sm:text-base mb-1.5">Why does LIKE &#x27;%a%&#x27; run slowly?</h3>
+<p class="text-sm text-slate-600 leading-relaxed">A leading wildcard prevents the database from using an index, so it must scan every row. LIKE &#x27;a%&#x27; can use an index because the start is fixed. For full-text search across large tables, use a full-text index instead of LIKE with a leading wildcard.</p>
+</div>
+</div>
+</section>
+
 <section id="preview-section" class="no-print mb-8"><div class="flex items-center justify-between mb-3"><h2 class="font-heading text-lg sm:text-xl font-bold text-brandNavy">Printable Sheet Preview</h2><span class="text-xs font-medium text-slate-500">High-Contrast Layout</span></div>
-<img src="/assets/previews/select-where.webp" alt="SELECT/WHERE Quick Reference Guide | Hoorvia Printable Preview" loading="lazy" class="rounded-2xl border border-slate-200 shadow-sm w-full" />
+<img src="/assets/previews/select-where.webp" alt="Printable SQL SELECT WHERE chart showing clauses and operators with syntax, purpose, and a working example." loading="lazy" class="rounded-2xl border border-slate-200 shadow-sm w-full" />
 </section>
 <section id="download-cta-box" class="no-print bg-white rounded-2xl border-2 border-emerald-500/40 shadow-md p-6 sm:p-8 mb-10 text-center">
 <span class="inline-block px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold uppercase tracking-wide mb-2">Instant Direct Download &bull; No Email Required</span>
