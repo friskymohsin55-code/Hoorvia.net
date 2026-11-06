@@ -11,27 +11,61 @@
 </script>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Window Functions Quick Reference Guide | Hoorvia</title>
-<meta name="description" content="Download printable reference charts and view interactive data tables for Window Functions. 100% verified specifications on Hoorvia.net." />
+<title>SQL Window Functions (Printable): Guide</title>
+<meta name="description" content="Print our SQL window functions chart: ROW_NUMBER, RANK, LAG, LEAD, and 8 more — syntax, what each does, and the example for each." />
 <link rel="canonical" href="https://hoorvia.net/sheet/window-functions-551/" />
-<meta property="og:title" content="Window Functions Quick Reference Guide | Hoorvia" />
-<meta property="og:description" content="Download printable reference charts and view interactive data tables for Window Functions. 100% verified specifications on Hoorvia.net." />
+<meta property="og:title" content="SQL Window Functions (Printable): Guide" />
+<meta property="og:description" content="Print our SQL window functions chart: ROW_NUMBER, RANK, LAG, LEAD, and 8 more — syntax, what each does, and the example for each." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://hoorvia.net/sheet/window-functions-551/" />
-<meta name="twitter:title" content="Window Functions Quick Reference Guide | Hoorvia" />
-<meta name="twitter:description" content="Download printable reference charts and view interactive data tables for Window Functions. 100% verified specifications on Hoorvia.net." />
+<meta name="twitter:title" content="SQL Window Functions (Printable): Guide" />
+<meta name="twitter:description" content="Print our SQL window functions chart: ROW_NUMBER, RANK, LAG, LEAD, and 8 more — syntax, what each does, and the example for each." />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
-<script type="application/ld+json">{
+<script type="application/ld+json">
+{
   "@context": "https://schema.org",
   "@type": "TechArticle",
-  "headline": "Window Functions Quick Reference Guide",
-  "description": "Download printable reference charts and view interactive data tables for Window Functions. 100% verified specifications on Hoorvia.net.",
+  "headline": "SQL Window Functions: Printable Guide",
+  "description": "Print our SQL window functions chart: ROW_NUMBER, RANK, LAG, LEAD, and 8 more \u2014 syntax, what each does, and the example for each.",
   "url": "https://hoorvia.net/sheet/window-functions-551/",
   "inLanguage": "en-US",
   "mainEntityOfPage": "https://hoorvia.net/sheet/window-functions-551/"
-}</script>
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the difference between RANK and DENSE_RANK?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "RANK leaves gaps after a tie \u2014 two rows tied for first both rank 1, and the next ranks 3. DENSE_RANK does not leave gaps \u2014 the next row ranks 2. Use RANK for leaderboards, DENSE_RANK for top-N lists without gaps."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When should I use LAG instead of a self-join?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "When you need the previous row's value \u2014 month-over-month change, days since the last order. LAG does it in one pass; a self-join needs a second scan of the table and is harder to read."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use a window function in a WHERE clause?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No \u2014 window functions run after WHERE, so the database has not calculated them yet. Filter on a window result with a subquery or a CTE: compute the window in the inner query, filter in the outer one."
+      }
+    }
+  ]
+}
+</script>
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
 tailwind.config = { theme: { extend: { colors: { paper: '#F8FAFC', warmPaper: '#FAF9F6', slateText: '#1E293B', brandNavy: '#0F172A', brandTeal: '#0D9488', ctaGreen: '#10B981', ctaGreenHover: '#059669', ctaAmber: '#F59E0B', ctaAmberHover: '#D97706' }, fontFamily: { heading: ['"Plus Jakarta Sans"', 'sans-serif'], sans: ['Inter', 'system-ui', 'sans-serif'] }, boxShadow: { 'paper-sheet': '0 14px 35px -5px rgba(15, 23, 42, 0.12), 0 4px 12px -2px rgba(15, 23, 42, 0.06)', 'card-hover': '0 12px 24px -6px rgba(13, 148, 136, 0.14)' } } } }
@@ -77,8 +111,8 @@ h1, h2, h3, h4, .font-heading { font-family: 'Plus Jakarta Sans', sans-serif; }
 <nav class="flex items-center gap-1.5"><a href="/" class="hover:text-brandTeal font-medium">Home</a><span>&rsaquo;</span><a href="/tech/" class="hover:text-brandTeal font-medium">Tech &amp; Software</a><span>&rsaquo;</span><span class="text-slate-800 font-semibold">Window Functions Quick Reference Guide</span></nav>
 <a href="/" class="inline-flex items-center gap-1 text-brandTeal font-semibold hover:underline">&larr; Back to All Cheat Sheets</a></div>
 <header class="mb-6"><div class="flex flex-wrap items-center gap-2 mb-3"><span class="px-2.5 py-1 rounded-md bg-teal-100 text-brandTeal text-xs font-bold uppercase tracking-wide">Tech &amp; Software</span><span class="px-2.5 py-1 rounded-md bg-emerald-100 text-emerald-800 text-xs font-semibold">Free Printable</span><span class="text-xs text-slate-500">Sizes: US Letter &amp; A4</span></div>
-<h1 class="font-heading text-2xl sm:text-4xl font-extrabold text-brandNavy tracking-tight leading-tight mb-3">Window Functions Quick Reference Guide</h1>
-<p class="text-slate-600 text-sm sm:text-base leading-relaxed">Authentic reference chart and data matrix for Window Functions in SQL &amp; Databases. Use the interactive table below or print it / save it as a PDF with the button below.</p></header>
+<h1 class="font-heading text-2xl sm:text-4xl font-extrabold text-brandNavy tracking-tight leading-tight mb-3">SQL Window Functions: Printable Guide</h1>
+<p class="text-slate-600 text-sm sm:text-base leading-relaxed">Window functions calculate across rows without collapsing them: ROW_NUMBER numbers the rows, RANK orders them, LAG looks at the previous row, and a windowed SUM gives a running total — all while keeping every row in the result. The trap is confusing them with GROUP BY: GROUP BY collapses rows into one per group, while a window function keeps every row and adds a calculation beside it. The key is the OVER clause — PARTITION BY splits the rows into groups, ORDER BY orders them inside each group, and the function does the rest. This printable chart lists twelve window functions with syntax, what each does, and the example. Consult the live reference table below, or print the sheet and keep it by your terminal.</p></header>
 <div id="quick-action-bar" class="no-print flex flex-wrap items-center gap-2.5 p-3 rounded-xl bg-white border border-slate-200 shadow-sm mb-8">
 <a href="#download-cta-box" class="flex-1 sm:flex-initial inline-flex items-center justify-center gap-1.5 px-4 py-2 rounded-lg bg-ctaGreen hover:bg-ctaGreenHover text-white font-semibold text-xs sm:text-sm transition-all shadow-sm"><span>&#128229; Jump to Free PDF Download</span></a>
 <button onclick="window.print()" class="flex-1 sm:flex-initial inline-flex items-center justify-center gap-1.5 px-4 py-2 rounded-lg bg-ctaAmber hover:bg-ctaAmberHover text-white font-semibold text-xs sm:text-sm transition-all shadow-sm cursor-pointer border-0"><span>&#128438; Print This Chart Now</span></button>
@@ -86,13 +120,54 @@ h1, h2, h3, h4, .font-heading { font-family: 'Plus Jakarta Sans', sans-serif; }
 <section id="table-section" class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden mb-10">
 <div class="p-4 sm:p-5 border-b border-slate-200 bg-slate-50/70 flex flex-col sm:flex-row sm:items-center justify-between gap-3"><div><h2 class="font-heading text-lg sm:text-xl font-bold text-brandNavy">Quick-Reference Table</h2><p class="text-xs text-slate-500">The full data from this cheat sheet, right on the page.</p></div></div>
 <div class="no-print p-3 sm:px-5 bg-white border-b border-slate-200"><input type="text" id="table-filter-input" oninput="filterRows()" placeholder="&#128270; Filter this table instantly..." class="w-full px-3.5 py-2 text-sm border border-slate-200 rounded-lg focus:outline-none focus:border-brandTeal" /></div>
-<div class="overflow-x-auto"><table class="w-full text-left border-collapse"><thead><tr class="bg-slate-100/80 text-slate-700 text-xs uppercase tracking-wider border-b border-slate-200"><th class="py-3 px-4 font-bold">Command / Feature</th><th class="py-3 px-4 font-bold">Syntax / Keyboard Shortcut (Win / Mac)</th><th class="py-3 px-4 font-bold">Operational Context &amp; Environment</th><th class="py-3 px-4 font-bold">Key Output / Practical Result</th></tr></thead><tbody id="post-tbody" class="divide-y divide-slate-200 text-xs sm:text-sm"><tr><td class="py-3 px-4 text-slate-700">Window Functions Primary Action</td><td class="py-3 px-4 text-slate-700">Ctrl + P / Cmd + P</td><td class="py-3 px-4 text-slate-700">Editor quick-access palette</td><td class="py-3 px-4 text-slate-700">Instantly locates and opens target files or commands</td></tr><tr><td class="py-3 px-4 text-slate-700">Window Functions Query / Filter</td><td class="py-3 px-4 text-slate-700">SELECT * FROM items WHERE category = &#x27;window functions&#x27;</td><td class="py-3 px-4 text-slate-700">Relational or collection retrieval</td><td class="py-3 px-4 text-slate-700">Returns filtered data record array matching criteria</td></tr><tr><td class="py-3 px-4 text-slate-700">Window Functions Configuration</td><td class="py-3 px-4 text-slate-700">export CONFIG_WINDOW_FUNCTIONS=true</td><td class="py-3 px-4 text-slate-700">Terminal shell environment (.bashrc / .zshrc)</td><td class="py-3 px-4 text-slate-700">Persists operational configuration flags across sessions</td></tr><tr><td class="py-3 px-4 text-slate-700">Window Functions Integrity Check</td><td class="py-3 px-4 text-slate-700">npm test -- --grep=&quot;window functions&quot;</td><td class="py-3 px-4 text-slate-700">Automated CI/CD test runner</td><td class="py-3 px-4 text-slate-700">Executes targeted assertions with exit code confirmation</td></tr></tbody></table></div></section>
-<section id="howto-section" class="no-print bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 mb-10"><h2 class="font-heading text-xl sm:text-2xl font-bold text-brandNavy mb-4">How to Use This Chart</h2><p class="text-sm sm:text-[15px] text-slate-600 leading-relaxed mb-3">Pin this chart where you work: it packs <strong>4 entries</strong> and 4 columns (<strong>Command / Feature</strong>, <strong>Syntax / Keyboard Shortcut (Win / Mac)</strong>, <strong>Operational Context &amp; Environment</strong>, <strong>Key Output / Practical Result</strong>) into one printable page, built for quick lookups.</p>
-<p class="text-sm sm:text-[15px] text-slate-600 leading-relaxed mb-3">Scan down the <strong>Command / Feature</strong> column to your item, then read across for Syntax / Keyboard Shortcut (Win / Mac), Operational Context &amp; Environment.</p>
-<p class="text-sm sm:text-[15px] text-slate-600 leading-relaxed mb-3"><strong class="text-brandNavy">Example:</strong> for <strong>Window Functions Primary Action</strong>, the chart gives <strong>Syntax / Keyboard Shortcut (Win / Mac)</strong> of <strong>Ctrl + P / Cmd + P</strong>.</p>
-<ul class="list-disc pl-5 space-y-1.5 text-sm sm:text-[15px] text-slate-600 leading-relaxed"><li>Compare values down a single column to spot the pattern before you commit to a choice.</li><li>When two rows look close, the Key Output / Practical Result column usually breaks the tie.</li><li>Print it once and keep it where you work — that's the whole point of a cheat sheet.</li></ul></section>
+<div class="overflow-x-auto"><table class="sheet-table">
+<thead>
+<tr><th>Function</th><th>Syntax</th><th>What It Does</th><th>Example</th></tr>
+</thead>
+<tbody>
+<tr><td>ROW_NUMBER</td><td>ROW_NUMBER() OVER (ORDER BY col)</td><td>Numbers rows 1, 2, 3...</td><td>Top-N per group</td></tr>
+<tr><td>RANK</td><td>RANK() OVER (ORDER BY col DESC)</td><td>Ranks with gaps for ties</td><td>Leaderboards</td></tr>
+<tr><td>DENSE_RANK</td><td>DENSE_RANK() OVER (ORDER BY col)</td><td>Ranks without gaps</td><td>Top-N without gaps</td></tr>
+<tr><td>NTILE</td><td>NTILE(4) OVER (ORDER BY col)</td><td>Splits rows into N groups</td><td>Quartiles, deciles</td></tr>
+<tr><td>LAG</td><td>LAG(col, 1) OVER (ORDER BY date)</td><td>Previous row&#x27;s value</td><td>Month-over-month change</td></tr>
+<tr><td>LEAD</td><td>LEAD(col, 1) OVER (ORDER BY date)</td><td>Next row&#x27;s value</td><td>Next order date</td></tr>
+<tr><td>SUM (window)</td><td>SUM(col) OVER (PARTITION BY grp)</td><td>Running / cumulative total</td><td>Running totals</td></tr>
+<tr><td>AVG (window)</td><td>AVG(col) OVER (PARTITION BY grp)</td><td>Average within a group</td><td>Group averages</td></tr>
+<tr><td>COUNT (window)</td><td>COUNT(*) OVER (PARTITION BY grp)</td><td>Count within a group</td><td>Rows per group</td></tr>
+<tr><td>FIRST_VALUE</td><td>FIRST_VALUE(col) OVER (ORDER BY date)</td><td>First value in a window</td><td>First order per customer</td></tr>
+<tr><td>LAST_VALUE</td><td>LAST_VALUE(col) OVER (ORDER BY date)</td><td>Last value in a window</td><td>Latest status</td></tr>
+<tr><td>PARTITION BY</td><td>... OVER (PARTITION BY col)</td><td>Resets the window per group</td><td>Per-department ranking</td></tr>
+</tbody>
+</table></div></section>
+<section id="howto-section" class="no-print bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 mb-10"><h2 class="font-heading text-xl sm:text-2xl font-bold text-brandNavy mb-4">How to Use This Chart</h2><p class="text-sm sm:text-[15px] text-slate-600 leading-relaxed mb-3">Pin this chart where you work: it packs <strong>12 entries</strong> and 4 columns (<strong>Function</strong>, <strong>Syntax</strong>, <strong>What It Does</strong>, <strong>Example</strong>) into one printable page, built for quick lookups.</p>
+<p class="text-sm sm:text-[15px] text-slate-600 leading-relaxed mb-3">Scan down the <strong>Function</strong> column to your item, then read across for Syntax, What It Does, Example.</p>
+<p class="text-sm sm:text-[15px] text-slate-600 leading-relaxed mb-3"><strong class="text-brandNavy">Example:</strong> for <strong>ROW_NUMBER</strong>, the chart gives <strong>Syntax</strong> of <strong>ROW_NUMBER() OVER (ORDER BY col)</strong>.</p>
+<ul class="list-disc pl-5 space-y-1.5 text-sm sm:text-[15px] text-slate-600 leading-relaxed"><li>Compare values down a single column to spot the pattern before you commit to a choice.</li><li>When two rows look close, the last column usually breaks the tie.</li><li>Print it once and keep it where you work — that's the whole point of a cheat sheet.</li></ul></section>
+<section class="paper-sheet rounded-2xl shadow-paper-sheet p-6 sm:p-8 mb-6 sm:mb-8 pt-8">
+<h2 class="font-heading text-lg sm:text-xl font-bold text-brandNavy mb-3">&#128161; Quick Tips</h2>
+<div class="space-y-3 text-sm sm:text-base text-slate-600 leading-relaxed">
+<p><strong class="text-brandNavy">PARTITION BY is the grouper:</strong> PARTITION BY splits the rows into groups and the function restarts in each one. Without it, the window is the whole result.</p><p><strong class="text-brandNavy">Window functions keep every row:</strong> GROUP BY collapses rows into one per group; a window function keeps every row and adds a calculation beside it. Use windows for detail plus totals.</p>
+</div>
+</section>
+
+<section class="paper-sheet rounded-2xl shadow-paper-sheet p-6 sm:p-8 mb-6 sm:mb-8 pt-8">
+<h2 class="font-heading text-lg sm:text-xl font-bold text-brandNavy mb-4">Frequently Asked Questions</h2>
+<div class="space-y-4">
+<div class="border-b border-slate-100 pb-4 last:border-0 last:pb-0">
+<h3 class="font-heading font-bold text-brandNavy text-sm sm:text-base mb-1.5">What is the difference between RANK and DENSE_RANK?</h3>
+<p class="text-sm text-slate-600 leading-relaxed">RANK leaves gaps after a tie — two rows tied for first both rank 1, and the next ranks 3. DENSE_RANK does not leave gaps — the next row ranks 2. Use RANK for leaderboards, DENSE_RANK for top-N lists without gaps.</p>
+</div><div class="border-b border-slate-100 pb-4 last:border-0 last:pb-0">
+<h3 class="font-heading font-bold text-brandNavy text-sm sm:text-base mb-1.5">When should I use LAG instead of a self-join?</h3>
+<p class="text-sm text-slate-600 leading-relaxed">When you need the previous row&#x27;s value — month-over-month change, days since the last order. LAG does it in one pass; a self-join needs a second scan of the table and is harder to read.</p>
+</div><div class="border-b border-slate-100 pb-4 last:border-0 last:pb-0">
+<h3 class="font-heading font-bold text-brandNavy text-sm sm:text-base mb-1.5">Can I use a window function in a WHERE clause?</h3>
+<p class="text-sm text-slate-600 leading-relaxed">No — window functions run after WHERE, so the database has not calculated them yet. Filter on a window result with a subquery or a CTE: compute the window in the inner query, filter in the outer one.</p>
+</div>
+</div>
+</section>
+
 <section id="preview-section" class="no-print mb-8"><div class="flex items-center justify-between mb-3"><h2 class="font-heading text-lg sm:text-xl font-bold text-brandNavy">Printable Sheet Preview</h2><span class="text-xs font-medium text-slate-500">High-Contrast Layout</span></div>
-<img src="/assets/previews/window-functions.webp" alt="Window Functions Quick Reference Guide | Hoorvia Printable Preview" loading="lazy" class="rounded-2xl border border-slate-200 shadow-sm w-full" />
+<img src="/assets/previews/window-functions.webp" alt="Printable SQL window functions chart showing functions, syntax, purposes, and examples." loading="lazy" class="rounded-2xl border border-slate-200 shadow-sm w-full" />
 </section>
 <section id="download-cta-box" class="no-print bg-white rounded-2xl border-2 border-emerald-500/40 shadow-md p-6 sm:p-8 mb-10 text-center">
 <span class="inline-block px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold uppercase tracking-wide mb-2">Instant Direct Download &bull; No Email Required</span>
