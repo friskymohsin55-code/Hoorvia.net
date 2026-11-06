@@ -91,6 +91,21 @@ h1, h2, h3, h4, .font-heading { font-family: 'Plus Jakarta Sans', sans-serif; }
   thead th { color: #fff !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   main, article { max-width: 100% !important; padding: 0 !important; margin: 0 !important; }
 }
+
+/* Hoorvia premium upgrade: unit toggle, row copy, swipe hint */
+.unit-toggle-btn{padding:6px 10px;font-size:12px;font-weight:600;color:#475569;background:#fff;border:0;cursor:pointer;white-space:nowrap;line-height:1.2}
+.unit-toggle-btn + .unit-toggle-btn{border-left:1px solid #E2E8F0}
+.unit-toggle-btn:hover{background:#F0FDFA;color:#0D9488}
+.unit-toggle-active{background:#0F172A !important;color:#fff !important}
+#table-section tbody tr{cursor:pointer}
+#table-section tbody tr:hover{background:#F0FDFA}
+.copy-badge{margin-right:6px;opacity:.55;font-size:12px}
+#table-section tbody tr:hover .copy-badge{opacity:1}
+#copyToast{position:fixed;right:16px;bottom:16px;z-index:60;background:#0F172A;color:#fff;font-size:13px;font-weight:600;padding:10px 16px;border-radius:10px;box-shadow:0 8px 24px rgba(15,23,42,.25);opacity:0;pointer-events:none;transform:translateY(8px);transition:opacity .2s ease,transform .2s ease}
+#copyToast.show{opacity:1;transform:translateY(0)}
+.swipe-hint{display:none;font-size:12px;color:#64748B;padding:8px 16px 12px;text-align:center}
+@media (max-width:768px){.swipe-hint{display:block}}
+.table-scroll-wrap.edge-fade{background-image:linear-gradient(to left,rgba(255,255,255,.95),rgba(255,255,255,0));background-size:32px 100%;background-repeat:no-repeat;background-position:right top}
 </style>
 </head>
 <body class="min-h-screen flex flex-col selection:bg-teal-100 selection:text-teal-900">
@@ -120,7 +135,7 @@ h1, h2, h3, h4, .font-heading { font-family: 'Plus Jakarta Sans', sans-serif; }
 <section id="table-section" class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden mb-10">
 <div class="p-4 sm:p-5 border-b border-slate-200 bg-slate-50/70 flex flex-col sm:flex-row sm:items-center justify-between gap-3"><div><h2 class="font-heading text-lg sm:text-xl font-bold text-brandNavy">Quick-Reference Table</h2><p class="text-xs text-slate-500">The full data from this cheat sheet, right on the page.</p></div></div>
 <div class="no-print p-3 sm:px-5 bg-white border-b border-slate-200"><input type="text" id="table-filter-input" oninput="filterRows()" placeholder="&#128270; Filter this table instantly..." class="w-full px-3.5 py-2 text-sm border border-slate-200 rounded-lg focus:outline-none focus:border-brandTeal" /></div>
-<div class="overflow-x-auto"><table class="sheet-table">
+<div class="overflow-x-auto table-scroll-wrap"><table class="sheet-table">
 <thead>
 <tr><th>Dressing</th><th>Ratio (Oil:Acid)</th><th>Oil</th><th>Acid</th><th>Extras</th></tr>
 </thead>
@@ -138,7 +153,7 @@ h1, h2, h3, h4, .font-heading { font-family: 'Plus Jakarta Sans', sans-serif; }
 <tr><td>Tahini dressing</td><td>2:1</td><td>Tahini + water</td><td>Lemon juice</td><td>Garlic, cumin</td></tr>
 <tr><td>Ranch-style</td><td>2:1</td><td>Mayo + sour cream</td><td>Buttermilk</td><td>Dill, garlic, onion</td></tr>
 </tbody>
-</table></div></section>
+</table></div><div class="swipe-hint no-print">👉 Swipe table horizontally to see all columns</div><div id="copyToast" class="no-print" role="status" aria-live="polite">Copied!</div></section>
 <section id="howto-section" class="no-print bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 mb-10"><h2 class="font-heading text-xl sm:text-2xl font-bold text-brandNavy mb-4">How to Use This Chart</h2><p class="text-sm sm:text-[15px] text-slate-600 leading-relaxed mb-3">Pin this chart where you work: it packs <strong>12 entries</strong> and 5 columns (<strong>Dressing</strong>, <strong>Ratio (Oil:Acid)</strong>, <strong>Oil</strong>, <strong>Acid</strong>, <strong>Extras</strong>) into one printable page, built for quick lookups.</p>
 <p class="text-sm sm:text-[15px] text-slate-600 leading-relaxed mb-3">Scan down the <strong>Dressing</strong> column to your item, then read across for Ratio (Oil:Acid), Oil, Acid, Extras.</p>
 <p class="text-sm sm:text-[15px] text-slate-600 leading-relaxed mb-3"><strong class="text-brandNavy">Example:</strong> for <strong>Classic vinaigrette</strong>, the chart gives <strong>Ratio (Oil:Acid)</strong> of <strong>3:1</strong>.</p>
@@ -181,7 +196,126 @@ h1, h2, h3, h4, .font-heading { font-family: 'Plus Jakarta Sans', sans-serif; }
 <p class="text-[11px] text-slate-400 mt-4">&#128161; <strong>Pro Printing Tip:</strong> In your printer settings, set Scale to <strong>&ldquo;Fit to Printable Area&rdquo;</strong> and enable <strong>&ldquo;Background Graphics&rdquo;</strong> for color headers.</p></section>
 </article></main>
 <script>
-function filterRows(){ const q=(document.getElementById('table-filter-input').value||'').toLowerCase(); document.querySelectorAll('#post-tbody tr').forEach(r=>{ r.style.display=r.textContent.toLowerCase().includes(q)?'':'none'; }); }
+function filterRows(){ const q=(document.getElementById('table-filter-input').value||'').toLowerCase(); document.querySelectorAll('#table-section tbody tr').forEach(r=>{ r.style.display=r.textContent.toLowerCase().includes(q)?'':'none'; }); }
+/* Hoorvia premium upgrade: unit toggle (°F/°C), one-click row copy, mobile swipe hint */
+(function(){
+var section=document.getElementById('table-section'); if(!section) return;
+var tbody=section.querySelector('tbody'); if(!tbody) return;
+/* --- temp conversion (pure, testable) --- */
+var NUM='-?\\d+(?:\\.\\d+)?';
+function tempExpr(u){ return '(?:'+NUM+'\\s*°'+u+'(?:\\s*[–—-]\\s*'+NUM+'\\s*°'+u+')?|'+NUM+'\\s*[–—-]\\s*'+NUM+'\\s*°'+u+')\\+?'; }
+function fToC(f){ return Math.round((f-32)*5/9); }
+function cToF(c){ return Math.round(c*9/5+32); }
+function convertNums(m,from,fn,to){
+  var out=m.replace(new RegExp('('+NUM+')\\s*([–—-])\\s*('+NUM+')\\s*°'+from,'g'), function(mm,a,dash,b){ return fn(parseFloat(a))+dash+fn(parseFloat(b))+'°'+to; });
+  return out.replace(new RegExp('('+NUM+')\\s*°'+from,'g'), function(mm,n){ return fn(parseFloat(n))+'°'+to; });
+}
+function cleanTemp(t){
+  var s=t.replace(/\(\s*\)/g,'').replace(/([><≤≥(])\s*\/\s*/g,'$1').replace(/\s*\/\s*([)>])/g,'$1').replace(/\s*\/\s*$/,'').replace(/^\s*\/\s*/,'').replace(/\(\s+/g,'(').replace(/\s+\)/g,')').replace(/\s{2,}/g,' ').trim();
+  return s.replace(/^\(([^()]*)\)$/,'$1');
+}
+function stripUnit(t,u){
+  var e=tempExpr(u), s=t;
+  s=s.replace(new RegExp('\\s*\\/\\s*'+e,'g'),'');
+  s=s.replace(new RegExp('\\(\\s*'+e+'\\s*\\)','g'),'');
+  s=s.replace(new RegExp(e,'g'),'');
+  return cleanTemp(s);
+}
+function convertCell(orig,mode){
+  if(mode==='both') return orig;
+  if(orig.indexOf('=')!==-1) return orig;
+  var hasF=new RegExp(NUM+'\\s*°F').test(orig);
+  var hasC=new RegExp(NUM+'\\s*°C').test(orig);
+  if(!hasF && !hasC) return orig;
+  if(mode==='f'){
+    if(hasC && !hasF){ return orig.replace(new RegExp(tempExpr('C'),'g'), function(m){ return convertNums(m,'C',cToF,'F'); }); }
+    return stripUnit(orig,'C');
+  }
+  if(hasF && !hasC){ return orig.replace(new RegExp(tempExpr('F'),'g'), function(m){ return convertNums(m,'F',fToC,'C'); }); }
+  return stripUnit(orig,'F');
+}
+function convertHeader(orig,mode){
+  if(mode==='both') return orig;
+  var t=convertCell(orig,mode);
+  if(t.trim()==='°F' && mode==='c') return '°C';
+  if(t.trim()==='°C' && mode==='f') return '°F';
+  if(mode==='f'){ t=t.replace(/\(°F \/ °C\)/g,'(°F)').replace(/\(°C\)/g,'(°F)'); }
+  else { t=t.replace(/\(°F \/ °C\)/g,'(°C)').replace(/\(°F\)/g,'(°C)'); }
+  return t;
+}
+/* --- end temp conversion --- */
+var tempCells=[];
+section.querySelectorAll('tbody td, thead th').forEach(function(el){
+  var txt=el.textContent;
+  if(txt.indexOf('°F')!==-1 || txt.indexOf('°C')!==-1){ el.dataset.orig=txt; tempCells.push(el); }
+});
+function addBadges(){
+  section.querySelectorAll('.copy-badge').forEach(function(b){ b.remove(); });
+  tbody.querySelectorAll('tr').forEach(function(tr){
+    var first=tr.querySelector('td'); if(!first) return;
+    var badge=document.createElement('span');
+    badge.className='copy-badge no-print'; badge.title='Click row to copy'; badge.textContent='📋';
+    first.insertBefore(badge, first.firstChild);
+  });
+}
+function applyUnit(mode){
+  tempCells.forEach(function(el){ el.textContent = el.tagName==='TH' ? convertHeader(el.dataset.orig, mode) : convertCell(el.dataset.orig, mode); });
+  addBadges();
+}
+var toast=document.getElementById('copyToast'), toastTimer=null;
+function showToast(){
+  if(!toast) return;
+  toast.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer=setTimeout(function(){ toast.classList.remove('show'); },1600);
+}
+function fallbackCopy(text){
+  var ta=document.createElement('textarea');
+  ta.value=text; ta.style.position='fixed'; ta.style.opacity='0';
+  document.body.appendChild(ta); ta.select();
+  try{ document.execCommand('copy'); }catch(e){}
+  document.body.removeChild(ta);
+}
+function copyRow(tr){
+  var parts=[];
+  tr.querySelectorAll('td').forEach(function(td){
+    var clone=td.cloneNode(true);
+    var b=clone.querySelector('.copy-badge'); if(b) b.remove();
+    parts.push(clone.textContent.trim());
+  });
+  var text=parts.join(' — ');
+  if(navigator.clipboard && navigator.clipboard.writeText){
+    navigator.clipboard.writeText(text).then(showToast, function(){ fallbackCopy(text); showToast(); });
+  } else { fallbackCopy(text); showToast(); }
+}
+tbody.addEventListener('click', function(e){
+  var tr=e.target.closest('tr'); if(!tr) return;
+  copyRow(tr);
+});
+var wrap=section.querySelector('.table-scroll-wrap');
+var hint=section.querySelector('.swipe-hint');
+function updateScrollHints(){
+  if(!wrap) return;
+  var overflowing=wrap.scrollWidth > wrap.clientWidth + 1;
+  var moreRight=overflowing && (wrap.scrollLeft + wrap.clientWidth < wrap.scrollWidth - 1);
+  wrap.classList.toggle('edge-fade', moreRight);
+  if(hint){ hint.style.display=overflowing ? '' : 'none'; }
+}
+if(wrap){ wrap.addEventListener('scroll', updateScrollHints, {passive:true}); }
+window.addEventListener('resize', updateScrollHints);
+window.addEventListener('load', updateScrollHints);
+var toggle=document.getElementById('unit-toggle');
+if(toggle){
+  toggle.addEventListener('click', function(e){
+    var btn=e.target.closest('button[data-unit]'); if(!btn) return;
+    toggle.querySelectorAll('.unit-toggle-btn').forEach(function(b){ b.classList.remove('unit-toggle-active'); });
+    btn.classList.add('unit-toggle-active');
+    applyUnit(btn.dataset.unit);
+  });
+}
+addBadges();
+updateScrollHints();
+})();
 </script>
 <footer class="no-print bg-white border-t border-slate-200 mt-12">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 py-10">
