@@ -11,27 +11,61 @@
 </script>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Reset vs Revert Quick Reference Guide | Hoorvia</title>
-<meta name="description" content="Download printable reference charts and view interactive data tables for Reset vs Revert. 100% verified specifications on Hoorvia.net." />
+<title>Git Reset vs Revert Chart (Printable): Undo Guide</title>
+<meta name="description" content="Print our git reset vs revert chart: soft, mixed, and hard reset plus revert — what each undo does, the exact command, and when it is safe." />
 <link rel="canonical" href="https://hoorvia.net/sheet/reset-vs-revert-571/" />
-<meta property="og:title" content="Reset vs Revert Quick Reference Guide | Hoorvia" />
-<meta property="og:description" content="Download printable reference charts and view interactive data tables for Reset vs Revert. 100% verified specifications on Hoorvia.net." />
+<meta property="og:title" content="Git Reset vs Revert Chart (Printable): Undo Guide" />
+<meta property="og:description" content="Print our git reset vs revert chart: soft, mixed, and hard reset plus revert — what each undo does, the exact command, and when it is safe." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://hoorvia.net/sheet/reset-vs-revert-571/" />
-<meta name="twitter:title" content="Reset vs Revert Quick Reference Guide | Hoorvia" />
-<meta name="twitter:description" content="Download printable reference charts and view interactive data tables for Reset vs Revert. 100% verified specifications on Hoorvia.net." />
+<meta name="twitter:title" content="Git Reset vs Revert Chart (Printable): Undo Guide" />
+<meta name="twitter:description" content="Print our git reset vs revert chart: soft, mixed, and hard reset plus revert — what each undo does, the exact command, and when it is safe." />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
-<script type="application/ld+json">{
+<script type="application/ld+json">
+{
   "@context": "https://schema.org",
   "@type": "TechArticle",
-  "headline": "Reset vs Revert Quick Reference Guide",
-  "description": "Download printable reference charts and view interactive data tables for Reset vs Revert. 100% verified specifications on Hoorvia.net.",
+  "headline": "Git Reset vs Revert Chart: Printable Undo Guide",
+  "description": "Print our git reset vs revert chart: soft, mixed, and hard reset plus revert \u2014 what each undo does, the exact command, and when it is safe.",
   "url": "https://hoorvia.net/sheet/reset-vs-revert-571/",
   "inLanguage": "en-US",
   "mainEntityOfPage": "https://hoorvia.net/sheet/reset-vs-revert-571/"
-}</script>
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the difference between git reset and git revert?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Reset moves the branch pointer backward and can erase commits, which rewrites history. Revert leaves history alone and adds a new commit that undoes the old one. Use reset only on private branches; use revert on any branch others share."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What do --soft, --mixed, and --hard mean in git reset?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "--soft moves HEAD back but keeps your changes staged, so you can commit again right away. --mixed, the default, unstages the changes but keeps the files. --hard deletes the changes entirely \u2014 use it only when you are sure the work is disposable."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I undo a commit that is already pushed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Use git revert with the commit hash: it creates a new commit that reverses the old one, which you can push normally. Never use git reset --hard on a pushed commit \u2014 it rewrites shared history and breaks every teammate's clone."
+      }
+    }
+  ]
+}
+</script>
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
 tailwind.config = { theme: { extend: { colors: { paper: '#F8FAFC', warmPaper: '#FAF9F6', slateText: '#1E293B', brandNavy: '#0F172A', brandTeal: '#0D9488', ctaGreen: '#10B981', ctaGreenHover: '#059669', ctaAmber: '#F59E0B', ctaAmberHover: '#D97706' }, fontFamily: { heading: ['"Plus Jakarta Sans"', 'sans-serif'], sans: ['Inter', 'system-ui', 'sans-serif'] }, boxShadow: { 'paper-sheet': '0 14px 35px -5px rgba(15, 23, 42, 0.12), 0 4px 12px -2px rgba(15, 23, 42, 0.06)', 'card-hover': '0 12px 24px -6px rgba(13, 148, 136, 0.14)' } } } }
@@ -77,8 +111,8 @@ h1, h2, h3, h4, .font-heading { font-family: 'Plus Jakarta Sans', sans-serif; }
 <nav class="flex items-center gap-1.5"><a href="/" class="hover:text-brandTeal font-medium">Home</a><span>&rsaquo;</span><a href="/tech/" class="hover:text-brandTeal font-medium">Tech &amp; Software</a><span>&rsaquo;</span><span class="text-slate-800 font-semibold">Reset vs Revert Quick Reference Guide</span></nav>
 <a href="/" class="inline-flex items-center gap-1 text-brandTeal font-semibold hover:underline">&larr; Back to All Cheat Sheets</a></div>
 <header class="mb-6"><div class="flex flex-wrap items-center gap-2 mb-3"><span class="px-2.5 py-1 rounded-md bg-teal-100 text-brandTeal text-xs font-bold uppercase tracking-wide">Tech &amp; Software</span><span class="px-2.5 py-1 rounded-md bg-emerald-100 text-emerald-800 text-xs font-semibold">Free Printable</span><span class="text-xs text-slate-500">Sizes: US Letter &amp; A4</span></div>
-<h1 class="font-heading text-2xl sm:text-4xl font-extrabold text-brandNavy tracking-tight leading-tight mb-3">Reset vs Revert Quick Reference Guide</h1>
-<p class="text-slate-600 text-sm sm:text-base leading-relaxed">Authentic reference chart and data matrix for Reset vs Revert in Git &amp; GitHub Workflow. Use the interactive table below or print it / save it as a PDF with the button below.</p></header>
+<h1 class="font-heading text-2xl sm:text-4xl font-extrabold text-brandNavy tracking-tight leading-tight mb-3">Git Reset vs Revert Chart: Printable Undo Guide</h1>
+<p class="text-slate-600 text-sm sm:text-base leading-relaxed">Git gives you two ways to undo a commit, and picking the wrong one is how teams lose work. Reset moves the branch pointer backward and can erase commits — perfect on your own private branch, dangerous on a shared one, because anyone who already pulled the old history ends up with a broken timeline. Revert does the opposite: it leaves history alone and adds a new commit that undoes the old one, so shared branches stay clean and everyone&#x27;s work survives. The trouble is that both commands look alike and the flags make all the difference: --soft keeps changes staged, --mixed unstages them, and --hard deletes them outright. Guessing wrong can wipe a day&#x27;s work. This printable chart lays out twelve reset and revert commands with what each one does, the exact syntax, and when to use it. Consult the live reference table below, or print the sheet and keep it beside your keyboard.</p></header>
 <div id="quick-action-bar" class="no-print flex flex-wrap items-center gap-2.5 p-3 rounded-xl bg-white border border-slate-200 shadow-sm mb-8">
 <a href="#download-cta-box" class="flex-1 sm:flex-initial inline-flex items-center justify-center gap-1.5 px-4 py-2 rounded-lg bg-ctaGreen hover:bg-ctaGreenHover text-white font-semibold text-xs sm:text-sm transition-all shadow-sm"><span>&#128229; Jump to Free PDF Download</span></a>
 <button onclick="window.print()" class="flex-1 sm:flex-initial inline-flex items-center justify-center gap-1.5 px-4 py-2 rounded-lg bg-ctaAmber hover:bg-ctaAmberHover text-white font-semibold text-xs sm:text-sm transition-all shadow-sm cursor-pointer border-0"><span>&#128438; Print This Chart Now</span></button>
@@ -86,13 +120,54 @@ h1, h2, h3, h4, .font-heading { font-family: 'Plus Jakarta Sans', sans-serif; }
 <section id="table-section" class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden mb-10">
 <div class="p-4 sm:p-5 border-b border-slate-200 bg-slate-50/70 flex flex-col sm:flex-row sm:items-center justify-between gap-3"><div><h2 class="font-heading text-lg sm:text-xl font-bold text-brandNavy">Quick-Reference Table</h2><p class="text-xs text-slate-500">The full data from this cheat sheet, right on the page.</p></div></div>
 <div class="no-print p-3 sm:px-5 bg-white border-b border-slate-200"><input type="text" id="table-filter-input" oninput="filterRows()" placeholder="&#128270; Filter this table instantly..." class="w-full px-3.5 py-2 text-sm border border-slate-200 rounded-lg focus:outline-none focus:border-brandTeal" /></div>
-<div class="overflow-x-auto"><table class="w-full text-left border-collapse"><thead><tr class="bg-slate-100/80 text-slate-700 text-xs uppercase tracking-wider border-b border-slate-200"><th class="py-3 px-4 font-bold">Command / Feature</th><th class="py-3 px-4 font-bold">Syntax / Keyboard Shortcut (Win / Mac)</th><th class="py-3 px-4 font-bold">Operational Context &amp; Environment</th><th class="py-3 px-4 font-bold">Key Output / Practical Result</th></tr></thead><tbody id="post-tbody" class="divide-y divide-slate-200 text-xs sm:text-sm"><tr><td class="py-3 px-4 text-slate-700">Reset vs Revert Primary Action</td><td class="py-3 px-4 text-slate-700">Ctrl + P / Cmd + P</td><td class="py-3 px-4 text-slate-700">Editor quick-access palette</td><td class="py-3 px-4 text-slate-700">Instantly locates and opens target files or commands</td></tr><tr><td class="py-3 px-4 text-slate-700">Reset vs Revert Query / Filter</td><td class="py-3 px-4 text-slate-700">SELECT * FROM items WHERE category = &#x27;reset vs revert&#x27;</td><td class="py-3 px-4 text-slate-700">Relational or collection retrieval</td><td class="py-3 px-4 text-slate-700">Returns filtered data record array matching criteria</td></tr><tr><td class="py-3 px-4 text-slate-700">Reset vs Revert Configuration</td><td class="py-3 px-4 text-slate-700">export CONFIG_RESET_VS_REVERT=true</td><td class="py-3 px-4 text-slate-700">Terminal shell environment (.bashrc / .zshrc)</td><td class="py-3 px-4 text-slate-700">Persists operational configuration flags across sessions</td></tr><tr><td class="py-3 px-4 text-slate-700">Reset vs Revert Integrity Check</td><td class="py-3 px-4 text-slate-700">npm test -- --grep=&quot;reset vs revert&quot;</td><td class="py-3 px-4 text-slate-700">Automated CI/CD test runner</td><td class="py-3 px-4 text-slate-700">Executes targeted assertions with exit code confirmation</td></tr></tbody></table></div></section>
-<section id="howto-section" class="no-print bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 mb-10"><h2 class="font-heading text-xl sm:text-2xl font-bold text-brandNavy mb-4">How to Use This Chart</h2><p class="text-sm sm:text-[15px] text-slate-600 leading-relaxed mb-3">Pin this chart where you work: it packs <strong>4 entries</strong> and 4 columns (<strong>Command / Feature</strong>, <strong>Syntax / Keyboard Shortcut (Win / Mac)</strong>, <strong>Operational Context &amp; Environment</strong>, <strong>Key Output / Practical Result</strong>) into one printable page, built for quick lookups.</p>
-<p class="text-sm sm:text-[15px] text-slate-600 leading-relaxed mb-3">Scan down the <strong>Command / Feature</strong> column to your item, then read across for Syntax / Keyboard Shortcut (Win / Mac), Operational Context &amp; Environment.</p>
-<p class="text-sm sm:text-[15px] text-slate-600 leading-relaxed mb-3"><strong class="text-brandNavy">Example:</strong> for <strong>Reset vs Revert Primary Action</strong>, the chart gives <strong>Syntax / Keyboard Shortcut (Win / Mac)</strong> of <strong>Ctrl + P / Cmd + P</strong>.</p>
-<ul class="list-disc pl-5 space-y-1.5 text-sm sm:text-[15px] text-slate-600 leading-relaxed"><li>Compare values down a single column to spot the pattern before you commit to a choice.</li><li>When two rows look close, the Key Output / Practical Result column usually breaks the tie.</li><li>Print it once and keep it where you work — that's the whole point of a cheat sheet.</li></ul></section>
+<div class="overflow-x-auto"><table class="sheet-table">
+<thead>
+<tr><th>Action</th><th>Command</th><th>What Happens</th><th>Use When</th></tr>
+</thead>
+<tbody>
+<tr><td>Soft reset</td><td>git reset --soft HEAD~1</td><td>Moves HEAD back, keeps changes staged</td><td>Undo the last commit, keep the work</td></tr>
+<tr><td>Mixed reset</td><td>git reset HEAD~1</td><td>Moves HEAD back, unstages changes</td><td>Undo a commit, redo it differently</td></tr>
+<tr><td>Hard reset</td><td>git reset --hard HEAD~1</td><td>Moves HEAD back, deletes changes</td><td>Discard a bad commit entirely</td></tr>
+<tr><td>Reset to a commit</td><td>git reset --hard &lt;hash&gt;</td><td>Rewinds branch to that commit</td><td>Start over from a known-good point</td></tr>
+<tr><td>Revert a commit</td><td>git revert &lt;hash&gt;</td><td>Creates a NEW commit undoing it</td><td>Undo on a shared branch</td></tr>
+<tr><td>Revert a merge</td><td>git revert -m 1 &lt;hash&gt;</td><td>Undoes a merge commit safely</td><td>Roll back a merged PR</td></tr>
+<tr><td>Revert a range</td><td>git revert &lt;old&gt;..&lt;new&gt;</td><td>Undoes several commits at once</td><td>Roll back a bad series</td></tr>
+<tr><td>Reset a file</td><td>git reset HEAD -- &lt;file&gt;</td><td>Unstages one file</td><td>Unstage without touching work</td></tr>
+<tr><td>Restore a file</td><td>git restore --source=HEAD &lt;file&gt;</td><td>Discards file changes</td><td>Throw away one file&#x27;s edits</td></tr>
+<tr><td>Revert conflicts</td><td>Resolve, then git revert --continue</td><td>Finishes the revert</td><td>When the revert hits conflicts</td></tr>
+<tr><td>Reset — pushed?</td><td>Never on shared branches</td><td>Rewrites history others have</td><td>Only for private branches</td></tr>
+<tr><td>Revert — pushed?</td><td>Safe on shared branches</td><td>Adds history, never rewrites</td><td>The safe choice for teams</td></tr>
+</tbody>
+</table></div></section>
+<section id="howto-section" class="no-print bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 mb-10"><h2 class="font-heading text-xl sm:text-2xl font-bold text-brandNavy mb-4">How to Use This Chart</h2><p class="text-sm sm:text-[15px] text-slate-600 leading-relaxed mb-3">Pin this chart where you work: it packs <strong>12 entries</strong> and 4 columns (<strong>Action</strong>, <strong>Command</strong>, <strong>What Happens</strong>, <strong>Use When</strong>) into one printable page, built for quick lookups.</p>
+<p class="text-sm sm:text-[15px] text-slate-600 leading-relaxed mb-3">Scan down the <strong>Action</strong> column to your item, then read across for Command, What Happens, Use When.</p>
+<p class="text-sm sm:text-[15px] text-slate-600 leading-relaxed mb-3"><strong class="text-brandNavy">Example:</strong> for <strong>Soft reset</strong>, the chart gives <strong>Command</strong> of <strong>git reset --soft HEAD~1</strong>.</p>
+<ul class="list-disc pl-5 space-y-1.5 text-sm sm:text-[15px] text-slate-600 leading-relaxed"><li>Compare values down a single column to spot the pattern before you commit to a choice.</li><li>When two rows look close, the last column usually breaks the tie.</li><li>Print it once and keep it where you work — that's the whole point of a cheat sheet.</li></ul></section>
+<section class="paper-sheet rounded-2xl shadow-paper-sheet p-6 sm:p-8 mb-6 sm:mb-8 pt-8">
+<h2 class="font-heading text-lg sm:text-xl font-bold text-brandNavy mb-3">&#128161; Quick Tips</h2>
+<div class="space-y-3 text-sm sm:text-base text-slate-600 leading-relaxed">
+<p><strong class="text-brandNavy">Never hard-reset a shared branch:</strong> A hard reset rewrites history that teammates already pulled, leaving their clones broken. On shared branches, always revert instead.</p><p><strong class="text-brandNavy">Check git status before any reset:</strong> A quick git status shows what is staged and unstaged, so you know exactly what --soft, --mixed, or --hard will keep or delete.</p>
+</div>
+</section>
+
+<section class="paper-sheet rounded-2xl shadow-paper-sheet p-6 sm:p-8 mb-6 sm:mb-8 pt-8">
+<h2 class="font-heading text-lg sm:text-xl font-bold text-brandNavy mb-4">Frequently Asked Questions</h2>
+<div class="space-y-4">
+<div class="border-b border-slate-100 pb-4 last:border-0 last:pb-0">
+<h3 class="font-heading font-bold text-brandNavy text-sm sm:text-base mb-1.5">What is the difference between git reset and git revert?</h3>
+<p class="text-sm text-slate-600 leading-relaxed">Reset moves the branch pointer backward and can erase commits, which rewrites history. Revert leaves history alone and adds a new commit that undoes the old one. Use reset only on private branches; use revert on any branch others share.</p>
+</div><div class="border-b border-slate-100 pb-4 last:border-0 last:pb-0">
+<h3 class="font-heading font-bold text-brandNavy text-sm sm:text-base mb-1.5">What do --soft, --mixed, and --hard mean in git reset?</h3>
+<p class="text-sm text-slate-600 leading-relaxed">--soft moves HEAD back but keeps your changes staged, so you can commit again right away. --mixed, the default, unstages the changes but keeps the files. --hard deletes the changes entirely — use it only when you are sure the work is disposable.</p>
+</div><div class="border-b border-slate-100 pb-4 last:border-0 last:pb-0">
+<h3 class="font-heading font-bold text-brandNavy text-sm sm:text-base mb-1.5">How do I undo a commit that is already pushed?</h3>
+<p class="text-sm text-slate-600 leading-relaxed">Use git revert with the commit hash: it creates a new commit that reverses the old one, which you can push normally. Never use git reset --hard on a pushed commit — it rewrites shared history and breaks every teammate&#x27;s clone.</p>
+</div>
+</div>
+</section>
+
 <section id="preview-section" class="no-print mb-8"><div class="flex items-center justify-between mb-3"><h2 class="font-heading text-lg sm:text-xl font-bold text-brandNavy">Printable Sheet Preview</h2><span class="text-xs font-medium text-slate-500">High-Contrast Layout</span></div>
-<img src="/assets/previews/reset-vs-revert.webp" alt="Reset vs Revert Quick Reference Guide | Hoorvia Printable Preview" loading="lazy" class="rounded-2xl border border-slate-200 shadow-sm w-full" />
+<img src="/assets/previews/reset-vs-revert.webp" alt="Printable git reset vs revert chart showing soft, mixed, and hard reset plus revert commands with what each does and when to use it." loading="lazy" class="rounded-2xl border border-slate-200 shadow-sm w-full" />
 </section>
 <section id="download-cta-box" class="no-print bg-white rounded-2xl border-2 border-emerald-500/40 shadow-md p-6 sm:p-8 mb-10 text-center">
 <span class="inline-block px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold uppercase tracking-wide mb-2">Instant Direct Download &bull; No Email Required</span>
