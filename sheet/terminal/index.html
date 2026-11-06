@@ -11,27 +11,61 @@
 </script>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Terminal Quick Reference Guide | Hoorvia</title>
-<meta name="description" content="Download printable reference charts and view interactive data tables for Terminal. 100% verified specifications on Hoorvia.net." />
+<title>Terminal Commands (Printable): Cheat Sheet</title>
+<meta name="description" content="Print our terminal commands cheat sheet: the 12 commands every developer uses — ls, cd, cp, mv, grep, and more — with examples and notes." />
 <link rel="canonical" href="https://hoorvia.net/sheet/terminal-479/" />
-<meta property="og:title" content="Terminal Quick Reference Guide | Hoorvia" />
-<meta property="og:description" content="Download printable reference charts and view interactive data tables for Terminal. 100% verified specifications on Hoorvia.net." />
+<meta property="og:title" content="Terminal Commands (Printable): Cheat Sheet" />
+<meta property="og:description" content="Print our terminal commands cheat sheet: the 12 commands every developer uses — ls, cd, cp, mv, grep, and more — with examples and notes." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://hoorvia.net/sheet/terminal-479/" />
-<meta name="twitter:title" content="Terminal Quick Reference Guide | Hoorvia" />
-<meta name="twitter:description" content="Download printable reference charts and view interactive data tables for Terminal. 100% verified specifications on Hoorvia.net." />
+<meta name="twitter:title" content="Terminal Commands (Printable): Cheat Sheet" />
+<meta name="twitter:description" content="Print our terminal commands cheat sheet: the 12 commands every developer uses — ls, cd, cp, mv, grep, and more — with examples and notes." />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
-<script type="application/ld+json">{
+<script type="application/ld+json">
+{
   "@context": "https://schema.org",
   "@type": "TechArticle",
-  "headline": "Terminal Quick Reference Guide",
-  "description": "Download printable reference charts and view interactive data tables for Terminal. 100% verified specifications on Hoorvia.net.",
+  "headline": "Terminal Commands: Printable Cheat Sheet",
+  "description": "Print our terminal commands cheat sheet: the 12 commands every developer uses \u2014 ls, cd, cp, mv, grep, and more \u2014 with examples and notes.",
   "url": "https://hoorvia.net/sheet/terminal-479/",
   "inLanguage": "en-US",
   "mainEntityOfPage": "https://hoorvia.net/sheet/terminal-479/"
-}</script>
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the difference between cp and mv?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cp copies a file and leaves the original; mv moves it, so the original is gone. Mv also renames \u2014 mv old.txt new.txt changes the name in place. Both need -r to work on folders."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I undo a deleted file in the terminal?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You cannot \u2014 rm deletes permanently, with no recycle bin. That is why you ls the path first, and why important files belong in version control or a backup, not just on disk."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does chmod +x do?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It makes a file executable, so you can run it as a program \u2014 ./script.sh instead of sh script.sh. Without the executable bit, the shell refuses to run it, and you get a permission denied error."
+      }
+    }
+  ]
+}
+</script>
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
 tailwind.config = { theme: { extend: { colors: { paper: '#F8FAFC', warmPaper: '#FAF9F6', slateText: '#1E293B', brandNavy: '#0F172A', brandTeal: '#0D9488', ctaGreen: '#10B981', ctaGreenHover: '#059669', ctaAmber: '#F59E0B', ctaAmberHover: '#D97706' }, fontFamily: { heading: ['"Plus Jakarta Sans"', 'sans-serif'], sans: ['Inter', 'system-ui', 'sans-serif'] }, boxShadow: { 'paper-sheet': '0 14px 35px -5px rgba(15, 23, 42, 0.12), 0 4px 12px -2px rgba(15, 23, 42, 0.06)', 'card-hover': '0 12px 24px -6px rgba(13, 148, 136, 0.14)' } } } }
@@ -77,8 +111,8 @@ h1, h2, h3, h4, .font-heading { font-family: 'Plus Jakarta Sans', sans-serif; }
 <nav class="flex items-center gap-1.5"><a href="/" class="hover:text-brandTeal font-medium">Home</a><span>&rsaquo;</span><a href="/tech/" class="hover:text-brandTeal font-medium">Tech &amp; Software</a><span>&rsaquo;</span><span class="text-slate-800 font-semibold">Terminal Quick Reference Guide</span></nav>
 <a href="/" class="inline-flex items-center gap-1 text-brandTeal font-semibold hover:underline">&larr; Back to All Cheat Sheets</a></div>
 <header class="mb-6"><div class="flex flex-wrap items-center gap-2 mb-3"><span class="px-2.5 py-1 rounded-md bg-teal-100 text-brandTeal text-xs font-bold uppercase tracking-wide">Tech &amp; Software</span><span class="px-2.5 py-1 rounded-md bg-emerald-100 text-emerald-800 text-xs font-semibold">Free Printable</span><span class="text-xs text-slate-500">Sizes: US Letter &amp; A4</span></div>
-<h1 class="font-heading text-2xl sm:text-4xl font-extrabold text-brandNavy tracking-tight leading-tight mb-3">Terminal Quick Reference Guide</h1>
-<p class="text-slate-600 text-sm sm:text-base leading-relaxed">Authentic reference chart and data matrix for Terminal in VS Code Editor. Use the interactive table below or print it / save it as a PDF with the button below.</p></header>
+<h1 class="font-heading text-2xl sm:text-4xl font-extrabold text-brandNavy tracking-tight leading-tight mb-3">Terminal Commands: Printable Cheat Sheet</h1>
+<p class="text-slate-600 text-sm sm:text-base leading-relaxed">The terminal looks intimidating until you learn twelve commands: pwd tells you where you are, ls shows what is there, cd moves you around, and cp, mv, and rm handle files. Everything else is a variation — grep searches inside files, find locates them by name, and chmod makes a script executable. Tab completion finishes filenames for you, so you rarely have to type a long path by hand. The trap is rm: it deletes without a recycle bin, and rm -rf on the wrong folder is unrecoverable. Always double-check the path, and use ls before you delete. This printable chart lists the twelve essential terminal commands with what each does, an example, and the note. Consult the live reference table below, or print the sheet and keep it by your keyboard.</p></header>
 <div id="quick-action-bar" class="no-print flex flex-wrap items-center gap-2.5 p-3 rounded-xl bg-white border border-slate-200 shadow-sm mb-8">
 <a href="#download-cta-box" class="flex-1 sm:flex-initial inline-flex items-center justify-center gap-1.5 px-4 py-2 rounded-lg bg-ctaGreen hover:bg-ctaGreenHover text-white font-semibold text-xs sm:text-sm transition-all shadow-sm"><span>&#128229; Jump to Free PDF Download</span></a>
 <button onclick="window.print()" class="flex-1 sm:flex-initial inline-flex items-center justify-center gap-1.5 px-4 py-2 rounded-lg bg-ctaAmber hover:bg-ctaAmberHover text-white font-semibold text-xs sm:text-sm transition-all shadow-sm cursor-pointer border-0"><span>&#128438; Print This Chart Now</span></button>
@@ -86,13 +120,54 @@ h1, h2, h3, h4, .font-heading { font-family: 'Plus Jakarta Sans', sans-serif; }
 <section id="table-section" class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden mb-10">
 <div class="p-4 sm:p-5 border-b border-slate-200 bg-slate-50/70 flex flex-col sm:flex-row sm:items-center justify-between gap-3"><div><h2 class="font-heading text-lg sm:text-xl font-bold text-brandNavy">Quick-Reference Table</h2><p class="text-xs text-slate-500">The full data from this cheat sheet, right on the page.</p></div></div>
 <div class="no-print p-3 sm:px-5 bg-white border-b border-slate-200"><input type="text" id="table-filter-input" oninput="filterRows()" placeholder="&#128270; Filter this table instantly..." class="w-full px-3.5 py-2 text-sm border border-slate-200 rounded-lg focus:outline-none focus:border-brandTeal" /></div>
-<div class="overflow-x-auto"><table class="w-full text-left border-collapse"><thead><tr class="bg-slate-100/80 text-slate-700 text-xs uppercase tracking-wider border-b border-slate-200"><th class="py-3 px-4 font-bold">Command / Feature</th><th class="py-3 px-4 font-bold">Syntax / Keyboard Shortcut (Win / Mac)</th><th class="py-3 px-4 font-bold">Operational Context &amp; Environment</th><th class="py-3 px-4 font-bold">Key Output / Practical Result</th></tr></thead><tbody id="post-tbody" class="divide-y divide-slate-200 text-xs sm:text-sm"><tr><td class="py-3 px-4 text-slate-700">Terminal Primary Action</td><td class="py-3 px-4 text-slate-700">Ctrl + P / Cmd + P</td><td class="py-3 px-4 text-slate-700">Editor quick-access palette</td><td class="py-3 px-4 text-slate-700">Instantly locates and opens target files or commands</td></tr><tr><td class="py-3 px-4 text-slate-700">Terminal Query / Filter</td><td class="py-3 px-4 text-slate-700">SELECT * FROM items WHERE category = &#x27;terminal&#x27;</td><td class="py-3 px-4 text-slate-700">Relational or collection retrieval</td><td class="py-3 px-4 text-slate-700">Returns filtered data record array matching criteria</td></tr><tr><td class="py-3 px-4 text-slate-700">Terminal Configuration</td><td class="py-3 px-4 text-slate-700">export CONFIG_TERMINAL=true</td><td class="py-3 px-4 text-slate-700">Terminal shell environment (.bashrc / .zshrc)</td><td class="py-3 px-4 text-slate-700">Persists operational configuration flags across sessions</td></tr><tr><td class="py-3 px-4 text-slate-700">Terminal Integrity Check</td><td class="py-3 px-4 text-slate-700">npm test -- --grep=&quot;terminal&quot;</td><td class="py-3 px-4 text-slate-700">Automated CI/CD test runner</td><td class="py-3 px-4 text-slate-700">Executes targeted assertions with exit code confirmation</td></tr></tbody></table></div></section>
-<section id="howto-section" class="no-print bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 mb-10"><h2 class="font-heading text-xl sm:text-2xl font-bold text-brandNavy mb-4">How to Use This Chart</h2><p class="text-sm sm:text-[15px] text-slate-600 leading-relaxed mb-3">Pin this chart where you work: it packs <strong>4 entries</strong> and 4 columns (<strong>Command / Feature</strong>, <strong>Syntax / Keyboard Shortcut (Win / Mac)</strong>, <strong>Operational Context &amp; Environment</strong>, <strong>Key Output / Practical Result</strong>) into one printable page, built for quick lookups.</p>
-<p class="text-sm sm:text-[15px] text-slate-600 leading-relaxed mb-3">Scan down the <strong>Command / Feature</strong> column to your item, then read across for Syntax / Keyboard Shortcut (Win / Mac), Operational Context &amp; Environment.</p>
-<p class="text-sm sm:text-[15px] text-slate-600 leading-relaxed mb-3"><strong class="text-brandNavy">Example:</strong> for <strong>Terminal Primary Action</strong>, the chart gives <strong>Syntax / Keyboard Shortcut (Win / Mac)</strong> of <strong>Ctrl + P / Cmd + P</strong>.</p>
-<ul class="list-disc pl-5 space-y-1.5 text-sm sm:text-[15px] text-slate-600 leading-relaxed"><li>Compare values down a single column to spot the pattern before you commit to a choice.</li><li>When two rows look close, the Key Output / Practical Result column usually breaks the tie.</li><li>Print it once and keep it where you work — that's the whole point of a cheat sheet.</li></ul></section>
+<div class="overflow-x-auto"><table class="sheet-table">
+<thead>
+<tr><th>Command</th><th>What It Does</th><th>Example</th><th>Note</th></tr>
+</thead>
+<tbody>
+<tr><td>pwd</td><td>Shows the current folder</td><td>pwd</td><td>Where am I?</td></tr>
+<tr><td>ls</td><td>Lists files</td><td>ls -la</td><td>-la shows hidden files</td></tr>
+<tr><td>cd</td><td>Changes folder</td><td>cd ~/Documents</td><td>cd .. goes up one level</td></tr>
+<tr><td>mkdir</td><td>Creates a folder</td><td>mkdir new-folder</td><td>Use -p for nested folders</td></tr>
+<tr><td>touch</td><td>Creates an empty file</td><td>touch notes.txt</td><td>Also updates timestamps</td></tr>
+<tr><td>cp</td><td>Copies files</td><td>cp a.txt b.txt</td><td>Use -r for folders</td></tr>
+<tr><td>mv</td><td>Moves or renames</td><td>mv old.txt new.txt</td><td>Same command, both jobs</td></tr>
+<tr><td>rm</td><td>Deletes files</td><td>rm file.txt</td><td>Use -r for folders, -f to force</td></tr>
+<tr><td>cat</td><td>Shows a file&#x27;s contents</td><td>cat notes.txt</td><td>For small files</td></tr>
+<tr><td>grep</td><td>Searches inside files</td><td>grep &quot;error&quot; log.txt</td><td>Use -r to search folders</td></tr>
+<tr><td>find</td><td>Finds files by name</td><td>find . -name &quot;*.txt&quot;</td><td>Slow but thorough</td></tr>
+<tr><td>chmod</td><td>Changes permissions</td><td>chmod +x script.sh</td><td>Makes a file executable</td></tr>
+</tbody>
+</table></div></section>
+<section id="howto-section" class="no-print bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 mb-10"><h2 class="font-heading text-xl sm:text-2xl font-bold text-brandNavy mb-4">How to Use This Chart</h2><p class="text-sm sm:text-[15px] text-slate-600 leading-relaxed mb-3">Pin this chart where you work: it packs <strong>12 entries</strong> and 4 columns (<strong>Command</strong>, <strong>What It Does</strong>, <strong>Example</strong>, <strong>Note</strong>) into one printable page, built for quick lookups.</p>
+<p class="text-sm sm:text-[15px] text-slate-600 leading-relaxed mb-3">Scan down the <strong>Command</strong> column to your item, then read across for What It Does, Example, Note.</p>
+<p class="text-sm sm:text-[15px] text-slate-600 leading-relaxed mb-3"><strong class="text-brandNavy">Example:</strong> for <strong>pwd</strong>, the chart gives <strong>What It Does</strong> of <strong>Shows the current folder</strong>.</p>
+<ul class="list-disc pl-5 space-y-1.5 text-sm sm:text-[15px] text-slate-600 leading-relaxed"><li>Compare values down a single column to spot the pattern before you commit to a choice.</li><li>When two rows look close, the last column usually breaks the tie.</li><li>Print it once and keep it where you work — that's the whole point of a cheat sheet.</li></ul></section>
+<section class="paper-sheet rounded-2xl shadow-paper-sheet p-6 sm:p-8 mb-6 sm:mb-8 pt-8">
+<h2 class="font-heading text-lg sm:text-xl font-bold text-brandNavy mb-3">&#128161; Quick Tips</h2>
+<div class="space-y-3 text-sm sm:text-base text-slate-600 leading-relaxed">
+<p><strong class="text-brandNavy">ls before you delete:</strong> Run ls on the path first to see exactly what rm will remove. Deleting the wrong folder has no undo.</p><p><strong class="text-brandNavy">Use tab completion:</strong> Type the first letters of a filename and press Tab — the terminal finishes it. It is faster and prevents typos in long paths.</p>
+</div>
+</section>
+
+<section class="paper-sheet rounded-2xl shadow-paper-sheet p-6 sm:p-8 mb-6 sm:mb-8 pt-8">
+<h2 class="font-heading text-lg sm:text-xl font-bold text-brandNavy mb-4">Frequently Asked Questions</h2>
+<div class="space-y-4">
+<div class="border-b border-slate-100 pb-4 last:border-0 last:pb-0">
+<h3 class="font-heading font-bold text-brandNavy text-sm sm:text-base mb-1.5">What is the difference between cp and mv?</h3>
+<p class="text-sm text-slate-600 leading-relaxed">Cp copies a file and leaves the original; mv moves it, so the original is gone. Mv also renames — mv old.txt new.txt changes the name in place. Both need -r to work on folders.</p>
+</div><div class="border-b border-slate-100 pb-4 last:border-0 last:pb-0">
+<h3 class="font-heading font-bold text-brandNavy text-sm sm:text-base mb-1.5">How do I undo a deleted file in the terminal?</h3>
+<p class="text-sm text-slate-600 leading-relaxed">You cannot — rm deletes permanently, with no recycle bin. That is why you ls the path first, and why important files belong in version control or a backup, not just on disk.</p>
+</div><div class="border-b border-slate-100 pb-4 last:border-0 last:pb-0">
+<h3 class="font-heading font-bold text-brandNavy text-sm sm:text-base mb-1.5">What does chmod +x do?</h3>
+<p class="text-sm text-slate-600 leading-relaxed">It makes a file executable, so you can run it as a program — ./script.sh instead of sh script.sh. Without the executable bit, the shell refuses to run it, and you get a permission denied error.</p>
+</div>
+</div>
+</section>
+
 <section id="preview-section" class="no-print mb-8"><div class="flex items-center justify-between mb-3"><h2 class="font-heading text-lg sm:text-xl font-bold text-brandNavy">Printable Sheet Preview</h2><span class="text-xs font-medium text-slate-500">High-Contrast Layout</span></div>
-<img src="/assets/previews/terminal.webp" alt="Terminal Quick Reference Guide | Hoorvia Printable Preview" loading="lazy" class="rounded-2xl border border-slate-200 shadow-sm w-full" />
+<img src="/assets/previews/terminal.webp" alt="Printable terminal commands cheat sheet showing commands, purposes, examples, and notes for everyday use." loading="lazy" class="rounded-2xl border border-slate-200 shadow-sm w-full" />
 </section>
 <section id="download-cta-box" class="no-print bg-white rounded-2xl border-2 border-emerald-500/40 shadow-md p-6 sm:p-8 mb-10 text-center">
 <span class="inline-block px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold uppercase tracking-wide mb-2">Instant Direct Download &bull; No Email Required</span>
