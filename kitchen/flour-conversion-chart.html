@@ -78,6 +78,198 @@
     footer a { color:#CFE3D4; text-decoration:none; margin:0 8px; }
     @media print { header,footer,.quick-bar,.preview-card,.cluster-box,.no-print { display:none!important; } body { background:#fff; } .container { max-width:100%; padding:0; } }
   </style>
+<style id="hoorvia-vip-master-style">
+body { background-color: #FAF7F0 !important; color: #1C2B21 !important; font-family: 'Inter', system-ui, -apple-system, sans-serif !important; -webkit-font-smoothing: antialiased; }
+h1, h2, h3, h4, .font-heading { font-family: 'Fraunces', Georgia, serif !important; }
+
+/* STRICT 1-LINE HEADER FIX — NEVER WRAPS TO 2 LINES */
+#site-header {
+  height: 64px !important;
+  min-height: 64px !important;
+  max-height: 64px !important;
+  background-color: rgba(253, 251, 247, 0.96) !important;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #E2DAC9 !important;
+}
+#site-header .vip-header-row {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  height: 64px !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  gap: 0.75rem !important;
+}
+#site-header .vip-nav-links {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  align-items: center !important;
+  gap: 0.25rem !important;
+  white-space: nowrap !important;
+  flex-shrink: 1 !important;
+  min-width: 0 !important;
+}
+@media (max-width: 960px) {
+  #site-header .vip-nav-links { display: none !important; }
+}
+
+/* VIP MASTER TABLE POLISH (Air Fryer Standard) */
+#table-section table, .sheet-table {
+  width: 100% !important;
+  border-collapse: collapse !important;
+  text-align: left !important;
+  font-variant-numeric: tabular-nums;
+}
+#table-section thead tr, .sheet-table thead tr {
+  background-color: #E9F2E7 !important;
+  color: #1C2B21 !important;
+  font-size: 0.75rem !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.05em !important;
+  border-bottom: 1px solid #D5E2D2 !important;
+}
+#table-section thead th, .sheet-table thead th {
+  background-color: #E9F2E7 !important;
+  color: #1C2B21 !important;
+  padding: 12px 16px !important;
+  font-weight: 700 !important;
+  font-family: 'Inter', sans-serif !important;
+}
+#table-section thead th:nth-child(3), .sheet-table thead th:nth-child(3) {
+  color: #2D6A4F !important;
+}
+#table-section tbody tr, .sheet-table tbody tr {
+  border-bottom: 1px solid #EAE3D5 !important;
+  transition: background-color 0.14s ease;
+  cursor: pointer;
+}
+#table-section tbody tr:nth-child(even) td, .sheet-table tbody tr:nth-child(even) td {
+  background-color: #FDFBF7;
+}
+#table-section tbody tr:hover td, .sheet-table tbody tr:hover td {
+  background-color: rgba(116, 198, 157, 0.16) !important;
+}
+#table-section tbody td, .sheet-table tbody td {
+  padding: 12px 16px !important;
+  font-size: 0.85rem !important;
+  line-height: 1.45 !important;
+  color: #1C2B21 !important;
+}
+#table-section tbody td:first-child, .sheet-table tbody td:first-child {
+  font-weight: 600 !important;
+  color: #1B4332 !important;
+}
+
+/* Segmented Unit Toggle Bar (Matches Air Fryer Control Pill) */
+.vip-unit-group {
+  display: inline-flex;
+  border-radius: 0.5rem;
+  padding: 0.25rem;
+  background-color: rgba(243, 237, 224, 0.9);
+  border: 1px solid #E2DAC9;
+  gap: 2px;
+}
+.vip-unit-btn {
+  padding: 4px 10px;
+  border-radius: 0.375rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #526356;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  white-space: nowrap;
+}
+.vip-unit-btn.active {
+  background-color: #FFFFFF !important;
+  color: #1B4332 !important;
+  box-shadow: 0 1px 2px rgba(20, 40, 29, 0.12);
+}
+
+/* One-Click Row Copy Badge & Toast */
+.copy-badge {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 1px 6px;
+  font-size: 10px;
+  font-weight: 700;
+  color: #2D6A4F;
+  background: #E9F2E7;
+  border: 1px solid #B7DEC8;
+  border-radius: 4px;
+  opacity: 0;
+  transition: opacity 0.15s ease;
+  vertical-align: middle;
+}
+tbody tr:hover .copy-badge { opacity: 1; }
+#copyToast {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background: #1B4332;
+  color: #FFFFFF;
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  box-shadow: 0 10px 25px rgba(20, 40, 29, 0.25);
+  border-left: 4px solid #74C69D;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: all 0.22s ease;
+  z-index: 9999;
+}
+#copyToast.show { transform: translateY(0); opacity: 1; }
+
+/* Mobile Swipe Hint & Right Edge Fade */
+.swipe-hint {
+  display: none;
+  font-size: 11.5px;
+  font-weight: 600;
+  color: #526356;
+  background: #FDFBF7;
+  padding: 6px 14px;
+  border-bottom: 1px solid #E2DAC9;
+  text-align: right;
+}
+@media (max-width: 768px) {
+  .swipe-hint { display: block; }
+}
+
+/* Full-Width Printable Preview Card */
+.vip-preview-card {
+  background: #FFFFFF;
+  border: 1px solid #E2DAC9;
+  border-radius: 1rem;
+  padding: 0.75rem;
+  box-shadow: 0 12px 28px -6px rgba(20, 83, 45, 0.12), 0 4px 10px -2px rgba(20, 83, 45, 0.05);
+}
+.vip-preview-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.65rem;
+  display: block;
+}
+
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: #F3EDE0; }
+::-webkit-scrollbar-thumb { background: #9DBFA9; border-radius: 4px; }
+
+@media print {
+  body { background: #FFFFFF !important; color: #000000 !important; font-size: 10.5pt; }
+  .no-print, header, footer, #site-header, #quick-action-bar, #download-cta-box, #pdf-showcase, #seo-guide-section, #howto-section, #tips-section, #faq-section, #table-controls, #breadcrumb-bar, .swipe-hint, #copyToast {
+    display: none !important;
+  }
+  article { max-width: 100% !important; padding: 0 !important; margin: 0 !important; }
+  #table-section { border: 1.5px solid #000 !important; box-shadow: none !important; border-radius: 0 !important; }
+  table { page-break-inside: auto; border-collapse: collapse !important; width: 100% !important; }
+  th, td { border: 1px solid #CBD5E1 !important; padding: 6px 8px !important; }
+  tr { page-break-inside: avoid; page-break-after: auto; }
+}
+</style>
 </head>
 <body>
   <header>
@@ -147,7 +339,7 @@
     <div id="download-pdf" class="preview-card">
       <h2 style="font-family:'Fraunces', Georgia, serif; color:var(--navy); font-size:20px; margin-bottom:6px;">Printable Cheat Sheet Preview (US Letter &amp; A4)</h2>
       <p style="font-size:13.5px; color:var(--muted); margin-bottom:16px;">High-contrast, ink-saving layout designed for kitchen binders and refrigerator magnets. No sign-up required.</p>
-      <img src="../assets/previews/flour-conversion-chart.webp" alt="Flour Weight & Protein Conversion Chart (Cups to Grams) Printable PDF Preview" width="520" height="673" loading="lazy">
+      <div class="vip-preview-card"><img src="../assets/previews/flour-conversion-chart.webp" alt="Flour Weight & Protein Conversion Chart (Cups to Grams) Printable PDF Preview" width="520" height="673" loading="lazy"></div>
       <div class="download-actions">
         <a href="../assets/pdfs/flour-conversion-chart.pdf" download="Hoorvia-flour-conversion-chart.pdf" class="btn-dl">📥 Download Free Printable PDF (US Letter / A4)</a>
       </div>
