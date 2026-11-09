@@ -154,6 +154,15 @@ h1, h2, h3, h4, .font-heading { font-family: 'Fraunces', Georgia, serif !importa
   #site-header .vip-nav-links { display: none !important; }
 }
 
+/* ARGON-REVIEW-FIXES-2026-11-07: header nowrap guard (31 no-CDN pages) + A4 col-3 emphasis */
+body > header, body > header > div, body > header nav {
+  white-space: nowrap !important;
+  flex-wrap: nowrap !important;
+}
+#table-section tbody td:nth-child(3), .sheet-table tbody td:nth-child(3) {
+  font-weight: 700 !important;
+  color: #2D6A4F !important;
+}
 /* VIP MASTER TABLE POLISH (Air Fryer Standard) */
 #table-section table, .sheet-table {
   width: 100% !important;
@@ -387,7 +396,9 @@ tbody tr:hover .copy-badge { opacity: 1; }
 <p class="text-[11px] text-muted mt-4">💡 <strong>Pro Printing Tip:</strong> In your printer settings, set Scale to <strong>“Fit to Printable Area”</strong> and enable <strong>“Background Graphics”</strong> for color headers.</p></section>
 
 <section id="seo-guide-section" class="no-print bg-white rounded-2xl border border-sandBorder shadow-vip-card p-6 sm:p-8 space-y-6 text-ink text-sm sm:text-base leading-relaxed">
-<div id="howto-section"><h2 class="font-heading text-xl sm:text-2xl font-bold text-brandNavy mb-3">How to Print &amp; Use This Chart</h2><p class="mb-3">Pin this chart where you work: it packs 12 entries and 5 columns ( Grain , Water : Grain , Simmer Time , Rest Time , Yield (1 Cup Dry) ) into one printable page, built for quick lookups.</p><p class="mb-3">Scan down the Grain column to your item, then read across for Water : Grain, Simmer Time, Rest Time, Yield (1 Cup Dry).</p><p class="mb-3">Example: for Long Grain White Rice , the chart gives Water : Grain of 2 : 1 .</p></div></section>
+<div id="howto-section"><h2 class="font-heading text-xl sm:text-2xl font-bold text-brandNavy mb-3">How to Print &amp; Use This Chart</h2><p class="mb-3">Pin this chart where you work: it packs 12 entries and 5 columns ( Grain , Water : Grain , Simmer Time , Rest Time , Yield (1 Cup Dry) ) into one printable page, built for quick lookups.</p><p class="mb-3">Scan down the Grain column to your item, then read across for Water : Grain, Simmer Time, Rest Time, Yield (1 Cup Dry).</p><p class="mb-3">Example: for Long Grain White Rice , the chart gives Water : Grain of 2 : 1 .</p></div><hr class="border-sandBorder" />
+<div id="faq-section"><h2 class="font-heading text-xl sm:text-2xl font-bold text-brandNavy mb-4">Frequently Asked Questions (FAQs)</h2><div class="space-y-3"><details class="group border border-sandBorder rounded-xl p-4 bg-paper" open><summary class="font-heading font-bold text-brandNavy cursor-pointer list-none flex justify-between items-center gap-3"><span>Why does brown rice take so much longer than white rice?</span><span class="text-brandTeal group-open:rotate-180 transition-transform shrink-0">▼</span></summary><p class="text-muted text-sm mt-2 leading-relaxed">Brown rice keeps its bran layer, which water must soak through before the grain softens. That is why it needs more water and forty to forty-five minutes, against fifteen for white rice. Soaking brown rice for thirty minutes first can cut the cook time.</p></details><details class="group border border-sandBorder rounded-xl p-4 bg-paper"><summary class="font-heading font-bold text-brandNavy cursor-pointer list-none flex justify-between items-center gap-3"><span>Can I cook all grains with the same water ratio?</span><span class="text-brandTeal group-open:rotate-180 transition-transform shrink-0">▼</span></summary><p class="text-muted text-sm mt-2 leading-relaxed">No — ratios run from one-to-one for couscous to three-to-one for wild rice and barley. Using one ratio for everything gives you soup or crunch. Match the ratio and time to the grain in the chart, and always measure the dry grain first.</p></details><details class="group border border-sandBorder rounded-xl p-4 bg-paper"><summary class="font-heading font-bold text-brandNavy cursor-pointer list-none flex justify-between items-center gap-3"><span>How much cooked grain does one cup dry make?</span><span class="text-brandTeal group-open:rotate-180 transition-transform shrink-0">▼</span></summary><p class="text-muted text-sm mt-2 leading-relaxed">Most grains triple in volume: one cup dry gives about three cups cooked. Oats and couscous give a little less, around two and a half cups, while wild rice and barley give about three and a half. Plan on one quarter cup dry per person as a side.</p></details></div></div>
+</section>
 </article></main>
 <footer class="no-print bg-[#0B2E1B] text-[#CFE3D4] mt-12">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 py-10">
@@ -528,6 +539,18 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   filterRows();
+  /* ARGON-A3-PLACEHOLDER: per-sheet dynamic filter placeholder from first rows */
+  (function () {
+    var input = document.getElementById('table-filter-input');
+    if (!input) return;
+    var cells = document.querySelectorAll('#table-section tbody tr td:first-child');
+    var examples = [];
+    for (var i = 0; i < cells.length && examples.length < 3; i++) {
+      var t = (cells[i].textContent || '').trim().replace(/\s+/g, ' ');
+      if (t && examples.indexOf(t) === -1) examples.push(t.length > 22 ? t.slice(0, 22) : t);
+    }
+    if (examples.length) input.setAttribute('placeholder', '\uD83D\uDD0D Filter rows instantly (e.g., ' + examples.join(', ') + ')...');
+  })();
 
   document.addEventListener('keydown', e => {
     if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
