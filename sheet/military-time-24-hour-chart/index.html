@@ -154,6 +154,15 @@ h1, h2, h3, h4, .font-heading { font-family: 'Fraunces', Georgia, serif !importa
   #site-header .vip-nav-links { display: none !important; }
 }
 
+/* ARGON-REVIEW-FIXES-2026-11-07: header nowrap guard (31 no-CDN pages) + A4 col-3 emphasis */
+body > header, body > header > div, body > header nav {
+  white-space: nowrap !important;
+  flex-wrap: nowrap !important;
+}
+#table-section tbody td:nth-child(3), .sheet-table tbody td:nth-child(3) {
+  font-weight: 700 !important;
+  color: #2D6A4F !important;
+}
 /* VIP MASTER TABLE POLISH (Air Fryer Standard) */
 #table-section table, .sheet-table {
   width: 100% !important;
@@ -390,7 +399,9 @@ tbody tr:hover .copy-badge { opacity: 1; }
 <p class="text-[11px] text-muted mt-4">💡 <strong>Pro Printing Tip:</strong> In your printer settings, set Scale to <strong>“Fit to Printable Area”</strong> and enable <strong>“Background Graphics”</strong> for color headers.</p></section>
 
 <section id="seo-guide-section" class="no-print bg-white rounded-2xl border border-sandBorder shadow-vip-card p-6 sm:p-8 space-y-6 text-ink text-sm sm:text-base leading-relaxed">
-<div id="howto-section"><h2 class="font-heading text-xl sm:text-2xl font-bold text-brandNavy mb-3">How to Print &amp; Use This Chart</h2><p class="mb-3">Pin this chart where you work: it packs 15 entries and 4 columns ( 12-Hour Time , 24-Hour Time , Spoken / Pronounced , Quick Rule ) into one printable page, built for quick lookups.</p><p class="mb-3">Scan down the 12-Hour Time column to your item, then read across for 24-Hour Time, Spoken / Pronounced, Quick Rule.</p><p class="mb-3">Example: for 12:00 AM (Midnight) , the chart gives 24-Hour Time of 0000 .</p></div></section>
+<div id="howto-section"><h2 class="font-heading text-xl sm:text-2xl font-bold text-brandNavy mb-3">How to Print &amp; Use This Chart</h2><p class="mb-3">Pin this chart where you work: it packs 15 entries and 4 columns ( 12-Hour Time , 24-Hour Time , Spoken / Pronounced , Quick Rule ) into one printable page, built for quick lookups.</p><p class="mb-3">Scan down the 12-Hour Time column to your item, then read across for 24-Hour Time, Spoken / Pronounced, Quick Rule.</p><p class="mb-3">Example: for 12:00 AM (Midnight) , the chart gives 24-Hour Time of 0000 .</p></div><hr class="border-sandBorder" />
+<div id="faq-section"><h2 class="font-heading text-xl sm:text-2xl font-bold text-brandNavy mb-4">Frequently Asked Questions (FAQs)</h2><div class="space-y-3"><details class="group border border-sandBorder rounded-xl p-4 bg-paper" open><summary class="font-heading font-bold text-brandNavy cursor-pointer list-none flex justify-between items-center gap-3"><span>How do you convert PM times to military time?</span><span class="text-brandTeal group-open:rotate-180 transition-transform shrink-0">▼</span></summary><p class="text-muted text-sm mt-2 leading-relaxed">Add 12 to the hour for every PM time except 12 PM itself. So 1 PM is 1300, 6 PM is 1800, and 11 PM is 2300. AM hours stay the same number (with a leading zero), midnight is 0000, and noon stays 1200.</p></details><details class="group border border-sandBorder rounded-xl p-4 bg-paper"><summary class="font-heading font-bold text-brandNavy cursor-pointer list-none flex justify-between items-center gap-3"><span>How do you say 0000 and 1000 out loud?</span><span class="text-brandTeal group-open:rotate-180 transition-transform shrink-0">▼</span></summary><p class="text-muted text-sm mt-2 leading-relaxed">Military convention says &#x27;zero hundred hours&#x27; for 0000 and &#x27;ten hundred hours&#x27; for 1000. The &#x27;zero&#x27; prefix applies to hours 0000–0900; from 1000 onward, you just say the number plus &#x27;hundred hours.&#x27;</p></details><details class="group border border-sandBorder rounded-xl p-4 bg-paper"><summary class="font-heading font-bold text-brandNavy cursor-pointer list-none flex justify-between items-center gap-3"><span>Why do militaries and hospitals use 24-hour time?</span><span class="text-brandTeal group-open:rotate-180 transition-transform shrink-0">▼</span></summary><p class="text-muted text-sm mt-2 leading-relaxed">It removes the AM/PM ambiguity that causes real errors — a medication logged at &#x27;3&#x27; could mean morning or afternoon. One 24-hour number means one unambiguous time, which is why aviation, medicine, and emergency services all use it.</p></details></div></div>
+</section>
 </article></main>
 <footer class="no-print bg-[#0B2E1B] text-[#CFE3D4] mt-12">
 <div class="max-w-6xl mx-auto px-4 sm:px-6 py-10">
@@ -531,6 +542,18 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   filterRows();
+  /* ARGON-A3-PLACEHOLDER: per-sheet dynamic filter placeholder from first rows */
+  (function () {
+    var input = document.getElementById('table-filter-input');
+    if (!input) return;
+    var cells = document.querySelectorAll('#table-section tbody tr td:first-child');
+    var examples = [];
+    for (var i = 0; i < cells.length && examples.length < 3; i++) {
+      var t = (cells[i].textContent || '').trim().replace(/\s+/g, ' ');
+      if (t && examples.indexOf(t) === -1) examples.push(t.length > 22 ? t.slice(0, 22) : t);
+    }
+    if (examples.length) input.setAttribute('placeholder', '\uD83D\uDD0D Filter rows instantly (e.g., ' + examples.join(', ') + ')...');
+  })();
 
   document.addEventListener('keydown', e => {
     if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {

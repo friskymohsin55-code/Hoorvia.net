@@ -115,6 +115,15 @@ h1, h2, h3, h4, .font-heading { font-family: 'Fraunces', Georgia, serif !importa
   #site-header .vip-nav-links { display: none !important; }
 }
 
+/* ARGON-REVIEW-FIXES-2026-11-07: header nowrap guard (31 no-CDN pages) + A4 col-3 emphasis */
+body > header, body > header > div, body > header nav {
+  white-space: nowrap !important;
+  flex-wrap: nowrap !important;
+}
+#table-section tbody td:nth-child(3), .sheet-table tbody td:nth-child(3) {
+  font-weight: 700 !important;
+  color: #2D6A4F !important;
+}
 /* VIP MASTER TABLE POLISH (Air Fryer Standard) */
 #table-section table, .sheet-table {
   width: 100% !important;
@@ -366,7 +375,9 @@ tbody tr:hover .copy-badge { opacity: 1; }
 <li><a href="turkey-temperature-cooking-guide.html">🥩 Turkey Temperature & Roasting Time Guide (#024)</a></li>
 </ul>
     </section>
-  </main>
+  <hr class="border-sandBorder" />
+<div id="faq-section"><h2 class="font-heading text-xl sm:text-2xl font-bold text-brandNavy mb-4">Frequently Asked Questions (FAQs)</h2><div class="space-y-3"><details class="group border border-sandBorder rounded-xl p-4 bg-paper" open><summary class="font-heading font-bold text-brandNavy cursor-pointer list-none flex justify-between items-center gap-3"><span>Is the red liquid on my steak plate blood?</span><span class="text-brandTeal group-open:rotate-180 transition-transform shrink-0">▼</span></summary><p class="text-muted text-sm mt-2 leading-relaxed">No! Almost all blood is removed during commercial processing. The red liquid is &#x27;myoglobin,&#x27; an oxygen-binding protein stored inside muscle fibers that turns red when mixed with water and natural meat juices.</p></details><details class="group border border-sandBorder rounded-xl p-4 bg-paper"><summary class="font-heading font-bold text-brandNavy cursor-pointer list-none flex justify-between items-center gap-3"><span>Should I let steaks come to room temperature for 1 hour before cooking?</span><span class="text-brandTeal group-open:rotate-180 transition-transform shrink-0">▼</span></summary><p class="text-muted text-sm mt-2 leading-relaxed">Tests show leaving a thick steak on the counter for 1 hour only raises its internal core temperature by about 4°F–6°F. Instead, focus on patting the exterior bone-dry with paper towels and salting 45 minutes ahead (or overnight on a wire rack in the fridge).</p></details><details class="group border border-sandBorder rounded-xl p-4 bg-paper"><summary class="font-heading font-bold text-brandNavy cursor-pointer list-none flex justify-between items-center gap-3"><span>Why did my steak get a thick grey ring around the edge?</span><span class="text-brandTeal group-open:rotate-180 transition-transform shrink-0">▼</span></summary><p class="text-muted text-sm mt-2 leading-relaxed">A thick grey band happens when you leave the steak on one side for 4–5 minutes over excessive heat or start with a wet surface. Pat the steak dry and flip it every 60 seconds so neither side overcooks underneath the sear.</p></details><details class="group border border-sandBorder rounded-xl p-4 bg-paper"><summary class="font-heading font-bold text-brandNavy cursor-pointer list-none flex justify-between items-center gap-3"><span>How do I slice flank or skirt steak so it isn&#x27;t chewy?</span><span class="text-brandTeal group-open:rotate-180 transition-transform shrink-0">▼</span></summary><p class="text-muted text-sm mt-2 leading-relaxed">Look closely at the parallel muscle fibers running along the length of the meat. Slice perpendicular (90 degrees across) to those fibers at a 45-degree bias into thin 1/4-inch strips.</p></details></div></div>
+</main>
   <footer>
     <p>&copy; 2026 Hoorvia.net — Print &bull; Plan &bull; Create. Formatted for US Letter (8.5"&times;11") &amp; A4 Paper.</p>
     <p style="margin-top:8px;"><a href="../about.html">About Us</a> • <a href="../contact.html">Contact</a> • <a href="../privacy-policy.html">Privacy Policy</a> • <a href="../terms.html">Terms</a> • <a href="../disclaimer.html">Disclaimer</a></p>
