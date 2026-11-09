@@ -147,6 +147,15 @@ h1, h2, h3, h4, .font-heading { font-family: 'Fraunces', Georgia, serif !importa
   #site-header .vip-nav-links { display: none !important; }
 }
 
+/* ARGON-REVIEW-FIXES-2026-11-07: header nowrap guard (31 no-CDN pages) + A4 col-3 emphasis */
+body > header, body > header > div, body > header nav {
+  white-space: nowrap !important;
+  flex-wrap: nowrap !important;
+}
+#table-section tbody td:nth-child(3), .sheet-table tbody td:nth-child(3) {
+  font-weight: 700 !important;
+  color: #2D6A4F !important;
+}
 /* VIP MASTER TABLE POLISH (Air Fryer Standard) */
 #table-section table, .sheet-table {
   width: 100% !important;
@@ -509,6 +518,18 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   filterRows();
+  /* ARGON-A3-PLACEHOLDER: per-sheet dynamic filter placeholder from first rows */
+  (function () {
+    var input = document.getElementById('table-filter-input');
+    if (!input) return;
+    var cells = document.querySelectorAll('#table-section tbody tr td:first-child');
+    var examples = [];
+    for (var i = 0; i < cells.length && examples.length < 3; i++) {
+      var t = (cells[i].textContent || '').trim().replace(/\s+/g, ' ');
+      if (t && examples.indexOf(t) === -1) examples.push(t.length > 22 ? t.slice(0, 22) : t);
+    }
+    if (examples.length) input.setAttribute('placeholder', '\uD83D\uDD0D Filter rows instantly (e.g., ' + examples.join(', ') + ')...');
+  })();
 
   document.addEventListener('keydown', e => {
     if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
