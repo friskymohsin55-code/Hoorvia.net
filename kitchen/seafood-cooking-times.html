@@ -115,6 +115,15 @@ h1, h2, h3, h4, .font-heading { font-family: 'Fraunces', Georgia, serif !importa
   #site-header .vip-nav-links { display: none !important; }
 }
 
+/* ARGON-REVIEW-FIXES-2026-11-07: header nowrap guard (31 no-CDN pages) + A4 col-3 emphasis */
+body > header, body > header > div, body > header nav {
+  white-space: nowrap !important;
+  flex-wrap: nowrap !important;
+}
+#table-section tbody td:nth-child(3), .sheet-table tbody td:nth-child(3) {
+  font-weight: 700 !important;
+  color: #2D6A4F !important;
+}
 /* VIP MASTER TABLE POLISH (Air Fryer Standard) */
 #table-section table, .sheet-table {
   width: 100% !important;
@@ -371,7 +380,9 @@ tbody tr:hover .copy-badge { opacity: 1; }
 <li><a href="meat-resting-time-guide.html">🥩 Meat Resting Time & Carryover Temp Guide (#030)</a></li>
 </ul>
     </section>
-  </main>
+  <hr class="border-sandBorder" />
+<div id="faq-section"><h2 class="font-heading text-xl sm:text-2xl font-bold text-brandNavy mb-4">Frequently Asked Questions (FAQs)</h2><div class="space-y-3"><details class="group border border-sandBorder rounded-xl p-4 bg-paper" open><summary class="font-heading font-bold text-brandNavy cursor-pointer list-none flex justify-between items-center gap-3"><span>How do I stop fish skin from curling up in a hot skillet?</span><span class="text-brandTeal group-open:rotate-180 transition-transform shrink-0">▼</span></summary><p class="text-muted text-sm mt-2 leading-relaxed">When raw fish skin hits a hot pan, collagen shrinks rapidly and buckles the center of the fillet upward. Score the skin lightly 3 times with a sharp knife before cooking, and press the fillet flat with a flexible fish spatula for the first 20 seconds in the pan.</p></details><details class="group border border-sandBorder rounded-xl p-4 bg-paper"><summary class="font-heading font-bold text-brandNavy cursor-pointer list-none flex justify-between items-center gap-3"><span>Should I thaw frozen shrimp before cooking?</span><span class="text-brandTeal group-open:rotate-180 transition-transform shrink-0">▼</span></summary><p class="text-muted text-sm mt-2 leading-relaxed">Yes! Unlike breaded frozen snacks, raw unbreaded shrimp release a puddle of water if thrown frozen into a skillet. Submerge frozen shrimp in a bowl of cold tap water for 10 minutes, drain, and pat completely dry with paper towels before searing.</p></details><details class="group border border-sandBorder rounded-xl p-4 bg-paper"><summary class="font-heading font-bold text-brandNavy cursor-pointer list-none flex justify-between items-center gap-3"><span>How much salt should I put in water for boiling lobster or shrimp?</span><span class="text-brandTeal group-open:rotate-180 transition-transform shrink-0">▼</span></summary><p class="text-muted text-sm mt-2 leading-relaxed">Season boiling seafood water &#x27;like the ocean&#x27;—use 1/4 cup (4 tablespoons) of kosher salt per gallon (4 quarts) of water so the shellfish meat seasons evenly without waterlogging.</p></details></div></div>
+</main>
   <footer>
     <p>&copy; 2026 Hoorvia.net — Print &bull; Plan &bull; Create. Formatted for US Letter (8.5"&times;11") &amp; A4 Paper.</p>
     <p style="margin-top:8px;"><a href="../about.html">About Us</a> • <a href="../contact.html">Contact</a> • <a href="../privacy-policy.html">Privacy Policy</a> • <a href="../terms.html">Terms</a> • <a href="../disclaimer.html">Disclaimer</a></p>

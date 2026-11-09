@@ -115,6 +115,15 @@ h1, h2, h3, h4, .font-heading { font-family: 'Fraunces', Georgia, serif !importa
   #site-header .vip-nav-links { display: none !important; }
 }
 
+/* ARGON-REVIEW-FIXES-2026-11-07: header nowrap guard (31 no-CDN pages) + A4 col-3 emphasis */
+body > header, body > header > div, body > header nav {
+  white-space: nowrap !important;
+  flex-wrap: nowrap !important;
+}
+#table-section tbody td:nth-child(3), .sheet-table tbody td:nth-child(3) {
+  font-weight: 700 !important;
+  color: #2D6A4F !important;
+}
 /* VIP MASTER TABLE POLISH (Air Fryer Standard) */
 #table-section table, .sheet-table {
   width: 100% !important;
@@ -361,7 +370,9 @@ tbody tr:hover .copy-badge { opacity: 1; }
 <li><a href="turkey-temperature-cooking-guide.html">🥩 Turkey Temperature & Roasting Time Guide (#024)</a></li>
 </ul>
     </section>
-  </main>
+  <hr class="border-sandBorder" />
+<div id="faq-section"><h2 class="font-heading text-xl sm:text-2xl font-bold text-brandNavy mb-4">Frequently Asked Questions (FAQs)</h2><div class="space-y-3"><details class="group border border-sandBorder rounded-xl p-4 bg-paper" open><summary class="font-heading font-bold text-brandNavy cursor-pointer list-none flex justify-between items-center gap-3"><span>Why is my cooked chicken still red or purple right next to the bone?</span><span class="text-brandTeal group-open:rotate-180 transition-transform shrink-0">▼</span></summary><p class="text-muted text-sm mt-2 leading-relaxed">Young broiler chickens have porous, immature bones. During freezing or cooking, purple bone marrow pigment seeps through the bone into surrounding meat. As long as your thermometer reads 165°F+ (or 175°F in drumsticks), the red pigment near the bone is 100% safe.</p></details><details class="group border border-sandBorder rounded-xl p-4 bg-paper"><summary class="font-heading font-bold text-brandNavy cursor-pointer list-none flex justify-between items-center gap-3"><span>How do I get a whole roast chicken to hit 160°F in the breast and 180°F in the thighs at the same time?</span><span class="text-brandTeal group-open:rotate-180 transition-transform shrink-0">▼</span></summary><p class="text-muted text-sm mt-2 leading-relaxed">Use one of three pro techniques: (1) Spatchcock (butterfly) the bird so the legs lie flat and exposed to higher oven heat, (2) Ice the breast by placing a bag of ice cubes on the breast for 20 minutes before roasting, or (3) Shield the breast with a triangle of aluminum foil for the first 25 minutes.</p></details><details class="group border border-sandBorder rounded-xl p-4 bg-paper"><summary class="font-heading font-bold text-brandNavy cursor-pointer list-none flex justify-between items-center gap-3"><span>What causes &#x27;woody&#x27; crunchy chicken breasts?</span><span class="text-brandTeal group-open:rotate-180 transition-transform shrink-0">▼</span></summary><p class="text-muted text-sm mt-2 leading-relaxed">Woody breast is a muscle abnormality in fast-growing commercial chickens where muscle fibers harden. Buying smaller 5–6 oz air-chilled breasts or pounding thick breasts gently to an even 3/4-inch thickness prevents rubbery texture.</p></details></div></div>
+</main>
   <footer>
     <p>&copy; 2026 Hoorvia.net — Print &bull; Plan &bull; Create. Formatted for US Letter (8.5"&times;11") &amp; A4 Paper.</p>
     <p style="margin-top:8px;"><a href="../about.html">About Us</a> • <a href="../contact.html">Contact</a> • <a href="../privacy-policy.html">Privacy Policy</a> • <a href="../terms.html">Terms</a> • <a href="../disclaimer.html">Disclaimer</a></p>

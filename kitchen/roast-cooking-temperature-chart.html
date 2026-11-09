@@ -115,6 +115,15 @@ h1, h2, h3, h4, .font-heading { font-family: 'Fraunces', Georgia, serif !importa
   #site-header .vip-nav-links { display: none !important; }
 }
 
+/* ARGON-REVIEW-FIXES-2026-11-07: header nowrap guard (31 no-CDN pages) + A4 col-3 emphasis */
+body > header, body > header > div, body > header nav {
+  white-space: nowrap !important;
+  flex-wrap: nowrap !important;
+}
+#table-section tbody td:nth-child(3), .sheet-table tbody td:nth-child(3) {
+  font-weight: 700 !important;
+  color: #2D6A4F !important;
+}
 /* VIP MASTER TABLE POLISH (Air Fryer Standard) */
 #table-section table, .sheet-table {
   width: 100% !important;
@@ -370,7 +379,9 @@ tbody tr:hover .copy-badge { opacity: 1; }
 <li><a href="meat-resting-time-guide.html">🥩 Meat Resting Time & Carryover Temp Guide (#030)</a></li>
 </ul>
     </section>
-  </main>
+  <hr class="border-sandBorder" />
+<div id="faq-section"><h2 class="font-heading text-xl sm:text-2xl font-bold text-brandNavy mb-4">Frequently Asked Questions (FAQs)</h2><div class="space-y-3"><details class="group border border-sandBorder rounded-xl p-4 bg-paper" open><summary class="font-heading font-bold text-brandNavy cursor-pointer list-none flex justify-between items-center gap-3"><span>Should I roast meat fat-side up or fat-side down?</span><span class="text-brandTeal group-open:rotate-180 transition-transform shrink-0">▼</span></summary><p class="text-muted text-sm mt-2 leading-relaxed">Always roast fat-side (fat cap) UP! Placing the fat cap on top shields the lean muscle underneath from direct top-element radiation and allows melting fat to baste around the sides of the roast.</p></details><details class="group border border-sandBorder rounded-xl p-4 bg-paper"><summary class="font-heading font-bold text-brandNavy cursor-pointer list-none flex justify-between items-center gap-3"><span>Why did my beef eye of round roast turn out tough even at 135°F?</span><span class="text-brandTeal group-open:rotate-180 transition-transform shrink-0">▼</span></summary><p class="text-muted text-sm mt-2 leading-relaxed">Eye of round comes from the heavily exercised rear leg muscle and has almost zero marbling. To make it tender, pull it at 122°F (so it rests to 132°F medium-rare) and slice it paper-thin (1/16 inch) strictly against the grain.</p></details><details class="group border border-sandBorder rounded-xl p-4 bg-paper"><summary class="font-heading font-bold text-brandNavy cursor-pointer list-none flex justify-between items-center gap-3"><span>Do I cover a roast with foil while it is baking in the oven?</span><span class="text-brandTeal group-open:rotate-180 transition-transform shrink-0">▼</span></summary><p class="text-muted text-sm mt-2 leading-relaxed">Leave tender dry-heat roasts (prime rib, tenderloin, pork loin, rack of lamb) UNCOVERED so the exterior browns via the Maillard reaction. Only cover tough braising cuts (chuck pot roast, brisket, pork shoulder) to trap steam and melt collagen.</p></details></div></div>
+</main>
   <footer>
     <p>&copy; 2026 Hoorvia.net — Print &bull; Plan &bull; Create. Formatted for US Letter (8.5"&times;11") &amp; A4 Paper.</p>
     <p style="margin-top:8px;"><a href="../about.html">About Us</a> • <a href="../contact.html">Contact</a> • <a href="../privacy-policy.html">Privacy Policy</a> • <a href="../terms.html">Terms</a> • <a href="../disclaimer.html">Disclaimer</a></p>
