@@ -1,2 +1,1 @@
-# Replace pub-XXXXXXXXXXXXXXXX with your AdSense publisher ID before applying
-# Example format (do NOT use this placeholder ID): google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
+google.com, pub-8705160220867230, DIRECT, f08c47fec0942fa0
