@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8705160220867230"
      crossorigin="anonymous"></script>
@@ -26,60 +26,20 @@
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;0,9..144,800;1,9..144,600;1,9..144,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why does ground turkey require 165°F while ground beef only requires 160°F?","acceptedAnswer":{"@type":"Answer","text":"Poultry flocks carry a higher baseline prevalence of Salmonella and Campylobacter strains that have slightly higher thermal resistance than the E. coli strains found in cattle. Reaching 165°F achieves an instant 7-log reduction of poultry pathogens."}},{"@type":"Question","name":"Why did my meatloaf fall apart when I sliced it?","acceptedAnswer":{"@type":"Answer","text":"Two reasons: (1) You sliced it immediately out of the oven instead of letting it rest for 15 minutes so the proteins and gelatin could set, or (2) You didn't use enough binder (use 1 large egg and 1/2 cup breadcrumbs per pound of meat)."}},{"@type":"Question","name":"Can I make medium-rare burgers at home safely?","acceptedAnswer":{"@type":"Answer","text":"Only if you sear the outside of a whole chuck/sirloin roast in boiling water or a hot skillet first to sterilize the surface, and then grind the meat yourself in a sanitized grinder immediately before cooking, or cook the patties sous-vide at 135°F for 2 full hours to pasteurize by time."}}]}</script>
   <style>
-    :root { --bg:#FAF7F0; --card:#FFFFFF; --navy:#1B4332; --slate:#1C2B21; --muted:#5B6B5E; --accent:#2D6A4F; --emerald:#40916C; --emerald-hover:#2D6A4F; --amber:#E07856; --border:#E9E2D2; }
-    * { box-sizing:border-box; margin:0; padding:0; }
-    body { font-family:'Inter',system-ui,sans-serif; background:var(--bg); color:var(--slate); line-height:1.6; }
-    header { background:#FDFBF7; border-bottom:1px solid var(--border); position:sticky; top:0; z-index:40; }
-    .nav-wrap { max-width:1120px; margin:0 auto; padding:14px 20px; display:flex; align-items:center; justify-content:space-between; flex-wrap:nowrap; gap:12px; }
-    .brand { display:flex; align-items:center; gap:10px; text-decoration:none; color:var(--navy); flex-shrink:0; white-space:nowrap; }
-    .brand-logo { width:36px; height:36px; border-radius:8px; background:var(--navy); color:#fff; font-family:'Fraunces', Georgia, serif; font-weight:800; display:flex; align-items:center; justify-content:center; font-size:18px; }
-    .brand-text span:first-child { display:inline; font-family:'Fraunces', Georgia, serif; font-weight:800; font-size:18px; line-height:1.1; }
-    .brand-text span:last-child { font-size:11.5px; color:var(--muted); margin-left:8px; white-space:nowrap; }
-    nav { display:flex; gap:18px; flex-wrap:nowrap; }
-    @media (max-width: 768px) {
-      .brand-text span:last-child { display:none; }
-      nav { display:none; }
-    }
-    nav a { text-decoration:none; color:var(--slate); font-size:14px; font-weight:500; }
-    .container { max-width:880px; margin:0 auto; padding:28px 20px 60px; }
-    .breadcrumb { font-size:13px; color:var(--muted); margin-bottom:12px; }
-    .breadcrumb a { color:var(--accent); text-decoration:none; font-weight:500; }
-    .badge-pill { display:inline-block; background:#FBEFE3; border:1px solid #E9D5C0; color:var(--navy); font-size:12px; font-weight:600; padding:4px 12px; border-radius:999px; margin-bottom:10px; }
-    h1 { font-family:'Fraunces', Georgia, serif; font-size:clamp(24px,4vw,34px); color:var(--navy); line-height:1.2; margin-bottom:12px; }
-    .intro-p { font-size:16px; color:#1C2B21; margin-bottom:20px; }
-    .quick-bar { display:flex; flex-wrap:wrap; gap:10px; align-items:center; justify-content:space-between; background:#fff; padding:12px 16px; border-radius:12px; border:1px solid var(--border); margin-bottom:22px; }
-    .search-input { flex:1; min-width:210px; padding:9px 14px; border:1px solid #E9E2D2; border-radius:8px; font-size:14px; }
-    .btn-sm { padding:9px 14px; border-radius:8px; text-decoration:none; font-size:13.5px; font-weight:600; cursor:pointer; border:none; display:inline-flex; align-items:center; gap:6px; }
-    .btn-jump { background:var(--emerald); color:#fff; }
-    .btn-print-top { background:#FBEFE3; color:#7A4A2B; border:1px solid #E9D5C0; }
-    .table-card { background:#fff; border-radius:12px; border:1px solid var(--border); overflow:hidden; margin-bottom:22px; }
-    .sec-banner { color:#fff; font-weight:700; font-size:13.5px; padding:10px 16px; }
-    .table-scroll { overflow-x:auto; }
-    .ref-table { width:100%; border-collapse:collapse; font-size:14px; text-align:left; }
-    .ref-table th { background:#F3EDE0; color:var(--navy); font-weight:700; padding:10px 14px; border-bottom:1px solid var(--border); }
-    .ref-table td { padding:10px 14px; border-bottom:1px solid var(--border); }
-    .ref-table tr:nth-child(even) td { background:#FAF7F0; }
-    .font-bold { font-weight:600; color:var(--navy); }
-    .callout-box { background:#FBEFE3; border-left:4px solid var(--accent); padding:16px 18px; border-radius:8px; margin:24px 0; font-size:14.5px; color:var(--navy); }
-    .preview-card { background:#F3EDE0; border:1px solid var(--border); border-radius:16px; padding:24px; text-align:center; margin:28px 0; }
-    .preview-card img { max-width:100%; width:520px; height:auto; border-radius:8px; border:1px solid #E9E2D2; background:#fff; }
-    .download-actions { display:flex; flex-wrap:wrap; gap:12px; justify-content:center; margin-top:20px; }
-    .btn-dl { background:var(--emerald); color:#fff; text-decoration:none; padding:14px 24px; border-radius:10px; font-weight:700; font-size:15px; display:inline-flex; align-items:center; gap:8px; }
-    .btn-print { background:var(--amber); color:#fff; border:none; padding:14px 22px; border-radius:10px; font-weight:700; font-size:15px; cursor:pointer; display:inline-flex; align-items:center; gap:8px; }
-    .guide-section { background:#fff; border:1px solid var(--border); border-radius:12px; padding:24px; margin-bottom:24px; }
-    .guide-section h2 { font-family:'Fraunces', Georgia, serif; font-size:21px; color:var(--navy); margin-bottom:12px; }
-    .guide-section h3 { font-size:17px; color:var(--navy); margin:16px 0 8px; }
-    .guide-section p, .guide-section li { font-size:15px; color:#1C2B21; margin-bottom:10px; }
-    .guide-section ul, .guide-section ol { padding-left:20px; }
-    .faq-item { border-bottom:1px solid var(--border); padding:14px 0; }
-    .faq-item:last-child { border-bottom:none; }
-    .faq-item h3 { font-size:16px; color:var(--navy); margin-bottom:6px; }
-    .cluster-links { display:grid; grid-template-columns:repeat(auto-fill,minmax(250px,1fr)); gap:10px; list-style:none; padding:0; margin-top:12px; }
-    .cluster-links a { display:block; padding:10px 14px; background:#FAF7F0; border:1px solid var(--border); border-radius:8px; text-decoration:none; color:var(--navy); font-size:13.5px; font-weight:600; }
-    footer { background:#0B2E1B; border-top:1px solid rgba(255,255,255,.12); padding:32px 20px; text-align:center; font-size:13.5px; color:#9DBFA9; }
-    footer a { color:#CFE3D4; text-decoration:none; margin:0 8px; }
-    @media print { header,footer,.quick-bar,.preview-card,.cluster-box,.no-print { display:none!important; } body { background:#fff; } .container { max-width:100%; padding:0; } }
-  </style>
+body { background-color: #FAF7F0; color: #1C2B21; font-family: 'Inter', sans-serif; }
+h1, h2, h3, h4, .font-heading { font-family: 'Fraunces', Georgia, serif; }
+.paper-preview-sheet { background: #FFFFFF; border: 1px solid #E9E2D2; position: relative; }
+.paper-preview-sheet::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 6px; background: linear-gradient(90deg, #2D6A4F, #40916C, #E07856); }
+::-webkit-scrollbar { width: 8px; height: 8px; } ::-webkit-scrollbar-track { background: #F3EDE0; } ::-webkit-scrollbar-thumb { background: #9DBFA9; border-radius: 4px; }
+@media print {
+body { background: #FFFFFF !important; color: #000000 !important; font-size: 11pt; }
+.no-print, header, footer, #quick-action-bar, #download-cta-box, #seo-guide-section, #table-controls, #hero-band, #trust-bar, #quick-ref-summary, #info-cards, #breadcrumb-bar, #table-section { display: none !important; }
+.sheet-backdrop { background: #FFFFFF !important; padding: 0 !important; border: none !important; }
+.paper-preview-sheet { box-shadow: none !important; border: 2px solid #000 !important; page-break-inside: avoid; }
+table { page-break-inside: auto; border-collapse: collapse !important; width: 100% !important; }
+tr { page-break-inside: avoid; page-break-after: auto; }
+}
+</style>
 <style id="hoorvia-vip-master-style">
 body { background-color: #FAF7F0 !important; color: #1C2B21 !important; font-family: 'Inter', system-ui, -apple-system, sans-serif !important; -webkit-font-smoothing: antialiased; }
 h1, h2, h3, h4, .font-heading { font-family: 'Fraunces', Georgia, serif !important; }
@@ -271,7 +231,7 @@ tbody tr:hover .copy-badge { opacity: 1; }
 
 @media print {
   body { background: #FFFFFF !important; color: #000000 !important; font-size: 10.5pt; }
-  .no-print, header, footer, #site-header, #quick-action-bar, #download-cta-box, #pdf-showcase, #seo-guide-section, #howto-section, #tips-section, #faq-section, #table-controls, #breadcrumb-bar, .swipe-hint, #copyToast {
+  .no-print, header, footer, #site-header, #quick-action-bar, #download-cta-box, #pdf-showcase, #seo-guide-section, #howto-section, #tips-section, #faq-section, #table-controls, #hero-band, #trust-bar, #quick-ref-summary, #info-cards, #breadcrumb-bar, .swipe-hint, #copyToast {
     display: none !important;
   }
   article { max-width: 100% !important; padding: 0 !important; margin: 0 !important; }
@@ -280,121 +240,417 @@ tbody tr:hover .copy-badge { opacity: 1; }
   th, td { border: 1px solid #CBD5E1 !important; padding: 6px 8px !important; }
   tr { page-break-inside: avoid; page-break-after: auto; }
 }
+
+/* SAMPLE RESTYLE 2026-11-11 — screenshot layout (Air Fryer hero) */
+.hero-band { background: linear-gradient(100deg, #FAF7F0 0%, rgba(250,247,240,.94) 42%, rgba(250,247,240,.72) 62%, rgba(250,247,240,.45) 100%), url('/assets/images/hero-warm.jpg') center right/cover no-repeat; }
+@media (max-width: 1023px) { .hero-band { background: linear-gradient(180deg, rgba(250,247,240,.97), rgba(250,247,240,.88)), url('/assets/images/hero-warm.jpg') center/cover no-repeat; } }
+.mini-chart-head { background: #0B2E1B; padding: 14px 16px; display: flex; gap: 14px; align-items: center; }
+.mini-chart-title { font-family: 'Fraunces', Georgia, serif; font-weight: 800; font-size: 23px; line-height: 1.08; color: #F2C230; }
+.mini-chart-sub { color: #CFE3D4; font-size: 11px; letter-spacing: .1em; margin-top: 3px; }
+.mini-chart-col h3 { background: #2D6A4F; color: #fff; font-size: 11px; font-weight: 700; padding: 6px 12px; text-transform: uppercase; letter-spacing: .07em; font-family: 'Inter', sans-serif; }
+.mini-chart-col table { width: 100%; font-size: 11.5px; border-collapse: collapse; }
+.mini-chart-col td { padding: 4px 12px; border-bottom: 1px solid #EFE9DB; color: #1C2B21; }
+.mini-chart-col td:last-child { text-align: right; font-weight: 600; color: #1B4332; white-space: nowrap; }
+.mini-chart-col tr:last-child td { border-bottom: none; }
+@media (min-width: 640px) { .mini-chart-col:nth-child(odd) { border-right: 1px solid #EFE9DB; } }
+.mini-chart-safety { background: #FDFBF7; border-top: 1px solid #E2DAC9; padding: 9px 12px; font-size: 11.5px; color: #526356; line-height: 1.5; }
+.trust-item { display: flex; align-items: center; justify-content: center; gap: 8px; padding: 14px 10px; font-size: 13px; font-weight: 700; color: #1B4332; }
+.trust-icon { font-size: 20px; line-height: 1; }
+#faq-section details summary::-webkit-details-marker { display: none; }
 </style>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = { theme: { extend: { colors: { forest: '#14532D', pine: '#1B4332', leaf: '#2D6A4F', moss: '#40916C', sage: '#74C69D', cream: '#FAF7F0', paperCream: '#FDFBF7', sand: '#F3EDE0', sandBorder: '#E2DAC9', ink: '#1C2B21', muted: '#526356', terra: '#E07856', terraHover: '#C85F45', paper: '#FAF7F0', warmPaper: '#FDFBF7', slateText: '#1E293B', brandNavy: '#1B4332', brandTeal: '#2D6A4F', ctaGreen: '#40916C', ctaGreenHover: '#2D6A4F', ctaAmber: '#E07856', ctaAmberHover: '#C85F45' }, fontFamily: { heading: ['Fraunces', 'Georgia', 'serif'], sans: ['Inter', 'system-ui', 'sans-serif'] }, boxShadow: { 'paper-sheet': '0 14px 35px -5px rgba(20, 83, 45, 0.14), 0 4px 12px -2px rgba(20, 83, 45, 0.07)', 'card-hover': '0 12px 24px -6px rgba(45, 106, 79, 0.18)', 'vip-card': '0 2px 12px -2px rgba(20, 40, 29, 0.06), 0 1px 3px -1px rgba(20, 40, 29, 0.04)', 'vip-cta': '0 12px 28px -6px rgba(27, 67, 50, 0.14), 0 4px 10px -2px rgba(27, 67, 50, 0.06)' } } } }
+</script>
 </head>
-<body>
-  <header>
-    <div class="nav-wrap">
-      <a href="../index.html" class="brand"><div class="brand-logo">H</div><div class="brand-text"><span>Hoorvia</span><span>Print &bull; Plan &bull; Create</span></div></a>
-      <nav><a href="index.html">Kitchen &amp; Cooking</a><a href="../crafting/">Crafting &amp; DIY</a><a href="../home-health/">Home &amp; Health Trackers</a><a href="../tech/">Tech &amp; Software</a></nav>
-    </div>
-  </header>
-  <main class="container">
-    <div class="breadcrumb"><a href="../index.html">Home</a> &rsaquo; <a href="index.html">Kitchen &amp; Cooking</a> &rsaquo; Ground Meat Temperature Chart</div>
-    <span class="badge-pill">🥩 Free Printable Sheet #026 • 160°F Red Meat vs 165°F Ground Poultry • Burgers, Meatloaf & Tacos</span>
-    <h1>Ground Meat Internal Temperature Chart (Beef, Poultry, Pork & Lamb)</h1>
-    <p class="intro-p">Whole steaks can be eaten rare at 125°F because the interior muscle has never been exposed to air or processing equipment. Once meat passes through a grinder, surface bacteria are distributed throughout the entire batch. That is why ground beef, pork, and lamb require a minimum internal temperature of 160°F (71°C), and ground chicken or turkey requires 165°F (74°C).</p>
-    <div class="quick-bar no-print">
-      <input type="text" id="tableFilter" class="search-input" placeholder="🔍 Filter cuts or temperatures on this chart..." onkeyup="filterRows()">
-      <a href="#download-pdf" class="btn-sm btn-jump">📥 Jump to PDF Download</a>
-    </div>
-    
-        <div class="table-card">
-          <div class="sec-banner" style="background:#C85F45;">■ USDA SAFE INTERNAL TEMPERATURES BY GROUND MEAT SPECIES</div>
-          <div class="table-scroll">
-            <table class="ref-table">
-              <thead><tr><th>Ground Meat Type</th><th>Pull From Heat At</th><th>Final Rested Temp (USDA)</th><th>Rest Time</th><th>Critical Safety & Moisture Note</th></tr></thead>
-              <tbody><tr class='searchable-row'><td class='font-bold'>Ground Beef (80/20, 85/15, 90/10)</td><td class=''>156°F–158°F / 69°C</td><td class=''>160°F / 71°C</td><td class=''>3–4 min</td><td class=''>Eliminates E. coli O157:H7; juices run clear</td></tr>
-<tr class='searchable-row'><td class='font-bold'>Ground Pork & Fresh Pork Sausage</td><td class=''>156°F–158°F / 69°C</td><td class=''>160°F / 71°C</td><td class=''>3–4 min</td><td class=''>Keep fat content ≥20% for juicy patties</td></tr>
-<tr class='searchable-row'><td class='font-bold'>Ground Lamb (Kofta / Gyro / Burgers)</td><td class=''>156°F–158°F / 69°C</td><td class=''>160°F / 71°C</td><td class=''>4 min</td><td class=''>Pair with grated onion or yogurt to retain moisture</td></tr>
-<tr class='searchable-row'><td class='font-bold'>Ground Bison / Venison / Wild Game</td><td class=''>155°F–157°F / 68°C</td><td class=''>160°F / 71°C</td><td class=''>4 min</td><td class=''>Ultra-lean (90/10); pull right at 157°F so it doesn't dry</td></tr>
-<tr class='searchable-row'><td class='font-bold'>Ground Chicken (Breast or Thigh Grind)</td><td class=''>162°F / 72°C</td><td class=''>165°F / 74°C (Mandatory)</td><td class=''>3–4 min</td><td class=''>93/7 thigh grind stays much juicier than 99% breast</td></tr>
-<tr class='searchable-row'><td class='font-bold'>Ground Turkey (85/15 or 93/7)</td><td class=''>162°F / 72°C</td><td class=''>165°F / 74°C (Mandatory)</td><td class=''>3–4 min</td><td class=''>Mix 1 tbsp olive oil or mayo per lb to prevent dryness</td></tr>
+
+<body class="min-h-screen flex flex-col selection:bg-sage/30 selection:text-pine">
+<header id="site-header" class="no-print bg-paperCream/95 backdrop-blur-md border-b border-sandBorder sticky top-0 z-40 h-16">
+<div class="vip-header-row max-w-6xl mx-auto px-4 sm:px-6 h-16 flex flex-nowrap items-center justify-between gap-3 min-w-0 whitespace-nowrap overflow-hidden">
+<a href="/" class="flex items-center gap-2.5 group shrink-0 whitespace-nowrap">
+<span class="w-9 h-9 rounded-xl bg-forest text-white flex items-center justify-center shadow-sm group-hover:bg-leaf transition-colors shrink-0"><svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 11.5 12 4l9 7.5"/><path stroke-linecap="round" stroke-linejoin="round" d="M5.5 10.5V20h13v-9.5"/><path stroke-linecap="round" stroke-linejoin="round" d="M12 20v-4.5h3.5V20"/><path stroke-linecap="round" stroke-linejoin="round" d="M12 4c.2-1.8 1.4-2.8 3-3-.2 1.8-1.4 2.8-3 3z" fill="currentColor" stroke="none"/></svg></span>
+<div class="leading-none"><span class="font-heading font-bold text-[21px] tracking-tight text-pine block">Hoorvia</span><span class="hidden sm:block text-[9.5px] font-semibold tracking-[0.16em] text-muted uppercase mt-0.5">Print &bull; Plan &bull; Create</span></div>
+</a>
+<nav class="vip-nav-links hidden lg:flex flex-nowrap items-center gap-1 text-sm font-medium text-muted shrink-0 whitespace-nowrap" aria-label="Main Categories">
+<a href="/kitchen/index.html" class="px-2.5 py-1.5 rounded-lg text-xs xl:text-[13px] font-semibold bg-sage/25 text-pine transition-colors whitespace-nowrap shrink-0">Kitchen & Cooking</a><a href="/crafting" class="px-2.5 py-1.5 rounded-lg text-xs xl:text-[13px] font-medium text-muted hover:text-brandTeal hover:bg-sand/60 transition-colors whitespace-nowrap shrink-0">Crafting & DIY</a><a href="/home-health" class="px-2.5 py-1.5 rounded-lg text-xs xl:text-[13px] font-medium text-muted hover:text-brandTeal hover:bg-sand/60 transition-colors whitespace-nowrap shrink-0">Home & Health Trackers</a><a href="/tech" class="px-2.5 py-1.5 rounded-lg text-xs xl:text-[13px] font-medium text-muted hover:text-brandTeal hover:bg-sand/60 transition-colors whitespace-nowrap shrink-0">Tech & Software</a>
+</nav>
+<div class="flex flex-nowrap items-center gap-2 shrink-0 whitespace-nowrap">
+<div class="hidden md:flex items-center gap-2 bg-white border border-sandBorder rounded-full pl-3 pr-2 py-1.5 shadow-sm w-44 lg:w-60">
+<svg class="w-4 h-4 text-muted shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+<input id="hero-search-input" type="text" placeholder="Search free printables..." aria-label="Search free printables" class="w-full bg-transparent text-xs font-medium text-ink placeholder:text-muted focus:outline-none" oninput="syncHeroSearch(this.value)" onkeydown="if(event.key==='Enter'){document.getElementById('table-section').scrollIntoView({behavior:'smooth'});}" />
+</div>
+</div>
+</div></header>
+<main class="flex-grow">
+<article class="max-w-6xl mx-auto px-4 sm:px-6 py-8">
+
+<div id="breadcrumb-bar" class="no-print flex flex-wrap items-center gap-2 mb-5 text-xs sm:text-sm text-muted">
+<nav class="flex items-center gap-1.5"><a href="/" class="hover:text-brandTeal font-medium">Home</a><span>&rsaquo;</span><a href="/kitchen/index.html" class="hover:text-brandTeal font-medium">Kitchen &amp; Cooking</a><span>&rsaquo;</span><span class="text-ink font-semibold">Ground Meat Internal Temperature Chart (Beef, Poultry, Pork & Lamb)</span></nav>
+</div>
+<section id="hero-band" class="hero-band relative overflow-hidden rounded-3xl border border-sandBorder mb-6">
+<div class="relative z-10 grid lg:grid-cols-5 gap-8 items-center px-5 sm:px-8 lg:px-10 py-8 sm:py-10">
+<div class="lg:col-span-3">
+<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-forest text-white text-xs font-bold uppercase tracking-wide mb-4">🍳 Kitchen &amp; Cooking</span>
+<h1 class="font-heading text-4xl sm:text-5xl xl:text-[3.4rem] font-extrabold text-brandNavy tracking-tight leading-[1.05] mb-4">Ground Meat Internal Temperature Chart (Beef, Poultry, Pork & Lamb)</h1>
+<p class="text-muted text-base sm:text-lg leading-relaxed mb-4">Whole steaks can be eaten rare at 125°F because the interior muscle has never been exposed to air or processing equipment. Once meat passes through a grinder, surface bacteria are distributed throughout the entire batch. That is why ground beef, pork, and lamb require a minimum internal temperature of 160°F (71°C), and ground chicken or turkey requires 165°F (74°C).</p>
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white border border-sandBorder text-xs font-semibold text-ink shadow-sm">🍳 18 Items</span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white border border-sandBorder text-xs font-semibold text-ink shadow-sm">🖨️ US Letter + A4</span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white border border-sandBorder text-xs font-semibold text-ink shadow-sm">🎁 Free PDF</span>
+</div>
+<div class="flex flex-wrap gap-3">
+<a href="/assets/pdfs/ground-meat-temperature-chart.pdf" download="Hoorvia-Ground-Meat-Temperature-Chart.pdf" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-forest hover:bg-leaf text-white font-bold text-sm shadow-md transition-all">⬇ Download Free PDF <span aria-hidden="true">&rsaquo;</span></a>
+<a href="#printable-preview" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white border-2 border-brandNavy text-brandNavy font-bold text-sm hover:bg-sand/50 transition-all">👁️ Preview Printable</a>
+</div>
+</div>
+<div class="lg:col-span-2">
+<div class="mini-chart bg-white rounded-2xl overflow-hidden shadow-paper-sheet border border-sandBorder">
+<div class="mini-chart-head">
+<svg class="w-11 h-11 shrink-0" viewBox="0 0 48 48" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="5" width="30" height="13" rx="3"/><rect x="9" y="21" width="30" height="17" rx="3"/><path d="M17 29.5h14"/><circle cx="24" cy="11.5" r="2.5"/><path d="M15 42h18"/></svg>
+<div><div class="mini-chart-title">Ground Meat<br/>Internal Temperature Chart</div><div class="mini-chart-sub">Quick &bull; Easy &bull; Reference</div></div>
+</div>
+<div class="grid sm:grid-cols-2">
+<div class="mini-chart-col"><h3>Usda Safe Internal Temperatures</h3><table><tbody>
+<tr><td>Ground Beef (80/20, 85/15, 90/10)</td><td>156&deg;F&ndash;158&deg;F, 3&ndash;4 min</td></tr>
+<tr><td>Ground Pork &amp; Fresh Pork Sausage</td><td>156&deg;F&ndash;158&deg;F, 3&ndash;4 min</td></tr>
+<tr><td>Ground Lamb (Kofta / Gyro / Burgers)</td><td>156&deg;F&ndash;158&deg;F, 4 min</td></tr>
+<tr><td>Ground Bison / Venison / Wild Game</td><td>155&deg;F&ndash;157&deg;F, 4 min</td></tr>
+<tr><td>Ground Chicken (Breast or Thigh Grind)</td><td>162&deg;F, 3&ndash;4 min</td></tr>
+</tbody></table></div>
+<div class="mini-chart-col"><h3>Cooking Timing &amp; Probe Guide By</h3><table><tbody>
+<tr><td>Smash Burger Patty (2.5&ndash;3 oz, 1/4")</td><td>160&deg;F, 2 min side 1 + 1 min side 2</td></tr>
+<tr><td>Standard Burger Patty (4&ndash;5 oz, 3/4")</td><td>157&deg;F, 4&ndash;5 min per side</td></tr>
+<tr><td>Thick Pub Burger (6&ndash;8 oz, 1.25")</td><td>156&deg;F, 6&ndash;7 min per side</td></tr>
+<tr><td>Classic Beef/Pork Meatloaf (2 lb Loaf)</td><td>155&deg;F, 55&ndash;65 minutes</td></tr>
+<tr><td>Turkey / Chicken Meatloaf (2 lb Loaf)</td><td>161&deg;F, 50&ndash;60 minutes</td></tr>
+</tbody></table></div>
+<div class="mini-chart-col"><h3>Lean-To-Fat Ratio Guide For</h3><table><tbody>
+<tr><td>73 / 27 or 75 / 25</td><td>Smash burgers on flat-top griddle</td></tr>
+<tr><td>80 / 20 (Chuck)</td><td>Gold standard for grilled &amp; pan burgers</td></tr>
+<tr><td>85 / 15 (Round)</td><td>Meatloaf, meatballs, Shepherd's pie</td></tr>
+<tr><td>90 / 10 or 93 / 7 (Sirloin)</td><td>Tacos, chili, sloppy joes, pasta sauces</td></tr>
+</tbody></table></div>
+</div>
+<div class="mini-chart-safety">&#9989; <strong>Food Safety:</strong> 💡 Chef's Thermometer Tip: How to keep burgers cooked to a safe 160&deg;F as juicy as a medium-rare steak: Gently mix a 'panade' (2 tablespoons o</div></div>
+</div>
+</div>
+</section>
+<div id="trust-bar" class="no-print grid grid-cols-2 sm:grid-cols-4 rounded-2xl bg-[#E9F2E7] border border-[#D5E2D2] mb-10 overflow-hidden divide-x divide-[#D5E2D2]">
+<div class="trust-item"><span class="trust-icon">&infin;</span> Free forever</div>
+<div class="trust-item"><svg class="w-5 h-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="8" r="4"/><path d="M3 21c0-3.5 3-6 7-6s7 2.5 7 6"/><path d="M17 4l5 5M22 4l-5 5"/></svg> No sign-up</div>
+<div class="trust-item"><svg class="w-5 h-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="M9 13h6M9 17h6"/></svg> Letter &amp; A4</div>
+<div class="trust-item"><svg class="w-5 h-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 8V4h10v4"/><rect x="4" y="8" width="16" height="8" rx="2"/><path d="M7 13h10v7H7z"/></svg> Print-ready</div>
+</div>
+<section id="quick-ref-summary" class="mb-10">
+<div class="bg-[#0B2E1B] text-white rounded-t-2xl px-5 py-3 flex items-center gap-2.5">
+<svg class="w-5 h-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+<h2 class="font-heading text-lg font-bold">Quick Reference Table</h2>
+</div>
+<div class="bg-white border border-t-0 border-sandBorder rounded-b-2xl overflow-hidden">
+<table class="w-full text-left border-collapse">
+<thead><tr class="bg-[#E9F2E7] text-ink text-xs uppercase tracking-wider border-b border-sandBorder"><th class="py-3 px-5 font-bold">Ground Meat Type</th><th class="py-3 px-5 font-bold">Pull From Heat At</th><th class="py-3 px-5 font-bold">Final Rested Temp (USDA)</th></tr></thead>
+<tbody class="divide-y divide-sandBorder text-sm">
+<tr><td class="py-3 px-5 font-semibold text-brandNavy">160&deg;F / 71&deg;C</td><td class="py-3 px-5"></td><td class="py-3 px-5 font-semibold text-brandTeal"></td></tr>
+<tr><td class="py-3 px-5 font-semibold text-brandNavy">165&deg;F / 74&deg;C (Mandatory)</td><td class="py-3 px-5"></td><td class="py-3 px-5 font-semibold text-brandTeal"></td></tr>
 </tbody>
-            </table>
-          </div>
-        </div>
-        
-        <div class="table-card">
-          <div class="sec-banner" style="background:#C85F45;">■ COOKING TIMING & PROBE GUIDE BY DISH FORMAT (BURGER, MEATLOAF, BALLS)</div>
-          <div class="table-scroll">
-            <table class="ref-table">
-              <thead><tr><th>Ground Meat Dish</th><th>Cooking Temp</th><th>Avg Cook Time</th><th>Pull Temp</th><th>Exact Thermometer Probe Method</th></tr></thead>
-              <tbody><tr class='searchable-row'><td class='font-bold'>Smash Burger Patty (2.5–3 oz, 1/4")</td><td class=''>450°F Griddle</td><td class=''>2 min side 1 + 1 min side 2</td><td class=''>160°F</td><td class=''>Too thin for probe; cook until lacy brown & juices clear</td></tr>
-<tr class='searchable-row'><td class='font-bold'>Standard Burger Patty (4–5 oz, 3/4")</td><td class=''>400°F Grill/Pan</td><td class=''>4–5 min per side</td><td class=''>157°F (Rest 160°F)</td><td class=''>Insert probe horizontally through side edge to center</td></tr>
-<tr class='searchable-row'><td class='font-bold'>Thick Pub Burger (6–8 oz, 1.25")</td><td class=''>375°F Med-High</td><td class=''>6–7 min per side</td><td class=''>156°F (Rest 160°F)</td><td class=''>Press thumb dimple in raw center so patty cooks flat</td></tr>
-<tr class='searchable-row'><td class='font-bold'>Classic Beef/Pork Meatloaf (2 lb Loaf)</td><td class=''>350°F / 175°C Oven</td><td class=''>55–65 minutes</td><td class=''>155°F (Rest 160°F)</td><td class=''>Insert diagonally into dead center of loaf; rest 15 min</td></tr>
-<tr class='searchable-row'><td class='font-bold'>Turkey / Chicken Meatloaf (2 lb Loaf)</td><td class=''>350°F / 175°C Oven</td><td class=''>50–60 minutes</td><td class=''>161°F (Rest 165°F)</td><td class=''>Glaze top during last 15 min to lock in steam</td></tr>
-<tr class='searchable-row'><td class='font-bold'>Italian Meatballs (1.5-inch diameter)</td><td class=''>400°F / 200°C Oven</td><td class=''>16–20 minutes</td><td class=''>160°F (165°F Poultry)</td><td class=''>Probe center of the largest meatball on middle tray</td></tr>
-<tr class='searchable-row'><td class='font-bold'>Stuffed Peppers / Cabbage Rolls</td><td class=''>375°F / 190°C Oven</td><td class=''>40–45 minutes</td><td class=''>160°F / 165°F</td><td class=''>If using raw rice/meat mix, center must hit 160°F+</td></tr>
-<tr class='searchable-row'><td class='font-bold'>Skillet Taco / Bolognese Crumbles</td><td class=''>Med-High Skillet</td><td class=''>7–9 minutes</td><td class=''>165°F+ (All browned)</td><td class=''>Simmer until zero pink remains & fat renders clear</td></tr>
-</tbody>
-            </table>
-          </div>
-        </div>
-        
-        <div class="table-card">
-          <div class="sec-banner" style="background:#C85F45;">■ LEAN-TO-FAT RATIO GUIDE FOR GROUND BEEF & POULTRY</div>
-          <div class="table-scroll">
-            <table class="ref-table">
-              <thead><tr><th>Package Ratio</th><th>Lean % / Fat %</th><th>Best Culinary Application</th><th>Shrinkage & Texture Behaviour</th></tr></thead>
-              <tbody><tr class='searchable-row'><td class='font-bold'>73 / 27 or 75 / 25</td><td class=''>73% Lean / 27% Fat</td><td class=''>Smash burgers on flat-top griddle</td><td class=''>High grease render; forms ultra-crisp lacy edges</td></tr>
-<tr class='searchable-row'><td class='font-bold'>80 / 20 (Chuck)</td><td class=''>80% Lean / 20% Fat</td><td class=''>Gold standard for grilled & pan burgers</td><td class=''>Ideal balance of beef flavor, juiciness, and hold</td></tr>
-<tr class='searchable-row'><td class='font-bold'>85 / 15 (Round)</td><td class=''>85% Lean / 15% Fat</td><td class=''>Meatloaf, meatballs, Shepherd's pie</td><td class=''>Less greasy pooling in baking dishes & casseroles</td></tr>
-<tr class='searchable-row'><td class='font-bold'>90 / 10 or 93 / 7 (Sirloin)</td><td class=''>90%+ Lean / ≤10% Fat</td><td class=''>Tacos, chili, sloppy joes, pasta sauces</td><td class=''>Dries out as burgers unless pan-ade binder is added</td></tr>
-</tbody>
-            </table>
-          </div>
-        </div>
-        
-    <div class="callout-box"><strong>💡 Chef's Thermometer Tip:</strong> How to keep burgers cooked to a safe 160°F as juicy as a medium-rare steak: Gently mix a 'panade' (2 tablespoons of crushed Ritz crackers or panko soaked in 2 tablespoons of milk per pound of meat) OR 1 tablespoon of mayonnaise into the raw grind before shaping patties!</div>
-    <div id="download-pdf" class="preview-card">
-      <h2 style="font-family:'Fraunces', Georgia, serif; color:var(--navy); font-size:20px; margin-bottom:6px;">Printable Cheat Sheet Preview (US Letter &amp; A4)</h2>
-      <p style="font-size:13.5px; color:var(--muted); margin-bottom:16px;">High-contrast, ink-saving layout designed for kitchen binders, grill stations, and refrigerator doors. No sign-up required.</p>
-      <div class="vip-preview-card"><img src="../assets/previews/ground-meat-temperature-chart.webp" alt="Ground Meat Internal Temperature Chart (Beef, Poultry, Pork & Lamb) Printable PDF Preview" width="520" height="673" loading="lazy"></div>
-      <div class="download-actions">
-        <a href="../assets/pdfs/ground-meat-temperature-chart.pdf" download="Hoorvia-ground-meat-temperature-chart.pdf" class="btn-dl">📥 Download Free Printable PDF (US Letter / A4)</a>
-      </div>
-    </div>
-    <section class="guide-section"><h2>Why Color Lies in Ground Meat (And How to Keep 160°F Burgers Juicy)</h2>
-        <p>Many people judge burger doneness by cutting into the middle to see if the meat is brown or pink. According to USDA food scientists, <strong>internal color is NOT a reliable indicator of ground meat safety</strong>:</p>
-        <ul>
+</table>
+</div>
+</section>
+<section id="table-section" class="bg-white rounded-2xl border border-sandBorder shadow-sm overflow-hidden mb-10">
+<div class="p-4 sm:p-5 border-b border-sandBorder bg-paperCream flex flex-col sm:flex-row sm:items-center justify-between gap-3"><div><h2 class="font-heading text-lg sm:text-xl font-bold text-brandNavy">Complete Ground Meat Internal Temperature Chart &mdash; All 18 Items</h2><p class="text-xs text-muted">Every item on this chart. Filter instantly or switch between &deg;F and &deg;C.</p></div><div id="table-controls" class="no-print flex flex-wrap items-center gap-2 self-start sm:self-auto"><div class="flex items-center gap-2"><span class="text-xs font-semibold text-muted">Units:</span><div id="unit-toggle" class="vip-unit-group" role="group" aria-label="Temperature Unit Toggle">
+<button type="button" class="vip-unit-btn active" onclick="setTempUnit('both', this)">°F &amp; °C</button>
+<button type="button" class="vip-unit-btn" onclick="setTempUnit('f', this)">°F Only</button>
+<button type="button" class="vip-unit-btn" onclick="setTempUnit('c', this)">°C Only</button></div></div></div></div>
+<div class="no-print p-3 sm:px-5 bg-white border-b border-sandBorder"><input type="text" id="table-filter-input" oninput="filterRows()" placeholder="🔍 Filter instantly (e.g., Ground Beef (80/20, 85, Ground Pork &amp; Fresh Po, Ground Lamb (Kofta / G)..." class="w-full px-3.5 py-2 text-sm border border-sandBorder rounded-lg focus:outline-none focus:border-brandTeal" /></div>
+<h3 class="font-heading text-base font-bold text-brandNavy bg-[#E9F2E7] px-5 py-3 border-b border-sandBorder">USDA SAFE INTERNAL TEMPERATURES BY GROUND MEAT SPECIES</h3>
+<div class="overflow-x-auto"><table class="w-full text-left border-collapse"><thead><tr class="bg-[#E9F2E7] text-ink text-xs uppercase tracking-wider border-b border-sandBorder"><th class="py-3 px-4 font-bold">Ground Meat Type</th><th class="py-3 px-4 font-bold">Pull From Heat At</th><th class="py-3 px-4 font-bold">Final Rested Temp (USDA)</th><th class="py-3 px-4 font-bold">Rest Time</th><th class="py-3 px-4 font-bold">Critical Safety &amp; Moisture Note</th></tr></thead><tbody class="divide-y divide-sandBorder text-xs sm:text-sm">
+<tr><td class="py-3 px-4 text-ink">Ground Beef (80/20, 85/15, 90/10)</td><td class="py-3 px-4 text-ink">156°F–158°F / 69°C</td><td class="py-3 px-4 text-ink">160°F / 71°C</td><td class="py-3 px-4 text-ink">3–4 min</td><td class="py-3 px-4 text-ink">Eliminates E. coli O157:H7; juices run clear</td></tr>
+<tr><td class="py-3 px-4 text-ink">Ground Pork & Fresh Pork Sausage</td><td class="py-3 px-4 text-ink">156°F–158°F / 69°C</td><td class="py-3 px-4 text-ink">160°F / 71°C</td><td class="py-3 px-4 text-ink">3–4 min</td><td class="py-3 px-4 text-ink">Keep fat content ≥20% for juicy patties</td></tr>
+<tr><td class="py-3 px-4 text-ink">Ground Lamb (Kofta / Gyro / Burgers)</td><td class="py-3 px-4 text-ink">156°F–158°F / 69°C</td><td class="py-3 px-4 text-ink">160°F / 71°C</td><td class="py-3 px-4 text-ink">4 min</td><td class="py-3 px-4 text-ink">Pair with grated onion or yogurt to retain moisture</td></tr>
+<tr><td class="py-3 px-4 text-ink">Ground Bison / Venison / Wild Game</td><td class="py-3 px-4 text-ink">155°F–157°F / 68°C</td><td class="py-3 px-4 text-ink">160°F / 71°C</td><td class="py-3 px-4 text-ink">4 min</td><td class="py-3 px-4 text-ink">Ultra-lean (90/10); pull right at 157°F / 69°C so it doesn't dry</td></tr>
+<tr><td class="py-3 px-4 text-ink">Ground Chicken (Breast or Thigh Grind)</td><td class="py-3 px-4 text-ink">162°F / 72°C</td><td class="py-3 px-4 text-ink">165°F / 74°C (Mandatory)</td><td class="py-3 px-4 text-ink">3–4 min</td><td class="py-3 px-4 text-ink">93/7 thigh grind stays much juicier than 99% breast</td></tr>
+<tr><td class="py-3 px-4 text-ink">Ground Turkey (85/15 or 93/7)</td><td class="py-3 px-4 text-ink">162°F / 72°C</td><td class="py-3 px-4 text-ink">165°F / 74°C (Mandatory)</td><td class="py-3 px-4 text-ink">3–4 min</td><td class="py-3 px-4 text-ink">Mix 1 tbsp olive oil or mayo per lb to prevent dryness</td></tr>
+</tbody></table></div>
+<h3 class="font-heading text-base font-bold text-brandNavy bg-[#E9F2E7] px-5 py-3 border-b border-sandBorder">COOKING TIMING &amp; PROBE GUIDE BY DISH FORMAT (BURGER, MEATLOAF, BALLS)</h3>
+<div class="overflow-x-auto"><table class="w-full text-left border-collapse"><thead><tr class="bg-[#E9F2E7] text-ink text-xs uppercase tracking-wider border-b border-sandBorder"><th class="py-3 px-4 font-bold">Ground Meat Dish</th><th class="py-3 px-4 font-bold">Cooking Temp</th><th class="py-3 px-4 font-bold">Avg Cook Time</th><th class="py-3 px-4 font-bold">Pull Temp</th><th class="py-3 px-4 font-bold">Exact Thermometer Probe Method</th></tr></thead><tbody class="divide-y divide-sandBorder text-xs sm:text-sm">
+<tr><td class="py-3 px-4 text-ink">Smash Burger Patty (2.5–3 oz, 1/4")</td><td class="py-3 px-4 text-ink">450°F / 232°C Griddle</td><td class="py-3 px-4 text-ink">2 min side 1 + 1 min side 2</td><td class="py-3 px-4 text-ink">160°F / 71°C</td><td class="py-3 px-4 text-ink">Too thin for probe; cook until lacy brown & juices clear</td></tr>
+<tr><td class="py-3 px-4 text-ink">Standard Burger Patty (4–5 oz, 3/4")</td><td class="py-3 px-4 text-ink">400°F / 204°C Grill/Pan</td><td class="py-3 px-4 text-ink">4–5 min per side</td><td class="py-3 px-4 text-ink">157°F / 69°C (Rest 160°F / 71°C)</td><td class="py-3 px-4 text-ink">Insert probe horizontally through side edge to center</td></tr>
+<tr><td class="py-3 px-4 text-ink">Thick Pub Burger (6–8 oz, 1.25")</td><td class="py-3 px-4 text-ink">375°F / 191°C Med-High</td><td class="py-3 px-4 text-ink">6–7 min per side</td><td class="py-3 px-4 text-ink">156°F / 69°C (Rest 160°F / 71°C)</td><td class="py-3 px-4 text-ink">Press thumb dimple in raw center so patty cooks flat</td></tr>
+<tr><td class="py-3 px-4 text-ink">Classic Beef/Pork Meatloaf (2 lb Loaf)</td><td class="py-3 px-4 text-ink">350°F / 175°C Oven</td><td class="py-3 px-4 text-ink">55–65 minutes</td><td class="py-3 px-4 text-ink">155°F / 68°C (Rest 160°F / 71°C)</td><td class="py-3 px-4 text-ink">Insert diagonally into dead center of loaf; rest 15 min</td></tr>
+<tr><td class="py-3 px-4 text-ink">Turkey / Chicken Meatloaf (2 lb Loaf)</td><td class="py-3 px-4 text-ink">350°F / 175°C Oven</td><td class="py-3 px-4 text-ink">50–60 minutes</td><td class="py-3 px-4 text-ink">161°F / 72°C (Rest 165°F / 74°C)</td><td class="py-3 px-4 text-ink">Glaze top during last 15 min to lock in steam</td></tr>
+<tr><td class="py-3 px-4 text-ink">Italian Meatballs (1.5-inch diameter)</td><td class="py-3 px-4 text-ink">400°F / 200°C Oven</td><td class="py-3 px-4 text-ink">16–20 minutes</td><td class="py-3 px-4 text-ink">160°F / 71°C (165°F / 74°C Poultry)</td><td class="py-3 px-4 text-ink">Probe center of the largest meatball on middle tray</td></tr>
+<tr><td class="py-3 px-4 text-ink">Stuffed Peppers / Cabbage Rolls</td><td class="py-3 px-4 text-ink">375°F / 190°C Oven</td><td class="py-3 px-4 text-ink">40–45 minutes</td><td class="py-3 px-4 text-ink">160°F / 71°C / 165°F / 74°C</td><td class="py-3 px-4 text-ink">If using raw rice/meat mix, center must hit 160°F+ / 71°C+</td></tr>
+<tr><td class="py-3 px-4 text-ink">Skillet Taco / Bolognese Crumbles</td><td class="py-3 px-4 text-ink">Med-High Skillet</td><td class="py-3 px-4 text-ink">7–9 minutes</td><td class="py-3 px-4 text-ink">165°F+ / 74°C+ (All browned)</td><td class="py-3 px-4 text-ink">Simmer until zero pink remains & fat renders clear</td></tr>
+</tbody></table></div>
+<h3 class="font-heading text-base font-bold text-brandNavy bg-[#E9F2E7] px-5 py-3 border-b border-sandBorder">LEAN-TO-FAT RATIO GUIDE FOR GROUND BEEF &amp; POULTRY</h3>
+<div class="overflow-x-auto"><table class="w-full text-left border-collapse"><thead><tr class="bg-[#E9F2E7] text-ink text-xs uppercase tracking-wider border-b border-sandBorder"><th class="py-3 px-4 font-bold">Package Ratio</th><th class="py-3 px-4 font-bold">Lean % / Fat %</th><th class="py-3 px-4 font-bold">Best Culinary Application</th><th class="py-3 px-4 font-bold">Shrinkage &amp; Texture Behaviour</th></tr></thead><tbody class="divide-y divide-sandBorder text-xs sm:text-sm">
+<tr><td class="py-3 px-4 text-ink">73 / 27 or 75 / 25</td><td class="py-3 px-4 text-ink">73% Lean / 27% Fat</td><td class="py-3 px-4 text-ink">Smash burgers on flat-top griddle</td><td class="py-3 px-4 text-ink">High grease render; forms ultra-crisp lacy edges</td></tr>
+<tr><td class="py-3 px-4 text-ink">80 / 20 (Chuck)</td><td class="py-3 px-4 text-ink">80% Lean / 20% Fat</td><td class="py-3 px-4 text-ink">Gold standard for grilled & pan burgers</td><td class="py-3 px-4 text-ink">Ideal balance of beef flavor, juiciness, and hold</td></tr>
+<tr><td class="py-3 px-4 text-ink">85 / 15 (Round)</td><td class="py-3 px-4 text-ink">85% Lean / 15% Fat</td><td class="py-3 px-4 text-ink">Meatloaf, meatballs, Shepherd's pie</td><td class="py-3 px-4 text-ink">Less greasy pooling in baking dishes & casseroles</td></tr>
+<tr><td class="py-3 px-4 text-ink">90 / 10 or 93 / 7 (Sirloin)</td><td class="py-3 px-4 text-ink">90%+ Lean / ≤10% Fat</td><td class="py-3 px-4 text-ink">Tacos, chili, sloppy joes, pasta sauces</td><td class="py-3 px-4 text-ink">Dries out as burgers unless pan-ade binder is added</td></tr>
+</tbody></table></div>
+</section>
+<div class="bg-[#FBEFE3] border-l-4 border-[#2D6A4F] rounded-lg px-4 sm:px-5 py-4 mb-8 text-sm text-[#1B4332] leading-relaxed"><strong>💡 Chef's Thermometer Tip:</strong> How to keep burgers cooked to a safe 160°F as juicy as a medium-rare steak: Gently mix a 'panade' (2 tablespoons of crushed Ritz crackers or panko soaked in 2 tablespoons of milk per pound of meat) OR 1 tablespoon of mayonnaise into the raw grind before shaping patties!</div>
+<section id="printable-preview" class="mb-8"><div class="flex items-center justify-between mb-3"><h2 class="font-heading text-lg sm:text-xl font-bold text-brandNavy">Printable Sheet Preview</h2><span class="text-xs font-medium text-muted">High-Contrast Layout</span></div>
+<div class="vip-preview-card"><img src="/assets/previews/ground-meat-temperature-chart.webp" alt="Ground Meat Internal Temperature Chart (Beef, Poultry, Pork & Lamb) Printable PDF Preview" loading="lazy" /></div>
+</section>
+<section id="download-cta-box" class="no-print bg-white rounded-2xl border-2 border-moss/40 shadow-md p-6 sm:p-8 mb-10 text-center">
+<span class="inline-block px-3 py-1 rounded-full bg-sage/30 text-leaf text-xs font-bold uppercase tracking-wide mb-2">Instant Direct Download • No Email Required</span>
+<h2 class="font-heading text-xl sm:text-2xl font-extrabold text-brandNavy mb-2">Download Your Free Printable Sheet</h2>
+<p class="text-muted text-xs sm:text-sm max-w-xl mx-auto mb-6">Download the printable PDF below. It is the same sheet shown in the preview above, ready to print on US Letter or A4 — open it and choose Print, with Scale set to Fit to Page.</p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3 max-w-2xl mx-auto">
+<a href="/assets/pdfs/ground-meat-temperature-chart.pdf" download="Hoorvia-Ground-Meat-Temperature-Chart.pdf" class="flex flex-col items-center justify-center py-3.5 px-4 rounded-xl bg-ctaGreen hover:bg-ctaGreenHover text-white font-heading font-bold shadow-sm transition-all"><span class="text-sm sm:text-base">📥 Download Free Printable PDF</span><span class="text-[11px] font-normal opacity-90">US Letter + A4 — PDF file</span></a>
+<a href="/assets/pdfs/ground-meat-temperature-chart.pdf" target="_blank" class="flex flex-col items-center justify-center py-3.5 px-4 rounded-xl bg-ctaGreen hover:bg-ctaGreenHover text-white font-heading font-bold shadow-sm transition-all"><span class="text-sm sm:text-base">📥 Download US Letter</span><span class="text-[11px] font-normal opacity-90">8.5&quot; × 11&quot; — PDF file</span></a>
+<a href="/assets/pdfs/ground-meat-temperature-chart.pdf" target="_blank" class="flex flex-col items-center justify-center py-3.5 px-4 rounded-xl bg-brandTeal hover:bg-leaf text-white font-heading font-bold shadow-sm transition-all"><span class="text-sm sm:text-base">📥 Download A4 Size</span><span class="text-[11px] font-normal opacity-90">210 × 297 mm UK/EU/AU — PDF file</span></a>
+<a href="/assets/pdfs/ground-meat-temperature-chart.pdf" target="_blank" class="flex flex-col items-center justify-center py-3.5 px-4 rounded-xl bg-ctaAmber hover:bg-ctaAmberHover text-white font-heading font-bold shadow-sm transition-all"><span class="text-sm sm:text-base">🖨️ Print Directly Now</span><span class="text-[11px] font-normal opacity-90">Open PDF to Print</span></a></div>
+<p class="text-[11px] text-muted mt-4">💡 <strong>Pro Printing Tip:</strong> In your printer settings, set Scale to <strong>“Fit to Printable Area”</strong> and enable <strong>“Background Graphics”</strong> for color headers.</p></section>
+<section id="info-cards" class="no-print grid md:grid-cols-3 gap-4 mb-10">
+<div class="bg-white border border-sandBorder rounded-2xl p-5 shadow-sm">
+<div class="flex items-center gap-2.5 mb-2"><span class="w-9 h-9 rounded-full bg-[#E9F2E7] flex items-center justify-center text-lg shrink-0">💡</span><h3 class="font-heading font-bold text-brandNavy">How to use this chart</h3></div>
+<p class="text-sm text-muted leading-relaxed">Simply find what you need, check the value, and put it to use.</p>
+</div>
+<div class="bg-white border border-sandBorder rounded-2xl p-5 shadow-sm">
+<div class="flex items-center gap-2.5 mb-2"><span class="w-9 h-9 rounded-full bg-[#EDE9F7] flex items-center justify-center text-lg shrink-0">🖨️</span><h3 class="font-heading font-bold text-brandNavy">Printing tips</h3></div>
+<p class="text-sm text-muted leading-relaxed">Use US Letter or A4 paper, and print in &ldquo;Actual Size&rdquo; for the best results. Set Scale to &ldquo;Fit to Printable Area&rdquo; and enable &ldquo;Background Graphics&rdquo; for color headers.</p>
+</div>
+<div class="bg-white border border-sandBorder rounded-2xl p-5 shadow-sm">
+<div class="flex items-center gap-2.5 mb-2"><span class="w-9 h-9 rounded-full bg-[#FDEEE3] flex items-center justify-center text-lg shrink-0">🛡️</span><h3 class="font-heading font-bold text-brandNavy">Food safety note</h3></div>
+<p class="text-sm text-muted leading-relaxed">💡 Chef's Thermometer Tip: How to keep burgers cooked to a safe 160&deg;F as juicy as a medium-rare steak: Gently mix a 'panade' (2 tablespoons of crushed Ritz crackers or panko soaked in 2 tablespoons of milk per pound of meat) OR 1 tablespoon of mayonnaise into the raw grind before shaping patties!</p>
+</div>
+</section>
+<section id="seo-guide-section" class="no-print bg-white rounded-2xl border border-sandBorder p-6 sm:p-8 space-y-6 text-ink text-sm sm:text-base leading-relaxed mb-10">
+<div><h2 class="font-heading text-xl sm:text-2xl font-bold text-brandNavy mb-3">Why Color Lies in Ground Meat (And How to Keep 160°F Burgers Juicy)</h2>
+        <p class="mb-3">Many people judge burger doneness by cutting into the middle to see if the meat is brown or pink. According to USDA food scientists, <strong>internal color is NOT a reliable indicator of ground meat safety</strong>:</p>
+        <ul class="list-disc pl-5 space-y-1 mb-3">
           <li><strong>Premature Browning (Looks Brown at 135°F):</strong> Ground beef stored in low-oxygen packaging or exposed to air can turn completely brown at just 135°F–140°F—long before reaching the 160°F threshold needed to destroy <em>E. coli</em>.</li>
           <li><strong>Persistent Pink (Looks Pink at 165°F+):</strong> Ground beef with a naturally high pH (above 6.0), or burgers cooked on a gas or charcoal grill where nitrogen dioxide and carbon monoxide gases react with myoglobin, can stay bright pink even when cooked past 170°F!</li>
         </ul>
-        <h3>3 Rules for Tender, Never-Tough Burgers & Meatballs</h3>
-        <ol>
+        <h3 class="font-heading text-lg font-bold text-brandNavy mt-5 mb-2">3 Rules for Tender, Never-Tough Burgers & Meatballs</h3>
+        <ol class="list-decimal pl-5 space-y-1 mb-3">
           <li><strong>Salt Only the Outside of Burgers right Before Cooking:</strong> Mixing salt directly into raw burger meat dissolves myosin proteins and cross-links the meat into a bouncy, sausage-like hockey puck. Handle the grind as little as possible and season the exterior crust right before hitting the pan.</li>
           <li><strong>Press a 1/4-Inch Dimple in the Center:</strong> As burger protein contracts under heat, the edges pinch inward and push the center up into a baseball dome. Pressing a shallow thumb print into the center of raw patties guarantees a flat burger.</li>
           <li><strong>Slide the Probe Through the Side:</strong> Always insert your digital thermometer horizontally through the side of a burger patty so the sensor tip sits dead-center.</li>
         </ol>
-        </section>
-    <section class="guide-section"><h2>Frequently Asked Questions</h2><div class='faq-item'><h3>Why does ground turkey require 165°F while ground beef only requires 160°F?</h3><p>Poultry flocks carry a higher baseline prevalence of Salmonella and Campylobacter strains that have slightly higher thermal resistance than the E. coli strains found in cattle. Reaching 165°F achieves an instant 7-log reduction of poultry pathogens.</p></div>
-<div class='faq-item'><h3>Why did my meatloaf fall apart when I sliced it?</h3><p>Two reasons: (1) You sliced it immediately out of the oven instead of letting it rest for 15 minutes so the proteins and gelatin could set, or (2) You didn't use enough binder (use 1 large egg and 1/2 cup breadcrumbs per pound of meat).</p></div>
-<div class='faq-item'><h3>Can I make medium-rare burgers at home safely?</h3><p>Only if you sear the outside of a whole chuck/sirloin roast in boiling water or a hot skillet first to sterilize the surface, and then grind the meat yourself in a sanitized grinder immediately before cooking, or cook the patties sous-vide at 135°F for 2 full hours to pasteurize by time.</p></div>
+        </div>
 </section>
-    <section class="guide-section cluster-box no-print">
-      <h2>Meat, Poultry &amp; Seafood Temperature Reference Series</h2>
-      <ul class="cluster-links"><li><a href="meat-temperature-chart.html">🥩 Master Meat Internal Temperature Chart (#021)</a></li>
-<li><a href="steak-doneness-chart.html">🥩 Steak Doneness Chart: Pull vs Target Temps (#022)</a></li>
-<li><a href="chicken-temperature-chart.html">🥩 Chicken Temperature Chart: White vs Dark Meat (#023)</a></li>
-<li><a href="turkey-temperature-cooking-guide.html">🥩 Turkey Temperature & Roasting Time Guide (#024)</a></li>
-<li><a href="pork-temperature-chart.html">🥩 Pork Internal Temperature Chart: Chops vs BBQ (#025)</a></li>
-<li><a href="fish-internal-temperature-chart.html">🥩 Fish & Shellfish Internal Temperature Chart (#027)</a></li>
+<section class="no-print bg-white rounded-2xl border border-sandBorder p-6 sm:p-8 mb-10">
+<h2 class="font-heading text-xl sm:text-2xl font-bold text-brandNavy mb-4">Meat, Poultry &amp; Seafood Temperature Reference Series</h2>
+<ul class="grid sm:grid-cols-2 gap-2">
+<li><a href="/kitchen/meat-temperature-chart.html" class="block px-4 py-2.5 bg-[#FAF7F0] border border-sandBorder rounded-lg text-sm font-semibold text-brandNavy hover:bg-sand/50 transition-colors">🥩 Master Meat Internal Temperature Chart (#021)</a></li>
+<li><a href="/kitchen/steak-doneness-chart.html" class="block px-4 py-2.5 bg-[#FAF7F0] border border-sandBorder rounded-lg text-sm font-semibold text-brandNavy hover:bg-sand/50 transition-colors">🥩 Steak Doneness Chart: Pull vs Target Temps (#022)</a></li>
+<li><a href="/kitchen/chicken-temperature-chart.html" class="block px-4 py-2.5 bg-[#FAF7F0] border border-sandBorder rounded-lg text-sm font-semibold text-brandNavy hover:bg-sand/50 transition-colors">🥩 Chicken Temperature Chart: White vs Dark Meat (#023)</a></li>
+<li><a href="/kitchen/turkey-temperature-cooking-guide.html" class="block px-4 py-2.5 bg-[#FAF7F0] border border-sandBorder rounded-lg text-sm font-semibold text-brandNavy hover:bg-sand/50 transition-colors">🥩 Turkey Temperature &amp; Roasting Time Guide (#024)</a></li>
+<li><a href="/kitchen/pork-temperature-chart.html" class="block px-4 py-2.5 bg-[#FAF7F0] border border-sandBorder rounded-lg text-sm font-semibold text-brandNavy hover:bg-sand/50 transition-colors">🥩 Pork Internal Temperature Chart: Chops vs BBQ (#025)</a></li>
+<li><a href="/kitchen/fish-internal-temperature-chart.html" class="block px-4 py-2.5 bg-[#FAF7F0] border border-sandBorder rounded-lg text-sm font-semibold text-brandNavy hover:bg-sand/50 transition-colors">🥩 Fish &amp; Shellfish Internal Temperature Chart (#027)</a></li>
 </ul>
-    </section>
-  <hr class="border-sandBorder" />
-<div id="faq-section"><h2 class="font-heading text-xl sm:text-2xl font-bold text-brandNavy mb-4">Frequently Asked Questions (FAQs)</h2><div class="space-y-3"><details class="group border border-sandBorder rounded-xl p-4 bg-paper" open><summary class="font-heading font-bold text-brandNavy cursor-pointer list-none flex justify-between items-center gap-3"><span>Why does ground turkey require 165°F while ground beef only requires 160°F?</span><span class="text-brandTeal group-open:rotate-180 transition-transform shrink-0">▼</span></summary><p class="text-muted text-sm mt-2 leading-relaxed">Poultry flocks carry a higher baseline prevalence of Salmonella and Campylobacter strains that have slightly higher thermal resistance than the E. coli strains found in cattle. Reaching 165°F achieves an instant 7-log reduction of poultry pathogens.</p></details><details class="group border border-sandBorder rounded-xl p-4 bg-paper"><summary class="font-heading font-bold text-brandNavy cursor-pointer list-none flex justify-between items-center gap-3"><span>Why did my meatloaf fall apart when I sliced it?</span><span class="text-brandTeal group-open:rotate-180 transition-transform shrink-0">▼</span></summary><p class="text-muted text-sm mt-2 leading-relaxed">Two reasons: (1) You sliced it immediately out of the oven instead of letting it rest for 15 minutes so the proteins and gelatin could set, or (2) You didn&#x27;t use enough binder (use 1 large egg and 1/2 cup breadcrumbs per pound of meat).</p></details><details class="group border border-sandBorder rounded-xl p-4 bg-paper"><summary class="font-heading font-bold text-brandNavy cursor-pointer list-none flex justify-between items-center gap-3"><span>Can I make medium-rare burgers at home safely?</span><span class="text-brandTeal group-open:rotate-180 transition-transform shrink-0">▼</span></summary><p class="text-muted text-sm mt-2 leading-relaxed">Only if you sear the outside of a whole chuck/sirloin roast in boiling water or a hot skillet first to sterilize the surface, and then grind the meat yourself in a sanitized grinder immediately before cooking, or cook the patties sous-vide at 135°F for 2 full hours to pasteurize by time.</p></details></div></div>
-</main>
-  <footer>
-    <p>&copy; 2026 Hoorvia.net — Print &bull; Plan &bull; Create. Formatted for US Letter (8.5"&times;11") &amp; A4 Paper.</p>
-    <p style="margin-top:8px;"><a href="../about.html">About Us</a> • <a href="../contact.html">Contact</a> • <a href="../privacy-policy.html">Privacy Policy</a> • <a href="../terms.html">Terms</a> • <a href="../disclaimer.html">Disclaimer</a></p>
-  </footer>
-  <script>
-    function filterRows() {
-      const q = document.getElementById('tableFilter').value.toLowerCase();
-      document.querySelectorAll('.searchable-row').forEach(r => { r.style.display = r.innerText.toLowerCase().includes(q) ? '' : 'none'; });
+</section>
+<section id="faq-section" class="no-print mb-10">
+<div class="bg-[#0B2E1B] text-white rounded-t-2xl px-5 py-3 flex items-center gap-2.5">
+<svg class="w-5 h-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.4 2.3c-.8.3-.9 1-.9 1.7"/><circle cx="12" cy="17" r="0.5" fill="currentColor"/></svg>
+<h2 class="font-heading text-lg font-bold">Frequently Asked Questions</h2>
+</div>
+<div class="bg-white border border-t-0 border-sandBorder rounded-b-2xl p-4 sm:p-5 grid sm:grid-cols-2 gap-3">
+<details class="group border border-sandBorder rounded-xl p-4 bg-paper"><summary class="font-heading font-bold text-brandNavy cursor-pointer list-none flex justify-between items-center"><span>Why does ground turkey require 165&deg;F while ground beef only requires 160&deg;F?</span><span class="text-brandTeal group-open:rotate-180 transition-transform">▼</span></summary><p class="text-muted text-sm mt-2">Poultry flocks carry a higher baseline prevalence of Salmonella and Campylobacter strains that have slightly higher thermal resistance than the E. coli strains found in cattle. Reaching 165°F achieves an instant 7-log reduction of poultry pathogens.</p></details>
+<details class="group border border-sandBorder rounded-xl p-4 bg-paper"><summary class="font-heading font-bold text-brandNavy cursor-pointer list-none flex justify-between items-center"><span>Why did my meatloaf fall apart when I sliced it?</span><span class="text-brandTeal group-open:rotate-180 transition-transform">▼</span></summary><p class="text-muted text-sm mt-2">Two reasons: (1) You sliced it immediately out of the oven instead of letting it rest for 15 minutes so the proteins and gelatin could set, or (2) You didn't use enough binder (use 1 large egg and 1/2 cup breadcrumbs per pound of meat).</p></details>
+<details class="group border border-sandBorder rounded-xl p-4 bg-paper"><summary class="font-heading font-bold text-brandNavy cursor-pointer list-none flex justify-between items-center"><span>Can I make medium-rare burgers at home safely?</span><span class="text-brandTeal group-open:rotate-180 transition-transform">▼</span></summary><p class="text-muted text-sm mt-2">Only if you sear the outside of a whole chuck/sirloin roast in boiling water or a hot skillet first to sterilize the surface, and then grind the meat yourself in a sanitized grinder immediately before cooking, or cook the patties sous-vide at 135°F for 2 full hours to pasteurize by time.</p></details>
+</div>
+</section>
+</article></main>
+<script id="hoorvia-vip-sheet-js">
+function filterRows() {
+  const input = document.getElementById('table-filter-input');
+  const q = (input ? input.value : '').toLowerCase().trim();
+  const rows = document.querySelectorAll('#table-section tbody tr');
+  let visible = 0;
+  rows.forEach(r => {
+    const show = !q || r.innerText.toLowerCase().includes(q);
+    r.style.display = show ? '' : 'none';
+    if (show) visible++;
+  });
+  const counter = document.getElementById('row-match-count');
+  if (counter && rows.length > 0) {
+    counter.textContent = q ? ('Showing ' + visible + ' of ' + rows.length + ' rows') : ('Showing all ' + rows.length + ' rows');
+  }
+}
+
+function setTempUnit(mode, btn) {
+  const group = btn ? btn.closest('.vip-unit-group, #unit-toggle') : null;
+  if (group) group.querySelectorAll('button').forEach(b => b.classList.remove('active'));
+  if (btn) btn.classList.add('active');
+
+  document.querySelectorAll('#table-section tbody td').forEach(td => {
+    const orig = td.getAttribute('data-orig');
+    if (!orig) return;
+    const hasBadge = td.querySelector('.copy-badge');
+    let updated = orig;
+    if (mode === 'f') {
+      updated = updated
+        .replace(/\s*\/\s*[-+]?\d+(?:\.\d+)?\s*°C\+?\s*[–\-]\s*[-+]?\d+(?:\.\d+)?\s*°C\+?/g, '')
+        .replace(/\s*\/\s*[-+]?\d+(?:\.\d+)?\s*[–\-]\s*[-+]?\d+(?:\.\d+)?\s*°C\+?/g, '')
+        .replace(/\s*\/\s*[-+]?\d+(?:\.\d+)?\s*°C\+?/g, '')
+        .replace(/\s*\(\s*[-+]?\d+(?:\.\d+)?\s*°C\+?\s*[–\-]\s*[-+]?\d+(?:\.\d+)?\s*°C\+?\)/g, '')
+        .replace(/\s*\(\s*[-+]?\d+(?:\.\d+)?\s*[–\-]\s*[-+]?\d+(?:\.\d+)?\s*°C\+?\)/g, '')
+        .replace(/\s*\([-+]?\d+(?:\.\d+)?\s*°C\+?\)/g, '');
+    } else if (mode === 'c') {
+      updated = updated
+        .replace(/([-+]?\d+(?:\.\d+)?)\s*°F(\+?)\s*([–\-])\s*([-+]?\d+(?:\.\d+)?)\s*°F(\+?)\s*\/\s*([-+]?\d+(?:\.\d+)?)\s*°C(\+?)\s*([–\-])\s*([-+]?\d+(?:\.\d+)?)\s*°C(\+?)/g, '$6°C$7$8$9°C$10')
+        .replace(/([-+]?\d+(?:\.\d+)?)\s*°F(\+?)\s*([–\-])\s*([-+]?\d+(?:\.\d+)?)\s*°F(\+?)\s*\(\s*([-+]?\d+(?:\.\d+)?)\s*°C(\+?)\s*([–\-])\s*([-+]?\d+(?:\.\d+)?)\s*°C(\+?)\)/g, '$6°C$7$8$9°C$10')
+        .replace(/([-+]?\d+(?:\.\d+)?)\s*([–\-])\s*([-+]?\d+(?:\.\d+)?)\s*°F(\+?)\s*\/\s*([-+]?\d+(?:\.\d+)?)\s*([–\-])\s*([-+]?\d+(?:\.\d+)?)\s*°C(\+?)/g, '$5°C$6$7°C$8')
+        .replace(/([-+]?\d+(?:\.\d+)?)\s*([–\-])\s*([-+]?\d+(?:\.\d+)?)\s*°F(\+?)\s*\/\s*([-+]?\d+(?:\.\d+)?)\s*°C(\+?)\s*([–\-])\s*([-+]?\d+(?:\.\d+)?)\s*°C(\+?)/g, '$5°C$7$8°C$9')
+        .replace(/([-+]?\d+(?:\.\d+)?)\s*([–\-])\s*([-+]?\d+(?:\.\d+)?)\s*°F(\+?)\s*\(\s*([-+]?\d+(?:\.\d+)?)\s*°C(\+?)\s*([–\-])\s*([-+]?\d+(?:\.\d+)?)\s*°C(\+?)\)/g, '$5°C$7$8°C$9')
+        .replace(/([-+]?\d+(?:\.\d+)?)\s*°F(\+?)\s*([–\-])\s*([-+]?\d+(?:\.\d+)?)\s*°F(\+?)\s*\/\s*([-+]?\d+(?:\.\d+)?)\s*([–\-])\s*([-+]?\d+(?:\.\d+)?)\s*°C(\+?)/g, '$6°C$7$8°C$9')
+        .replace(/([-+]?\d+(?:\.\d+)?)\s*°F(\+?)\s*([–\-])\s*([-+]?\d+(?:\.\d+)?)\s*°F(\+?)\s*\(\s*([-+]?\d+(?:\.\d+)?)\s*([–\-])\s*([-+]?\d+(?:\.\d+)?)\s*°C(\+?)\)/g, '$6°C$7$8°C$9')
+        .replace(/([-+]?\d+(?:\.\d+)?)\s*°F(\+?)\s*([–\-])\s*([-+]?\d+(?:\.\d+)?)\s*°F(\+?)\s*\/\s*([-+]?\d+(?:\.\d+)?)\s*°C(\+?)/g, '$6°C$7')
+        .replace(/([-+]?\d+(?:\.\d+)?)\s*°F(\+?)\s*([–\-])\s*([-+]?\d+(?:\.\d+)?)\s*°F(\+?)\s*\(\s*([-+]?\d+(?:\.\d+)?)\s*°C(\+?)\)/g, '$6°C$7')
+        .replace(/([-+]?\d+(?:\.\d+)?)\s*°F(\+?)\s+to\s+([-+]?\d+(?:\.\d+)?)\s*°F(\+?)\s*\(\s*([-+]?\d+(?:\.\d+)?)\s*°C(\+?)\s*([–\-])\s*([-+]?\d+(?:\.\d+)?)\s*°C(\+?)\)/g, '$5°C$6$7$8°C$9')
+        .replace(/([-+]?\d+(?:\.\d+)?)\s*°F(\+?)\s+to\s+([-+]?\d+(?:\.\d+)?)\s*°F(\+?)\s*\(\s*([-+]?\d+(?:\.\d+)?)\s*°C(\+?)\)/g, '$5°C$6')
+        .replace(/(?<![\d][–\-])([-+]?\d+(?:\.\d+)?)\s*°F(\+?)\s*\/\s*([-+]?\d+(?:\.\d+)?)\s*°C(\+?)/g, '$3°C$4')
+        .replace(/([-+]?\d+(?:\.\d+)?)\s*([–\-])\s*([-+]?\d+(?:\.\d+)?)\s*°F(\+?)\s*\(\s*([-+]?\d+(?:\.\d+)?)\s*([–\-])\s*([-+]?\d+(?:\.\d+)?)\s*°C(\+?)\)/g, '$5°C$6$7°C$8')
+        .replace(/(?<![\d][–\-])([-+]?\d+(?:\.\d+)?)\s*°F(\+?)\s*\(\s*([-+]?\d+(?:\.\d+)?)\s*°C(\+?)\)/g, '$3°C$4');
     }
-  </script>
-</body>
-</html>
+    td.innerHTML = updated;
+    if (hasBadge) {
+      const b = document.createElement('span');
+      b.className = 'copy-badge no-print';
+      b.textContent = '📋 Copy';
+      td.appendChild(b);
+    }
+  });
+}
+
+function setWeightUnit(mode, btn) {
+  const group = btn ? btn.closest('.vip-unit-group, #weight-toggle-control') : null;
+  if (group) group.querySelectorAll('button').forEach(b => b.classList.remove('active'));
+  if (btn) btn.classList.add('active');
+
+  document.querySelectorAll('#table-section tbody td').forEach(td => {
+    const orig = td.getAttribute('data-orig');
+    if (!orig) return;
+    const hasBadge = td.querySelector('.copy-badge');
+    let updated = orig;
+    if (mode === 'g') {
+      updated = updated
+        .replace(/(\d+(?:\.\d+)?(?:[–-]\d+(?:\.\d+)?)?\s*g(?:rams)?)\s*\/\s*\d+(?:\.\d+)?(?:[–-]\d+(?:\.\d+)?)?\s*oz/gi, '$1')
+        .replace(/(\d+(?:\.\d+)?(?:[–-]\d+(?:\.\d+)?)?\s*g(?:rams)?)\s*\(\d+(?:\.\d+)?(?:[–-]\d+(?:\.\d+)?)?\s*oz\)/gi, '$1');
+    } else if (mode === 'oz') {
+      updated = updated
+        .replace(/\d+(?:\.\d+)?(?:[–-]\d+(?:\.\d+)?)?\s*g(?:rams)?\s*\/\s*(\d+(?:\.\d+)?(?:[–-]\d+(?:\.\d+)?)?\s*oz)/gi, '$1')
+        .replace(/\d+(?:\.\d+)?(?:[–-]\d+(?:\.\d+)?)?\s*g(?:rams)?\s*\((\d+(?:\.\d+)?(?:[–-]\d+(?:\.\d+)?)?\s*oz)\)/gi, '$1');
+    }
+    td.innerHTML = updated;
+    if (hasBadge) {
+      const b = document.createElement('span');
+      b.className = 'copy-badge no-print';
+      b.textContent = '📋 Copy';
+      td.appendChild(b);
+    }
+  });
+}
+
+let vipToastTimer;
+function showCopyToast(msg) {
+  let toast = document.getElementById('copyToast');
+  if (!toast) {
+    toast = document.createElement('div');
+    toast.id = 'copyToast';
+    toast.className = 'no-print';
+    document.body.appendChild(toast);
+  }
+  toast.textContent = '✅ ' + msg;
+  toast.classList.add('show');
+  clearTimeout(vipToastTimer);
+  vipToastTimer = setTimeout(() => toast.classList.remove('show'), 2200);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const rows = document.querySelectorAll('#table-section tbody tr');
+  rows.forEach(row => {
+    row.querySelectorAll('td').forEach(td => {
+      if (!td.hasAttribute('data-orig')) {
+        const clone = td.cloneNode(true);
+        const existingBadge = clone.querySelector('.copy-badge');
+        if (existingBadge) existingBadge.remove();
+        td.setAttribute('data-orig', clone.innerHTML.trim());
+      }
+    });
+    const firstTd = row.querySelector('td');
+    if (firstTd && !firstTd.querySelector('.copy-badge')) {
+      const badge = document.createElement('span');
+      badge.className = 'copy-badge no-print';
+      badge.textContent = '📋 Copy';
+      firstTd.appendChild(badge);
+    }
+    row.addEventListener('click', () => {
+      const cells = Array.from(row.querySelectorAll('td')).map(td => {
+        const c = td.cloneNode(true);
+        const b = c.querySelector('.copy-badge');
+        if (b) b.remove();
+        return c.innerText.trim();
+      });
+      if (cells.length && navigator.clipboard) {
+        navigator.clipboard.writeText(cells.join(' — ')).then(() => {
+          showCopyToast('Copied: ' + cells[0]);
+        });
+      }
+    });
+  });
+
+  filterRows();
+  /* ARGON-A3-PLACEHOLDER: per-sheet dynamic filter placeholder from first rows */
+  (function () {
+    var input = document.getElementById('table-filter-input');
+    if (!input) return;
+    var cells = document.querySelectorAll('#table-section tbody tr td:first-child');
+    var examples = [];
+    for (var i = 0; i < cells.length && examples.length < 3; i++) {
+      var t = (cells[i].textContent || '').trim().replace(/\s+/g, ' ');
+      if (t && examples.indexOf(t) === -1) examples.push(t.length > 22 ? t.slice(0, 22) : t);
+    }
+    if (examples.length) input.setAttribute('placeholder', '\uD83D\uDD0D Filter rows instantly (e.g., ' + examples.join(', ') + ')...');
+  })();
+
+  document.addEventListener('keydown', e => {
+    if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
+      const input = document.getElementById('table-filter-input') || document.getElementById('global-search-input');
+      if (input) {
+        e.preventDefault();
+        input.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        input.focus();
+      }
+    }
+  });
+});
+
+function syncHeroSearch(v){var el=document.getElementById('table-filter-input');if(el){el.value=v;filterRows();;}}</script>
+<footer class="no-print bg-[#0B2E1B] text-[#CFE3D4] mt-12">
+<div class="max-w-6xl mx-auto px-4 sm:px-6 py-8">
+<div class="flex flex-col lg:flex-row lg:items-center gap-6 justify-between pb-6 border-b border-white/10">
+<div class="flex items-center gap-3 flex-wrap">
+<a href="/" class="flex items-center gap-2.5">
+<span class="w-9 h-9 rounded-xl bg-forest text-white flex items-center justify-center shadow-sm"><svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 11.5 12 4l9 7.5"/><path stroke-linecap="round" stroke-linejoin="round" d="M5.5 10.5V20h13v-9.5"/><path stroke-linecap="round" stroke-linejoin="round" d="M12 20v-4.5h3.5V20"/><path stroke-linecap="round" stroke-linejoin="round" d="M12 4c.2-1.8 1.4-2.8 3-3-.2 1.8-1.4 2.8-3 3z" fill="currentColor" stroke="none"/></svg></span>
+<span class="font-heading font-extrabold text-xl text-white">Hoorvia<span class="text-[#74C69D]">.net</span></span>
+</a>
+<span class="hidden sm:block w-px h-6 bg-white/20"></span>
+<span class="font-heading italic text-[#CFE3D4] text-sm">Free Printables. Better Living.</span>
+</div>
+<nav class="flex flex-wrap items-center gap-x-5 gap-y-2 text-sm font-medium">
+<a href="/" class="hover:text-white">Home</a>
+<a href="/kitchen/" class="hover:text-white">Kitchen &amp; Cooking</a>
+<a href="/crafting/" class="hover:text-white">Crafts &amp; DIY</a>
+<a href="/tech/" class="hover:text-white">Tech Shortcuts</a>
+<a href="/about.html" class="hover:text-white">About</a>
+</nav>
+<div class="flex items-center gap-2">
+<a href="#" aria-label="YouTube" class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white transition-colors"><svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M23 12s0-3.8-.5-5.6c-.3-1-1-1.7-2-2C18.7 4 12 4 12 4s-6.7 0-8.5.4c-1 .3-1.7 1-2 2C1 8.2 1 12 1 12s0 3.8.5 5.6c.3 1 1 1.7 2 2 1.8.4 8.5.4 8.5.4s6.7 0 8.5-.4c1-.3 1.7-1 2-2 .5-1.8.5-5.6.5-5.6zM9.8 15.5v-7l6 3.5-6 3.5z"/></svg></a>
+<a href="#" aria-label="Pinterest" class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white transition-colors"><span class="font-heading font-bold text-sm leading-none">P</span></a>
+<a href="#" aria-label="Facebook" class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white transition-colors"><svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21.5v-7.2h2.4l.4-2.9h-2.8V9.5c0-.8.3-1.4 1.5-1.4h1.4V5.5c-.3 0-1.2-.1-2.2-.1-2.2 0-3.7 1.3-3.7 3.8v2.2H8v2.9h2.5v7.2h3z"/></svg></a>
+<a href="#" aria-label="X" class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white transition-colors"><svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M17.7 3H21l-7.3 8.3L22.2 21h-6.7l-5.2-6.2L4.3 21H1l7.8-8.9L1.8 3h6.9l4.7 5.7L17.7 3zm-1.2 16h1.9L6.9 4.9H4.8L16.5 19z"/></svg></a>
+</div>
+</div>
+<div class="pt-5 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-[#9DBFA9]">
+<p>&copy; Hoorvia.net. All rights reserved.</p>
+<nav class="flex flex-wrap items-center justify-center gap-x-4 gap-y-1"><a href="/about.html" class="hover:text-white">About Us</a><a href="/contact.html" class="hover:text-white">Contact Us</a><a href="/privacy-policy.html" class="hover:text-white">Privacy Policy</a><a href="/terms.html" class="hover:text-white">Terms &amp; Conditions</a><a href="/disclaimer.html" class="hover:text-white">Disclaimer</a></nav>
+</div>
+</div>
+</footer>
+</body></html>
